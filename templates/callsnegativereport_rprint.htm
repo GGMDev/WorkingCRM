@@ -1,0 +1,561 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel callsNegativeReport rprint}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {
+		background-color: #ffffbb;
+	}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color: #ffe0b0;
+	}
+	.rnr-report {
+		width: 100%;
+	}
+	td {
+		padding: 2px; 4px;
+	}
+			td.group_1{
+			background-color: #90EE90;
+		}
+		td.nbgroup_1{
+			background-color: #90EE90;
+		}
+		td.header_1 {
+			background-color: #7ACA7A; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_2{
+			background-color: #ADD8E6;
+		}
+		td.nbgroup_2{
+			background-color: #ADD8E6;
+		}
+		td.header_2 {
+			background-color: #93B7C3; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_3{
+			background-color: #FFB6C1;
+		}
+		td.nbgroup_3{
+			background-color: #FFB6C1;
+		}
+		td.header_3 {
+			background-color: #D89AA4; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_4{
+			background-color: #FFFACD;
+		}
+		td.nbgroup_4{
+			background-color: #FFFACD;
+		}
+		td.header_4 {
+			background-color: #D8D4AE; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+			td.group_5{
+			background-color: #B0E0E6;
+		}
+		td.nbgroup_5{
+			background-color: #B0E0E6;
+		}
+		td.header_5 {
+			background-color: #95BEC3; 
+			font-size: 120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		td.blackshade {
+		font-size: 120%;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+		.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	</style>
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+						
+ <!-- add to settings ? -->
+
+
+<table class="table table-striped table-bordered rnr-b-grid rnr-gridtable" cellpadding="0" >
+	<tbody>			
+{BEGIN grid_row}
+				<!--  group headers -->
+	 
+		{BEGIN dialerAgent_newgroup}							
+		<tr class="group-spliter-1"  >
+			<td class="header_1" colspan="4">
+				{$label callsNegativeReport dialerAgent }:&nbsp;
+				{$xdialerAgent_grval}
+								<span data-itemtype="grid_field" data-field="dialerAgent" data-itemid="grid_field2" data-pageid={$pageid} data-record-id="{$recId}">
+{$dialerAgent_grval}
+</span>			</td>
+		</tr>
+		
+				{END dialerAgent_newgroup}
+	 
+		{BEGIN callDate_newgroup}							
+		<tr class="group-spliter-2"  >
+			<td class="header_2" colspan="4">
+				{$label callsNegativeReport callDate }:&nbsp;
+				{$xcallDate_grval}
+								<span data-itemtype="grid_field" data-field="callDate" data-itemid="grid_field3" data-pageid={$pageid} data-record-id="{$recId}">
+{$callDate_grval}
+</span>			</td>
+		</tr>
+		
+				{END callDate_newgroup}
+	 
+		{BEGIN dialerCampaign_newgroup}							
+		<tr class="group-spliter-3"  >
+			<td class="header_3" colspan="4">
+				{$label callsNegativeReport dialerCampaign }:&nbsp;
+				{$xdialerCampaign_grval}
+								<span data-itemtype="grid_field" data-field="dialerCampaign" data-itemid="grid_field4" data-pageid={$pageid} data-record-id="{$recId}">
+{$dialerCampaign_grval}
+</span>			</td>
+		</tr>
+		
+				{END dialerCampaign_newgroup}
+	 
+		{BEGIN dialerList_newgroup}							
+		<tr class="group-spliter-4"  >
+			<td class="header_4" colspan="4">
+				{$label callsNegativeReport dialerList }:&nbsp;
+				{$xdialerList_grval}
+								<span data-itemtype="grid_field" data-field="dialerList" data-itemid="grid_field5" data-pageid={$pageid} data-record-id="{$recId}">
+{$dialerList_grval}
+</span>			</td>
+		</tr>
+		
+				{END dialerList_newgroup}
+	 
+		{BEGIN callResult_newgroup}							
+		<tr class="group-spliter-5"  >
+			<td class="header_5" colspan="4">
+				{$label callsNegativeReport callResult }:&nbsp;
+				{$xcallResult_grval}
+								<span data-itemtype="grid_field" data-field="callResult" data-itemid="grid_field6" data-pageid={$pageid} data-record-id="{$recId}">
+{$callResult_grval}
+</span>			</td>
+		</tr>
+		
+				<tr class="fieldnamesrow group-headers">
+																																													<td class="blackshade {$fieldclass_talkTime}">{$label callsNegativeReport talkTime }</td>
+														<td class="blackshade {$fieldclass_typingTime}">{$label callsNegativeReport typingTime }</td>
+														<td class="blackshade {$fieldclass_totalCallTime}">{$label callsNegativeReport totalCallTime }</td>
+														<td class="blackshade {$fieldclass_forCount}">{$label callsNegativeReport forCount }</td>
+									</tr>
+				{END callResult_newgroup}
+		
+
+			<!--  data-->
+		{BEGIN row_data}
+		<tr >
+																																													<td class="data {$fieldclass_talkTime}">
+			{$xtalkTime_value}
+						<span data-itemtype="grid_field" data-field="talkTime" data-itemid="grid_field7" data-pageid={$pageid} data-record-id="{$recId}">
+{$talkTime_value}
+</span>			</td>
+														<td class="data {$fieldclass_typingTime}">
+			{$xtypingTime_value}
+						<span data-itemtype="grid_field" data-field="typingTime" data-itemid="grid_field8" data-pageid={$pageid} data-record-id="{$recId}">
+{$typingTime_value}
+</span>			</td>
+														<td class="data {$fieldclass_totalCallTime}">
+			{$xtotalCallTime_value}
+						<span data-itemtype="grid_field" data-field="totalCallTime" data-itemid="grid_field9" data-pageid={$pageid} data-record-id="{$recId}">
+{$totalCallTime_value}
+</span>			</td>
+														<td class="data {$fieldclass_forCount}">
+			{$xforCount_value}
+						<span data-itemtype="grid_field" data-field="forCount" data-itemid="grid_field10" data-pageid={$pageid} data-record-id="{$recId}">
+{$forCount_value}
+</span>			</td>
+									</tr>
+		{END row_data}
+	
+	<!---  group summary-->
+					{BEGIN callResult_endgroup}
+
+		<tr >
+					<td class="group_5" colspan="4">
+				Σύνολο για {$label callsNegativeReport callResult } {$callResult_grval} - <span class="summary-5" data-type="summary">
+					{$groupcallResult_total_cnt}
+				</span> Σύνολο εγγραφών			</td>			
+				</tr>
+		
+					<!--  Sum -->
+			<tr >
+												<td class="group_5">
+									Σύνολο									&nbsp;
+									<span class="summary-5" data-type="sum" data-field="talkTime">					
+						{$groupcallResult_totaltalkTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_5 {$fieldclass_typingTime}">
+									&nbsp;
+									<span class="summary-5" data-type="sum" data-field="typingTime">					
+						{$groupcallResult_totaltypingTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_5 {$fieldclass_totalCallTime}">
+									&nbsp;
+									<span class="summary-5" data-type="sum" data-field="totalCallTime">					
+						{$groupcallResult_totaltotalCallTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_5 {$fieldclass_forCount}">
+									&nbsp;
+									<span class="summary-5" data-type="sum" data-field="forCount">					
+						{$groupcallResult_totalforCount_sum}
+					</span>			
+							
+				</td>
+						</tr>
+		
+		
+		
+			
+
+		{END callResult_endgroup}
+							{BEGIN dialerList_endgroup}
+
+		<tr >
+					<td class="group_4" colspan="4">
+				Σύνολο για {$label callsNegativeReport dialerList } {$dialerList_grval} - <span class="summary-4" data-type="summary">
+					{$groupdialerList_total_cnt}
+				</span> Σύνολο εγγραφών			</td>			
+				</tr>
+		
+					<!--  Sum -->
+			<tr >
+												<td class="group_4">
+									Σύνολο									&nbsp;
+									<span class="summary-4" data-type="sum" data-field="talkTime">					
+						{$groupdialerList_totaltalkTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_4 {$fieldclass_typingTime}">
+									&nbsp;
+									<span class="summary-4" data-type="sum" data-field="typingTime">					
+						{$groupdialerList_totaltypingTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_4 {$fieldclass_totalCallTime}">
+									&nbsp;
+									<span class="summary-4" data-type="sum" data-field="totalCallTime">					
+						{$groupdialerList_totaltotalCallTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_4 {$fieldclass_forCount}">
+									&nbsp;
+									<span class="summary-4" data-type="sum" data-field="forCount">					
+						{$groupdialerList_totalforCount_sum}
+					</span>			
+							
+				</td>
+						</tr>
+		
+		
+		
+			
+
+		{END dialerList_endgroup}
+							{BEGIN dialerCampaign_endgroup}
+
+		<tr >
+					<td class="group_3" colspan="4">
+				Σύνολο για {$label callsNegativeReport dialerCampaign } {$dialerCampaign_grval} - <span class="summary-3" data-type="summary">
+					{$groupdialerCampaign_total_cnt}
+				</span> Σύνολο εγγραφών			</td>			
+				</tr>
+		
+					<!--  Sum -->
+			<tr >
+												<td class="group_3">
+									Σύνολο									&nbsp;
+									<span class="summary-3" data-type="sum" data-field="talkTime">					
+						{$groupdialerCampaign_totaltalkTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_3 {$fieldclass_typingTime}">
+									&nbsp;
+									<span class="summary-3" data-type="sum" data-field="typingTime">					
+						{$groupdialerCampaign_totaltypingTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_3 {$fieldclass_totalCallTime}">
+									&nbsp;
+									<span class="summary-3" data-type="sum" data-field="totalCallTime">					
+						{$groupdialerCampaign_totaltotalCallTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_3 {$fieldclass_forCount}">
+									&nbsp;
+									<span class="summary-3" data-type="sum" data-field="forCount">					
+						{$groupdialerCampaign_totalforCount_sum}
+					</span>			
+							
+				</td>
+						</tr>
+		
+		
+		
+			
+
+		{END dialerCampaign_endgroup}
+							{BEGIN callDate_endgroup}
+
+		<tr >
+					<td class="group_2" colspan="4">
+				Σύνολο για {$label callsNegativeReport callDate } {$callDate_grval} - <span class="summary-2" data-type="summary">
+					{$groupcallDate_total_cnt}
+				</span> Σύνολο εγγραφών			</td>			
+				</tr>
+		
+					<!--  Sum -->
+			<tr >
+												<td class="group_2">
+									Σύνολο									&nbsp;
+									<span class="summary-2" data-type="sum" data-field="talkTime">					
+						{$groupcallDate_totaltalkTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_2 {$fieldclass_typingTime}">
+									&nbsp;
+									<span class="summary-2" data-type="sum" data-field="typingTime">					
+						{$groupcallDate_totaltypingTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_2 {$fieldclass_totalCallTime}">
+									&nbsp;
+									<span class="summary-2" data-type="sum" data-field="totalCallTime">					
+						{$groupcallDate_totaltotalCallTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_2 {$fieldclass_forCount}">
+									&nbsp;
+									<span class="summary-2" data-type="sum" data-field="forCount">					
+						{$groupcallDate_totalforCount_sum}
+					</span>			
+							
+				</td>
+						</tr>
+		
+		
+		
+			
+
+		{END callDate_endgroup}
+							{BEGIN dialerAgent_endgroup}
+
+		<tr >
+					<td class="group_1" colspan="4">
+				Σύνολο για {$label callsNegativeReport dialerAgent } {$dialerAgent_grval} - <span class="summary-1" data-type="summary">
+					{$groupdialerAgent_total_cnt}
+				</span> Σύνολο εγγραφών			</td>			
+				</tr>
+		
+					<!--  Sum -->
+			<tr >
+												<td class="group_1">
+									Σύνολο									&nbsp;
+									<span class="summary-1" data-type="sum" data-field="talkTime">					
+						{$groupdialerAgent_totaltalkTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_1 {$fieldclass_typingTime}">
+									&nbsp;
+									<span class="summary-1" data-type="sum" data-field="typingTime">					
+						{$groupdialerAgent_totaltypingTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_1 {$fieldclass_totalCallTime}">
+									&nbsp;
+									<span class="summary-1" data-type="sum" data-field="totalCallTime">					
+						{$groupdialerAgent_totaltotalCallTime_sum}
+					</span>			
+							
+				</td>
+												<td class="group_1 {$fieldclass_forCount}">
+									&nbsp;
+									<span class="summary-1" data-type="sum" data-field="forCount">					
+						{$groupdialerAgent_totalforCount_sum}
+					</span>			
+							
+				</td>
+						</tr>
+		
+		
+		
+			
+
+		{END dialerAgent_endgroup}
+			
+{END grid_row}
+
+	{BEGIN summary_header}
+	<tr class="summary-header">
+						
+						
+						
+						
+						
+							<td class="blackshade {$fieldclass_talkTime}">{$label callsNegativeReport talkTime }</td>
+				
+							<td class="blackshade {$fieldclass_typingTime}">{$label callsNegativeReport typingTime }</td>
+				
+							<td class="blackshade {$fieldclass_totalCallTime}">{$label callsNegativeReport totalCallTime }</td>
+				
+							<td class="blackshade {$fieldclass_forCount}">{$label callsNegativeReport forCount }</td>
+				
+			
+	</tr>
+	{END summary_header}			
+
+
+
+
+    
+    
+
+	<!-- global summary-->
+	{BEGIN global_summary}
+    <tr class="summaryrow summary-global">
+        <td class="globalsummary" colspan="9">
+            Γενικό Σύνολο {$global_total_cnt} - Σύνολο εγγραφών        </td>
+    </tr>
+
+	    <!--  Sum -->
+    <tr class="summary-global">
+					
+                <td class="globalsummary">Σύνολο&nbsp;{$global_totaltalkTime_sum}</td>
+        		
+					
+                <td class="globalsummary {$fieldclass_typingTime}">
+            {$global_totaltypingTime_sum}
+        </td>
+        		
+					
+                <td class="globalsummary {$fieldclass_totalCallTime}">
+            {$global_totaltotalCallTime_sum}
+        </td>
+        		
+					
+                <td class="globalsummary {$fieldclass_forCount}">
+            {$global_totalforCount_sum}
+        </td>
+        		
+		</tr>
+	
+	
+	
+		{END global_summary}
+
+	</tbody>
+</table>			</div>
+{END grid_block}									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

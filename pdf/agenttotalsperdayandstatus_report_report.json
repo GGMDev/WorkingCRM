@@ -1,0 +1,914 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption agentTotalsPerDayAndStatus_Report}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+										"%",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 9,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_breadcrumb}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Εμφανίζονται οι %first% - %last% από %total%","hidden":"{$item_hide_details_found}","isHtml":true,"page_indicator":true},
+				
+				
+			{"text":"","hidden":"{$item_hide_page_size}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_print_panel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																
+
+
+{BEGIN grid_row}
+	{BEGIN agent_newgroup}
+		[
+								{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report agent }',
+				style: "blackshade",
+				alignment: '{$agent_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report callDate }',
+				style: "blackshade",
+				alignment: '{$callDate_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report dialerCampaign }',
+				style: "blackshade",
+				alignment: '{$dialerCampaign_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report dialerList }',
+				style: "blackshade",
+				alignment: '{$dialerList_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report callStatus }',
+				style: "blackshade",
+				alignment: '{$callStatus_align}',
+			},
+																									
+																																	{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report callsCount }',
+				style: "blackshade",
+				alignment: '{$callsCount_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report totalTalkTime }',
+				style: "blackshade",
+				alignment: '{$totalTalkTime_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report totalTypingTime }',
+				style: "blackshade",
+				alignment: '{$totalTypingTime_align}',
+			},
+											{
+				text: '{$jslabel agentTotalsPerDayAndStatus_Report totalCallTime }',
+				style: "blackshade",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	[
+													{
+					colSpan: 9,
+					text: {$agent_grval},
+					style: "header_1"
+				},
+																														],
+	{END agent_newgroup}
+	{BEGIN callDate_newgroup}
+	
+	[
+									{
+					text: '',
+					style: "group_1"
+				},
+																{
+					colSpan: 8,
+					text: {$callDate_grval},
+					style: "header_2"
+				},
+																									],
+	{END callDate_newgroup}
+	{BEGIN dialerCampaign_newgroup}
+	
+	[
+									{
+					text: '',
+					style: "group_1"
+				},
+												{
+					text: '',
+					style: "group_2"
+				},
+																{
+					colSpan: 7,
+					text: {$dialerCampaign_grval},
+					style: "header_3"
+				},
+																				],
+	{END dialerCampaign_newgroup}
+	{BEGIN dialerList_newgroup}
+	
+	[
+									{
+					text: '',
+					style: "group_1"
+				},
+												{
+					text: '',
+					style: "group_2"
+				},
+												{
+					text: '',
+					style: "group_3"
+				},
+																{
+					colSpan: 6,
+					text: {$dialerList_grval},
+					style: "header_4"
+				},
+															],
+	{END dialerList_newgroup}
+	{BEGIN callStatus_newgroup}
+	
+	[
+									{
+					text: '',
+					style: "group_1"
+				},
+												{
+					text: '',
+					style: "group_2"
+				},
+												{
+					text: '',
+					style: "group_3"
+				},
+												{
+					text: '',
+					style: "group_4"
+				},
+																{
+					colSpan: 5,
+					text: {$callStatus_grval},
+					style:"header_5"
+				},
+										],
+	{END callStatus_newgroup}
+
+	{BEGIN row_data}
+	[
+			{
+			text: [
+									''
+							],
+			style: "group_1"
+		},
+			{
+			text: [
+									''
+							],
+			style: "group_2"
+		},
+			{
+			text: [
+									''
+							],
+			style: "group_3"
+		},
+			{
+			text: [
+									''
+							],
+			style: "group_4"
+		},
+			{
+			text: [
+									''
+							],
+			style: "group_5"
+		},
+																					{
+			text: {$callsCount_value},
+			alignment: '{$callsCount_align}',
+		},
+							{
+			text: {$totalTalkTime_value},
+			alignment: '{$totalTalkTime_align}',
+		},
+							{
+			text: {$totalTypingTime_value},
+			alignment: '{$totalTypingTime_align}',
+		},
+							{
+			text: {$totalCallTime_value},
+			alignment: '{$totalCallTime_align}',
+		},
+				],
+	{END row_data}
+
+
+		{BEGIN callStatus_endgroup}
+
+		[
+								{
+				text: "",
+				style: "group_1"
+			},
+						{
+				text: "",
+				style: "group_2"
+			},
+						{
+				text: "",
+				style: "group_3"
+			},
+						{
+				text: "",
+				style: "group_4"
+			},
+					
+																												{
+				colSpan: 5,
+				text: [
+					'Σύνολο για {$jslabel agentTotalsPerDayAndStatus_Report callStatus } ', 
+					{$callStatus_grval},
+					' - ', 
+					{$groupcallStatus_total_cnt}, 
+					' Σύνολο εγγραφών'
+				],
+				style: 'group_5',
+			},
+																										],
+	
+		[
+								
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: '',
+				style: "group_3"
+			},
+											
+						{
+				text: '',
+				style: "group_4"
+			},
+											
+						{
+				text: "Σύνολο",
+				style: "group_5"
+			},
+											
+						{
+				text: {$groupcallStatus_totalcallsCount_sum},
+				style: "group_5",
+				alignment: '{$callsCount_align}',
+			},
+											
+						{
+				text: {$groupcallStatus_totaltotalTalkTime_sum},
+				style: "group_5",
+				alignment: '{$totalTalkTime_align}',
+			},
+											
+						{
+				text: {$groupcallStatus_totaltotalTypingTime_sum},
+				style: "group_5",
+				alignment: '{$totalTypingTime_align}',
+			},
+											
+						{
+				text: {$groupcallStatus_totaltotalCallTime_sum},
+				style: "group_5",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	
+	
+	
+	{END callStatus_endgroup}
+			{BEGIN dialerList_endgroup}
+
+		[
+								{
+				text: "",
+				style: "group_1"
+			},
+						{
+				text: "",
+				style: "group_2"
+			},
+						{
+				text: "",
+				style: "group_3"
+			},
+					
+																							{
+				colSpan: 6,
+				text: [
+					'Σύνολο για {$jslabel agentTotalsPerDayAndStatus_Report dialerList } ', 
+					{$dialerList_grval},
+					' - ', 
+					{$groupdialerList_total_cnt}, 
+					' Σύνολο εγγραφών'
+				],
+				style: 'group_4',
+			},
+																															],
+	
+		[
+								
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: '',
+				style: "group_3"
+			},
+											
+						{
+				text: "Σύνολο",
+				style: "group_4"
+			},
+											
+						{
+				text: '',
+				style: "group_4"
+			},
+											
+						{
+				text: {$groupdialerList_totalcallsCount_sum},
+				style: "group_4",
+				alignment: '{$callsCount_align}',
+			},
+											
+						{
+				text: {$groupdialerList_totaltotalTalkTime_sum},
+				style: "group_4",
+				alignment: '{$totalTalkTime_align}',
+			},
+											
+						{
+				text: {$groupdialerList_totaltotalTypingTime_sum},
+				style: "group_4",
+				alignment: '{$totalTypingTime_align}',
+			},
+											
+						{
+				text: {$groupdialerList_totaltotalCallTime_sum},
+				style: "group_4",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	
+	
+	
+	{END dialerList_endgroup}
+			{BEGIN dialerCampaign_endgroup}
+
+		[
+								{
+				text: "",
+				style: "group_1"
+			},
+						{
+				text: "",
+				style: "group_2"
+			},
+					
+																		{
+				colSpan: 7,
+				text: [
+					'Σύνολο για {$jslabel agentTotalsPerDayAndStatus_Report dialerCampaign } ', 
+					{$dialerCampaign_grval},
+					' - ', 
+					{$groupdialerCampaign_total_cnt}, 
+					' Σύνολο εγγραφών'
+				],
+				style: 'group_3',
+			},
+																																				],
+	
+		[
+								
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: "Σύνολο",
+				style: "group_3"
+			},
+											
+						{
+				text: '',
+				style: "group_3"
+			},
+											
+						{
+				text: '',
+				style: "group_3"
+			},
+											
+						{
+				text: {$groupdialerCampaign_totalcallsCount_sum},
+				style: "group_3",
+				alignment: '{$callsCount_align}',
+			},
+											
+						{
+				text: {$groupdialerCampaign_totaltotalTalkTime_sum},
+				style: "group_3",
+				alignment: '{$totalTalkTime_align}',
+			},
+											
+						{
+				text: {$groupdialerCampaign_totaltotalTypingTime_sum},
+				style: "group_3",
+				alignment: '{$totalTypingTime_align}',
+			},
+											
+						{
+				text: {$groupdialerCampaign_totaltotalCallTime_sum},
+				style: "group_3",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	
+	
+	
+	{END dialerCampaign_endgroup}
+			{BEGIN callDate_endgroup}
+
+		[
+								{
+				text: "",
+				style: "group_1"
+			},
+					
+													{
+				colSpan: 8,
+				text: [
+					'Σύνολο για {$jslabel agentTotalsPerDayAndStatus_Report callDate } ', 
+					{$callDate_grval},
+					' - ', 
+					{$groupcallDate_total_cnt}, 
+					' Σύνολο εγγραφών'
+				],
+				style: 'group_2',
+			},
+																																									],
+	
+		[
+								
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: "Σύνολο",
+				style: "group_2"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: '',
+				style: "group_2"
+			},
+											
+						{
+				text: {$groupcallDate_totalcallsCount_sum},
+				style: "group_2",
+				alignment: '{$callsCount_align}',
+			},
+											
+						{
+				text: {$groupcallDate_totaltotalTalkTime_sum},
+				style: "group_2",
+				alignment: '{$totalTalkTime_align}',
+			},
+											
+						{
+				text: {$groupcallDate_totaltotalTypingTime_sum},
+				style: "group_2",
+				alignment: '{$totalTypingTime_align}',
+			},
+											
+						{
+				text: {$groupcallDate_totaltotalCallTime_sum},
+				style: "group_2",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	
+	
+	
+	{END callDate_endgroup}
+			{BEGIN agent_endgroup}
+
+		[
+		
+								{
+				colSpan: 9,
+				text: [
+					'Σύνολο για {$jslabel agentTotalsPerDayAndStatus_Report agent } ', 
+					{$agent_grval},
+					' - ', 
+					{$groupagent_total_cnt}, 
+					' Σύνολο εγγραφών'
+				],
+				style: 'group_1',
+			},
+																																														],
+	
+		[
+								
+						{
+				text: "Σύνολο",
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: '',
+				style: "group_1"
+			},
+											
+						{
+				text: {$groupagent_totalcallsCount_sum},
+				style: "group_1",
+				alignment: '{$callsCount_align}',
+			},
+											
+						{
+				text: {$groupagent_totaltotalTalkTime_sum},
+				style: "group_1",
+				alignment: '{$totalTalkTime_align}',
+			},
+											
+						{
+				text: {$groupagent_totaltotalTypingTime_sum},
+				style: "group_1",
+				alignment: '{$totalTypingTime_align}',
+			},
+											
+						{
+				text: {$groupagent_totaltotalCallTime_sum},
+				style: "group_1",
+				alignment: '{$totalCallTime_align}',
+			},
+						],
+	
+	
+	
+	
+	{END agent_endgroup}
+	
+{END grid_row}
+
+
+
+
+
+
+
+
+
+
+{BEGIN global_summary}
+	[
+		{
+			text: 'Γενικό Σύνολο {$global_total_cnt} - Σύνολο εγγραφών',
+			colSpan: 9,
+			style: 'globalsummary',
+		}
+	],
+
+		[
+							{
+			text: [
+							'Σύνολο ',
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							'',
+						],
+			style: 'globalsummary',
+
+					},
+							{
+			text: [
+			
+							{$global_totalcallsCount_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$callsCount_align}',
+					},
+							{
+			text: [
+			
+							{$global_totaltotalTalkTime_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$totalTalkTime_align}',
+					},
+							{
+			text: [
+			
+							{$global_totaltotalTypingTime_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$totalTypingTime_align}',
+					},
+							{
+			text: [
+			
+							{$global_totaltotalCallTime_sum},
+						],
+			style: 'globalsummary',
+
+			 
+			alignment: '{$totalCallTime_align}',
+					},
+			],
+	
+	
+	
+	
+{END global_summary}
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

@@ -1,0 +1,201 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_contacts export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$firstName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$lastName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$phone1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$phone1Type_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$phone2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$phone2Type_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$phone3_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$phone3Type_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$mobile1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$mobile2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$address_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$postalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$dateInserted_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$noCall_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$noCallDate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$comments_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$agentMessage_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field19}","text":{$isCompany_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field20}","text":{$name_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field21}","text":{$referenceCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field22}","text":{$area_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field23}","text":{$city_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field24}","text":{$region_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field25}","text":{$vatNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field26}","text":{$taxOffice_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$externalRefCode_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

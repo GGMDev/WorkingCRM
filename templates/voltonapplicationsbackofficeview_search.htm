@@ -1,0 +1,3007 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search" >{$pagetitlelabel dbo_voltonApplicationsBackofficeView search}</h2>
+		</div>			 
+				<div 
+	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search1" {$item_search_search1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset1" {$item_search_reset1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Καθαρισμός Πεδίων			</a>
+</span>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="6"
+		
+		data-v-width="10"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c14}
+<td
+	{$cell_grid_c14}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c14" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callPhone_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_callPhone}" data-itemtype="search_field_label" data-itemid="search_field_label36" {$item_search_field_label36} data-pageid="{$pageid}" data-field="callPhone">
+	{$label dbo_voltonApplicationsBackofficeView callPhone }</label>
+{END callPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c14}
+			 
+																
+
+{BEGIN cellblock_grid_c15}
+<td
+	{$cell_grid_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c15" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callPhone_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options36" {$item_search_field_options36} data-pageid="{$pageid}" data-field="callPhone" >
+	{$searchtype_callPhone}
+</div>
+{END callPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c15}
+			 
+																
+
+{BEGIN cellblock_grid_c63}
+<td
+	{$cell_grid_c63}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c63" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="callPhone" data-before-same-field >
+	{$callPhone_editcontrol}</div>
+{END callPhone_fieldblock}
+											{BEGIN callPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between36" {$item_search_field_between36} data-pageid="{$pageid}" data-field="callPhone" >
+	{$callPhone_editcontrol1}
+</div>
+{END callPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c63}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_callDate}" data-itemtype="search_field_label" data-itemid="search_field_label35" {$item_search_field_label35} data-pageid="{$pageid}" data-field="callDate">
+	{$label dbo_voltonApplicationsBackofficeView callDate }</label>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+			 
+																
+
+{BEGIN cellblock_grid_c27}
+<td
+	{$cell_grid_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c27" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options35" {$item_search_field_options35} data-pageid="{$pageid}" data-field="callDate" >
+	{$searchtype_callDate}
+</div>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c27}
+			 
+																
+
+{BEGIN cellblock_grid_c22}
+<td
+	{$cell_grid_c22}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c22" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="callDate" data-before-same-field >
+	{$callDate_editcontrol}</div>
+{END callDate_fieldblock}
+											{BEGIN callDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between35" {$item_search_field_between35} data-pageid="{$pageid}" data-field="callDate" >
+	{$callDate_editcontrol1}
+</div>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c22}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c58}
+<td
+	{$cell_grid_c58}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c58" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c58}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c59}
+<td
+	{$cell_grid_c59}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c59" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c59}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c60}
+<td
+	{$cell_grid_c60}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c60" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c60}
+			 
+																
+
+{BEGIN cellblock_grid_c98}
+<td
+	{$cell_grid_c98}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c98" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationType_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationType}" data-itemtype="search_field_label" data-itemid="search_field_label1" {$item_search_field_label1} data-pageid="{$pageid}" data-field="applicationType">
+	{$label dbo_voltonApplicationsBackofficeView applicationType }</label>
+{END applicationType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c98}
+			 
+																
+
+{BEGIN cellblock_grid_c105}
+<td
+	{$cell_grid_c105}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c105" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationType_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options1" {$item_search_field_options1} data-pageid="{$pageid}" data-field="applicationType" >
+	{$searchtype_applicationType}
+</div>
+{END applicationType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c105}
+			 
+																
+
+{BEGIN cellblock_grid_c106}
+<td
+	{$cell_grid_c106}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c106" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationType_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field45" {$item_integrated_search_field45} data-pageid="{$pageid}" data-field="applicationType" data-before-same-field >
+	{$applicationType_editcontrol}</div>
+{END applicationType_fieldblock}
+											{BEGIN applicationType_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between1" {$item_search_field_between1} data-pageid="{$pageid}" data-field="applicationType" >
+	{$applicationType_editcontrol1}
+</div>
+{END applicationType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c106}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c17}
+<td
+	{$cell_grid_c17}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c17" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationAgentStatus_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationAgentStatus}" data-itemtype="search_field_label" data-itemid="search_field_label4" {$item_search_field_label4} data-pageid="{$pageid}" data-field="applicationAgentStatus">
+	{$label dbo_voltonApplicationsBackofficeView applicationAgentStatus }</label>
+{END applicationAgentStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c17}
+			 
+																
+
+{BEGIN cellblock_grid_c62}
+<td
+	{$cell_grid_c62}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c62" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationAgentStatus_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options4" {$item_search_field_options4} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+	{$searchtype_applicationAgentStatus}
+</div>
+{END applicationAgentStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c62}
+			 
+																
+
+{BEGIN cellblock_grid_c18}
+<td
+	{$cell_grid_c18}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c18" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationAgentStatus_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field70" {$item_integrated_search_field70} data-pageid="{$pageid}" data-field="applicationAgentStatus" data-before-same-field >
+	{$applicationAgentStatus_editcontrol}</div>
+{END applicationAgentStatus_fieldblock}
+											{BEGIN applicationAgentStatus_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between4" {$item_search_field_between4} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+	{$applicationAgentStatus_editcontrol1}
+</div>
+{END applicationAgentStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c18}
+			 
+																
+
+{BEGIN cellblock_grid_c19}
+<td
+	{$cell_grid_c19}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c19" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationStatusId_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationStatusId}" data-itemtype="search_field_label" data-itemid="search_field_label2" {$item_search_field_label2} data-pageid="{$pageid}" data-field="applicationStatusId">
+	{$label dbo_voltonApplicationsBackofficeView applicationStatusId }</label>
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c19}
+			 
+																
+
+{BEGIN cellblock_grid_c24}
+<td
+	{$cell_grid_c24}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c24" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationStatusId_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options2" {$item_search_field_options2} data-pageid="{$pageid}" data-field="applicationStatusId" >
+	{$searchtype_applicationStatusId}
+</div>
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c24}
+			 
+																
+
+{BEGIN cellblock_grid_c23}
+<td
+	{$cell_grid_c23}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c23" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationStatusId_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="applicationStatusId" data-before-same-field >
+	{$applicationStatusId_editcontrol}</div>
+{END applicationStatusId_fieldblock}
+											{BEGIN applicationStatusId_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between2" {$item_search_field_between2} data-pageid="{$pageid}" data-field="applicationStatusId" >
+	{$applicationStatusId_editcontrol1}
+</div>
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c23}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c117}
+<td
+	{$cell_grid_c117}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c117" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c117}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c116}
+<td
+	{$cell_grid_c116}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c116" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c116}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c115}
+<td
+	{$cell_grid_c115}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c115" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c115}
+			 
+																
+
+{BEGIN cellblock_grid_c20}
+<td
+	{$cell_grid_c20}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c20" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationLastStatusDate_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationLastStatusDate}" data-itemtype="search_field_label" data-itemid="search_field_label3" {$item_search_field_label3} data-pageid="{$pageid}" data-field="applicationLastStatusDate">
+	{$label dbo_voltonApplicationsBackofficeView applicationLastStatusDate }</label>
+{END applicationLastStatusDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c20}
+			 
+																
+
+{BEGIN cellblock_grid_c26}
+<td
+	{$cell_grid_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c26" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationLastStatusDate_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options3" {$item_search_field_options3} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+	{$searchtype_applicationLastStatusDate}
+</div>
+{END applicationLastStatusDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c26}
+			 
+																
+
+{BEGIN cellblock_grid_c25}
+<td
+	{$cell_grid_c25}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c25" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationLastStatusDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field77" {$item_integrated_search_field77} data-pageid="{$pageid}" data-field="applicationLastStatusDate" data-before-same-field >
+	{$applicationLastStatusDate_editcontrol}</div>
+{END applicationLastStatusDate_fieldblock}
+											{BEGIN applicationLastStatusDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between3" {$item_search_field_between3} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+	{$applicationLastStatusDate_editcontrol1}
+</div>
+{END applicationLastStatusDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c25}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c118}
+<td
+	{$cell_grid_c118}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="grid_c118" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search" data-small > 
+	ΣΤΟΙΧΕΙΑ ΑΙΤΟΥΝΤΟΣ</span>
+	
+								</td>
+			{END cellblock_grid_c118}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c121}
+<td
+	{$cell_grid_c121}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c121" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c121}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c122}
+<td
+	{$cell_grid_c122}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c122" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c122}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c123}
+<td
+	{$cell_grid_c123}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c123" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c123}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c124}
+<td
+	{$cell_grid_c124}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c124" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c124}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantName_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantName}" data-itemtype="search_field_label" data-itemid="search_field_label5" {$item_search_field_label5} data-pageid="{$pageid}" data-field="applicantName">
+	{$label dbo_voltonApplicationsBackofficeView applicantName }</label>
+{END applicantName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c32}
+<td
+	{$cell_grid_c32}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c32" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantName_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options5" {$item_search_field_options5} data-pageid="{$pageid}" data-field="applicantName" >
+	{$searchtype_applicantName}
+</div>
+{END applicantName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c32}
+			 
+																
+
+{BEGIN cellblock_grid_c31}
+<td
+	{$cell_grid_c31}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c31" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantName_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="applicantName" data-before-same-field >
+	{$applicantName_editcontrol}</div>
+{END applicantName_fieldblock}
+											{BEGIN applicantName_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between5" {$item_search_field_between5} data-pageid="{$pageid}" data-field="applicantName" >
+	{$applicantName_editcontrol1}
+</div>
+{END applicantName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c31}
+			 
+																
+
+{BEGIN cellblock_grid_c69}
+<td
+	{$cell_grid_c69}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c69" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPhone_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantPhone}" data-itemtype="search_field_label" data-itemid="search_field_label16" {$item_search_field_label16} data-pageid="{$pageid}" data-field="applicantPhone">
+	{$label dbo_voltonApplicationsBackofficeView applicantPhone }</label>
+{END applicantPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c69}
+			 
+																
+
+{BEGIN cellblock_grid_c68}
+<td
+	{$cell_grid_c68}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c68" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPhone_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options16" {$item_search_field_options16} data-pageid="{$pageid}" data-field="applicantPhone" >
+	{$searchtype_applicantPhone}
+</div>
+{END applicantPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c68}
+			 
+																
+
+{BEGIN cellblock_grid_c87}
+<td
+	{$cell_grid_c87}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c87" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="applicantPhone" data-before-same-field >
+	{$applicantPhone_editcontrol}</div>
+{END applicantPhone_fieldblock}
+											{BEGIN applicantPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between16" {$item_search_field_between16} data-pageid="{$pageid}" data-field="applicantPhone" >
+	{$applicantPhone_editcontrol1}
+</div>
+{END applicantPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c87}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c80}
+<td
+	{$cell_grid_c80}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c80" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantIdNumber_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantIdNumber}" data-itemtype="search_field_label" data-itemid="search_field_label7" {$item_search_field_label7} data-pageid="{$pageid}" data-field="applicantIdNumber">
+	{$label dbo_voltonApplicationsBackofficeView applicantIdNumber }</label>
+{END applicantIdNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c80}
+			 
+																
+
+{BEGIN cellblock_grid_c81}
+<td
+	{$cell_grid_c81}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c81" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantIdNumber_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options7" {$item_search_field_options7} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+	{$searchtype_applicantIdNumber}
+</div>
+{END applicantIdNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c81}
+			 
+																
+
+{BEGIN cellblock_grid_c82}
+<td
+	{$cell_grid_c82}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c82" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantIdNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="applicantIdNumber" data-before-same-field >
+	{$applicantIdNumber_editcontrol}</div>
+{END applicantIdNumber_fieldblock}
+											{BEGIN applicantIdNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between7" {$item_search_field_between7} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+	{$applicantIdNumber_editcontrol1}
+</div>
+{END applicantIdNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c82}
+			 
+																
+
+{BEGIN cellblock_grid_c90}
+<td
+	{$cell_grid_c90}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c90" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantMobile_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantMobile}" data-itemtype="search_field_label" data-itemid="search_field_label9" {$item_search_field_label9} data-pageid="{$pageid}" data-field="applicantMobile">
+	{$label dbo_voltonApplicationsBackofficeView applicantMobile }</label>
+{END applicantMobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c90}
+			 
+																
+
+{BEGIN cellblock_grid_c92}
+<td
+	{$cell_grid_c92}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c92" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantMobile_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options9" {$item_search_field_options9} data-pageid="{$pageid}" data-field="applicantMobile" >
+	{$searchtype_applicantMobile}
+</div>
+{END applicantMobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c92}
+			 
+																
+
+{BEGIN cellblock_grid_c93}
+<td
+	{$cell_grid_c93}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c93" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantMobile_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="applicantMobile" data-before-same-field >
+	{$applicantMobile_editcontrol}</div>
+{END applicantMobile_fieldblock}
+											{BEGIN applicantMobile_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between9" {$item_search_field_between9} data-pageid="{$pageid}" data-field="applicantMobile" >
+	{$applicantMobile_editcontrol1}
+</div>
+{END applicantMobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c93}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c28}
+<td
+	{$cell_grid_c28}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c28" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxRegistrationNumber_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantTaxRegistrationNumber}" data-itemtype="search_field_label" data-itemid="search_field_label6" {$item_search_field_label6} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber">
+	{$label dbo_voltonApplicationsBackofficeView applicantTaxRegistrationNumber }</label>
+{END applicantTaxRegistrationNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c28}
+			 
+																
+
+{BEGIN cellblock_grid_c36}
+<td
+	{$cell_grid_c36}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c36" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxRegistrationNumber_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options6" {$item_search_field_options6} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+	{$searchtype_applicantTaxRegistrationNumber}
+</div>
+{END applicantTaxRegistrationNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c36}
+			 
+																
+
+{BEGIN cellblock_grid_c35}
+<td
+	{$cell_grid_c35}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c35" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxRegistrationNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" data-before-same-field >
+	{$applicantTaxRegistrationNumber_editcontrol}</div>
+{END applicantTaxRegistrationNumber_fieldblock}
+											{BEGIN applicantTaxRegistrationNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between6" {$item_search_field_between6} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+	{$applicantTaxRegistrationNumber_editcontrol1}
+</div>
+{END applicantTaxRegistrationNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c35}
+			 
+																
+
+{BEGIN cellblock_grid_c16}
+<td
+	{$cell_grid_c16}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c16" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantWorkPhone_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicantWorkPhone}" data-itemtype="search_field_label" data-itemid="search_field_label8" {$item_search_field_label8} data-pageid="{$pageid}" data-field="applicantWorkPhone">
+	{$label dbo_voltonApplicationsBackofficeView applicantWorkPhone }</label>
+{END applicantWorkPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c16}
+			 
+																
+
+{BEGIN cellblock_grid_c70}
+<td
+	{$cell_grid_c70}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c70" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantWorkPhone_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options8" {$item_search_field_options8} data-pageid="{$pageid}" data-field="applicantWorkPhone" >
+	{$searchtype_applicantWorkPhone}
+</div>
+{END applicantWorkPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c70}
+			 
+																
+
+{BEGIN cellblock_grid_c71}
+<td
+	{$cell_grid_c71}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c71" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantWorkPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field46" {$item_integrated_search_field46} data-pageid="{$pageid}" data-field="applicantWorkPhone" data-before-same-field >
+	{$applicantWorkPhone_editcontrol}</div>
+{END applicantWorkPhone_fieldblock}
+											{BEGIN applicantWorkPhone_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between8" {$item_search_field_between8} data-pageid="{$pageid}" data-field="applicantWorkPhone" >
+	{$applicantWorkPhone_editcontrol1}
+</div>
+{END applicantWorkPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c71}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c30}
+<td
+	{$cell_grid_c30}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c30" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c30}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c40}
+<td
+	{$cell_grid_c40}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c40" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c40}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c39}
+<td
+	{$cell_grid_c39}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c39" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c39}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c65}
+<td
+	{$cell_grid_c65}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c65" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c65}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c74}
+<td
+	{$cell_grid_c74}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c74" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c74}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c75}
+<td
+	{$cell_grid_c75}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c75" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c75}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c148}
+<td
+	{$cell_grid_c148}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c148" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search" data-small > 
+	ΠΑΡΟΧΗ</span>
+	
+								</td>
+			{END cellblock_grid_c148}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c155}
+<td
+	{$cell_grid_c155}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c155" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c155}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c156}
+<td
+	{$cell_grid_c156}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c156" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c156}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c157}
+<td
+	{$cell_grid_c157}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c157" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c157}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c158}
+<td
+	{$cell_grid_c158}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c158" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c158}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c159}
+<td
+	{$cell_grid_c159}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c159" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c159}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c142}
+<td
+	{$cell_grid_c142}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c142" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerAddress_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_powerAddress}" data-itemtype="search_field_label" data-itemid="search_field_label10" {$item_search_field_label10} data-pageid="{$pageid}" data-field="powerAddress">
+	{$label dbo_voltonApplicationsBackofficeView powerAddress }</label>
+{END powerAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c142}
+			 
+																
+
+{BEGIN cellblock_grid_c149}
+<td
+	{$cell_grid_c149}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c149" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerAddress_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options10" {$item_search_field_options10} data-pageid="{$pageid}" data-field="powerAddress" >
+	{$searchtype_powerAddress}
+</div>
+{END powerAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c149}
+			 
+																
+
+{BEGIN cellblock_grid_c150}
+<td
+	{$cell_grid_c150}
+	class=""
+	
+			
+			data-cellId="grid_c150" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerAddress_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="powerAddress" data-before-same-field >
+	{$powerAddress_editcontrol}</div>
+{END powerAddress_fieldblock}
+											{BEGIN powerAddress_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between10" {$item_search_field_between10} data-pageid="{$pageid}" data-field="powerAddress" >
+	{$powerAddress_editcontrol1}
+</div>
+{END powerAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c150}
+			 
+																
+
+{BEGIN cellblock_grid_c151}
+<td
+	{$cell_grid_c151}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c151" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN voltonPlan_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_voltonPlan}" data-itemtype="search_field_label" data-itemid="search_field_label12" {$item_search_field_label12} data-pageid="{$pageid}" data-field="voltonPlan">
+	{$label dbo_voltonApplicationsBackofficeView voltonPlan }</label>
+{END voltonPlan_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c151}
+			 
+																
+
+{BEGIN cellblock_grid_c152}
+<td
+	{$cell_grid_c152}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c152" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN voltonPlan_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options12" {$item_search_field_options12} data-pageid="{$pageid}" data-field="voltonPlan" >
+	{$searchtype_voltonPlan}
+</div>
+{END voltonPlan_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c152}
+			 
+																
+
+{BEGIN cellblock_grid_c153}
+<td
+	{$cell_grid_c153}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c153" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN voltonPlan_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="voltonPlan" data-before-same-field >
+	{$voltonPlan_editcontrol}</div>
+{END voltonPlan_fieldblock}
+											{BEGIN voltonPlan_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between12" {$item_search_field_between12} data-pageid="{$pageid}" data-field="voltonPlan" >
+	{$voltonPlan_editcontrol1}
+</div>
+{END voltonPlan_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c153}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c49}
+<td
+	{$cell_grid_c49}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c49" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerPostalCode_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_powerPostalCode}" data-itemtype="search_field_label" data-itemid="search_field_label11" {$item_search_field_label11} data-pageid="{$pageid}" data-field="powerPostalCode">
+	{$label dbo_voltonApplicationsBackofficeView powerPostalCode }</label>
+{END powerPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c49}
+			 
+																
+
+{BEGIN cellblock_grid_c143}
+<td
+	{$cell_grid_c143}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c143" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerPostalCode_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options11" {$item_search_field_options11} data-pageid="{$pageid}" data-field="powerPostalCode" >
+	{$searchtype_powerPostalCode}
+</div>
+{END powerPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c143}
+			 
+																
+
+{BEGIN cellblock_grid_c144}
+<td
+	{$cell_grid_c144}
+	class=""
+	
+			
+			data-cellId="grid_c144" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerPostalCode_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="powerPostalCode" data-before-same-field >
+	{$powerPostalCode_editcontrol}</div>
+{END powerPostalCode_fieldblock}
+											{BEGIN powerPostalCode_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between11" {$item_search_field_between11} data-pageid="{$pageid}" data-field="powerPostalCode" >
+	{$powerPostalCode_editcontrol1}
+</div>
+{END powerPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c144}
+			 
+																
+
+{BEGIN cellblock_grid_c145}
+<td
+	{$cell_grid_c145}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c145" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerSupplyNumber_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_powerSupplyNumber}" data-itemtype="search_field_label" data-itemid="search_field_label13" {$item_search_field_label13} data-pageid="{$pageid}" data-field="powerSupplyNumber">
+	{$label dbo_voltonApplicationsBackofficeView powerSupplyNumber }</label>
+{END powerSupplyNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c145}
+			 
+																
+
+{BEGIN cellblock_grid_c146}
+<td
+	{$cell_grid_c146}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c146" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerSupplyNumber_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options13" {$item_search_field_options13} data-pageid="{$pageid}" data-field="powerSupplyNumber" >
+	{$searchtype_powerSupplyNumber}
+</div>
+{END powerSupplyNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c146}
+			 
+																
+
+{BEGIN cellblock_grid_c147}
+<td
+	{$cell_grid_c147}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c147" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerSupplyNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="powerSupplyNumber" data-before-same-field >
+	{$powerSupplyNumber_editcontrol}</div>
+{END powerSupplyNumber_fieldblock}
+											{BEGIN powerSupplyNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between13" {$item_search_field_between13} data-pageid="{$pageid}" data-field="powerSupplyNumber" >
+	{$powerSupplyNumber_editcontrol1}
+</div>
+{END powerSupplyNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c147}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c33}
+<td
+	{$cell_grid_c33}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c33" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c33}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c94}
+<td
+	{$cell_grid_c94}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c94" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c94}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c66}
+<td
+	{$cell_grid_c66}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c66" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c66}
+			 
+																
+
+{BEGIN cellblock_grid_c77}
+<td
+	{$cell_grid_c77}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c77" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerMeterNumber_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_powerMeterNumber}" data-itemtype="search_field_label" data-itemid="search_field_label14" {$item_search_field_label14} data-pageid="{$pageid}" data-field="powerMeterNumber">
+	{$label dbo_voltonApplicationsBackofficeView powerMeterNumber }</label>
+{END powerMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c77}
+			 
+																
+
+{BEGIN cellblock_grid_c76}
+<td
+	{$cell_grid_c76}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c76" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerMeterNumber_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options14" {$item_search_field_options14} data-pageid="{$pageid}" data-field="powerMeterNumber" >
+	{$searchtype_powerMeterNumber}
+</div>
+{END powerMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c76}
+			 
+																
+
+{BEGIN cellblock_grid_c91}
+<td
+	{$cell_grid_c91}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c91" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN powerMeterNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="powerMeterNumber" data-before-same-field >
+	{$powerMeterNumber_editcontrol}</div>
+{END powerMeterNumber_fieldblock}
+											{BEGIN powerMeterNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between14" {$item_search_field_between14} data-pageid="{$pageid}" data-field="powerMeterNumber" >
+	{$powerMeterNumber_editcontrol1}
+</div>
+{END powerMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c91}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c21}
+<td
+	{$cell_grid_c21}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c21" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c21}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c46}
+<td
+	{$cell_grid_c46}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c46" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c46}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c47}
+<td
+	{$cell_grid_c47}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c47" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c47}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c48}
+<td
+	{$cell_grid_c48}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c48" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c48}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c54}
+<td
+	{$cell_grid_c54}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c54" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c54}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c55}
+<td
+	{$cell_grid_c55}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c55" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c55}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c119}
+<td
+	{$cell_grid_c119}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c119" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search" data-small > 
+	ΦΥΣΙΚΟ ΑΕΡΙΟ</span>
+	
+								</td>
+			{END cellblock_grid_c119}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c131}
+<td
+	{$cell_grid_c131}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c131" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c131}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c132}
+<td
+	{$cell_grid_c132}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c132" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c132}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c133}
+<td
+	{$cell_grid_c133}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c133" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c133}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c134}
+<td
+	{$cell_grid_c134}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c134" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c134}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c135}
+<td
+	{$cell_grid_c135}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c135" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c135}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c67}
+<td
+	{$cell_grid_c67}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c67" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngAddress_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_ngAddress}" data-itemtype="search_field_label" data-itemid="search_field_label15" {$item_search_field_label15} data-pageid="{$pageid}" data-field="ngAddress">
+	{$label dbo_voltonApplicationsBackofficeView ngAddress }</label>
+{END ngAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c67}
+			 
+																
+
+{BEGIN cellblock_grid_c61}
+<td
+	{$cell_grid_c61}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c61" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngAddress_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options15" {$item_search_field_options15} data-pageid="{$pageid}" data-field="ngAddress" >
+	{$searchtype_ngAddress}
+</div>
+{END ngAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c61}
+			 
+																
+
+{BEGIN cellblock_grid_c100}
+<td
+	{$cell_grid_c100}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c100" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngAddress_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="ngAddress" data-before-same-field >
+	{$ngAddress_editcontrol}</div>
+{END ngAddress_fieldblock}
+											{BEGIN ngAddress_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between15" {$item_search_field_between15} data-pageid="{$pageid}" data-field="ngAddress" >
+	{$ngAddress_editcontrol1}
+</div>
+{END ngAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c100}
+			 
+																
+
+{BEGIN cellblock_grid_c89}
+<td
+	{$cell_grid_c89}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c89" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterType_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_ngMeterType}" data-itemtype="search_field_label" data-itemid="search_field_label27" {$item_search_field_label27} data-pageid="{$pageid}" data-field="ngMeterType">
+	{$label dbo_voltonApplicationsBackofficeView ngMeterType }</label>
+{END ngMeterType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c89}
+			 
+																
+
+{BEGIN cellblock_grid_c2}
+<td
+	{$cell_grid_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c2" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterType_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options27" {$item_search_field_options27} data-pageid="{$pageid}" data-field="ngMeterType" >
+	{$searchtype_ngMeterType}
+</div>
+{END ngMeterType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c2}
+			 
+																
+
+{BEGIN cellblock_grid_c42}
+<td
+	{$cell_grid_c42}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c42" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterType_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field72" {$item_integrated_search_field72} data-pageid="{$pageid}" data-field="ngMeterType" data-before-same-field >
+	{$ngMeterType_editcontrol}</div>
+{END ngMeterType_fieldblock}
+											{BEGIN ngMeterType_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between27" {$item_search_field_between27} data-pageid="{$pageid}" data-field="ngMeterType" >
+	{$ngMeterType_editcontrol1}
+</div>
+{END ngMeterType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c42}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c79}
+<td
+	{$cell_grid_c79}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c79" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngPostalCode_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_ngPostalCode}" data-itemtype="search_field_label" data-itemid="search_field_label24" {$item_search_field_label24} data-pageid="{$pageid}" data-field="ngPostalCode">
+	{$label dbo_voltonApplicationsBackofficeView ngPostalCode }</label>
+{END ngPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c79}
+			 
+																
+
+{BEGIN cellblock_grid_c78}
+<td
+	{$cell_grid_c78}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c78" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngPostalCode_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options24" {$item_search_field_options24} data-pageid="{$pageid}" data-field="ngPostalCode" >
+	{$searchtype_ngPostalCode}
+</div>
+{END ngPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c78}
+			 
+																
+
+{BEGIN cellblock_grid_c101}
+<td
+	{$cell_grid_c101}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c101" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngPostalCode_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field64" {$item_integrated_search_field64} data-pageid="{$pageid}" data-field="ngPostalCode" data-before-same-field >
+	{$ngPostalCode_editcontrol}</div>
+{END ngPostalCode_fieldblock}
+											{BEGIN ngPostalCode_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between24" {$item_search_field_between24} data-pageid="{$pageid}" data-field="ngPostalCode" >
+	{$ngPostalCode_editcontrol1}
+</div>
+{END ngPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c101}
+			 
+																
+
+{BEGIN cellblock_grid_c154}
+<td
+	{$cell_grid_c154}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c154" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterNumber_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_ngMeterNumber}" data-itemtype="search_field_label" data-itemid="search_field_label28" {$item_search_field_label28} data-pageid="{$pageid}" data-field="ngMeterNumber">
+	{$label dbo_voltonApplicationsBackofficeView ngMeterNumber }</label>
+{END ngMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c154}
+			 
+																
+
+{BEGIN cellblock_grid_c160}
+<td
+	{$cell_grid_c160}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c160" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterNumber_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options28" {$item_search_field_options28} data-pageid="{$pageid}" data-field="ngMeterNumber" >
+	{$searchtype_ngMeterNumber}
+</div>
+{END ngMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c160}
+			 
+																
+
+{BEGIN cellblock_grid_c161}
+<td
+	{$cell_grid_c161}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c161" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ngMeterNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field71" {$item_integrated_search_field71} data-pageid="{$pageid}" data-field="ngMeterNumber" data-before-same-field >
+	{$ngMeterNumber_editcontrol}</div>
+{END ngMeterNumber_fieldblock}
+											{BEGIN ngMeterNumber_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between28" {$item_search_field_between28} data-pageid="{$pageid}" data-field="ngMeterNumber" >
+	{$ngMeterNumber_editcontrol1}
+</div>
+{END ngMeterNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c161}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c88}
+<td
+	{$cell_grid_c88}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c88" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c88}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c86}
+<td
+	{$cell_grid_c86}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c86" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c86}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c104}
+<td
+	{$cell_grid_c104}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c104" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c104}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c97}
+<td
+	{$cell_grid_c97}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c97" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c97}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c99}
+<td
+	{$cell_grid_c99}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c99" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c99}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c1" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c1}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c130}
+<td
+	{$cell_grid_c130}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c130" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search" data-small > 
+	ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</span>
+	
+								</td>
+			{END cellblock_grid_c130}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c137}
+<td
+	{$cell_grid_c137}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="grid_c137" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="5"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c137}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c139}
+<td
+	{$cell_grid_c139}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c139" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c139}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c140}
+<td
+	{$cell_grid_c140}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c140" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c140}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c141}
+<td
+	{$cell_grid_c141}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c141" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c141}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationContactMethod_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationContactMethod}" data-itemtype="search_field_label" data-itemid="search_field_label34" {$item_search_field_label34} data-pageid="{$pageid}" data-field="applicationContactMethod">
+	{$label dbo_voltonApplicationsBackofficeView applicationContactMethod }</label>
+{END applicationContactMethod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
+			 
+																
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationContactMethod_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options34" {$item_search_field_options34} data-pageid="{$pageid}" data-field="applicationContactMethod" >
+	{$searchtype_applicationContactMethod}
+</div>
+{END applicationContactMethod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c13}
+			 
+																
+
+{BEGIN cellblock_grid_c34}
+<td
+	{$cell_grid_c34}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c34" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationContactMethod_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field78" {$item_integrated_search_field78} data-pageid="{$pageid}" data-field="applicationContactMethod" data-before-same-field >
+	{$applicationContactMethod_editcontrol}</div>
+{END applicationContactMethod_fieldblock}
+											{BEGIN applicationContactMethod_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between34" {$item_search_field_between34} data-pageid="{$pageid}" data-field="applicationContactMethod" >
+	{$applicationContactMethod_editcontrol1}
+</div>
+{END applicationContactMethod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c34}
+			 
+																
+
+{BEGIN cellblock_grid_c110}
+<td
+	{$cell_grid_c110}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c110" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourier_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationCourier}" data-itemtype="search_field_label" data-itemid="search_field_label32" {$item_search_field_label32} data-pageid="{$pageid}" data-field="applicationCourier">
+	{$label dbo_voltonApplicationsBackofficeView applicationCourier }</label>
+{END applicationCourier_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c110}
+			 
+																
+
+{BEGIN cellblock_grid_c109}
+<td
+	{$cell_grid_c109}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c109" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourier_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options32" {$item_search_field_options32} data-pageid="{$pageid}" data-field="applicationCourier" >
+	{$searchtype_applicationCourier}
+</div>
+{END applicationCourier_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c109}
+			 
+																
+
+{BEGIN cellblock_grid_c111}
+<td
+	{$cell_grid_c111}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c111" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourier_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field79" {$item_integrated_search_field79} data-pageid="{$pageid}" data-field="applicationCourier" data-before-same-field >
+	{$applicationCourier_editcontrol}</div>
+{END applicationCourier_fieldblock}
+											{BEGIN applicationCourier_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between32" {$item_search_field_between32} data-pageid="{$pageid}" data-field="applicationCourier" >
+	{$applicationCourier_editcontrol1}
+</div>
+{END applicationCourier_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c111}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c41}
+<td
+	{$cell_grid_c41}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c41" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c41}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c45}
+<td
+	{$cell_grid_c45}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="grid_c45" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="5"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c45}
+			 
+																
+
+{BEGIN cellblock_grid_c113}
+<td
+	{$cell_grid_c113}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c113" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierDate_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_applicationCourierDate}" data-itemtype="search_field_label" data-itemid="search_field_label33" {$item_search_field_label33} data-pageid="{$pageid}" data-field="applicationCourierDate">
+	{$label dbo_voltonApplicationsBackofficeView applicationCourierDate }</label>
+{END applicationCourierDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c113}
+			 
+																
+
+{BEGIN cellblock_grid_c112}
+<td
+	{$cell_grid_c112}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c112" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierDate_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options33" {$item_search_field_options33} data-pageid="{$pageid}" data-field="applicationCourierDate" >
+	{$searchtype_applicationCourierDate}
+</div>
+{END applicationCourierDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c112}
+			 
+																
+
+{BEGIN cellblock_grid_c114}
+<td
+	{$cell_grid_c114}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c114" data-pageid="{$pageid}" data-page="voltonapplicationsbackofficeview_search"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field80" {$item_integrated_search_field80} data-pageid="{$pageid}" data-field="applicationCourierDate" data-before-same-field >
+	{$applicationCourierDate_editcontrol}</div>
+{END applicationCourierDate_fieldblock}
+											{BEGIN applicationCourierDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between33" {$item_search_field_between33} data-pageid="{$pageid}" data-field="applicationCourierDate" >
+	{$applicationCourierDate_editcontrol1}
+</div>
+{END applicationCourierDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c114}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			
+	ocolspan="3"		data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN agent_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agent}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="agent" 
+	
+	data-signal-error-for="agent{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="agent" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_agent}">
+		{$label dbo_voltonApplicationsBackofficeView agent }	</label>
+	<div class="r-search-option">
+		{$searchtype_agent}
+	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol}	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol1}
+	</div>
+	
+</div>
+
+{END agent_fieldblock}
+											
+{BEGIN applicationPhase_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationPhase}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationPhase" 
+	
+	data-signal-error-for="applicationPhase{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="applicationPhase" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationPhase}">
+		{$label dbo_voltonApplicationsBackofficeView applicationPhase }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationPhase}
+	</div>
+	<div class="r-search-field">
+		{$applicationPhase_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationPhase_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationPhase_fieldblock}
+											
+{BEGIN salesPhase_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_salesPhase}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="salesPhase" 
+	
+	data-signal-error-for="salesPhase{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="salesPhase" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_salesPhase}">
+		{$label dbo_voltonApplicationsBackofficeView salesPhase }	</label>
+	<div class="r-search-option">
+		{$searchtype_salesPhase}
+	</div>
+	<div class="r-search-field">
+		{$salesPhase_editcontrol}	</div>
+	<div class="r-search-field">
+		{$salesPhase_editcontrol1}
+	</div>
+	
+</div>
+
+{END salesPhase_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="3"		data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c5}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Καθαρισμός Πεδίων			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Ακύρωση			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

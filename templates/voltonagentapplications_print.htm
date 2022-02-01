@@ -1,0 +1,6575 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pdflink_block}
+<span data-itemtype="print_pdf" data-itemid="print_pdf" {$item_print_pdf} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	pdflink" data-pdfpage="print" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Volton Agent Applications.pdf" 
+data-pagetype="print" 
+{$pdflink_attrs} >
+							Προβολή σε PDF			</a>
+</span>
+{END pdflink_block}
+		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_voltonAgentApplications print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c4" data-pageid="{$pageid}"	{$cell_top_c4}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>	 
+		{BEGIN applicationStatusId_fieldfootercolumn}
+{BEGIN applicationStatusId_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="grid_field_totals" {$item_grid_field_totals} data-pageid="{$pageid}" data-field="applicationStatusId">
+	Πλήθος	{$applicationStatusId_total}
+</span>
+{END applicationStatusId_showtotal}
+{END applicationStatusId_fieldfootercolumn}
+
+			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_top}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<img src="{$file_url images/volton%20header.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" data-record-id="{$recId}" />
+	
+	</td>
+	{END cellblock_grid_cell_field}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field64}
+	<td
+	
+	{$cell_grid_cell_field64}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$applicationType_class}
+			"
+
+			data-field="applicationType"
+	
+	data-cellId="grid_cell_field64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicationType_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationType">
+	{$label dbo_voltonAgentApplications applicationType }	</span>
+{END applicationType_fieldheadercolumn}
+
+	 
+		{BEGIN applicationType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationType" data-default-width >
+{$applicationType_value}
+</span>
+{END applicationType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field64}
+						 
+							{BEGIN cellblock_grid_cell_field66}
+	<td
+	
+	{$cell_grid_cell_field66}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$applicationStatusId_class}
+			"
+
+			data-field="applicationStatusId"
+	
+	data-cellId="grid_cell_field66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicationStatusId_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId">
+	{$label dbo_voltonAgentApplications applicationStatusId }	</span>
+{END applicationStatusId_fieldheadercolumn}
+
+	 
+		{BEGIN applicationStatusId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId" data-default-width >
+{$applicationStatusId_value}
+</span>
+{END applicationStatusId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field66}
+						 
+							{BEGIN cellblock_grid_cell_field67}
+	<td
+	
+	{$cell_grid_cell_field67}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$applicationLastStatusDate_class}
+			"
+
+			data-field="applicationLastStatusDate"
+	
+	data-cellId="grid_cell_field67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicationLastStatusDate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label14" {$item_grid_field_label14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationLastStatusDate">
+	{$label dbo_voltonAgentApplications applicationLastStatusDate }	</span>
+{END applicationLastStatusDate_fieldheadercolumn}
+
+	 
+		{BEGIN applicationLastStatusDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field14" {$item_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationLastStatusDate" data-default-width >
+{$applicationLastStatusDate_value}
+</span>
+{END applicationLastStatusDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field67}
+						 
+							{BEGIN cellblock_grid_cell_field68}
+	<td
+	
+	{$cell_grid_cell_field68}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field68}
+						 
+							{BEGIN cellblock_grid_cell_field69}
+	<td
+	
+	{$cell_grid_cell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field69" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field69}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_label1}
+	<td
+	
+	{$cell_grid_cell_label1}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label1}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field1}
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field2}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label4}
+	<td
+	
+	{$cell_grid_cell_label4}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantName_class}
+			"
+
+			data-field="applicantName"
+	
+	data-cellId="grid_cell_label4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="applicantName">
+	{$label dbo_voltonAgentApplications applicantName }	</span>
+{END applicantName_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label4}
+						 
+							{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantName_class}
+			"
+
+			data-field="applicantName"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantName" data-default-width >
+{$applicantName_value}
+</span>
+{END applicantName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+						 
+							{BEGIN cellblock_grid_cell_label5}
+	<td
+	
+	{$cell_grid_cell_label5}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantIdNumber_class}
+			"
+
+			data-field="applicantIdNumber"
+	
+	data-cellId="grid_cell_label5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantIdNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantIdNumber">
+	{$label dbo_voltonAgentApplications applicantIdNumber }	</span>
+{END applicantIdNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label5}
+						 
+							{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantIdNumber_class}
+			"
+
+			data-field="applicantIdNumber"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantIdNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantIdNumber" data-default-width >
+{$applicantIdNumber_value}
+</span>
+{END applicantIdNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+						 
+							{BEGIN cellblock_grid_cell_label6}
+	<td
+	
+	{$cell_grid_cell_label6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label6}
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field6}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label8}
+	<td
+	
+	{$cell_grid_cell_label8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantAddress_class}
+			"
+
+			data-field="applicantAddress"
+	
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantAddress">
+	{$label dbo_voltonAgentApplications applicantAddress }	</span>
+{END applicantAddress_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label8}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantAddress_class}
+			"
+
+			data-field="applicantAddress"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantAddress" data-default-width >
+{$applicantAddress_value}
+</span>
+{END applicantAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+						 
+							{BEGIN cellblock_grid_cell_label9}
+	<td
+	
+	{$cell_grid_cell_label9}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantPostalCode_class}
+			"
+
+			data-field="applicantPostalCode"
+	
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPostalCode">
+	{$label dbo_voltonAgentApplications applicantPostalCode }	</span>
+{END applicantPostalCode_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label9}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPostalCode_class}
+			"
+
+			data-field="applicantPostalCode"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPostalCode" data-default-width >
+{$applicantPostalCode_value}
+</span>
+{END applicantPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+						 
+							{BEGIN cellblock_grid_cell_label10}
+	<td
+	
+	{$cell_grid_cell_label10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label10}
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field10}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label12}
+	<td
+	
+	{$cell_grid_cell_label12}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantArea_class}
+			"
+
+			data-field="applicantArea"
+	
+	data-cellId="grid_cell_label12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantArea">
+	{$label dbo_voltonAgentApplications applicantArea }	</span>
+{END applicantArea_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label12}
+						 
+							{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantArea_class}
+			"
+
+			data-field="applicantArea"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantArea" data-default-width >
+{$applicantArea_value}
+</span>
+{END applicantArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+						 
+							{BEGIN cellblock_grid_cell_label13}
+	<td
+	
+	{$cell_grid_cell_label13}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantCity_class}
+			"
+
+			data-field="applicantCity"
+	
+	data-cellId="grid_cell_label13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantCity">
+	{$label dbo_voltonAgentApplications applicantCity }	</span>
+{END applicantCity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label13}
+						 
+							{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantCity_class}
+			"
+
+			data-field="applicantCity"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantCity" data-default-width >
+{$applicantCity_value}
+</span>
+{END applicantCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+						 
+							{BEGIN cellblock_grid_cell_label14}
+	<td
+	
+	{$cell_grid_cell_label14}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label14}
+						 
+							{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field14}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label64}
+	<td
+	
+	{$cell_grid_cell_label64}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantPhone_class}
+			"
+
+			data-field="applicantPhone"
+	
+	data-cellId="grid_cell_label64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPhone">
+	{$label dbo_voltonAgentApplications applicantPhone }	</span>
+{END applicantPhone_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label64}
+						 
+							{BEGIN cellblock_grid_cell_label65}
+	<td
+	
+	{$cell_grid_cell_label65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPhone_class}
+			"
+
+			data-field="applicantPhone"
+	
+	data-cellId="grid_cell_label65" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPhone" data-default-width >
+{$applicantPhone_value}
+</span>
+{END applicantPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label65}
+						 
+							{BEGIN cellblock_grid_cell_label66}
+	<td
+	
+	{$cell_grid_cell_label66}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantWorkPhone_class}
+			"
+
+			data-field="applicantWorkPhone"
+	
+	data-cellId="grid_cell_label66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantWorkPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantWorkPhone">
+	{$label dbo_voltonAgentApplications applicantWorkPhone }	</span>
+{END applicantWorkPhone_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label66}
+						 
+							{BEGIN cellblock_grid_cell_label67}
+	<td
+	
+	{$cell_grid_cell_label67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantWorkPhone_class}
+			"
+
+			data-field="applicantWorkPhone"
+	
+	data-cellId="grid_cell_label67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantWorkPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantWorkPhone" data-default-width >
+{$applicantWorkPhone_value}
+</span>
+{END applicantWorkPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label67}
+						 
+							{BEGIN cellblock_grid_cell_label68}
+	<td
+	
+	{$cell_grid_cell_label68}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantMobile_class}
+			"
+
+			data-field="applicantMobile"
+	
+	data-cellId="grid_cell_label68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantMobile_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantMobile">
+	{$label dbo_voltonAgentApplications applicantMobile }	</span>
+{END applicantMobile_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label68}
+						 
+							{BEGIN cellblock_grid_cell_label69}
+	<td
+	
+	{$cell_grid_cell_label69}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantMobile_class}
+			"
+
+			data-field="applicantMobile"
+	
+	data-cellId="grid_cell_label69" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantMobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantMobile" data-default-width >
+{$applicantMobile_value}
+</span>
+{END applicantMobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label69}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field88}
+	<td
+	
+	{$cell_grid_cell_field88}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantProfession_class}
+			"
+
+			data-field="applicantProfession"
+	
+	data-cellId="grid_cell_field88" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantProfession_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantProfession">
+	{$label dbo_voltonAgentApplications applicantProfession }	</span>
+{END applicantProfession_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field88}
+						 
+							{BEGIN cellblock_grid_cell_field89}
+	<td
+	
+	{$cell_grid_cell_field89}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantProfession_class}
+			"
+
+			data-field="applicantProfession"
+	
+	data-cellId="grid_cell_field89" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantProfession_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantProfession" data-default-width >
+{$applicantProfession_value}
+</span>
+{END applicantProfession_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field89}
+						 
+							{BEGIN cellblock_grid_cell_field90}
+	<td
+	
+	{$cell_grid_cell_field90}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantEmail_class}
+			"
+
+			data-field="applicantEmail"
+	
+	data-cellId="grid_cell_field90" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantEmail_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantEmail">
+	{$label dbo_voltonAgentApplications applicantEmail }	</span>
+{END applicantEmail_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field90}
+						 
+							{BEGIN cellblock_grid_cell_field91}
+	<td
+	
+	{$cell_grid_cell_field91}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantEmail_class}
+			"
+
+			data-field="applicantEmail"
+	
+	data-cellId="grid_cell_field91" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantEmail_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantEmail" data-default-width >
+{$applicantEmail_value}
+</span>
+{END applicantEmail_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field91}
+						 
+							{BEGIN cellblock_grid_cell_field92}
+	<td
+	
+	{$cell_grid_cell_field92}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantGemi_class}
+			"
+
+			data-field="applicantGemi"
+	
+	data-cellId="grid_cell_field92" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantGemi_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantGemi">
+	{$label dbo_voltonAgentApplications applicantGemi }	</span>
+{END applicantGemi_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field92}
+						 
+							{BEGIN cellblock_grid_cell_field93}
+	<td
+	
+	{$cell_grid_cell_field93}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantGemi_class}
+			"
+
+			data-field="applicantGemi"
+	
+	data-cellId="grid_cell_field93" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantGemi_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantGemi" data-default-width >
+{$applicantGemi_value}
+</span>
+{END applicantGemi_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field93}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field80}
+	<td
+	
+	{$cell_grid_cell_field80}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantTaxRegistrationNumber_class}
+			"
+
+			data-field="applicantTaxRegistrationNumber"
+	
+	data-cellId="grid_cell_field80" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantTaxRegistrationNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxRegistrationNumber">
+	{$label dbo_voltonAgentApplications applicantTaxRegistrationNumber }	</span>
+{END applicantTaxRegistrationNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field80}
+						 
+							{BEGIN cellblock_grid_cell_field81}
+	<td
+	
+	{$cell_grid_cell_field81}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxRegistrationNumber_class}
+			"
+
+			data-field="applicantTaxRegistrationNumber"
+	
+	data-cellId="grid_cell_field81" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantTaxRegistrationNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxRegistrationNumber" data-default-width >
+{$applicantTaxRegistrationNumber_value}
+</span>
+{END applicantTaxRegistrationNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field81}
+						 
+							{BEGIN cellblock_grid_cell_field82}
+	<td
+	
+	{$cell_grid_cell_field82}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantTaxOffice_class}
+			"
+
+			data-field="applicantTaxOffice"
+	
+	data-cellId="grid_cell_field82" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantTaxOffice_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxOffice">
+	{$label dbo_voltonAgentApplications applicantTaxOffice }	</span>
+{END applicantTaxOffice_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field82}
+						 
+							{BEGIN cellblock_grid_cell_field83}
+	<td
+	
+	{$cell_grid_cell_field83}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxOffice_class}
+			"
+
+			data-field="applicantTaxOffice"
+	
+	data-cellId="grid_cell_field83" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantTaxOffice_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxOffice" data-default-width >
+{$applicantTaxOffice_value}
+</span>
+{END applicantTaxOffice_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field83}
+						 
+							{BEGIN cellblock_grid_cell_field84}
+	<td
+	
+	{$cell_grid_cell_field84}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$applicantKod_class}
+			"
+
+			data-field="applicantKod"
+	
+	data-cellId="grid_cell_field84" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantKod_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantKod">
+	{$label dbo_voltonAgentApplications applicantKod }	</span>
+{END applicantKod_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field84}
+						 
+							{BEGIN cellblock_grid_cell_field85}
+	<td
+	
+	{$cell_grid_cell_field85}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantKod_class}
+			"
+
+			data-field="applicantKod"
+	
+	data-cellId="grid_cell_field85" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicantKod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantKod" data-default-width >
+{$applicantKod_value}
+</span>
+{END applicantKod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field85}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label16}
+	<td
+	
+	{$cell_grid_cell_label16}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΝΟΜΙΜΟΥ ΕΚΠΡΟΣΩΠΟΥ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label16}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field104}
+	<td
+	
+	{$cell_grid_cell_field104}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field104" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field104}
+						 
+							{BEGIN cellblock_grid_cell_field105}
+	<td
+	
+	{$cell_grid_cell_field105}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field105" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field105}
+						 
+							{BEGIN cellblock_grid_cell_field106}
+	<td
+	
+	{$cell_grid_cell_field106}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field106" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field106}
+						 
+							{BEGIN cellblock_grid_cell_field107}
+	<td
+	
+	{$cell_grid_cell_field107}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field107" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field107}
+						 
+							{BEGIN cellblock_grid_cell_field108}
+	<td
+	
+	{$cell_grid_cell_field108}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field108" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field108}
+						 
+							{BEGIN cellblock_grid_cell_field109}
+	<td
+	
+	{$cell_grid_cell_field109}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field109" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field109}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label20}
+	<td
+	
+	{$cell_grid_cell_label20}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$legalName_class}
+			"
+
+			data-field="legalName"
+	
+	data-cellId="grid_cell_label20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN legalName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="legalName">
+	{$label dbo_voltonAgentApplications legalName }	</span>
+{END legalName_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label20}
+						 
+							{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$legalName_class}
+			"
+
+			data-field="legalName"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN legalName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="legalName" data-default-width >
+{$legalName_value}
+</span>
+{END legalName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+						 
+							{BEGIN cellblock_grid_cell_label21}
+	<td
+	
+	{$cell_grid_cell_label21}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$legalIdNumber_class}
+			"
+
+			data-field="legalIdNumber"
+	
+	data-cellId="grid_cell_label21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN legalIdNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="legalIdNumber">
+	{$label dbo_voltonAgentApplications legalIdNumber }	</span>
+{END legalIdNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label21}
+						 
+							{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$legalIdNumber_class}
+			"
+
+			data-field="legalIdNumber"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN legalIdNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="legalIdNumber" data-default-width >
+{$legalIdNumber_value}
+</span>
+{END legalIdNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+						 
+							{BEGIN cellblock_grid_cell_label22}
+	<td
+	
+	{$cell_grid_cell_label22}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label22}
+						 
+							{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field22}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label24}
+	<td
+	
+	{$cell_grid_cell_label24}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text6" {$item_text6} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΥΠΕΥΘΥΝΟΥ ΕΠΙΚΟΙΝΩΝΙΑΣ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label24}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label28}
+	<td
+	
+	{$cell_grid_cell_label28}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactName_class}
+			"
+
+			data-field="contactName"
+	
+	data-cellId="grid_cell_label28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactName">
+	{$label dbo_voltonAgentApplications contactName }	</span>
+{END contactName_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label28}
+						 
+							{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactName_class}
+			"
+
+			data-field="contactName"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactName" data-default-width >
+{$contactName_value}
+</span>
+{END contactName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+						 
+							{BEGIN cellblock_grid_cell_label29}
+	<td
+	
+	{$cell_grid_cell_label29}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactPhone_class}
+			"
+
+			data-field="contactPhone"
+	
+	data-cellId="grid_cell_label29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactPhone">
+	{$label dbo_voltonAgentApplications contactPhone }	</span>
+{END contactPhone_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label29}
+						 
+							{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactPhone_class}
+			"
+
+			data-field="contactPhone"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactPhone" data-default-width >
+{$contactPhone_value}
+</span>
+{END contactPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+						 
+							{BEGIN cellblock_grid_cell_label30}
+	<td
+	
+	{$cell_grid_cell_label30}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactMobile_class}
+			"
+
+			data-field="contactMobile"
+	
+	data-cellId="grid_cell_label30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactMobile_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMobile">
+	{$label dbo_voltonAgentApplications contactMobile }	</span>
+{END contactMobile_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label30}
+						 
+							{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactMobile_class}
+			"
+
+			data-field="contactMobile"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactMobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMobile" data-default-width >
+{$contactMobile_value}
+</span>
+{END contactMobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label32}
+	<td
+	
+	{$cell_grid_cell_label32}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactEmail_class}
+			"
+
+			data-field="contactEmail"
+	
+	data-cellId="grid_cell_label32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactEmail_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactEmail">
+	{$label dbo_voltonAgentApplications contactEmail }	</span>
+{END contactEmail_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label32}
+						 
+							{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactEmail_class}
+			"
+
+			data-field="contactEmail"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN contactEmail_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactEmail" data-default-width >
+{$contactEmail_value}
+</span>
+{END contactEmail_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+						 
+							{BEGIN cellblock_grid_cell_label33}
+	<td
+	
+	{$cell_grid_cell_label33}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label33}
+						 
+							{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field33}
+						 
+							{BEGIN cellblock_grid_cell_label34}
+	<td
+	
+	{$cell_grid_cell_label34}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label34}
+						 
+							{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field34}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label39}
+	<td
+	
+	{$cell_grid_cell_label39}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-small > 
+	ΔΙΕΥΘΥΝΣΗ ΑΠΟΣΤΟΛΗΣ ΛΟΓΑΡΙΑΣΜΟΥ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label39}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label36}
+	<td
+	
+	{$cell_grid_cell_label36}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$mailAddress_class}
+			"
+
+			data-field="mailAddress"
+	
+	data-cellId="grid_cell_label36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailAddress">
+	{$label dbo_voltonAgentApplications mailAddress }	</span>
+{END mailAddress_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label36}
+						 
+							{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$mailAddress_class}
+			"
+
+			data-field="mailAddress"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailAddress" data-default-width >
+{$mailAddress_value}
+</span>
+{END mailAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+						 
+							{BEGIN cellblock_grid_cell_label37}
+	<td
+	
+	{$cell_grid_cell_label37}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$mailPostalCode_class}
+			"
+
+			data-field="mailPostalCode"
+	
+	data-cellId="grid_cell_label37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailPostalCode">
+	{$label dbo_voltonAgentApplications mailPostalCode }	</span>
+{END mailPostalCode_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label37}
+						 
+							{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$mailPostalCode_class}
+			"
+
+			data-field="mailPostalCode"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailPostalCode" data-default-width >
+{$mailPostalCode_value}
+</span>
+{END mailPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+						 
+							{BEGIN cellblock_grid_cell_label38}
+	<td
+	
+	{$cell_grid_cell_label38}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$mailArea_class}
+			"
+
+			data-field="mailArea"
+	
+	data-cellId="grid_cell_label38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailArea">
+	{$label dbo_voltonAgentApplications mailArea }	</span>
+{END mailArea_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label38}
+						 
+							{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$mailArea_class}
+			"
+
+			data-field="mailArea"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailArea" data-default-width >
+{$mailArea_value}
+</span>
+{END mailArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label40}
+	<td
+	
+	{$cell_grid_cell_label40}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label40}
+						 
+							{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field40}
+						 
+							{BEGIN cellblock_grid_cell_label41}
+	<td
+	
+	{$cell_grid_cell_label41}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label41}
+						 
+							{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field41}
+						 
+							{BEGIN cellblock_grid_cell_label42}
+	<td
+	
+	{$cell_grid_cell_label42}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$mailCity_class}
+			"
+
+			data-field="mailCity"
+	
+	data-cellId="grid_cell_label42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailCity">
+	{$label dbo_voltonAgentApplications mailCity }	</span>
+{END mailCity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label42}
+						 
+							{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$mailCity_class}
+			"
+
+			data-field="mailCity"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN mailCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mailCity" data-default-width >
+{$mailCity_value}
+</span>
+{END mailCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label44}
+	<td
+	
+	{$cell_grid_cell_label44}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΡΕΥΜΑ)</span>
+	
+	</td>
+	{END cellblock_grid_cell_label44}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label48}
+	<td
+	
+	{$cell_grid_cell_label48}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerAddress_class}
+			"
+
+			data-field="powerAddress"
+	
+	data-cellId="grid_cell_label48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerAddress">
+	{$label dbo_voltonAgentApplications powerAddress }	</span>
+{END powerAddress_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label48}
+						 
+							{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerAddress_class}
+			"
+
+			data-field="powerAddress"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerAddress" data-default-width >
+{$powerAddress_value}
+</span>
+{END powerAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+						 
+							{BEGIN cellblock_grid_cell_label49}
+	<td
+	
+	{$cell_grid_cell_label49}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerAgreedKw_class}
+			"
+
+			data-field="powerAgreedKw"
+	
+	data-cellId="grid_cell_label49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerAgreedKw_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="powerAgreedKw">
+	{$label dbo_voltonAgentApplications powerAgreedKw }	</span>
+{END powerAgreedKw_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label49}
+						 
+							{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerAgreedKw_class}
+			"
+
+			data-field="powerAgreedKw"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerAgreedKw_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerAgreedKw" data-default-width >
+{$powerAgreedKw_value}
+</span>
+{END powerAgreedKw_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+						 
+							{BEGIN cellblock_grid_cell_label50}
+	<td
+	
+	{$cell_grid_cell_label50}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$powerOwnershipType_class}
+			"
+
+			data-field="powerOwnershipType"
+	
+	data-cellId="grid_cell_label50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerOwnershipType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerOwnershipType" data-default-width >
+{$powerOwnershipType_value}
+</span>
+{END powerOwnershipType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label50}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label52}
+	<td
+	
+	{$cell_grid_cell_label52}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerPostalCode_class}
+			"
+
+			data-field="powerPostalCode"
+	
+	data-cellId="grid_cell_label52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerPostalCode">
+	{$label dbo_voltonAgentApplications powerPostalCode }	</span>
+{END powerPostalCode_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label52}
+						 
+							{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerPostalCode_class}
+			"
+
+			data-field="powerPostalCode"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerPostalCode" data-default-width >
+{$powerPostalCode_value}
+</span>
+{END powerPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+						 
+							{BEGIN cellblock_grid_cell_label53}
+	<td
+	
+	{$cell_grid_cell_label53}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerArea_class}
+			"
+
+			data-field="powerArea"
+	
+	data-cellId="grid_cell_label53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerArea">
+	{$label dbo_voltonAgentApplications powerArea }	</span>
+{END powerArea_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label53}
+						 
+							{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerArea_class}
+			"
+
+			data-field="powerArea"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerArea" data-default-width >
+{$powerArea_value}
+</span>
+{END powerArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+						 
+							{BEGIN cellblock_grid_cell_label54}
+	<td
+	
+	{$cell_grid_cell_label54}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerCity_class}
+			"
+
+			data-field="powerCity"
+	
+	data-cellId="grid_cell_label54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCity">
+	{$label dbo_voltonAgentApplications powerCity }	</span>
+{END powerCity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label54}
+						 
+							{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerCity_class}
+			"
+
+			data-field="powerCity"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCity" data-default-width >
+{$powerCity_value}
+</span>
+{END powerCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field59}
+	<td
+	
+	{$cell_grid_cell_field59}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerCurrentSupplier_class}
+			"
+
+			data-field="powerCurrentSupplier"
+	
+	data-cellId="grid_cell_field59" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentSupplier_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentSupplier">
+	{$label dbo_voltonAgentApplications powerCurrentSupplier }	</span>
+{END powerCurrentSupplier_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_field59}
+						 
+							{BEGIN cellblock_grid_cell_field63}
+	<td
+	
+	{$cell_grid_cell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerCurrentSupplier_class}
+			"
+
+			data-field="powerCurrentSupplier"
+	
+	data-cellId="grid_cell_field63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentSupplier_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentSupplier" data-default-width >
+{$powerCurrentSupplier_value}
+</span>
+{END powerCurrentSupplier_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field63}
+						 
+							{BEGIN cellblock_grid_cell_field71}
+	<td
+	
+	{$cell_grid_cell_field71}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$powerActivationStatus_class}
+			"
+
+			data-field="powerActivationStatus"
+	
+	data-cellId="grid_cell_field71" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerActivationStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerActivationStatus" data-default-width >
+{$powerActivationStatus_value}
+</span>
+{END powerActivationStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field71}
+						 
+							{BEGIN cellblock_grid_cell_field73}
+	<td
+	
+	{$cell_grid_cell_field73}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field73" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field73}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label56}
+	<td
+	
+	{$cell_grid_cell_label56}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerSupplyNumber_class}
+			"
+
+			data-field="powerSupplyNumber"
+	
+	data-cellId="grid_cell_label56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerSupplyNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerSupplyNumber">
+	{$label dbo_voltonAgentApplications powerSupplyNumber }	</span>
+{END powerSupplyNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label56}
+						 
+							{BEGIN cellblock_grid_cell_field56}
+	<td
+	
+	{$cell_grid_cell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerSupplyNumber_class}
+			"
+
+			data-field="powerSupplyNumber"
+	
+	data-cellId="grid_cell_field56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerSupplyNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerSupplyNumber" data-default-width >
+{$powerSupplyNumber_value}
+</span>
+{END powerSupplyNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field56}
+						 
+							{BEGIN cellblock_grid_cell_label57}
+	<td
+	
+	{$cell_grid_cell_label57}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerMeterNumber_class}
+			"
+
+			data-field="powerMeterNumber"
+	
+	data-cellId="grid_cell_label57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerMeterNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerMeterNumber">
+	{$label dbo_voltonAgentApplications powerMeterNumber }	</span>
+{END powerMeterNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label57}
+						 
+							{BEGIN cellblock_grid_cell_field57}
+	<td
+	
+	{$cell_grid_cell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerMeterNumber_class}
+			"
+
+			data-field="powerMeterNumber"
+	
+	data-cellId="grid_cell_field57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerMeterNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerMeterNumber" data-default-width >
+{$powerMeterNumber_value}
+</span>
+{END powerMeterNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field57}
+						 
+							{BEGIN cellblock_grid_cell_label58}
+	<td
+	
+	{$cell_grid_cell_label58}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerCurrentDayMeter_class}
+			"
+
+			data-field="powerCurrentDayMeter"
+	
+	data-cellId="grid_cell_label58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentDayMeter_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentDayMeter">
+	{$label dbo_voltonAgentApplications powerCurrentDayMeter }	</span>
+{END powerCurrentDayMeter_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label58}
+						 
+							{BEGIN cellblock_grid_cell_field58}
+	<td
+	
+	{$cell_grid_cell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerCurrentDayMeter_class}
+			"
+
+			data-field="powerCurrentDayMeter"
+	
+	data-cellId="grid_cell_field58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentDayMeter_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentDayMeter" data-default-width >
+{$powerCurrentDayMeter_value}
+</span>
+{END powerCurrentDayMeter_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field58}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label75}
+	<td
+	
+	{$cell_grid_cell_label75}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label75" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label75}
+						 
+							{BEGIN cellblock_grid_cell_label76}
+	<td
+	
+	{$cell_grid_cell_label76}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label76" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label76}
+						 
+							{BEGIN cellblock_grid_cell_label77}
+	<td
+	
+	{$cell_grid_cell_label77}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label77" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label77}
+						 
+							{BEGIN cellblock_grid_cell_label78}
+	<td
+	
+	{$cell_grid_cell_label78}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label78" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label78}
+						 
+							{BEGIN cellblock_grid_cell_label79}
+	<td
+	
+	{$cell_grid_cell_label79}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$powerCurrentNightMeter_class}
+			"
+
+			data-field="powerCurrentNightMeter"
+	
+	data-cellId="grid_cell_label79" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentNightMeter_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentNightMeter">
+	{$label dbo_voltonAgentApplications powerCurrentNightMeter }	</span>
+{END powerCurrentNightMeter_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label79}
+						 
+							{BEGIN cellblock_grid_cell_label80}
+	<td
+	
+	{$cell_grid_cell_label80}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$powerCurrentNightMeter_class}
+			"
+
+			data-field="powerCurrentNightMeter"
+	
+	data-cellId="grid_cell_label80" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN powerCurrentNightMeter_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="powerCurrentNightMeter" data-default-width >
+{$powerCurrentNightMeter_value}
+</span>
+{END powerCurrentNightMeter_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label80}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label172}
+	<td
+	
+	{$cell_grid_cell_label172}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label172" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text7" {$item_text7} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΦΥΣΙΚΟ ΑΕΡΙΟ)</span>
+	
+	</td>
+	{END cellblock_grid_cell_label172}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label166}
+	<td
+	
+	{$cell_grid_cell_label166}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngAddress_class}
+			"
+
+			data-field="ngAddress"
+	
+	data-cellId="grid_cell_label166" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngAddress">
+	{$label dbo_voltonAgentApplications ngAddress }	</span>
+{END ngAddress_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label166}
+						 
+							{BEGIN cellblock_grid_cell_label167}
+	<td
+	
+	{$cell_grid_cell_label167}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngAddress_class}
+			"
+
+			data-field="ngAddress"
+	
+	data-cellId="grid_cell_label167" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngAddress" data-default-width >
+{$ngAddress_value}
+</span>
+{END ngAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label167}
+						 
+							{BEGIN cellblock_grid_cell_label168}
+	<td
+	
+	{$cell_grid_cell_label168}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngPostalCode_class}
+			"
+
+			data-field="ngPostalCode"
+	
+	data-cellId="grid_cell_label168" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngPostalCode">
+	{$label dbo_voltonAgentApplications ngPostalCode }	</span>
+{END ngPostalCode_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label168}
+						 
+							{BEGIN cellblock_grid_cell_label169}
+	<td
+	
+	{$cell_grid_cell_label169}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngPostalCode_class}
+			"
+
+			data-field="ngPostalCode"
+	
+	data-cellId="grid_cell_label169" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngPostalCode" data-default-width >
+{$ngPostalCode_value}
+</span>
+{END ngPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label169}
+						 
+							{BEGIN cellblock_grid_cell_label170}
+	<td
+	
+	{$cell_grid_cell_label170}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label170" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label170}
+						 
+							{BEGIN cellblock_grid_cell_label171}
+	<td
+	
+	{$cell_grid_cell_label171}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label171" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label171}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label160}
+	<td
+	
+	{$cell_grid_cell_label160}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngCity_class}
+			"
+
+			data-field="ngCity"
+	
+	data-cellId="grid_cell_label160" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label3" {$item_grid_field_label3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngCity">
+	{$label dbo_voltonAgentApplications ngCity }	</span>
+{END ngCity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label160}
+						 
+							{BEGIN cellblock_grid_cell_label161}
+	<td
+	
+	{$cell_grid_cell_label161}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngCity_class}
+			"
+
+			data-field="ngCity"
+	
+	data-cellId="grid_cell_label161" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngCity" data-default-width >
+{$ngCity_value}
+</span>
+{END ngCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label161}
+						 
+							{BEGIN cellblock_grid_cell_label162}
+	<td
+	
+	{$cell_grid_cell_label162}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngArea_class}
+			"
+
+			data-field="ngArea"
+	
+	data-cellId="grid_cell_label162" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngArea">
+	{$label dbo_voltonAgentApplications ngArea }	</span>
+{END ngArea_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label162}
+						 
+							{BEGIN cellblock_grid_cell_label163}
+	<td
+	
+	{$cell_grid_cell_label163}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngArea_class}
+			"
+
+			data-field="ngArea"
+	
+	data-cellId="grid_cell_label163" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngArea" data-default-width >
+{$ngArea_value}
+</span>
+{END ngArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label163}
+						 
+							{BEGIN cellblock_grid_cell_label164}
+	<td
+	
+	{$cell_grid_cell_label164}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label164" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label164}
+						 
+							{BEGIN cellblock_grid_cell_label165}
+	<td
+	
+	{$cell_grid_cell_label165}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label165" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label165}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label154}
+	<td
+	
+	{$cell_grid_cell_label154}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngPressure_class}
+			"
+
+			data-field="ngPressure"
+	
+	data-cellId="grid_cell_label154" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngPressure_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label4" {$item_grid_field_label4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngPressure">
+	{$label dbo_voltonAgentApplications ngPressure }	</span>
+{END ngPressure_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label154}
+						 
+							{BEGIN cellblock_grid_cell_label155}
+	<td
+	
+	{$cell_grid_cell_label155}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngPressure_class}
+			"
+
+			data-field="ngPressure"
+	
+	data-cellId="grid_cell_label155" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngPressure_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field4" {$item_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngPressure" data-default-width >
+{$ngPressure_value}
+</span>
+{END ngPressure_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label155}
+						 
+							{BEGIN cellblock_grid_cell_label156}
+	<td
+	
+	{$cell_grid_cell_label156}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label156" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label156}
+						 
+							{BEGIN cellblock_grid_cell_label157}
+	<td
+	
+	{$cell_grid_cell_label157}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label157" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label157}
+						 
+							{BEGIN cellblock_grid_cell_label158}
+	<td
+	
+	{$cell_grid_cell_label158}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label158" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label158}
+						 
+							{BEGIN cellblock_grid_cell_label159}
+	<td
+	
+	{$cell_grid_cell_label159}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label159" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label159}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label136}
+	<td
+	
+	{$cell_grid_cell_label136}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngHourlyCapacity_class}
+			"
+
+			data-field="ngHourlyCapacity"
+	
+	data-cellId="grid_cell_label136" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngHourlyCapacity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label5" {$item_grid_field_label5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngHourlyCapacity">
+	{$label dbo_voltonAgentApplications ngHourlyCapacity }	</span>
+{END ngHourlyCapacity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label136}
+						 
+							{BEGIN cellblock_grid_cell_label137}
+	<td
+	
+	{$cell_grid_cell_label137}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngHourlyCapacity_class}
+			"
+
+			data-field="ngHourlyCapacity"
+	
+	data-cellId="grid_cell_label137" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngHourlyCapacity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field5" {$item_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngHourlyCapacity" data-default-width >
+{$ngHourlyCapacity_value}
+</span>
+{END ngHourlyCapacity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label137}
+						 
+							{BEGIN cellblock_grid_cell_label138}
+	<td
+	
+	{$cell_grid_cell_label138}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label138" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label138}
+						 
+							{BEGIN cellblock_grid_cell_label139}
+	<td
+	
+	{$cell_grid_cell_label139}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label139" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label139}
+						 
+							{BEGIN cellblock_grid_cell_label140}
+	<td
+	
+	{$cell_grid_cell_label140}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label140" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label140}
+						 
+							{BEGIN cellblock_grid_cell_label153}
+	<td
+	
+	{$cell_grid_cell_label153}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label153" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label153}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label130}
+	<td
+	
+	{$cell_grid_cell_label130}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngHkasp_class}
+			"
+
+			data-field="ngHkasp"
+	
+	data-cellId="grid_cell_label130" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngHkasp_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngHkasp">
+	{$label dbo_voltonAgentApplications ngHkasp }	</span>
+{END ngHkasp_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label130}
+						 
+							{BEGIN cellblock_grid_cell_label131}
+	<td
+	
+	{$cell_grid_cell_label131}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngHkasp_class}
+			"
+
+			data-field="ngHkasp"
+	
+	data-cellId="grid_cell_label131" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngHkasp_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngHkasp" data-default-width >
+{$ngHkasp_value}
+</span>
+{END ngHkasp_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label131}
+						 
+							{BEGIN cellblock_grid_cell_label132}
+	<td
+	
+	{$cell_grid_cell_label132}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label132" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label132}
+						 
+							{BEGIN cellblock_grid_cell_label133}
+	<td
+	
+	{$cell_grid_cell_label133}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label133" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label133}
+						 
+							{BEGIN cellblock_grid_cell_label134}
+	<td
+	
+	{$cell_grid_cell_label134}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label134" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label134}
+						 
+							{BEGIN cellblock_grid_cell_label135}
+	<td
+	
+	{$cell_grid_cell_label135}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label135" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label135}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label85}
+	<td
+	
+	{$cell_grid_cell_label85}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngMeterNumber_class}
+			"
+
+			data-field="ngMeterNumber"
+	
+	data-cellId="grid_cell_label85" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngMeterNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngMeterNumber">
+	{$label dbo_voltonAgentApplications ngMeterNumber }	</span>
+{END ngMeterNumber_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label85}
+						 
+							{BEGIN cellblock_grid_cell_label95}
+	<td
+	
+	{$cell_grid_cell_label95}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngMeterNumber_class}
+			"
+
+			data-field="ngMeterNumber"
+	
+	data-cellId="grid_cell_label95" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngMeterNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngMeterNumber" data-default-width >
+{$ngMeterNumber_value}
+</span>
+{END ngMeterNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label95}
+						 
+							{BEGIN cellblock_grid_cell_label96}
+	<td
+	
+	{$cell_grid_cell_label96}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngMeterType_class}
+			"
+
+			data-field="ngMeterType"
+	
+	data-cellId="grid_cell_label96" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngMeterType_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label8" {$item_grid_field_label8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngMeterType">
+	{$label dbo_voltonAgentApplications ngMeterType }	</span>
+{END ngMeterType_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label96}
+						 
+							{BEGIN cellblock_grid_cell_label97}
+	<td
+	
+	{$cell_grid_cell_label97}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngMeterType_class}
+			"
+
+			data-field="ngMeterType"
+	
+	data-cellId="grid_cell_label97" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngMeterType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field8" {$item_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngMeterType" data-default-width >
+{$ngMeterType_value}
+</span>
+{END ngMeterType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label97}
+						 
+							{BEGIN cellblock_grid_cell_label98}
+	<td
+	
+	{$cell_grid_cell_label98}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngCurrentMeterValue_class}
+			"
+
+			data-field="ngCurrentMeterValue"
+	
+	data-cellId="grid_cell_label98" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngCurrentMeterValue_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label9" {$item_grid_field_label9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngCurrentMeterValue">
+	{$label dbo_voltonAgentApplications ngCurrentMeterValue }	</span>
+{END ngCurrentMeterValue_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label98}
+						 
+							{BEGIN cellblock_grid_cell_label129}
+	<td
+	
+	{$cell_grid_cell_label129}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngCurrentMeterValue_class}
+			"
+
+			data-field="ngCurrentMeterValue"
+	
+	data-cellId="grid_cell_label129" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngCurrentMeterValue_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field9" {$item_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngCurrentMeterValue" data-default-width >
+{$ngCurrentMeterValue_value}
+</span>
+{END ngCurrentMeterValue_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label129}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label173}
+	<td
+	
+	{$cell_grid_cell_label173}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngConnectionExists_class}
+			"
+
+			data-field="ngConnectionExists"
+	
+	data-cellId="grid_cell_label173" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngConnectionExists_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label10" {$item_grid_field_label10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngConnectionExists">
+	{$label dbo_voltonAgentApplications ngConnectionExists }	</span>
+{END ngConnectionExists_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label173}
+						 
+							{BEGIN cellblock_grid_cell_label176}
+	<td
+	
+	{$cell_grid_cell_label176}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngConnectionExists_class}
+			"
+
+			data-field="ngConnectionExists"
+	
+	data-cellId="grid_cell_label176" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngConnectionExists_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field10" {$item_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngConnectionExists" data-default-width >
+{$ngConnectionExists_value}
+</span>
+{END ngConnectionExists_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label176}
+						 
+							{BEGIN cellblock_grid_cell_label178}
+	<td
+	
+	{$cell_grid_cell_label178}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngSupplyIsNew_class}
+			"
+
+			data-field="ngSupplyIsNew"
+	
+	data-cellId="grid_cell_label178" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngSupplyIsNew_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label11" {$item_grid_field_label11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngSupplyIsNew">
+	{$label dbo_voltonAgentApplications ngSupplyIsNew }	</span>
+{END ngSupplyIsNew_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label178}
+						 
+							{BEGIN cellblock_grid_cell_label179}
+	<td
+	
+	{$cell_grid_cell_label179}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngSupplyIsNew_class}
+			"
+
+			data-field="ngSupplyIsNew"
+	
+	data-cellId="grid_cell_label179" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngSupplyIsNew_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field11" {$item_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngSupplyIsNew" data-default-width >
+{$ngSupplyIsNew_value}
+</span>
+{END ngSupplyIsNew_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label179}
+						 
+							{BEGIN cellblock_grid_cell_label180}
+	<td
+	
+	{$cell_grid_cell_label180}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ngSupplyReactivation_class}
+			"
+
+			data-field="ngSupplyReactivation"
+	
+	data-cellId="grid_cell_label180" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngSupplyReactivation_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label12" {$item_grid_field_label12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngSupplyReactivation">
+	{$label dbo_voltonAgentApplications ngSupplyReactivation }	</span>
+{END ngSupplyReactivation_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label180}
+						 
+							{BEGIN cellblock_grid_cell_label181}
+	<td
+	
+	{$cell_grid_cell_label181}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ngSupplyReactivation_class}
+			"
+
+			data-field="ngSupplyReactivation"
+	
+	data-cellId="grid_cell_label181" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN ngSupplyReactivation_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field12" {$item_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ngSupplyReactivation" data-default-width >
+{$ngSupplyReactivation_value}
+</span>
+{END ngSupplyReactivation_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label181}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label63}
+	<td
+	
+	{$cell_grid_cell_label63}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text4" {$item_text4} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΤΙΜΟΛΟΓΙΟ VOLTON</span>
+	
+	</td>
+	{END cellblock_grid_cell_label63}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label60}
+	<td
+	
+	{$cell_grid_cell_label60}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonPlan_class}
+			"
+
+			data-field="voltonPlan"
+	
+	data-cellId="grid_cell_label60" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonPlan_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonPlan">
+	{$label dbo_voltonAgentApplications voltonPlan }	</span>
+{END voltonPlan_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label60}
+						 
+							{BEGIN cellblock_grid_cell_field60}
+	<td
+	
+	{$cell_grid_cell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$voltonPlan_class}
+			"
+
+			data-field="voltonPlan"
+	
+	data-cellId="grid_cell_field60" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonPlan_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonPlan" data-default-width >
+{$voltonPlan_value}
+</span>
+{END voltonPlan_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field60}
+						 
+							{BEGIN cellblock_grid_cell_label61}
+	<td
+	
+	{$cell_grid_cell_label61}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonContractDuration_class}
+			"
+
+			data-field="voltonContractDuration"
+	
+	data-cellId="grid_cell_label61" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonContractDuration_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonContractDuration">
+	{$label dbo_voltonAgentApplications voltonContractDuration }	</span>
+{END voltonContractDuration_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label61}
+						 
+							{BEGIN cellblock_grid_cell_field61}
+	<td
+	
+	{$cell_grid_cell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$voltonContractDuration_class}
+			"
+
+			data-field="voltonContractDuration"
+	
+	data-cellId="grid_cell_field61" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonContractDuration_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonContractDuration" data-default-width >
+{$voltonContractDuration_value}
+</span>
+{END voltonContractDuration_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field61}
+						 
+							{BEGIN cellblock_grid_cell_label62}
+	<td
+	
+	{$cell_grid_cell_label62}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label62" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label62}
+						 
+							{BEGIN cellblock_grid_cell_field62}
+	<td
+	
+	{$cell_grid_cell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field62" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field62}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label81}
+	<td
+	
+	{$cell_grid_cell_label81}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonWarrantyAmount_class}
+			"
+
+			data-field="voltonWarrantyAmount"
+	
+	data-cellId="grid_cell_label81" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonWarrantyAmount_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonWarrantyAmount">
+	{$label dbo_voltonAgentApplications voltonWarrantyAmount }	</span>
+{END voltonWarrantyAmount_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label81}
+						 
+							{BEGIN cellblock_grid_cell_label82}
+	<td
+	
+	{$cell_grid_cell_label82}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$voltonWarrantyAmount_class}
+			"
+
+			data-field="voltonWarrantyAmount"
+	
+	data-cellId="grid_cell_label82" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonWarrantyAmount_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonWarrantyAmount" data-default-width >
+{$voltonWarrantyAmount_value}
+</span>
+{END voltonWarrantyAmount_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label82}
+						 
+							{BEGIN cellblock_grid_cell_label83}
+	<td
+	
+	{$cell_grid_cell_label83}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonWarrantyOnFirstBill_class}
+			"
+
+			data-field="voltonWarrantyOnFirstBill"
+	
+	data-cellId="grid_cell_label83" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonWarrantyOnFirstBill_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="voltonWarrantyOnFirstBill">
+	{$label dbo_voltonAgentApplications voltonWarrantyOnFirstBill }	</span>
+{END voltonWarrantyOnFirstBill_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label83}
+						 
+							{BEGIN cellblock_grid_cell_label84}
+	<td
+	
+	{$cell_grid_cell_label84}
+	{$recordattrs}
+	class="
+						{$voltonWarrantyOnFirstBill_class}
+			"
+
+			data-field="voltonWarrantyOnFirstBill"
+	
+	data-cellId="grid_cell_label84" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonWarrantyOnFirstBill_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonWarrantyOnFirstBill" data-default-width >
+{$voltonWarrantyOnFirstBill_value}
+</span>
+{END voltonWarrantyOnFirstBill_fieldcolumn}	 
+		{BEGIN voltonOther_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonOther" data-default-width >
+{$voltonOther_value}
+</span>
+{END voltonOther_fieldcolumn}	 
+		{BEGIN voltonOther_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonOther">
+	{$label dbo_voltonAgentApplications voltonOther }	</span>
+{END voltonOther_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label84}
+						 
+							{BEGIN cellblock_grid_cell_label86}
+	<td
+	
+	{$cell_grid_cell_label86}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label86" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label86}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label87}
+	<td
+	
+	{$cell_grid_cell_label87}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label87" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label87}
+						 
+							{BEGIN cellblock_grid_cell_label88}
+	<td
+	
+	{$cell_grid_cell_label88}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label88" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label88}
+						 
+							{BEGIN cellblock_grid_cell_label89}
+	<td
+	
+	{$cell_grid_cell_label89}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label89" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label89}
+						 
+							{BEGIN cellblock_grid_cell_label90}
+	<td
+	
+	{$cell_grid_cell_label90}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label90" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label90}
+						 
+							{BEGIN cellblock_grid_cell_label91}
+	<td
+	
+	{$cell_grid_cell_label91}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label91" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label91}
+						 
+							{BEGIN cellblock_grid_cell_label92}
+	<td
+	
+	{$cell_grid_cell_label92}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label92" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label92}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label99}
+	<td
+	
+	{$cell_grid_cell_label99}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonAutoPayment_class}
+			"
+
+			data-field="voltonAutoPayment"
+	
+	data-cellId="grid_cell_label99" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonAutoPayment_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field111" {$item_simple_grid_field111} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="voltonAutoPayment">
+	{$label dbo_voltonAgentApplications voltonAutoPayment }	</span>
+{END voltonAutoPayment_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label99}
+						 
+							{BEGIN cellblock_grid_cell_label100}
+	<td
+	
+	{$cell_grid_cell_label100}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$voltonAutoPayment_class}
+			"
+
+			data-field="voltonAutoPayment"
+	
+	data-cellId="grid_cell_label100" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonAutoPayment_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonAutoPayment" data-default-width >
+{$voltonAutoPayment_value}
+</span>
+{END voltonAutoPayment_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label100}
+						 
+							{BEGIN cellblock_grid_cell_label101}
+	<td
+	
+	{$cell_grid_cell_label101}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label101" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label101}
+						 
+							{BEGIN cellblock_grid_cell_label102}
+	<td
+	
+	{$cell_grid_cell_label102}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label102" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label102}
+						 
+							{BEGIN cellblock_grid_cell_label103}
+	<td
+	
+	{$cell_grid_cell_label103}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label103" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label103}
+						 
+							{BEGIN cellblock_grid_cell_label104}
+	<td
+	
+	{$cell_grid_cell_label104}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label104" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label104}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label93}
+	<td
+	
+	{$cell_grid_cell_label93}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$voltonComments_class}
+			"
+
+			data-field="voltonComments"
+	
+	data-cellId="grid_cell_label93" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonComments_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field110" {$item_simple_grid_field110} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonComments">
+	{$label dbo_voltonAgentApplications voltonComments }	</span>
+{END voltonComments_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label93}
+						 
+							{BEGIN cellblock_grid_cell_label94}
+	<td
+	
+	{$cell_grid_cell_label94}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$voltonComments_class}
+			"
+
+			data-field="voltonComments"
+	
+	data-cellId="grid_cell_label94" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN voltonComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="voltonComments" data-default-width >
+{$voltonComments_value}
+</span>
+{END voltonComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label94}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label147}
+	<td
+	
+	{$cell_grid_cell_label147}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label147" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text5" {$item_text5} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label147}
+						 
+							{BEGIN cellblock_grid_cell_label148}
+	<td
+	
+	{$cell_grid_cell_label148}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label148" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label148}
+						 
+							{BEGIN cellblock_grid_cell_label149}
+	<td
+	
+	{$cell_grid_cell_label149}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label149" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label149}
+						 
+							{BEGIN cellblock_grid_cell_label150}
+	<td
+	
+	{$cell_grid_cell_label150}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label150" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label150}
+						 
+							{BEGIN cellblock_grid_cell_label151}
+	<td
+	
+	{$cell_grid_cell_label151}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label151" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label151}
+						 
+							{BEGIN cellblock_grid_cell_label152}
+	<td
+	
+	{$cell_grid_cell_label152}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label152" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label152}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label123}
+	<td
+	
+	{$cell_grid_cell_label123}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document1_class}
+			"
+
+			data-field="document1"
+	
+	data-cellId="grid_cell_label123" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field112" {$item_simple_grid_field112} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document1">
+	{$label dbo_voltonAgentApplications document1 }	</span>
+{END document1_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label123}
+						 
+							{BEGIN cellblock_grid_cell_label124}
+	<td
+	
+	{$cell_grid_cell_label124}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document1_class}
+			"
+
+			data-field="document1"
+	
+	data-cellId="grid_cell_label124" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document1" data-default-width >
+{$document1_value}
+</span>
+{END document1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label124}
+						 
+							{BEGIN cellblock_grid_cell_label125}
+	<td
+	
+	{$cell_grid_cell_label125}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document6_class}
+			"
+
+			data-field="document6"
+	
+	data-cellId="grid_cell_label125" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document6_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field117" {$item_simple_grid_field117} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document6">
+	{$label dbo_voltonAgentApplications document6 }	</span>
+{END document6_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label125}
+						 
+							{BEGIN cellblock_grid_cell_label126}
+	<td
+	
+	{$cell_grid_cell_label126}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document6_class}
+			"
+
+			data-field="document6"
+	
+	data-cellId="grid_cell_label126" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document6_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document6" data-default-width >
+{$document6_value}
+</span>
+{END document6_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label126}
+						 
+							{BEGIN cellblock_grid_cell_label127}
+	<td
+	
+	{$cell_grid_cell_label127}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document11_class}
+			"
+
+			data-field="document11"
+	
+	data-cellId="grid_cell_label127" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document11_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field122" {$item_simple_grid_field122} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document11">
+	{$label dbo_voltonAgentApplications document11 }	</span>
+{END document11_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label127}
+						 
+							{BEGIN cellblock_grid_cell_label128}
+	<td
+	
+	{$cell_grid_cell_label128}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document11_class}
+			"
+
+			data-field="document11"
+	
+	data-cellId="grid_cell_label128" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document11_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document11" data-default-width >
+{$document11_value}
+</span>
+{END document11_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label128}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label117}
+	<td
+	
+	{$cell_grid_cell_label117}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document2_class}
+			"
+
+			data-field="document2"
+	
+	data-cellId="grid_cell_label117" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field113" {$item_simple_grid_field113} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document2">
+	{$label dbo_voltonAgentApplications document2 }	</span>
+{END document2_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label117}
+						 
+							{BEGIN cellblock_grid_cell_label118}
+	<td
+	
+	{$cell_grid_cell_label118}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document2_class}
+			"
+
+			data-field="document2"
+	
+	data-cellId="grid_cell_label118" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document2" data-default-width >
+{$document2_value}
+</span>
+{END document2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label118}
+						 
+							{BEGIN cellblock_grid_cell_label119}
+	<td
+	
+	{$cell_grid_cell_label119}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document7_class}
+			"
+
+			data-field="document7"
+	
+	data-cellId="grid_cell_label119" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document7_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field118" {$item_simple_grid_field118} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document7">
+	{$label dbo_voltonAgentApplications document7 }	</span>
+{END document7_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label119}
+						 
+							{BEGIN cellblock_grid_cell_label120}
+	<td
+	
+	{$cell_grid_cell_label120}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document7_class}
+			"
+
+			data-field="document7"
+	
+	data-cellId="grid_cell_label120" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document7_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document7" data-default-width >
+{$document7_value}
+</span>
+{END document7_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label120}
+						 
+							{BEGIN cellblock_grid_cell_label121}
+	<td
+	
+	{$cell_grid_cell_label121}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document12_class}
+			"
+
+			data-field="document12"
+	
+	data-cellId="grid_cell_label121" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document12_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field123" {$item_simple_grid_field123} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document12">
+	{$label dbo_voltonAgentApplications document12 }	</span>
+{END document12_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label121}
+						 
+							{BEGIN cellblock_grid_cell_label122}
+	<td
+	
+	{$cell_grid_cell_label122}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document12_class}
+			"
+
+			data-field="document12"
+	
+	data-cellId="grid_cell_label122" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document12_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document12" data-default-width >
+{$document12_value}
+</span>
+{END document12_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label122}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label111}
+	<td
+	
+	{$cell_grid_cell_label111}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document5_class}
+			"
+
+			data-field="document5"
+	
+	data-cellId="grid_cell_label111" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document5_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field116" {$item_simple_grid_field116} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document5">
+	{$label dbo_voltonAgentApplications document5 }	</span>
+{END document5_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label111}
+						 
+							{BEGIN cellblock_grid_cell_label112}
+	<td
+	
+	{$cell_grid_cell_label112}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document3_class}
+			"
+
+			data-field="document3"
+	
+	data-cellId="grid_cell_label112" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document3_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document3" data-default-width >
+{$document3_value}
+</span>
+{END document3_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label112}
+						 
+							{BEGIN cellblock_grid_cell_label113}
+	<td
+	
+	{$cell_grid_cell_label113}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document8_class}
+			"
+
+			data-field="document8"
+	
+	data-cellId="grid_cell_label113" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document8_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field119" {$item_simple_grid_field119} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document8">
+	{$label dbo_voltonAgentApplications document8 }	</span>
+{END document8_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label113}
+						 
+							{BEGIN cellblock_grid_cell_label114}
+	<td
+	
+	{$cell_grid_cell_label114}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document8_class}
+			"
+
+			data-field="document8"
+	
+	data-cellId="grid_cell_label114" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document8_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document8" data-default-width >
+{$document8_value}
+</span>
+{END document8_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label114}
+						 
+							{BEGIN cellblock_grid_cell_label115}
+	<td
+	
+	{$cell_grid_cell_label115}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document13_class}
+			"
+
+			data-field="document13"
+	
+	data-cellId="grid_cell_label115" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document13_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field124" {$item_simple_grid_field124} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document13">
+	{$label dbo_voltonAgentApplications document13 }	</span>
+{END document13_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label115}
+						 
+							{BEGIN cellblock_grid_cell_label116}
+	<td
+	
+	{$cell_grid_cell_label116}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document13_class}
+			"
+
+			data-field="document13"
+	
+	data-cellId="grid_cell_label116" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document13_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document13" data-default-width >
+{$document13_value}
+</span>
+{END document13_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label116}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label105}
+	<td
+	
+	{$cell_grid_cell_label105}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document4_class}
+			"
+
+			data-field="document4"
+	
+	data-cellId="grid_cell_label105" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document4_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field115" {$item_simple_grid_field115} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document4">
+	{$label dbo_voltonAgentApplications document4 }	</span>
+{END document4_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label105}
+						 
+							{BEGIN cellblock_grid_cell_label106}
+	<td
+	
+	{$cell_grid_cell_label106}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document4_class}
+			"
+
+			data-field="document4"
+	
+	data-cellId="grid_cell_label106" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document4_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document4" data-default-width >
+{$document4_value}
+</span>
+{END document4_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label106}
+						 
+							{BEGIN cellblock_grid_cell_label107}
+	<td
+	
+	{$cell_grid_cell_label107}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document9_class}
+			"
+
+			data-field="document9"
+	
+	data-cellId="grid_cell_label107" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document9_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field120" {$item_simple_grid_field120} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document9">
+	{$label dbo_voltonAgentApplications document9 }	</span>
+{END document9_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label107}
+						 
+							{BEGIN cellblock_grid_cell_label108}
+	<td
+	
+	{$cell_grid_cell_label108}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document9_class}
+			"
+
+			data-field="document9"
+	
+	data-cellId="grid_cell_label108" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document9_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document9" data-default-width >
+{$document9_value}
+</span>
+{END document9_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label108}
+						 
+							{BEGIN cellblock_grid_cell_label109}
+	<td
+	
+	{$cell_grid_cell_label109}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document14_class}
+			"
+
+			data-field="document14"
+	
+	data-cellId="grid_cell_label109" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document14_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field125" {$item_simple_grid_field125} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document14">
+	{$label dbo_voltonAgentApplications document14 }	</span>
+{END document14_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label109}
+						 
+							{BEGIN cellblock_grid_cell_label110}
+	<td
+	
+	{$cell_grid_cell_label110}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document14_class}
+			"
+
+			data-field="document14"
+	
+	data-cellId="grid_cell_label110" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document14_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document14" data-default-width >
+{$document14_value}
+</span>
+{END document14_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label110}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label141}
+	<td
+	
+	{$cell_grid_cell_label141}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document3_class}
+			"
+
+			data-field="document3"
+	
+	data-cellId="grid_cell_label141" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document3_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field114" {$item_simple_grid_field114} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document3">
+	{$label dbo_voltonAgentApplications document3 }	</span>
+{END document3_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label141}
+						 
+							{BEGIN cellblock_grid_cell_label142}
+	<td
+	
+	{$cell_grid_cell_label142}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document5_class}
+			"
+
+			data-field="document5"
+	
+	data-cellId="grid_cell_label142" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document5_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document5" data-default-width >
+{$document5_value}
+</span>
+{END document5_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label142}
+						 
+							{BEGIN cellblock_grid_cell_label143}
+	<td
+	
+	{$cell_grid_cell_label143}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document10_class}
+			"
+
+			data-field="document10"
+	
+	data-cellId="grid_cell_label143" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document10_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field121" {$item_simple_grid_field121} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document10">
+	{$label dbo_voltonAgentApplications document10 }	</span>
+{END document10_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label143}
+						 
+							{BEGIN cellblock_grid_cell_label144}
+	<td
+	
+	{$cell_grid_cell_label144}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document10_class}
+			"
+
+			data-field="document10"
+	
+	data-cellId="grid_cell_label144" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document10_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document10" data-default-width >
+{$document10_value}
+</span>
+{END document10_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label144}
+						 
+							{BEGIN cellblock_grid_cell_label145}
+	<td
+	
+	{$cell_grid_cell_label145}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$document15_class}
+			"
+
+			data-field="document15"
+	
+	data-cellId="grid_cell_label145" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document15_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field126" {$item_simple_grid_field126} data-pageid="{$pageid}" data-page="voltonagentapplications_print" data-record-id="{$recId}" data-field="document15">
+	{$label dbo_voltonAgentApplications document15 }	</span>
+{END document15_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label145}
+						 
+							{BEGIN cellblock_grid_cell_label146}
+	<td
+	
+	{$cell_grid_cell_label146}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$document15_class}
+			"
+
+			data-field="document15"
+	
+	data-cellId="grid_cell_label146" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN document15_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="document15" data-default-width >
+{$document15_value}
+</span>
+{END document15_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label146}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label27}
+	<td
+	
+	{$cell_grid_cell_label27}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$applicationAgentStatus_class}
+			"
+
+			data-field="applicationAgentStatus"
+	
+	data-cellId="grid_cell_label27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	 
+		{BEGIN applicationAgentStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field13" {$item_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationAgentStatus" data-default-width >
+{$applicationAgentStatus_value}
+</span>
+{END applicationAgentStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label27}
+						 
+							{BEGIN cellblock_grid_cell_label35}
+	<td
+	
+	{$cell_grid_cell_label35}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label35}
+						 
+							{BEGIN cellblock_grid_cell_label43}
+	<td
+	
+	{$cell_grid_cell_label43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label43}
+						 
+							{BEGIN cellblock_grid_cell_label45}
+	<td
+	
+	{$cell_grid_cell_label45}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label45}
+						 
+							{BEGIN cellblock_grid_cell_label46}
+	<td
+	
+	{$cell_grid_cell_label46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="voltonagentapplications_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label46}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label13" {$item_grid_field_label13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList">
+	{$label dbo_voltonAgentApplications dialerList }	</span>
+{END dialerList_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field15" {$item_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList" data-default-width >
+{$dialerList_value}
+</span>
+{END dialerList_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label15" {$item_grid_field_label15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent">
+	{$label dbo_voltonAgentApplications dialerAgent }	</span>
+{END dialerAgent_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field16" {$item_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent" data-default-width >
+{$dialerAgent_value}
+</span>
+{END dialerAgent_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_label11}
+	<td
+	
+	{$cell_grid_cell_label11}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$dialerRecording_class}
+			"
+
+			data-field="dialerRecording"
+	
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerRecording_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label16" {$item_grid_field_label16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerRecording">
+	{$label dbo_voltonAgentApplications dialerRecording }	</span>
+{END dialerRecording_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label11}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerRecording_class}
+			"
+
+			data-field="dialerRecording"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerRecording_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field17" {$item_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerRecording" data-default-width >
+{$dialerRecording_value}
+</span>
+{END dialerRecording_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+						 
+							{BEGIN cellblock_grid_cell_label15}
+	<td
+	
+	{$cell_grid_cell_label15}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$orderShipCompany_class}
+			"
+
+			data-field="orderShipCompany"
+	
+	data-cellId="grid_cell_label15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderShipCompany_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label17" {$item_grid_field_label17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderShipCompany">
+	{$label dbo_voltonAgentApplications orderShipCompany }	</span>
+{END orderShipCompany_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label15}
+						 
+							{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderShipCompany_class}
+			"
+
+			data-field="orderShipCompany"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderShipCompany_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field18" {$item_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderShipCompany" data-default-width >
+{$orderShipCompany_value}
+</span>
+{END orderShipCompany_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label17}
+	<td
+	
+	{$cell_grid_cell_label17}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$orderInvoiceRequired_class}
+			"
+
+			data-field="orderInvoiceRequired"
+	
+	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderInvoiceRequired_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label18" {$item_grid_field_label18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderInvoiceRequired">
+	{$label dbo_voltonAgentApplications orderInvoiceRequired }	</span>
+{END orderInvoiceRequired_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label17}
+						 
+							{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderInvoiceRequired_class}
+			"
+
+			data-field="orderInvoiceRequired"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderInvoiceRequired_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field19" {$item_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderInvoiceRequired" data-default-width >
+{$orderInvoiceRequired_value}
+</span>
+{END orderInvoiceRequired_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+						 
+							{BEGIN cellblock_grid_cell_label18}
+	<td
+	
+	{$cell_grid_cell_label18}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$callComments_class}
+			"
+
+			data-field="callComments"
+	
+	data-cellId="grid_cell_label18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callComments_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label19" {$item_grid_field_label19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callComments">
+	{$label dbo_voltonAgentApplications callComments }	</span>
+{END callComments_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label18}
+						 
+							{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callComments_class}
+			"
+
+			data-field="callComments"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field20" {$item_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callComments" data-default-width >
+{$callComments_value}
+</span>
+{END callComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+						 
+							{BEGIN cellblock_grid_cell_label19}
+	<td
+	
+	{$cell_grid_cell_label19}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$internalCommunication_class}
+			"
+
+			data-field="internalCommunication"
+	
+	data-cellId="grid_cell_label19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN internalCommunication_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label20" {$item_grid_field_label20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="internalCommunication">
+	{$label dbo_voltonAgentApplications internalCommunication }	</span>
+{END internalCommunication_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label19}
+						 
+							{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$internalCommunication_class}
+			"
+
+			data-field="internalCommunication"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN internalCommunication_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field21" {$item_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="internalCommunication" data-default-width >
+{$internalCommunication_value}
+</span>
+{END internalCommunication_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+						 
+							{BEGIN cellblock_grid_cell_label23}
+	<td
+	
+	{$cell_grid_cell_label23}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$callGdprAcceptance_class}
+			"
+
+			data-field="callGdprAcceptance"
+	
+	data-cellId="grid_cell_label23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprAcceptance_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label21" {$item_grid_field_label21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprAcceptance">
+	{$label dbo_voltonAgentApplications callGdprAcceptance }	</span>
+{END callGdprAcceptance_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label23}
+						 
+							{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprAcceptance_class}
+			"
+
+			data-field="callGdprAcceptance"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprAcceptance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field22" {$item_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprAcceptance" data-default-width >
+{$callGdprAcceptance_value}
+</span>
+{END callGdprAcceptance_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label25}
+	<td
+	
+	{$cell_grid_cell_label25}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$callGdprRecordingAcceptance_class}
+			"
+
+			data-field="callGdprRecordingAcceptance"
+	
+	data-cellId="grid_cell_label25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprRecordingAcceptance_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label22" {$item_grid_field_label22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprRecordingAcceptance">
+	{$label dbo_voltonAgentApplications callGdprRecordingAcceptance }	</span>
+{END callGdprRecordingAcceptance_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label25}
+						 
+							{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprRecordingAcceptance_class}
+			"
+
+			data-field="callGdprRecordingAcceptance"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprRecordingAcceptance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field23" {$item_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprRecordingAcceptance" data-default-width >
+{$callGdprRecordingAcceptance_value}
+</span>
+{END callGdprRecordingAcceptance_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+						 
+							{BEGIN cellblock_grid_cell_label26}
+	<td
+	
+	{$cell_grid_cell_label26}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$orderPaymentMethod_class}
+			"
+
+			data-field="orderPaymentMethod"
+	
+	data-cellId="grid_cell_label26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderPaymentMethod_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label23" {$item_grid_field_label23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderPaymentMethod">
+	{$label dbo_voltonAgentApplications orderPaymentMethod }	</span>
+{END orderPaymentMethod_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label26}
+						 
+							{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderPaymentMethod_class}
+			"
+
+			data-field="orderPaymentMethod"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderPaymentMethod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field24" {$item_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderPaymentMethod" data-default-width >
+{$orderPaymentMethod_value}
+</span>
+{END orderPaymentMethod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+						 
+							{BEGIN cellblock_grid_cell_label31}
+	<td
+	
+	{$cell_grid_cell_label31}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$Expr2_class}
+			"
+
+			data-field="Expr2"
+	
+	data-cellId="grid_cell_label31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Expr2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label24" {$item_grid_field_label24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Expr2">
+	{$label dbo_voltonAgentApplications Expr2 }	</span>
+{END Expr2_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label31}
+						 
+							{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$Expr2_class}
+			"
+
+			data-field="Expr2"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Expr2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field25" {$item_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Expr2" data-default-width >
+{$Expr2_value}
+</span>
+{END Expr2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+						 
+							{BEGIN cellblock_grid_cell_label47}
+	<td
+	
+	{$cell_grid_cell_label47}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactZipCode_class}
+			"
+
+			data-field="contactZipCode"
+	
+	data-cellId="grid_cell_label47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactZipCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label25" {$item_grid_field_label25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactZipCode">
+	{$label dbo_voltonAgentApplications contactZipCode }	</span>
+{END contactZipCode_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label47}
+						 
+							{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactZipCode_class}
+			"
+
+			data-field="contactZipCode"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactZipCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field26" {$item_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactZipCode" data-default-width >
+{$contactZipCode_value}
+</span>
+{END contactZipCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label51}
+	<td
+	
+	{$cell_grid_cell_label51}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactCity_class}
+			"
+
+			data-field="contactCity"
+	
+	data-cellId="grid_cell_label51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label26" {$item_grid_field_label26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactCity">
+	{$label dbo_voltonAgentApplications contactCity }	</span>
+{END contactCity_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label51}
+						 
+							{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactCity_class}
+			"
+
+			data-field="contactCity"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field27" {$item_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactCity" data-default-width >
+{$contactCity_value}
+</span>
+{END contactCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+						 
+							{BEGIN cellblock_grid_cell_label55}
+	<td
+	
+	{$cell_grid_cell_label55}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$ContactArea_class}
+			"
+
+			data-field="ContactArea"
+	
+	data-cellId="grid_cell_label55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label27" {$item_grid_field_label27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactArea">
+	{$label dbo_voltonAgentApplications ContactArea }	</span>
+{END ContactArea_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label55}
+						 
+							{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ContactArea_class}
+			"
+
+			data-field="ContactArea"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field28" {$item_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactArea" data-default-width >
+{$ContactArea_value}
+</span>
+{END ContactArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+						 
+							{BEGIN cellblock_grid_cell_label59}
+	<td
+	
+	{$cell_grid_cell_label59}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactGender_class}
+			"
+
+			data-field="contactGender"
+	
+	data-cellId="grid_cell_label59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactGender_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label28" {$item_grid_field_label28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactGender">
+	{$label dbo_voltonAgentApplications contactGender }	</span>
+{END contactGender_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label59}
+						 
+							{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactGender_class}
+			"
+
+			data-field="contactGender"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactGender_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field29" {$item_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactGender" data-default-width >
+{$contactGender_value}
+</span>
+{END contactGender_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+						 
+							{BEGIN cellblock_grid_cell_label70}
+	<td
+	
+	{$cell_grid_cell_label70}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactAge_class}
+			"
+
+			data-field="contactAge"
+	
+	data-cellId="grid_cell_label70" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactAge_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label29" {$item_grid_field_label29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactAge">
+	{$label dbo_voltonAgentApplications contactAge }	</span>
+{END contactAge_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label70}
+						 
+							{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactAge_class}
+			"
+
+			data-field="contactAge"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactAge_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field30" {$item_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactAge" data-default-width >
+{$contactAge_value}
+</span>
+{END contactAge_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label71}
+	<td
+	
+	{$cell_grid_cell_label71}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$crmUser_class}
+			"
+
+			data-field="crmUser"
+	
+	data-cellId="grid_cell_label71" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN crmUser_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label30" {$item_grid_field_label30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="crmUser">
+	{$label dbo_voltonAgentApplications crmUser }	</span>
+{END crmUser_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label71}
+						 
+							{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$crmUser_class}
+			"
+
+			data-field="crmUser"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN crmUser_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field31" {$item_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="crmUser" data-default-width >
+{$crmUser_value}
+</span>
+{END crmUser_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+						 
+							{BEGIN cellblock_grid_cell_label72}
+	<td
+	
+	{$cell_grid_cell_label72}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$pauseAfterCall_class}
+			"
+
+			data-field="pauseAfterCall"
+	
+	data-cellId="grid_cell_label72" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pauseAfterCall_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label31" {$item_grid_field_label31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pauseAfterCall">
+	{$label dbo_voltonAgentApplications pauseAfterCall }	</span>
+{END pauseAfterCall_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label72}
+						 
+							{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pauseAfterCall_class}
+			"
+
+			data-field="pauseAfterCall"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pauseAfterCall_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field32" {$item_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pauseAfterCall" data-default-width >
+{$pauseAfterCall_value}
+</span>
+{END pauseAfterCall_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+						 
+							{BEGIN cellblock_grid_cell_label73}
+	<td
+	
+	{$cell_grid_cell_label73}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_cell_label73" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label32" {$item_grid_field_label32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone">
+	{$label dbo_voltonAgentApplications dialerPhone }	</span>
+{END dialerPhone_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label73}
+						 
+							{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field33" {$item_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone" data-default-width >
+{$dialerPhone_value}
+</span>
+{END dialerPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+						 
+							{BEGIN cellblock_grid_cell_label74}
+	<td
+	
+	{$cell_grid_cell_label74}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_cell_label74" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label33" {$item_grid_field_label33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign">
+	{$label dbo_voltonAgentApplications dialerCampaign }	</span>
+{END dialerCampaign_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label74}
+						 
+							{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field34" {$item_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign" data-default-width >
+{$dialerCampaign_value}
+</span>
+{END dialerCampaign_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label174}
+	<td
+	
+	{$cell_grid_cell_label174}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$productFamilyId_class}
+			"
+
+			data-field="productFamilyId"
+	
+	data-cellId="grid_cell_label174" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN productFamilyId_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label34" {$item_grid_field_label34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="productFamilyId">
+	{$label dbo_voltonAgentApplications productFamilyId }	</span>
+{END productFamilyId_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label174}
+						 
+							{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$productFamilyId_class}
+			"
+
+			data-field="productFamilyId"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN productFamilyId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field35" {$item_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="productFamilyId" data-default-width >
+{$productFamilyId_value}
+</span>
+{END productFamilyId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+						 
+							{BEGIN cellblock_grid_cell_label175}
+	<td
+	
+	{$cell_grid_cell_label175}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$contactMethod_class}
+			"
+
+			data-field="contactMethod"
+	
+	data-cellId="grid_cell_label175" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactMethod_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label35" {$item_grid_field_label35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMethod">
+	{$label dbo_voltonAgentApplications contactMethod }	</span>
+{END contactMethod_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label175}
+						 
+							{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactMethod_class}
+			"
+
+			data-field="contactMethod"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactMethod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field36" {$item_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMethod" data-default-width >
+{$contactMethod_value}
+</span>
+{END contactMethod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+						 
+							{BEGIN cellblock_grid_cell_label177}
+	<td
+	
+	{$cell_grid_cell_label177}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$courier_class}
+			"
+
+			data-field="courier"
+	
+	data-cellId="grid_cell_label177" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courier_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label36" {$item_grid_field_label36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courier">
+	{$label dbo_voltonAgentApplications courier }	</span>
+{END courier_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label177}
+						 
+							{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courier_class}
+			"
+
+			data-field="courier"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courier_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field37" {$item_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courier" data-default-width >
+{$courier_value}
+</span>
+{END courier_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+						 
+							{BEGIN cellblock_grid_cell_label182}
+	<td
+	
+	{$cell_grid_cell_label182}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$deliveryComments_class}
+			"
+
+			data-field="deliveryComments"
+	
+	data-cellId="grid_cell_label182" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deliveryComments_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label37" {$item_grid_field_label37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deliveryComments">
+	{$label dbo_voltonAgentApplications deliveryComments }	</span>
+{END deliveryComments_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label182}
+						 
+							{BEGIN cellblock_grid_cell_field55}
+	<td
+	
+	{$cell_grid_cell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$deliveryComments_class}
+			"
+
+			data-field="deliveryComments"
+	
+	data-cellId="grid_cell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deliveryComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field38" {$item_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deliveryComments" data-default-width >
+{$deliveryComments_value}
+</span>
+{END deliveryComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field55}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label183}
+	<td
+	
+	{$cell_grid_cell_label183}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$courierDeliveryDate_class}
+			"
+
+			data-field="courierDeliveryDate"
+	
+	data-cellId="grid_cell_label183" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierDeliveryDate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label38" {$item_grid_field_label38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierDeliveryDate">
+	{$label dbo_voltonAgentApplications courierDeliveryDate }	</span>
+{END courierDeliveryDate_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label183}
+						 
+							{BEGIN cellblock_grid_cell_field65}
+	<td
+	
+	{$cell_grid_cell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierDeliveryDate_class}
+			"
+
+			data-field="courierDeliveryDate"
+	
+	data-cellId="grid_cell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierDeliveryDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field39" {$item_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierDeliveryDate" data-default-width >
+{$courierDeliveryDate_value}
+</span>
+{END courierDeliveryDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field65}
+						 
+							{BEGIN cellblock_grid_cell_label184}
+	<td
+	
+	{$cell_grid_cell_label184}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$courierTimeFrom_class}
+			"
+
+			data-field="courierTimeFrom"
+	
+	data-cellId="grid_cell_label184" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeFrom_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label39" {$item_grid_field_label39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeFrom">
+	{$label dbo_voltonAgentApplications courierTimeFrom }	</span>
+{END courierTimeFrom_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label184}
+						 
+							{BEGIN cellblock_grid_cell_field70}
+	<td
+	
+	{$cell_grid_cell_field70}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeFrom_class}
+			"
+
+			data-field="courierTimeFrom"
+	
+	data-cellId="grid_cell_field70" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeFrom_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field40" {$item_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeFrom" data-default-width >
+{$courierTimeFrom_value}
+</span>
+{END courierTimeFrom_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field70}
+						 
+							{BEGIN cellblock_grid_cell_label185}
+	<td
+	
+	{$cell_grid_cell_label185}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$courierTimeTo_class}
+			"
+
+			data-field="courierTimeTo"
+	
+	data-cellId="grid_cell_label185" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeTo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label40" {$item_grid_field_label40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeTo">
+	{$label dbo_voltonAgentApplications courierTimeTo }	</span>
+{END courierTimeTo_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label185}
+						 
+							{BEGIN cellblock_grid_cell_field72}
+	<td
+	
+	{$cell_grid_cell_field72}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeTo_class}
+			"
+
+			data-field="courierTimeTo"
+	
+	data-cellId="grid_cell_field72" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeTo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field41" {$item_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeTo" data-default-width >
+{$courierTimeTo_value}
+</span>
+{END courierTimeTo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field72}
+						 
+							{BEGIN cellblock_grid_cell_label186}
+	<td
+	
+	{$cell_grid_cell_label186}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label186" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label186}
+						 
+							{BEGIN cellblock_grid_cell_field74}
+	<td
+	
+	{$cell_grid_cell_field74}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field74" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field74}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+		 
+{BEGIN details_internalcomments}
+{$displayDetailTable_internalcomments}
+{END details_internalcomments}
+	{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

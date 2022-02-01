@@ -1,0 +1,1879 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_novaApplications search}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callid}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callid" 
+	
+	data-signal-error-for="callid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="callid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callid}">
+		{$label dbo_novaApplications callid }	</label>
+	<div class="r-search-option">
+		{$searchtype_callid}
+	</div>
+	<div class="r-search-field">
+		{$callid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callid_editcontrol1}
+	</div>
+	
+</div>
+
+{END callid_fieldblock}
+											
+{BEGIN applicationStatusId_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationStatusId}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationStatusId" 
+	
+	data-signal-error-for="applicationStatusId{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="applicationStatusId" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationStatusId}">
+		{$label dbo_novaApplications applicationStatusId }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationStatusId}
+	</div>
+	<div class="r-search-field">
+		{$applicationStatusId_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationStatusId_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationStatusId_fieldblock}
+											
+{BEGIN applicationType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationType" 
+	
+	data-signal-error-for="applicationType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="applicationType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationType}">
+		{$label dbo_novaApplications applicationType }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationType}
+	</div>
+	<div class="r-search-field">
+		{$applicationType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationType_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationType_fieldblock}
+											
+{BEGIN applicantName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantName}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantName" 
+	
+	data-signal-error-for="applicantName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="applicantName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantName}">
+		{$label dbo_novaApplications applicantName }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantName}
+	</div>
+	<div class="r-search-field">
+		{$applicantName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantName_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantName_fieldblock}
+											
+{BEGIN applicantFirstName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantFirstName}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantFirstName" 
+	
+	data-signal-error-for="applicantFirstName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="applicantFirstName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantFirstName}">
+		{$label dbo_novaApplications applicantFirstName }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantFirstName}
+	</div>
+	<div class="r-search-field">
+		{$applicantFirstName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantFirstName_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantFirstName_fieldblock}
+											
+{BEGIN applicantBirthdate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantBirthdate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantBirthdate" 
+	
+	data-signal-error-for="applicantBirthdate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="applicantBirthdate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantBirthdate}">
+		{$label dbo_novaApplications applicantBirthdate }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantBirthdate}
+	</div>
+	<div class="r-search-field">
+		{$applicantBirthdate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantBirthdate_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantBirthdate_fieldblock}
+											
+{BEGIN applicantProfession_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantProfession}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantProfession" 
+	
+	data-signal-error-for="applicantProfession{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="applicantProfession" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantProfession}">
+		{$label dbo_novaApplications applicantProfession }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantProfession}
+	</div>
+	<div class="r-search-field">
+		{$applicantProfession_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantProfession_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantProfession_fieldblock}
+											
+{BEGIN applicantIdNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantIdNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantIdNumber" 
+	
+	data-signal-error-for="applicantIdNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantIdNumber}">
+		{$label dbo_novaApplications applicantIdNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantIdNumber}
+	</div>
+	<div class="r-search-field">
+		{$applicantIdNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantIdNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantIdNumber_fieldblock}
+											
+{BEGIN applicantAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantAddress" 
+	
+	data-signal-error-for="applicantAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="applicantAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantAddress}">
+		{$label dbo_novaApplications applicantAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantAddress}
+	</div>
+	<div class="r-search-field">
+		{$applicantAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantAddress_fieldblock}
+											
+{BEGIN applicantPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantPostalCode" 
+	
+	data-signal-error-for="applicantPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="applicantPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantPostalCode}">
+		{$label dbo_novaApplications applicantPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$applicantPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantPostalCode_fieldblock}
+											
+{BEGIN applicantArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantArea" 
+	
+	data-signal-error-for="applicantArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="applicantArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantArea}">
+		{$label dbo_novaApplications applicantArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantArea}
+	</div>
+	<div class="r-search-field">
+		{$applicantArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantArea_fieldblock}
+											
+{BEGIN applicantCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantCity" 
+	
+	data-signal-error-for="applicantCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="applicantCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantCity}">
+		{$label dbo_novaApplications applicantCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantCity}
+	</div>
+	<div class="r-search-field">
+		{$applicantCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantCity_fieldblock}
+											
+{BEGIN applicantTaxRegistrationNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxRegistrationNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantTaxRegistrationNumber" 
+	
+	data-signal-error-for="applicantTaxRegistrationNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantTaxRegistrationNumber}">
+		{$label dbo_novaApplications applicantTaxRegistrationNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantTaxRegistrationNumber}
+	</div>
+	<div class="r-search-field">
+		{$applicantTaxRegistrationNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantTaxRegistrationNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantTaxRegistrationNumber_fieldblock}
+											
+{BEGIN applicantTaxOffice_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxOffice}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantTaxOffice" 
+	
+	data-signal-error-for="applicantTaxOffice{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="applicantTaxOffice" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantTaxOffice}">
+		{$label dbo_novaApplications applicantTaxOffice }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantTaxOffice}
+	</div>
+	<div class="r-search-field">
+		{$applicantTaxOffice_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantTaxOffice_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantTaxOffice_fieldblock}
+											
+{BEGIN applicantPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPhone}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantPhone" 
+	
+	data-signal-error-for="applicantPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="applicantPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantPhone}">
+		{$label dbo_novaApplications applicantPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantPhone}
+	</div>
+	<div class="r-search-field">
+		{$applicantPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantPhone_fieldblock}
+											
+{BEGIN applicantMobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantMobile}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantMobile" 
+	
+	data-signal-error-for="applicantMobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="applicantMobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantMobile}">
+		{$label dbo_novaApplications applicantMobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantMobile}
+	</div>
+	<div class="r-search-field">
+		{$applicantMobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantMobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantMobile_fieldblock}
+											
+{BEGIN applicantEmail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantEmail}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantEmail" 
+	
+	data-signal-error-for="applicantEmail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="applicantEmail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantEmail}">
+		{$label dbo_novaApplications applicantEmail }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantEmail}
+	</div>
+	<div class="r-search-field">
+		{$applicantEmail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantEmail_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantEmail_fieldblock}
+											
+{BEGIN standAloneProgram_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_standAloneProgram}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="standAloneProgram" 
+	
+	data-signal-error-for="standAloneProgram{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="standAloneProgram" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_standAloneProgram}">
+		{$label dbo_novaApplications standAloneProgram }	</label>
+	<div class="r-search-option">
+		{$searchtype_standAloneProgram}
+	</div>
+	<div class="r-search-field">
+		{$standAloneProgram_editcontrol}	</div>
+	<div class="r-search-field">
+		{$standAloneProgram_editcontrol1}
+	</div>
+	
+</div>
+
+{END standAloneProgram_fieldblock}
+											
+{BEGIN doublePlayProgram_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doublePlayProgram}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="doublePlayProgram" 
+	
+	data-signal-error-for="doublePlayProgram{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="doublePlayProgram" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_doublePlayProgram}">
+		{$label dbo_novaApplications doublePlayProgram }	</label>
+	<div class="r-search-option">
+		{$searchtype_doublePlayProgram}
+	</div>
+	<div class="r-search-field">
+		{$doublePlayProgram_editcontrol}	</div>
+	<div class="r-search-field">
+		{$doublePlayProgram_editcontrol1}
+	</div>
+	
+</div>
+
+{END doublePlayProgram_fieldblock}
+											
+{BEGIN triplePlayProgram_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_triplePlayProgram}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="triplePlayProgram" 
+	
+	data-signal-error-for="triplePlayProgram{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="triplePlayProgram" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_triplePlayProgram}">
+		{$label dbo_novaApplications triplePlayProgram }	</label>
+	<div class="r-search-option">
+		{$searchtype_triplePlayProgram}
+	</div>
+	<div class="r-search-field">
+		{$triplePlayProgram_editcontrol}	</div>
+	<div class="r-search-field">
+		{$triplePlayProgram_editcontrol1}
+	</div>
+	
+</div>
+
+{END triplePlayProgram_fieldblock}
+											
+{BEGIN triplePlayProgramType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_triplePlayProgramType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="triplePlayProgramType" 
+	
+	data-signal-error-for="triplePlayProgramType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="triplePlayProgramType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_triplePlayProgramType}">
+		{$label dbo_novaApplications triplePlayProgramType }	</label>
+	<div class="r-search-option">
+		{$searchtype_triplePlayProgramType}
+	</div>
+	<div class="r-search-field">
+		{$triplePlayProgramType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$triplePlayProgramType_editcontrol1}
+	</div>
+	
+</div>
+
+{END triplePlayProgramType_fieldblock}
+											
+{BEGIN additionalServiceInternet_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceInternet}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceInternet" 
+	
+	data-signal-error-for="additionalServiceInternet{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="additionalServiceInternet" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceInternet}">
+		{$label dbo_novaApplications additionalServiceInternet }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceInternet}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternet_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternet_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceInternet_fieldblock}
+											
+{BEGIN additionalServiceInternetSpeed_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceInternetSpeed}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceInternetSpeed" 
+	
+	data-signal-error-for="additionalServiceInternetSpeed{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="additionalServiceInternetSpeed" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceInternetSpeed}">
+		{$label dbo_novaApplications additionalServiceInternetSpeed }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceInternetSpeed}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternetSpeed_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternetSpeed_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceInternetSpeed_fieldblock}
+											
+{BEGIN additionalServiceInternationalCalls_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceInternationalCalls}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceInternationalCalls" 
+	
+	data-signal-error-for="additionalServiceInternationalCalls{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="additionalServiceInternationalCalls" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceInternationalCalls}">
+		{$label dbo_novaApplications additionalServiceInternationalCalls }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceInternationalCalls}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternationalCalls_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceInternationalCalls_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceInternationalCalls_fieldblock}
+											
+{BEGIN additionalServiceStaticIp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceStaticIp}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceStaticIp" 
+	
+	data-signal-error-for="additionalServiceStaticIp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="additionalServiceStaticIp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceStaticIp}">
+		{$label dbo_novaApplications additionalServiceStaticIp }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceStaticIp}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceStaticIp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceStaticIp_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceStaticIp_fieldblock}
+											
+{BEGIN additionalServiceStaticBlock8Ip_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceStaticBlock8Ip}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceStaticBlock8Ip" 
+	
+	data-signal-error-for="additionalServiceStaticBlock8Ip{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="additionalServiceStaticBlock8Ip" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceStaticBlock8Ip}">
+		{$label dbo_novaApplications additionalServiceStaticBlock8Ip }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceStaticBlock8Ip}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceStaticBlock8Ip_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceStaticBlock8Ip_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceStaticBlock8Ip_fieldblock}
+											
+{BEGIN additionalServiceSecondLine_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceSecondLine}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceSecondLine" 
+	
+	data-signal-error-for="additionalServiceSecondLine{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="additionalServiceSecondLine" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceSecondLine}">
+		{$label dbo_novaApplications additionalServiceSecondLine }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceSecondLine}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceSecondLine_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceSecondLine_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceSecondLine_fieldblock}
+											
+{BEGIN additionalServiceLandLine1000Minutes_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceLandLine1000Minutes}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceLandLine1000Minutes" 
+	
+	data-signal-error-for="additionalServiceLandLine1000Minutes{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="additionalServiceLandLine1000Minutes" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceLandLine1000Minutes}">
+		{$label dbo_novaApplications additionalServiceLandLine1000Minutes }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceLandLine1000Minutes}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceLandLine1000Minutes_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceLandLine1000Minutes_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceLandLine1000Minutes_fieldblock}
+											
+{BEGIN additionalServiceEquipment_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceEquipment}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceEquipment" 
+	
+	data-signal-error-for="additionalServiceEquipment{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="additionalServiceEquipment" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceEquipment}">
+		{$label dbo_novaApplications additionalServiceEquipment }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceEquipment}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceEquipment_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceEquipment_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceEquipment_fieldblock}
+											
+{BEGIN additionalServiceEquipmentInstallation_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceEquipmentInstallation}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceEquipmentInstallation" 
+	
+	data-signal-error-for="additionalServiceEquipmentInstallation{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="additionalServiceEquipmentInstallation" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceEquipmentInstallation}">
+		{$label dbo_novaApplications additionalServiceEquipmentInstallation }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceEquipmentInstallation}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceEquipmentInstallation_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceEquipmentInstallation_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceEquipmentInstallation_fieldblock}
+											
+{BEGIN portabilityIsNewLine_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityIsNewLine}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityIsNewLine" 
+	
+	data-signal-error-for="portabilityIsNewLine{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="portabilityIsNewLine" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityIsNewLine}">
+		{$label dbo_novaApplications portabilityIsNewLine }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityIsNewLine}
+	</div>
+	<div class="r-search-field">
+		{$portabilityIsNewLine_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityIsNewLine_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityIsNewLine_fieldblock}
+											
+{BEGIN portabilityOldNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityOldNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityOldNumber" 
+	
+	data-signal-error-for="portabilityOldNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="portabilityOldNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityOldNumber}">
+		{$label dbo_novaApplications portabilityOldNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityOldNumber}
+	</div>
+	<div class="r-search-field">
+		{$portabilityOldNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityOldNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityOldNumber_fieldblock}
+											
+{BEGIN portabilityOldOwner_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityOldOwner}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityOldOwner" 
+	
+	data-signal-error-for="portabilityOldOwner{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="portabilityOldOwner" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityOldOwner}">
+		{$label dbo_novaApplications portabilityOldOwner }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityOldOwner}
+	</div>
+	<div class="r-search-field">
+		{$portabilityOldOwner_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityOldOwner_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityOldOwner_fieldblock}
+											
+{BEGIN portabilityActivationAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityActivationAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityActivationAddress" 
+	
+	data-signal-error-for="portabilityActivationAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="portabilityActivationAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityActivationAddress}">
+		{$label dbo_novaApplications portabilityActivationAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityActivationAddress}
+	</div>
+	<div class="r-search-field">
+		{$portabilityActivationAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityActivationAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityActivationAddress_fieldblock}
+											
+{BEGIN portabilityActivationPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityActivationPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityActivationPostalCode" 
+	
+	data-signal-error-for="portabilityActivationPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field37" {$item_integrated_search_field37} data-pageid="{$pageid}" data-field="portabilityActivationPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityActivationPostalCode}">
+		{$label dbo_novaApplications portabilityActivationPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityActivationPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$portabilityActivationPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityActivationPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityActivationPostalCode_fieldblock}
+											
+{BEGIN portabilityActivationArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityActivationArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityActivationArea" 
+	
+	data-signal-error-for="portabilityActivationArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field38" {$item_integrated_search_field38} data-pageid="{$pageid}" data-field="portabilityActivationArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityActivationArea}">
+		{$label dbo_novaApplications portabilityActivationArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityActivationArea}
+	</div>
+	<div class="r-search-field">
+		{$portabilityActivationArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityActivationArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityActivationArea_fieldblock}
+											
+{BEGIN portabilityActivationCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityActivationCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityActivationCity" 
+	
+	data-signal-error-for="portabilityActivationCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field39" {$item_integrated_search_field39} data-pageid="{$pageid}" data-field="portabilityActivationCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityActivationCity}">
+		{$label dbo_novaApplications portabilityActivationCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityActivationCity}
+	</div>
+	<div class="r-search-field">
+		{$portabilityActivationCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityActivationCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityActivationCity_fieldblock}
+											
+{BEGIN portabilityPstnIsdn_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityPstnIsdn}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityPstnIsdn" 
+	
+	data-signal-error-for="portabilityPstnIsdn{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field40" {$item_integrated_search_field40} data-pageid="{$pageid}" data-field="portabilityPstnIsdn" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityPstnIsdn}">
+		{$label dbo_novaApplications portabilityPstnIsdn }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityPstnIsdn}
+	</div>
+	<div class="r-search-field">
+		{$portabilityPstnIsdn_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityPstnIsdn_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityPstnIsdn_fieldblock}
+											
+{BEGIN portabilityLine1PhoneNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityLine1PhoneNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityLine1PhoneNumber" 
+	
+	data-signal-error-for="portabilityLine1PhoneNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="portabilityLine1PhoneNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityLine1PhoneNumber}">
+		{$label dbo_novaApplications portabilityLine1PhoneNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityLine1PhoneNumber}
+	</div>
+	<div class="r-search-field">
+		{$portabilityLine1PhoneNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityLine1PhoneNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityLine1PhoneNumber_fieldblock}
+											
+{BEGIN portabilityLine2PhoneNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityLine2PhoneNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityLine2PhoneNumber" 
+	
+	data-signal-error-for="portabilityLine2PhoneNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field42" {$item_integrated_search_field42} data-pageid="{$pageid}" data-field="portabilityLine2PhoneNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityLine2PhoneNumber}">
+		{$label dbo_novaApplications portabilityLine2PhoneNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityLine2PhoneNumber}
+	</div>
+	<div class="r-search-field">
+		{$portabilityLine2PhoneNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityLine2PhoneNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityLine2PhoneNumber_fieldblock}
+											
+{BEGIN portabilityLine3PhoneNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityLine3PhoneNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityLine3PhoneNumber" 
+	
+	data-signal-error-for="portabilityLine3PhoneNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field43" {$item_integrated_search_field43} data-pageid="{$pageid}" data-field="portabilityLine3PhoneNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityLine3PhoneNumber}">
+		{$label dbo_novaApplications portabilityLine3PhoneNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityLine3PhoneNumber}
+	</div>
+	<div class="r-search-field">
+		{$portabilityLine3PhoneNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityLine3PhoneNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityLine3PhoneNumber_fieldblock}
+											
+{BEGIN portabilityLine4PhoneNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityLine4PhoneNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityLine4PhoneNumber" 
+	
+	data-signal-error-for="portabilityLine4PhoneNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field44" {$item_integrated_search_field44} data-pageid="{$pageid}" data-field="portabilityLine4PhoneNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityLine4PhoneNumber}">
+		{$label dbo_novaApplications portabilityLine4PhoneNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityLine4PhoneNumber}
+	</div>
+	<div class="r-search-field">
+		{$portabilityLine4PhoneNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityLine4PhoneNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityLine4PhoneNumber_fieldblock}
+											
+{BEGIN portabilityUsername1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityUsername1}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityUsername1" 
+	
+	data-signal-error-for="portabilityUsername1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field45" {$item_integrated_search_field45} data-pageid="{$pageid}" data-field="portabilityUsername1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityUsername1}">
+		{$label dbo_novaApplications portabilityUsername1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityUsername1}
+	</div>
+	<div class="r-search-field">
+		{$portabilityUsername1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityUsername1_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityUsername1_fieldblock}
+											
+{BEGIN portabilityusername2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_portabilityusername2}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="portabilityusername2" 
+	
+	data-signal-error-for="portabilityusername2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field46" {$item_integrated_search_field46} data-pageid="{$pageid}" data-field="portabilityusername2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_portabilityusername2}">
+		{$label dbo_novaApplications portabilityusername2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_portabilityusername2}
+	</div>
+	<div class="r-search-field">
+		{$portabilityusername2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$portabilityusername2_editcontrol1}
+	</div>
+	
+</div>
+
+{END portabilityusername2_fieldblock}
+											
+{BEGIN documentIdPassport_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentIdPassport}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentIdPassport" 
+	
+	data-signal-error-for="documentIdPassport{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field47" {$item_integrated_search_field47} data-pageid="{$pageid}" data-field="documentIdPassport" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentIdPassport}">
+		{$label dbo_novaApplications documentIdPassport }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentIdPassport}
+	</div>
+	<div class="r-search-field">
+		{$documentIdPassport_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentIdPassport_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentIdPassport_fieldblock}
+											
+{BEGIN documentIdPassportPreviousOwner_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentIdPassportPreviousOwner}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentIdPassportPreviousOwner" 
+	
+	data-signal-error-for="documentIdPassportPreviousOwner{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field48" {$item_integrated_search_field48} data-pageid="{$pageid}" data-field="documentIdPassportPreviousOwner" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentIdPassportPreviousOwner}">
+		{$label dbo_novaApplications documentIdPassportPreviousOwner }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentIdPassportPreviousOwner}
+	</div>
+	<div class="r-search-field">
+		{$documentIdPassportPreviousOwner_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentIdPassportPreviousOwner_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentIdPassportPreviousOwner_fieldblock}
+											
+{BEGIN documentLastBill_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentLastBill}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentLastBill" 
+	
+	data-signal-error-for="documentLastBill{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field49" {$item_integrated_search_field49} data-pageid="{$pageid}" data-field="documentLastBill" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentLastBill}">
+		{$label dbo_novaApplications documentLastBill }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentLastBill}
+	</div>
+	<div class="r-search-field">
+		{$documentLastBill_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentLastBill_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentLastBill_fieldblock}
+											
+{BEGIN documentAddressValidation_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentAddressValidation}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentAddressValidation" 
+	
+	data-signal-error-for="documentAddressValidation{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field50" {$item_integrated_search_field50} data-pageid="{$pageid}" data-field="documentAddressValidation" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentAddressValidation}">
+		{$label dbo_novaApplications documentAddressValidation }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentAddressValidation}
+	</div>
+	<div class="r-search-field">
+		{$documentAddressValidation_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentAddressValidation_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentAddressValidation_fieldblock}
+											
+{BEGIN documentDeathCertificate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentDeathCertificate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentDeathCertificate" 
+	
+	data-signal-error-for="documentDeathCertificate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field51" {$item_integrated_search_field51} data-pageid="{$pageid}" data-field="documentDeathCertificate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentDeathCertificate}">
+		{$label dbo_novaApplications documentDeathCertificate }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentDeathCertificate}
+	</div>
+	<div class="r-search-field">
+		{$documentDeathCertificate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentDeathCertificate_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentDeathCertificate_fieldblock}
+											
+{BEGIN documentAuthorization_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentAuthorization}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentAuthorization" 
+	
+	data-signal-error-for="documentAuthorization{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field52" {$item_integrated_search_field52} data-pageid="{$pageid}" data-field="documentAuthorization" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentAuthorization}">
+		{$label dbo_novaApplications documentAuthorization }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentAuthorization}
+	</div>
+	<div class="r-search-field">
+		{$documentAuthorization_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentAuthorization_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentAuthorization_fieldblock}
+											
+{BEGIN documentOther_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentOther}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentOther" 
+	
+	data-signal-error-for="documentOther{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field53" {$item_integrated_search_field53} data-pageid="{$pageid}" data-field="documentOther" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentOther}">
+		{$label dbo_novaApplications documentOther }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentOther}
+	</div>
+	<div class="r-search-field">
+		{$documentOther_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentOther_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentOther_fieldblock}
+											
+{BEGIN documentOtherType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documentOtherType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="documentOtherType" 
+	
+	data-signal-error-for="documentOtherType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field54" {$item_integrated_search_field54} data-pageid="{$pageid}" data-field="documentOtherType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_documentOtherType}">
+		{$label dbo_novaApplications documentOtherType }	</label>
+	<div class="r-search-option">
+		{$searchtype_documentOtherType}
+	</div>
+	<div class="r-search-field">
+		{$documentOtherType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$documentOtherType_editcontrol1}
+	</div>
+	
+</div>
+
+{END documentOtherType_fieldblock}
+											
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id" 
+	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label dbo_novaApplications id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN ProgramSpeed_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ProgramSpeed}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ProgramSpeed" 
+	
+	data-signal-error-for="ProgramSpeed{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="ProgramSpeed" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ProgramSpeed}">
+		{$label dbo_novaApplications ProgramSpeed }	</label>
+	<div class="r-search-option">
+		{$searchtype_ProgramSpeed}
+	</div>
+	<div class="r-search-field">
+		{$ProgramSpeed_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ProgramSpeed_editcontrol1}
+	</div>
+	
+</div>
+
+{END ProgramSpeed_fieldblock}
+											
+{BEGIN applicationAgentStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationAgentStatus}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationAgentStatus" 
+	
+	data-signal-error-for="applicationAgentStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationAgentStatus}">
+		{$label dbo_novaApplications applicationAgentStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationAgentStatus}
+	</div>
+	<div class="r-search-field">
+		{$applicationAgentStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationAgentStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationAgentStatus_fieldblock}
+											
+{BEGIN applicationLastStatusDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationLastStatusDate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationLastStatusDate" 
+	
+	data-signal-error-for="applicationLastStatusDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field55" {$item_integrated_search_field55} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationLastStatusDate}">
+		{$label dbo_novaApplications applicationLastStatusDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationLastStatusDate}
+	</div>
+	<div class="r-search-field">
+		{$applicationLastStatusDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationLastStatusDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationLastStatusDate_fieldblock}
+											
+{BEGIN applicationContactMethod_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationContactMethod}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationContactMethod" 
+	
+	data-signal-error-for="applicationContactMethod{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field56" {$item_integrated_search_field56} data-pageid="{$pageid}" data-field="applicationContactMethod" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationContactMethod}">
+		{$label dbo_novaApplications applicationContactMethod }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationContactMethod}
+	</div>
+	<div class="r-search-field">
+		{$applicationContactMethod_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationContactMethod_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationContactMethod_fieldblock}
+											
+{BEGIN applicationCourier_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationCourier}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationCourier" 
+	
+	data-signal-error-for="applicationCourier{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field57" {$item_integrated_search_field57} data-pageid="{$pageid}" data-field="applicationCourier" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationCourier}">
+		{$label dbo_novaApplications applicationCourier }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationCourier}
+	</div>
+	<div class="r-search-field">
+		{$applicationCourier_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationCourier_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationCourier_fieldblock}
+											
+{BEGIN applicationCourierDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationCourierDate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationCourierDate" 
+	
+	data-signal-error-for="applicationCourierDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field58" {$item_integrated_search_field58} data-pageid="{$pageid}" data-field="applicationCourierDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationCourierDate}">
+		{$label dbo_novaApplications applicationCourierDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationCourierDate}
+	</div>
+	<div class="r-search-field">
+		{$applicationCourierDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationCourierDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationCourierDate_fieldblock}
+											
+{BEGIN applicationCourierTimeFrom_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationCourierTimeFrom}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationCourierTimeFrom" 
+	
+	data-signal-error-for="applicationCourierTimeFrom{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field59" {$item_integrated_search_field59} data-pageid="{$pageid}" data-field="applicationCourierTimeFrom" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationCourierTimeFrom}">
+		{$label dbo_novaApplications applicationCourierTimeFrom }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationCourierTimeFrom}
+	</div>
+	<div class="r-search-field">
+		{$applicationCourierTimeFrom_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationCourierTimeFrom_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationCourierTimeFrom_fieldblock}
+											
+{BEGIN applicationCourierTimeTo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationCourierTimeTo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationCourierTimeTo" 
+	
+	data-signal-error-for="applicationCourierTimeTo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field60" {$item_integrated_search_field60} data-pageid="{$pageid}" data-field="applicationCourierTimeTo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationCourierTimeTo}">
+		{$label dbo_novaApplications applicationCourierTimeTo }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationCourierTimeTo}
+	</div>
+	<div class="r-search-field">
+		{$applicationCourierTimeTo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationCourierTimeTo_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationCourierTimeTo_fieldblock}
+											
+{BEGIN applicationCourierComments_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationCourierComments}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationCourierComments" 
+	
+	data-signal-error-for="applicationCourierComments{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field61" {$item_integrated_search_field61} data-pageid="{$pageid}" data-field="applicationCourierComments" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationCourierComments}">
+		{$label dbo_novaApplications applicationCourierComments }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationCourierComments}
+	</div>
+	<div class="r-search-field">
+		{$applicationCourierComments_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationCourierComments_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationCourierComments_fieldblock}
+											
+{BEGIN dialerAgent_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerAgent}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerAgent" 
+	
+	data-signal-error-for="dialerAgent{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field62" {$item_integrated_search_field62} data-pageid="{$pageid}" data-field="dialerAgent" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerAgent}">
+		{$label dbo_novaApplications dialerAgent }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerAgent}
+	</div>
+	<div class="r-search-field">
+		{$dialerAgent_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerAgent_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerAgent_fieldblock}
+											
+{BEGIN adittionalServiceMobileNoLimit_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adittionalServiceMobileNoLimit}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="adittionalServiceMobileNoLimit" 
+	
+	data-signal-error-for="adittionalServiceMobileNoLimit{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field63" {$item_integrated_search_field63} data-pageid="{$pageid}" data-field="adittionalServiceMobileNoLimit" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_adittionalServiceMobileNoLimit}">
+		{$label dbo_novaApplications adittionalServiceMobileNoLimit }	</label>
+	<div class="r-search-option">
+		{$searchtype_adittionalServiceMobileNoLimit}
+	</div>
+	<div class="r-search-field">
+		{$adittionalServiceMobileNoLimit_editcontrol}	</div>
+	<div class="r-search-field">
+		{$adittionalServiceMobileNoLimit_editcontrol1}
+	</div>
+	
+</div>
+
+{END adittionalServiceMobileNoLimit_fieldblock}
+											
+{BEGIN additionalServiceEONMultiScreen_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceEONMultiScreen}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceEONMultiScreen" 
+	
+	data-signal-error-for="additionalServiceEONMultiScreen{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field64" {$item_integrated_search_field64} data-pageid="{$pageid}" data-field="additionalServiceEONMultiScreen" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceEONMultiScreen}">
+		{$label dbo_novaApplications additionalServiceEONMultiScreen }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceEONMultiScreen}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceEONMultiScreen_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceEONMultiScreen_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceEONMultiScreen_fieldblock}
+											
+{BEGIN additionalServiceNovaMultiroom_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceNovaMultiroom}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceNovaMultiroom" 
+	
+	data-signal-error-for="additionalServiceNovaMultiroom{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field65" {$item_integrated_search_field65} data-pageid="{$pageid}" data-field="additionalServiceNovaMultiroom" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceNovaMultiroom}">
+		{$label dbo_novaApplications additionalServiceNovaMultiroom }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceNovaMultiroom}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceNovaMultiroom_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceNovaMultiroom_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceNovaMultiroom_fieldblock}
+											
+{BEGIN additionalServiceAdultPack_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_additionalServiceAdultPack}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="additionalServiceAdultPack" 
+	
+	data-signal-error-for="additionalServiceAdultPack{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field66" {$item_integrated_search_field66} data-pageid="{$pageid}" data-field="additionalServiceAdultPack" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_additionalServiceAdultPack}">
+		{$label dbo_novaApplications additionalServiceAdultPack }	</label>
+	<div class="r-search-option">
+		{$searchtype_additionalServiceAdultPack}
+	</div>
+	<div class="r-search-field">
+		{$additionalServiceAdultPack_editcontrol}	</div>
+	<div class="r-search-field">
+		{$additionalServiceAdultPack_editcontrol1}
+	</div>
+	
+</div>
+
+{END additionalServiceAdultPack_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Επαναφορά			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Ακύρωση			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

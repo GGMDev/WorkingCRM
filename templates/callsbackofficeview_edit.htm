@@ -1,0 +1,2119 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_CallsBackofficeView edit}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Πίσω στη λίστα</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Προβολή</button>
+{END view_page_button}
+</div>
+</div>
+			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section" {$item_section} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} data-toggle="collapse"   
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Στοιχεία Κλήσης			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="topbar" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="5"
+		
+		data-v-width="9"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section2_c15}
+<td
+	{$cell_section2_c15}
+	class="r-align-left r-ori-vert"
+	
+			data-single
+			
+	ocolspan="3"		data-cellId="section2_c15" data-pageid="{$pageid}"
+		data-v-cell="5"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dialerAgent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerAgent}  r-vertical-field" 
+	data-fieldname="dialerAgent" 
+	data-signal-error-for="dialerAgent{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="dialerAgent" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerAgent}">
+		{BEGIN dialerAgent_label}{$label dbo_CallsBackofficeView dialerAgent }{END dialerAgent_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerAgent_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerAgent">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerAgent }		</div>
+	</div>
+</div>
+
+
+{END dialerAgent_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c15}
+			 
+																
+
+{BEGIN cellblock_section2_c20}
+<td
+	{$cell_section2_c20}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c20" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callStart_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callStart}  r-vertical-field" 
+	data-fieldname="callStart" 
+	data-signal-error-for="callStart{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="edit_field" {$item_edit_field} data-pageid="{$pageid}" data-field="callStart" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callStart}">
+		{BEGIN callStart_label}{$label dbo_CallsBackofficeView callStart }{END callStart_label}
+	</label>
+	<div class="r-edit-field">
+		{$callStart_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callStart">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callStart }		</div>
+	</div>
+</div>
+
+
+{END callStart_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c20}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c21}
+<td
+	{$cell_section2_c21}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c21" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c21}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c7}
+<td
+	{$cell_section2_c7}
+	class="r-align-left r-ori-vert"
+	
+			data-single
+			
+	ocolspan="3"		data-cellId="section2_c7" data-pageid="{$pageid}"
+		data-v-cell="5"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dialerPhone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerPhone}  r-vertical-field" 
+	data-fieldname="dialerPhone" 
+	data-signal-error-for="dialerPhone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="dialerPhone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerPhone}">
+		{BEGIN dialerPhone_label}{$label dbo_CallsBackofficeView dialerPhone }{END dialerPhone_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerPhone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerPhone">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerPhone }		</div>
+	</div>
+</div>
+
+
+{END dialerPhone_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c7}
+			 
+																
+
+{BEGIN cellblock_section2_c16}
+<td
+	{$cell_section2_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callClassificationID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callClassificationID}  r-vertical-field" 
+	data-fieldname="callClassificationID" 
+	data-signal-error-for="callClassificationID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="callClassificationID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callClassificationID}">
+		{BEGIN callClassificationID_label}{$label dbo_CallsBackofficeView callClassificationID }{END callClassificationID_label}
+	</label>
+	<div class="r-edit-field">
+		{$callClassificationID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callClassificationID">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callClassificationID }		</div>
+	</div>
+</div>
+
+
+{END callClassificationID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c16}
+			 
+																
+
+{BEGIN cellblock_section2_c17}
+<td
+	{$cell_section2_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c17" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callSubClassificationID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callSubClassificationID}  r-vertical-field" 
+	data-fieldname="callSubClassificationID" 
+	data-signal-error-for="callSubClassificationID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="callSubClassificationID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callSubClassificationID}">
+		{BEGIN callSubClassificationID_label}{$label dbo_CallsBackofficeView callSubClassificationID }{END callSubClassificationID_label}
+	</label>
+	<div class="r-edit-field">
+		{$callSubClassificationID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callSubClassificationID">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callSubClassificationID }		</div>
+	</div>
+</div>
+
+
+{END callSubClassificationID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c17}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c47}
+<td
+	{$cell_section2_c47}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section2_c47" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callStatusId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callStatusId}  r-vertical-field" 
+	data-fieldname="callStatusId" 
+	data-signal-error-for="callStatusId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="callStatusId" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callStatusId}">
+		{BEGIN callStatusId_label}{$label dbo_CallsBackofficeView callStatusId }{END callStatusId_label}
+	</label>
+	<div class="r-edit-field">
+		{$callStatusId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callStatusId">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callStatusId }		</div>
+	</div>
+</div>
+
+
+{END callStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c47}
+			 
+																
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			
+	ocolspan="3"	orowspan="6"	data-cellId="section2_c" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="5"
+		
+>
+	<div edit-form-cell class="clearfix">
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section5" {$item_section5} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} data-toggle="collapse"   
+
+				href="#section2{$pageid}" aria-expanded="false" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Αγορές Πελάτη			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="topbar" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="1"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c1}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section4" {$item_section4} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} data-toggle="collapse"   
+
+				href="#section3{$pageid}" aria-expanded="false" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Εικόνα Πελάτη			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="topbar" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="1"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c1}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section1" {$item_section1} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} data-toggle="collapse"   
+
+				href="#section4{$pageid}" aria-expanded="false" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Πληροφορίες Κλήσης			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="topbar" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="3"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section4_c3}
+<td
+	{$cell_section4_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c3" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tvchannel_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="tvchannel{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label8" {$item_edit_field_label8} data-pageid="{$pageid}" data-field="tvchannel">
+		<label class="r-edit-label control-label" for="{$labelfor_tvchannel}">
+			{BEGIN tvchannel_label}{$label dbo_CallsBackofficeView tvchannel }{END tvchannel_label}
+		</label>
+	</div>
+{END tvchannel_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c3}
+			 
+																
+
+{BEGIN cellblock_section4_c2}
+<td
+	{$cell_section4_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c2" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tvchannel_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="tvchannel{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="tvchannel" >
+		{$tvchannel_editcontrol}	</div>
+{END tvchannel_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c2}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section4_c10}
+<td
+	{$cell_section4_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c10" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN broadcast_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="broadcast{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label6" {$item_edit_field_label6} data-pageid="{$pageid}" data-field="broadcast">
+		<label class="r-edit-label control-label" for="{$labelfor_broadcast}">
+			{BEGIN broadcast_label}{$label dbo_CallsBackofficeView broadcast }{END broadcast_label}
+		</label>
+	</div>
+{END broadcast_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c10}
+			 
+																
+
+{BEGIN cellblock_section4_c9}
+<td
+	{$cell_section4_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c9" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN broadcast_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="broadcast{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="broadcast" >
+		{$broadcast_editcontrol}	</div>
+{END broadcast_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section4_c7}
+<td
+	{$cell_section4_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c7" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN seller_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="seller{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label7" {$item_edit_field_label7} data-pageid="{$pageid}" data-field="seller">
+		<label class="r-edit-label control-label" for="{$labelfor_seller}">
+			{BEGIN seller_label}{$label dbo_CallsBackofficeView seller }{END seller_label}
+		</label>
+	</div>
+{END seller_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c7}
+			 
+																
+
+{BEGIN cellblock_section4_c8}
+<td
+	{$cell_section4_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c8" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN seller_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="seller{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="seller" >
+		{$seller_editcontrol}	</div>
+{END seller_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c8}
+								</tr>
+			</tbody></table>
+{END section4_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section8" {$item_section8} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section5_headattrs} data-toggle="collapse"   
+
+				href="#section5{$pageid}" aria-expanded="false" aria-controls="section5"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Χρόνοι			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section5_xtrclass}" role="tabpanel"  {$section_section5_attrs}
+
+				id="section5{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section8_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section8" id="form_section8_{$pageid}" data-makeup="topbar" {$form_section8} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="4"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section8_c6}
+<td
+	{$cell_section8_c6}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c6" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callStart_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="callStart{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="callStart">
+		<label class="r-edit-label control-label" for="{$labelfor_callStart}">
+			{BEGIN callStart_label}{$label dbo_CallsBackofficeView callStart }{END callStart_label}
+		</label>
+	</div>
+{END callStart_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c6}
+			 
+																
+
+{BEGIN cellblock_section8_c24}
+<td
+	{$cell_section8_c24}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c24" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callStart_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="callStart{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="callStart" >
+		{$callStart_editcontrol}	</div>
+{END callStart_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c24}
+			 
+																
+
+{BEGIN cellblock_section8_c17}
+<td
+	{$cell_section8_c17}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c17" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN talkTime_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="talkTime{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label3" {$item_edit_field_label3} data-pageid="{$pageid}" data-field="talkTime">
+		<label class="r-edit-label control-label" for="{$labelfor_talkTime}">
+			{BEGIN talkTime_label}{$label dbo_CallsBackofficeView talkTime }{END talkTime_label}
+		</label>
+	</div>
+{END talkTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c17}
+			 
+																
+
+{BEGIN cellblock_section8_c10}
+<td
+	{$cell_section8_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN talkTime_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="talkTime{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="talkTime" >
+		{$talkTime_editcontrol}	</div>
+{END talkTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c10}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section8_c8}
+<td
+	{$cell_section8_c8}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c8" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callHangup_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="callHangup{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="callHangup">
+		<label class="r-edit-label control-label" for="{$labelfor_callHangup}">
+			{BEGIN callHangup_label}{$label dbo_CallsBackofficeView callHangup }{END callHangup_label}
+		</label>
+	</div>
+{END callHangup_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c8}
+			 
+																
+
+{BEGIN cellblock_section8_c25}
+<td
+	{$cell_section8_c25}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c25" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callHangup_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="callHangup{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="callHangup" >
+		{$callHangup_editcontrol}	</div>
+{END callHangup_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c25}
+			 
+																
+
+{BEGIN cellblock_section8_c18}
+<td
+	{$cell_section8_c18}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c18" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN typingTime_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="typingTime{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label4" {$item_edit_field_label4} data-pageid="{$pageid}" data-field="typingTime">
+		<label class="r-edit-label control-label" for="{$labelfor_typingTime}">
+			{BEGIN typingTime_label}{$label dbo_CallsBackofficeView typingTime }{END typingTime_label}
+		</label>
+	</div>
+{END typingTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c18}
+			 
+																
+
+{BEGIN cellblock_section8_c11}
+<td
+	{$cell_section8_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN typingTime_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="typingTime{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="typingTime" >
+		{$typingTime_editcontrol}	</div>
+{END typingTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section8_c7}
+<td
+	{$cell_section8_c7}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callEnd_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="callEnd{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="callEnd">
+		<label class="r-edit-label control-label" for="{$labelfor_callEnd}">
+			{BEGIN callEnd_label}{$label dbo_CallsBackofficeView callEnd }{END callEnd_label}
+		</label>
+	</div>
+{END callEnd_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c7}
+			 
+																
+
+{BEGIN cellblock_section8_c26}
+<td
+	{$cell_section8_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c26" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callEnd_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="callEnd{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="callEnd" >
+		{$callEnd_editcontrol}	</div>
+{END callEnd_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c26}
+			 
+																
+
+{BEGIN cellblock_section8_c19}
+<td
+	{$cell_section8_c19}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN totalCallTime_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="totalCallTime{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label5" {$item_edit_field_label5} data-pageid="{$pageid}" data-field="totalCallTime">
+		<label class="r-edit-label control-label" for="{$labelfor_totalCallTime}">
+			{BEGIN totalCallTime_label}{$label dbo_CallsBackofficeView totalCallTime }{END totalCallTime_label}
+		</label>
+	</div>
+{END totalCallTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c19}
+			 
+																
+
+{BEGIN cellblock_section8_c12}
+<td
+	{$cell_section8_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN totalCallTime_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="totalCallTime{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="totalCallTime" >
+		{$totalCallTime_editcontrol}	</div>
+{END totalCallTime_fieldblock}
+	
+								</td>
+			{END cellblock_section8_c12}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_section8_c9}
+<td
+	{$cell_section8_c9}
+	class="r-align-center r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c9" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section8_c9}
+			 
+		
+							
+
+{BEGIN cellblock_section8_c27}
+<td
+	{$cell_section8_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c27" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section8_c27}
+			 
+		
+							
+
+{BEGIN cellblock_section8_c20}
+<td
+	{$cell_section8_c20}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c20" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section8_c20}
+			 
+		
+							
+
+{BEGIN cellblock_section8_c13}
+<td
+	{$cell_section8_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section8_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section8_c13}
+								</tr>
+			</tbody></table>
+{END section8_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section6" {$item_section6} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section6_headattrs} data-toggle="collapse"   
+
+				href="#section6{$pageid}" aria-expanded="false" aria-controls="section6"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Dialer Data			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section6_xtrclass}" role="tabpanel"  {$section_section6_attrs}
+
+				id="section6{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="topbar" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section3_c}
+<td
+	{$cell_section3_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section3_c" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dialerCampaign_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCampaign}  r-horizontal-field form-horizontal" 
+	data-fieldname="dialerCampaign" 
+	data-signal-error-for="dialerCampaign{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="dialerCampaign" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerCampaign}">
+		{BEGIN dialerCampaign_label}{$label dbo_CallsBackofficeView dialerCampaign }{END dialerCampaign_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerCampaign_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerCampaign">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerCampaign }		</div>
+	</div>
+</div>
+
+
+{END dialerCampaign_fieldblock}
+											
+{BEGIN dialerList_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerList}  r-horizontal-field form-horizontal" 
+	data-fieldname="dialerList" 
+	data-signal-error-for="dialerList{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="dialerList" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerList}">
+		{BEGIN dialerList_label}{$label dbo_CallsBackofficeView dialerList }{END dialerList_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerList_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerList">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerList }		</div>
+	</div>
+</div>
+
+
+{END dialerList_fieldblock}
+											
+{BEGIN dialerRecording_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerRecording}  r-horizontal-field form-horizontal" 
+	data-fieldname="dialerRecording" 
+	data-signal-error-for="dialerRecording{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="dialerRecording" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerRecording}">
+		{BEGIN dialerRecording_label}{$label dbo_CallsBackofficeView dialerRecording }{END dialerRecording_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerRecording_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerRecording">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerRecording }		</div>
+	</div>
+</div>
+
+
+{END dialerRecording_fieldblock}
+											
+{BEGIN dialerLeadID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerLeadID}  r-horizontal-field form-horizontal" 
+	data-fieldname="dialerLeadID" 
+	data-signal-error-for="dialerLeadID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="dialerLeadID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerLeadID}">
+		{BEGIN dialerLeadID_label}{$label dbo_CallsBackofficeView dialerLeadID }{END dialerLeadID_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerLeadID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerLeadID">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerLeadID }		</div>
+	</div>
+</div>
+
+
+{END dialerLeadID_fieldblock}
+											
+{BEGIN dialerCallEpoch_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCallEpoch}  r-horizontal-field form-horizontal" 
+	data-fieldname="dialerCallEpoch" 
+	data-signal-error-for="dialerCallEpoch{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="dialerCallEpoch" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerCallEpoch}">
+		{BEGIN dialerCallEpoch_label}{$label dbo_CallsBackofficeView dialerCallEpoch }{END dialerCallEpoch_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerCallEpoch_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerCallEpoch">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView dialerCallEpoch }		</div>
+	</div>
+</div>
+
+
+{END dialerCallEpoch_fieldblock}
+											
+{BEGIN pauseAfterCall_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pauseAfterCall}  r-horizontal-field form-horizontal" 
+	data-fieldname="pauseAfterCall" 
+	data-signal-error-for="pauseAfterCall{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="pauseAfterCall" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pauseAfterCall}">
+		{BEGIN pauseAfterCall_label}{$label dbo_CallsBackofficeView pauseAfterCall }{END pauseAfterCall_label}
+	</label>
+	<div class="r-edit-field">
+		{$pauseAfterCall_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pauseAfterCall">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView pauseAfterCall }		</div>
+	</div>
+</div>
+
+
+{END pauseAfterCall_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c}
+								</tr>
+			</tbody></table>
+{END section3_block}
+		  </div>
+		</div>
+	</div>
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c49}
+<td
+	{$cell_section2_c49}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section2_c49" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callDenialReasonID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callDenialReasonID}  r-vertical-field" 
+	data-fieldname="callDenialReasonID" 
+	data-signal-error-for="callDenialReasonID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="callDenialReasonID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callDenialReasonID}">
+		{BEGIN callDenialReasonID_label}{$label dbo_CallsBackofficeView callDenialReasonID }{END callDenialReasonID_label}
+	</label>
+	<div class="r-edit-field">
+		{$callDenialReasonID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callDenialReasonID">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callDenialReasonID }		</div>
+	</div>
+</div>
+
+
+{END callDenialReasonID_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c49}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c52}
+<td
+	{$cell_section2_c52}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section2_c52" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remarks}  r-vertical-field" 
+	data-fieldname="remarks" 
+	data-signal-error-for="remarks{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="remarks" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_remarks}">
+		{BEGIN remarks_label}{$label dbo_CallsBackofficeView remarks }{END remarks_label}
+	</label>
+	<div class="r-edit-field">
+		{$remarks_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="remarks">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView remarks }		</div>
+	</div>
+</div>
+
+
+{END remarks_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c52}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c53}
+<td
+	{$cell_section2_c53}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c53" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN redialDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_redialDate}  r-vertical-field" 
+	data-fieldname="redialDate" 
+	data-signal-error-for="redialDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="redialDate" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_redialDate}">
+		{BEGIN redialDate_label}{$label dbo_CallsBackofficeView redialDate }{END redialDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$redialDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="redialDate">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView redialDate }		</div>
+	</div>
+</div>
+
+
+{END redialDate_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c53}
+			 
+																
+
+{BEGIN cellblock_section2_c11}
+<td
+	{$cell_section2_c11}
+	class="r-align-center r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c11" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN redialIsPrivate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_redialIsPrivate}  r-vertical-field" 
+	data-fieldname="redialIsPrivate" 
+	data-signal-error-for="redialIsPrivate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="redialIsPrivate" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_redialIsPrivate}">
+		{BEGIN redialIsPrivate_label}{$label dbo_CallsBackofficeView redialIsPrivate }{END redialIsPrivate_label}
+	</label>
+	<div class="r-edit-field">
+		{$redialIsPrivate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="redialIsPrivate">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView redialIsPrivate }		</div>
+	</div>
+</div>
+
+
+{END redialIsPrivate_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c56}
+<td
+	{$cell_section2_c56}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section2_c56" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN redialComments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_redialComments}  r-vertical-field" 
+	data-fieldname="redialComments" 
+	data-signal-error-for="redialComments{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="redialComments" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_redialComments}">
+		{BEGIN redialComments_label}{$label dbo_CallsBackofficeView redialComments }{END redialComments_label}
+	</label>
+	<div class="r-edit-field">
+		{$redialComments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="redialComments">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView redialComments }		</div>
+	</div>
+</div>
+
+
+{END redialComments_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c56}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c57}
+<td
+	{$cell_section2_c57}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section2_c57" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callComments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callComments}  r-vertical-field" 
+	data-fieldname="callComments" 
+	data-signal-error-for="callComments{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-page="callsbackofficeview_edit" data-field="callComments" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callComments}">
+		{BEGIN callComments_label}{$label dbo_CallsBackofficeView callComments }{END callComments_label}
+	</label>
+	<div class="r-edit-field">
+		{$callComments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callComments">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView callComments }		</div>
+	</div>
+</div>
+
+
+{END callComments_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c57}
+								</tr>
+			</tbody></table>
+{END section2_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+		
+					<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="2"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="grid_c4" data-pageid="{$pageid}" data-page="callsbackofficeview_edit"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c4}
+								</tr>
+	 
+	 
+																</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section2" {$item_section2} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section7_headattrs} data-toggle="collapse"   
+
+				href="#section7{$pageid}" aria-expanded="false" aria-controls="section7"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Αιτήσεις Volton			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section7_xtrclass}" role="tabpanel"  {$section_section7_attrs}
+
+				id="section7{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section5_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_dbo_voltonapplications}
+<div data-itemtype="details_preview" data-itemid="details_preview3" {$item_details_preview3} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_voltonApplications }				
+							<span>
+					{$detailslButtons_dbo_voltonapplications}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_dbo_voltonapplications}
+		</div>
+	</div>
+</div>
+{END details_dbo_voltonapplications}
+	
+				{END section5_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section9" {$item_section9} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section8_headattrs} data-toggle="collapse"   
+
+				href="#section8{$pageid}" aria-expanded="false" aria-controls="section8"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Αιτήσεις Nova			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section8_xtrclass}" role="tabpanel"  {$section_section8_attrs}
+
+				id="section8{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section9_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_novaapplications}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_novaApplications }				
+							<span>
+					{$detailslButtons_novaapplications}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_novaapplications}
+		</div>
+	</div>
+</div>
+{END details_novaapplications}
+	
+				{END section9_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section3" {$item_section3} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section9_headattrs} data-toggle="collapse"   
+
+				href="#section9{$pageid}" aria-expanded="false" aria-controls="section9"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Παραγγελία Προϊόντων			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section9_xtrclass}" role="tabpanel"  {$section_section9_attrs}
+
+				id="section9{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section6_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section6" id="form_section6_{$pageid}" data-makeup="topbar" {$form_section6} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="4"
+		
+		data-v-width="5"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section6_c3}
+<td
+	{$cell_section6_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contactId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactId}  r-vertical-field" 
+	data-fieldname="contactId" 
+	data-signal-error-for="contactId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="contactId" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactId}">
+		{BEGIN contactId_label}{$label dbo_CallsBackofficeView contactId }{END contactId_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactId">
+		<div class="text-muted" >
+		{$tooltip dbo_CallsBackofficeView contactId }		</div>
+	</div>
+</div>
+
+
+{END contactId_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c3}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c}
+<td
+	{$cell_section6_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c4}
+<td
+	{$cell_section6_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c4}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c5}
+<td
+	{$cell_section6_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c5}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_section6_c25}
+<td
+	{$cell_section6_c25}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c25" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c25}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c26}
+<td
+	{$cell_section6_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c26" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c26}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c27}
+<td
+	{$cell_section6_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c27" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c27}
+			 
+		
+							
+
+{BEGIN cellblock_section6_c28}
+<td
+	{$cell_section6_c28}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c28" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section6_c28}
+								</tr>
+			</tbody></table>
+{END section6_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="section7" {$item_section7} data-pageid="{$pageid}">
+		<div class="panel-heading" role="tab" {$section_section10_headattrs} data-toggle="collapse"   
+
+				href="#section10{$pageid}" aria-expanded="false" aria-controls="section10"
+
+		>
+		  <h4 class="panel-title">
+			<a role="button" >
+				Εσωτερική Επικοινωνία			</a>
+		  </h4>
+		</div>
+		<div  class="panel-collapse collapse  {$section_section10_xtrclass}" role="tabpanel"  {$section_section10_attrs}
+
+				id="section10{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section7_block}
+
+
+
+
+ 
+	 
+												
+{BEGIN details_internalcomments}
+<div data-itemtype="details_preview" data-itemid="details_preview2" {$item_details_preview2} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_internalComments }				
+							<span>
+					{$detailslButtons_internalcomments}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_internalcomments}
+		</div>
+	</div>
+</div>
+{END details_internalcomments}
+	
+				{END section7_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Αποθήκευση			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Ακύρωση			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Επαναφορά		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="callsbackofficeview_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Προβολή		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,895 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_voltonAgentApplications volton_view_popup}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"*", 
+							{END col_grid_2}
+												{BEGIN col_grid_3}
+						"*", 
+							{END col_grid_3}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c3}
+			colSpan: {$colspan_grid_c3},
+			{END colspan_grid_c3}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{BEGIN mastertable_block}
+			{$showmasterfile}
+		{END mastertable_block},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+																		{ 
+				cellId: 'c3',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c3',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'c3',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
+																			{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantName }","bold":true}," ",{$applicantName_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c8}
+																			{BEGIN cellblock_grid_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c9}
+			colSpan: {$colspan_grid_c9},
+			{END colspan_grid_c9}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicationType }","bold":true}," ",{$applicationType_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c9}
+																		{ 
+				cellId: 'c9',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantTaxOffice }","bold":true}," ",{$applicantTaxOffice_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantGemi }","bold":true}," ",{$applicantGemi_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactName }","bold":true}," ",{$contactName_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","text":[{"text":"{$jslabel dbo_voltonAgentApplications legalName }","bold":true}," ",{$legalName_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerOwnershipType }","bold":true}," ",{$powerOwnershipType_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field40}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerCurrentSupplier }","bold":true}," ",{$powerCurrentSupplier_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonPlan }","bold":true}," ",{$voltonPlan_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonOther }","bold":true}," ",{$voltonOther_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field56}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document3 }","bold":true}," ",{$document3_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field60}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document7 }","bold":true}," ",{$document7_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field64}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document11 }","bold":true}," ",{$document11_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field68}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document15 }","bold":true}," ",{$document15_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicationStatusId }","bold":true}," ",{$applicationStatusId_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantArea }","bold":true}," ",{$applicantArea_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","text":[{"text":"{$jslabel dbo_voltonAgentApplications mailCity }","bold":true}," ",{$mailCity_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+																			{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantIdNumber }","bold":true}," ",{$applicantIdNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantEmail }","bold":true}," ",{$applicantEmail_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantPhone }","bold":true}," ",{$applicantPhone_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactPhone }","bold":true}," ",{$contactPhone_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","text":[{"text":"{$jslabel dbo_voltonAgentApplications legalIdNumber }","bold":true}," ",{$legalIdNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerPostalCode }","bold":true}," ",{$powerPostalCode_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerAgreedKw }","bold":true}," ",{$powerAgreedKw_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerCurrentDayMeter }","bold":true}," ",{$powerCurrentDayMeter_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonContractDuration }","bold":true}," ",{$voltonContractDuration_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonComments }","bold":true}," ",{$voltonComments_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonAutoPayment }","bold":true}," ",{$voltonAutoPayment_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field57}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document4 }","bold":true}," ",{$document4_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field61}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document8 }","bold":true}," ",{$document8_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field65}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document12 }","bold":true}," ",{$document12_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerArea }","bold":true}," ",{$powerArea_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+																			{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantAddress }","bold":true}," ",{$applicantAddress_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantProfession }","bold":true}," ",{$applicantProfession_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantWorkPhone }","bold":true}," ",{$applicantWorkPhone_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactMobile }","bold":true}," ",{$contactMobile_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","text":[{"text":"{$jslabel dbo_voltonAgentApplications mailAddress }","bold":true}," ",{$mailAddress_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerSupplyNumber }","bold":true}," ",{$powerSupplyNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerCurrentNightMeter }","bold":true}," ",{$powerCurrentNightMeter_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonWarrantyAmount }","bold":true}," ",{$voltonWarrantyAmount_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document1 }","bold":true}," ",{$document1_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field58}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document5 }","bold":true}," ",{$document5_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field62}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document9 }","bold":true}," ",{$document9_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field66}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document13 }","bold":true}," ",{$document13_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantCity }","bold":true}," ",{$applicantCity_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","text":[{"text":"{$jslabel dbo_voltonAgentApplications mailArea }","bold":true}," ",{$mailArea_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerCity }","bold":true}," ",{$powerCity_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+																			{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantPostalCode }","bold":true}," ",{$applicantPostalCode_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantTaxRegistrationNumber }","bold":true}," ",{$applicantTaxRegistrationNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantKod }","bold":true}," ",{$applicantKod_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicantMobile }","bold":true}," ",{$applicantMobile_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactEmail }","bold":true}," ",{$contactEmail_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","text":[{"text":"{$jslabel dbo_voltonAgentApplications mailPostalCode }","bold":true}," ",{$mailPostalCode_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerAddress }","bold":true}," ",{$powerAddress_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerMeterNumber }","bold":true}," ",{$powerMeterNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","text":[{"text":"{$jslabel dbo_voltonAgentApplications powerActivationStatus }","bold":true}," ",{$powerActivationStatus_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","text":[{"text":"{$jslabel dbo_voltonAgentApplications voltonWarrantyOnFirstBill }","bold":true}," ",{$voltonWarrantyOnFirstBill_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field55}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document2 }","bold":true}," ",{$document2_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field59}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document6 }","bold":true}," ",{$document6_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field63}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document10 }","bold":true}," ",{$document10_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field67}","text":[{"text":"{$jslabel dbo_voltonAgentApplications document14 }","bold":true}," ",{$document14_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c6}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c10}
+			colSpan: {$colspan_grid_c10},
+			{END colspan_grid_c10}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_internalcomments}
+			{$displayDetailTable_internalcomments }
+		{END details_internalcomments},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c10}
+																		{ 
+				cellId: 'c10',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c10',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'c10',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngAddress }","bold":true}," ",{$ngAddress_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngPressure }","bold":true}," ",{$ngPressure_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field69}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngMeterNumber }","bold":true}," ",{$ngMeterNumber_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field73}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngSupplyIsNew }","bold":true}," ",{$ngSupplyIsNew_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field77}","text":[{"text":"{$jslabel dbo_voltonAgentApplications dialerAgent }","bold":true}," ",{$dialerAgent_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field81}","text":[{"text":"{$jslabel dbo_voltonAgentApplications callComments }","bold":true}," ",{$callComments_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field85}","text":[{"text":"{$jslabel dbo_voltonAgentApplications orderPaymentMethod }","bold":true}," ",{$orderPaymentMethod_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field89}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ContactArea }","bold":true}," ",{$ContactArea_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field93}","text":[{"text":"{$jslabel dbo_voltonAgentApplications pauseAfterCall }","bold":true}," ",{$pauseAfterCall_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field97}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactMethod }","bold":true}," ",{$contactMethod_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field101}","text":[{"text":"{$jslabel dbo_voltonAgentApplications courierTimeFrom }","bold":true}," ",{$courierTimeFrom_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c11}
+																			{BEGIN cellblock_grid_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngPostalCode }","bold":true}," ",{$ngPostalCode_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngHourlyCapacity }","bold":true}," ",{$ngHourlyCapacity_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field70}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngMeterType }","bold":true}," ",{$ngMeterType_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field74}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngSupplyReactivation }","bold":true}," ",{$ngSupplyReactivation_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field78}","text":[{"text":"{$jslabel dbo_voltonAgentApplications dialerRecording }","bold":true}," ",{$dialerRecording_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field82}","text":[{"text":"{$jslabel dbo_voltonAgentApplications internalCommunication }","bold":true}," ",{$internalCommunication_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field86}","text":[{"text":"{$jslabel dbo_voltonAgentApplications Expr2 }","bold":true}," ",{$Expr2_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field90}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactGender }","bold":true}," ",{$contactGender_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field94}","text":[{"text":"{$jslabel dbo_voltonAgentApplications dialerPhone }","bold":true}," ",{$dialerPhone_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field98}","text":[{"text":"{$jslabel dbo_voltonAgentApplications courier }","bold":true}," ",{$courier_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field102}","text":[{"text":"{$jslabel dbo_voltonAgentApplications courierTimeTo }","bold":true}," ",{$courierTimeTo_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c12}
+																			{BEGIN cellblock_grid_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngArea }","bold":true}," ",{$ngArea_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngHkasp }","bold":true}," ",{$ngHkasp_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field71}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngCurrentMeterValue }","bold":true}," ",{$ngCurrentMeterValue_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field75}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicationLastStatusDate }","bold":true}," ",{$applicationLastStatusDate_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field79}","text":[{"text":"{$jslabel dbo_voltonAgentApplications orderShipCompany }","bold":true}," ",{$orderShipCompany_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field83}","text":[{"text":"{$jslabel dbo_voltonAgentApplications callGdprAcceptance }","bold":true}," ",{$callGdprAcceptance_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field87}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactZipCode }","bold":true}," ",{$contactZipCode_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field91}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactAge }","bold":true}," ",{$contactAge_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field95}","text":[{"text":"{$jslabel dbo_voltonAgentApplications dialerCampaign }","bold":true}," ",{$dialerCampaign_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field99}","text":[{"text":"{$jslabel dbo_voltonAgentApplications deliveryComments }","bold":true}," ",{$deliveryComments_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c13}
+																			{BEGIN cellblock_grid_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngCity }","bold":true}," ",{$ngCity_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field72}","text":[{"text":"{$jslabel dbo_voltonAgentApplications ngConnectionExists }","bold":true}," ",{$ngConnectionExists_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","text":[{"text":"{$jslabel dbo_voltonAgentApplications applicationAgentStatus }","bold":true}," ",{$applicationAgentStatus_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field76}","text":[{"text":"{$jslabel dbo_voltonAgentApplications dialerList }","bold":true}," ",{$dialerList_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field80}","text":[{"text":"{$jslabel dbo_voltonAgentApplications orderInvoiceRequired }","bold":true}," ",{$orderInvoiceRequired_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field84}","text":[{"text":"{$jslabel dbo_voltonAgentApplications callGdprRecordingAcceptance }","bold":true}," ",{$callGdprRecordingAcceptance_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field88}","text":[{"text":"{$jslabel dbo_voltonAgentApplications contactCity }","bold":true}," ",{$contactCity_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field92}","text":[{"text":"{$jslabel dbo_voltonAgentApplications crmUser }","bold":true}," ",{$crmUser_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field96}","text":[{"text":"{$jslabel dbo_voltonAgentApplications productFamilyId }","bold":true}," ",{$productFamilyId_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field100}","text":[{"text":"{$jslabel dbo_voltonAgentApplications courierDeliveryDate }","bold":true}," ",{$courierDeliveryDate_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c14}
+											],
+				{END row_grid_4}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

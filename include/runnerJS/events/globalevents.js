@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('<global>',Runner.pages.constants.PAGE_MENU,"afterInit",function(pageObj,proxy,pageid){var x=setInterval(function(){pageObj.findItem('agentStatus').text(getAgentStatus(proxy['userData']));},3000);;});

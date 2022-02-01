@@ -1,0 +1,2617 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_voltonAgentApplications edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Πίσω στη λίστα</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Προβολή</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN applicantName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantName}  r-vertical-field" 
+	data-fieldname="applicantName" 
+	data-signal-error-for="applicantName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="applicantName" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantName}">
+		{BEGIN applicantName_label}{$label dbo_voltonAgentApplications applicantName }{END applicantName_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantName">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantName }		</div>
+	</div>
+</div>
+
+
+{END applicantName_fieldblock}
+											
+{BEGIN applicantIdNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantIdNumber}  r-vertical-field" 
+	data-fieldname="applicantIdNumber" 
+	data-signal-error-for="applicantIdNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantIdNumber}">
+		{BEGIN applicantIdNumber_label}{$label dbo_voltonAgentApplications applicantIdNumber }{END applicantIdNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantIdNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantIdNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantIdNumber }		</div>
+	</div>
+</div>
+
+
+{END applicantIdNumber_fieldblock}
+											
+{BEGIN applicantAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantAddress}  r-vertical-field" 
+	data-fieldname="applicantAddress" 
+	data-signal-error-for="applicantAddress{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="applicantAddress" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantAddress}">
+		{BEGIN applicantAddress_label}{$label dbo_voltonAgentApplications applicantAddress }{END applicantAddress_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantAddress_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantAddress">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantAddress }		</div>
+	</div>
+</div>
+
+
+{END applicantAddress_fieldblock}
+											
+{BEGIN applicantPostalCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPostalCode}  r-vertical-field" 
+	data-fieldname="applicantPostalCode" 
+	data-signal-error-for="applicantPostalCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="applicantPostalCode" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantPostalCode}">
+		{BEGIN applicantPostalCode_label}{$label dbo_voltonAgentApplications applicantPostalCode }{END applicantPostalCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantPostalCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantPostalCode">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantPostalCode }		</div>
+	</div>
+</div>
+
+
+{END applicantPostalCode_fieldblock}
+											
+{BEGIN applicantTaxRegistrationNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxRegistrationNumber}  r-vertical-field" 
+	data-fieldname="applicantTaxRegistrationNumber" 
+	data-signal-error-for="applicantTaxRegistrationNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantTaxRegistrationNumber}">
+		{BEGIN applicantTaxRegistrationNumber_label}{$label dbo_voltonAgentApplications applicantTaxRegistrationNumber }{END applicantTaxRegistrationNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantTaxRegistrationNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantTaxRegistrationNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantTaxRegistrationNumber }		</div>
+	</div>
+</div>
+
+
+{END applicantTaxRegistrationNumber_fieldblock}
+											
+{BEGIN applicantTaxOffice_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxOffice}  r-vertical-field" 
+	data-fieldname="applicantTaxOffice" 
+	data-signal-error-for="applicantTaxOffice{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="applicantTaxOffice" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantTaxOffice}">
+		{BEGIN applicantTaxOffice_label}{$label dbo_voltonAgentApplications applicantTaxOffice }{END applicantTaxOffice_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantTaxOffice_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantTaxOffice">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantTaxOffice }		</div>
+	</div>
+</div>
+
+
+{END applicantTaxOffice_fieldblock}
+											
+{BEGIN applicantEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantEmail}  r-vertical-field" 
+	data-fieldname="applicantEmail" 
+	data-signal-error-for="applicantEmail{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="applicantEmail" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantEmail}">
+		{BEGIN applicantEmail_label}{$label dbo_voltonAgentApplications applicantEmail }{END applicantEmail_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantEmail_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantEmail">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantEmail }		</div>
+	</div>
+</div>
+
+
+{END applicantEmail_fieldblock}
+											
+{BEGIN applicantProfession_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantProfession}  r-vertical-field" 
+	data-fieldname="applicantProfession" 
+	data-signal-error-for="applicantProfession{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="applicantProfession" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantProfession}">
+		{BEGIN applicantProfession_label}{$label dbo_voltonAgentApplications applicantProfession }{END applicantProfession_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantProfession_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantProfession">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantProfession }		</div>
+	</div>
+</div>
+
+
+{END applicantProfession_fieldblock}
+											
+{BEGIN applicantKod_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantKod}  r-vertical-field" 
+	data-fieldname="applicantKod" 
+	data-signal-error-for="applicantKod{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="applicantKod" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantKod}">
+		{BEGIN applicantKod_label}{$label dbo_voltonAgentApplications applicantKod }{END applicantKod_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantKod_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantKod">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantKod }		</div>
+	</div>
+</div>
+
+
+{END applicantKod_fieldblock}
+											
+{BEGIN applicantGemi_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantGemi}  r-vertical-field" 
+	data-fieldname="applicantGemi" 
+	data-signal-error-for="applicantGemi{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="applicantGemi" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantGemi}">
+		{BEGIN applicantGemi_label}{$label dbo_voltonAgentApplications applicantGemi }{END applicantGemi_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantGemi_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantGemi">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantGemi }		</div>
+	</div>
+</div>
+
+
+{END applicantGemi_fieldblock}
+											
+{BEGIN contactName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactName}  r-vertical-field" 
+	data-fieldname="contactName" 
+	data-signal-error-for="contactName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="contactName" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactName}">
+		{BEGIN contactName_label}{$label dbo_voltonAgentApplications contactName }{END contactName_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactName">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactName }		</div>
+	</div>
+</div>
+
+
+{END contactName_fieldblock}
+											
+{BEGIN contactPhone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactPhone}  r-vertical-field" 
+	data-fieldname="contactPhone" 
+	data-signal-error-for="contactPhone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="contactPhone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactPhone}">
+		{BEGIN contactPhone_label}{$label dbo_voltonAgentApplications contactPhone }{END contactPhone_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactPhone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactPhone">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactPhone }		</div>
+	</div>
+</div>
+
+
+{END contactPhone_fieldblock}
+											
+{BEGIN contactMobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactMobile}  r-vertical-field" 
+	data-fieldname="contactMobile" 
+	data-signal-error-for="contactMobile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="contactMobile" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactMobile}">
+		{BEGIN contactMobile_label}{$label dbo_voltonAgentApplications contactMobile }{END contactMobile_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactMobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactMobile">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactMobile }		</div>
+	</div>
+</div>
+
+
+{END contactMobile_fieldblock}
+											
+{BEGIN contactEmail_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactEmail}  r-vertical-field" 
+	data-fieldname="contactEmail" 
+	data-signal-error-for="contactEmail{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="contactEmail" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactEmail}">
+		{BEGIN contactEmail_label}{$label dbo_voltonAgentApplications contactEmail }{END contactEmail_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactEmail_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactEmail">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactEmail }		</div>
+	</div>
+</div>
+
+
+{END contactEmail_fieldblock}
+											
+{BEGIN applicantPhone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPhone}  r-vertical-field" 
+	data-fieldname="applicantPhone" 
+	data-signal-error-for="applicantPhone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="applicantPhone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantPhone}">
+		{BEGIN applicantPhone_label}{$label dbo_voltonAgentApplications applicantPhone }{END applicantPhone_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantPhone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantPhone">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantPhone }		</div>
+	</div>
+</div>
+
+
+{END applicantPhone_fieldblock}
+											
+{BEGIN applicantMobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantMobile}  r-vertical-field" 
+	data-fieldname="applicantMobile" 
+	data-signal-error-for="applicantMobile{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="applicantMobile" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantMobile}">
+		{BEGIN applicantMobile_label}{$label dbo_voltonAgentApplications applicantMobile }{END applicantMobile_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantMobile_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantMobile">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantMobile }		</div>
+	</div>
+</div>
+
+
+{END applicantMobile_fieldblock}
+											
+{BEGIN legalName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_legalName}  r-vertical-field" 
+	data-fieldname="legalName" 
+	data-signal-error-for="legalName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="legalName" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_legalName}">
+		{BEGIN legalName_label}{$label dbo_voltonAgentApplications legalName }{END legalName_label}
+	</label>
+	<div class="r-edit-field">
+		{$legalName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="legalName">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications legalName }		</div>
+	</div>
+</div>
+
+
+{END legalName_fieldblock}
+											
+{BEGIN legalIdNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_legalIdNumber}  r-vertical-field" 
+	data-fieldname="legalIdNumber" 
+	data-signal-error-for="legalIdNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="legalIdNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_legalIdNumber}">
+		{BEGIN legalIdNumber_label}{$label dbo_voltonAgentApplications legalIdNumber }{END legalIdNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$legalIdNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="legalIdNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications legalIdNumber }		</div>
+	</div>
+</div>
+
+
+{END legalIdNumber_fieldblock}
+											
+{BEGIN mailAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailAddress}  r-vertical-field" 
+	data-fieldname="mailAddress" 
+	data-signal-error-for="mailAddress{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="mailAddress" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_mailAddress}">
+		{BEGIN mailAddress_label}{$label dbo_voltonAgentApplications mailAddress }{END mailAddress_label}
+	</label>
+	<div class="r-edit-field">
+		{$mailAddress_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mailAddress">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications mailAddress }		</div>
+	</div>
+</div>
+
+
+{END mailAddress_fieldblock}
+											
+{BEGIN mailPostalCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailPostalCode}  r-vertical-field" 
+	data-fieldname="mailPostalCode" 
+	data-signal-error-for="mailPostalCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="mailPostalCode" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_mailPostalCode}">
+		{BEGIN mailPostalCode_label}{$label dbo_voltonAgentApplications mailPostalCode }{END mailPostalCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$mailPostalCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mailPostalCode">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications mailPostalCode }		</div>
+	</div>
+</div>
+
+
+{END mailPostalCode_fieldblock}
+											
+{BEGIN powerAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerAddress}  r-vertical-field" 
+	data-fieldname="powerAddress" 
+	data-signal-error-for="powerAddress{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="powerAddress" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerAddress}">
+		{BEGIN powerAddress_label}{$label dbo_voltonAgentApplications powerAddress }{END powerAddress_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerAddress_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerAddress">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerAddress }		</div>
+	</div>
+</div>
+
+
+{END powerAddress_fieldblock}
+											
+{BEGIN powerOwnershipType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerOwnershipType}  r-vertical-field" 
+	data-fieldname="powerOwnershipType" 
+	data-signal-error-for="powerOwnershipType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="powerOwnershipType" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerOwnershipType}">
+		{BEGIN powerOwnershipType_label}{$label dbo_voltonAgentApplications powerOwnershipType }{END powerOwnershipType_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerOwnershipType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerOwnershipType">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerOwnershipType }		</div>
+	</div>
+</div>
+
+
+{END powerOwnershipType_fieldblock}
+											
+{BEGIN powerPostalCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerPostalCode}  r-vertical-field" 
+	data-fieldname="powerPostalCode" 
+	data-signal-error-for="powerPostalCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="powerPostalCode" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerPostalCode}">
+		{BEGIN powerPostalCode_label}{$label dbo_voltonAgentApplications powerPostalCode }{END powerPostalCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerPostalCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerPostalCode">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerPostalCode }		</div>
+	</div>
+</div>
+
+
+{END powerPostalCode_fieldblock}
+											
+{BEGIN powerAgreedKw_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerAgreedKw}  r-vertical-field" 
+	data-fieldname="powerAgreedKw" 
+	data-signal-error-for="powerAgreedKw{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="powerAgreedKw" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerAgreedKw}">
+		{BEGIN powerAgreedKw_label}{$label dbo_voltonAgentApplications powerAgreedKw }{END powerAgreedKw_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerAgreedKw_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerAgreedKw">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerAgreedKw }		</div>
+	</div>
+</div>
+
+
+{END powerAgreedKw_fieldblock}
+											
+{BEGIN powerSupplyNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerSupplyNumber}  r-vertical-field" 
+	data-fieldname="powerSupplyNumber" 
+	data-signal-error-for="powerSupplyNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="powerSupplyNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerSupplyNumber}">
+		{BEGIN powerSupplyNumber_label}{$label dbo_voltonAgentApplications powerSupplyNumber }{END powerSupplyNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerSupplyNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerSupplyNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerSupplyNumber }		</div>
+	</div>
+</div>
+
+
+{END powerSupplyNumber_fieldblock}
+											
+{BEGIN powerMeterNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerMeterNumber}  r-vertical-field" 
+	data-fieldname="powerMeterNumber" 
+	data-signal-error-for="powerMeterNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="powerMeterNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerMeterNumber}">
+		{BEGIN powerMeterNumber_label}{$label dbo_voltonAgentApplications powerMeterNumber }{END powerMeterNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerMeterNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerMeterNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerMeterNumber }		</div>
+	</div>
+</div>
+
+
+{END powerMeterNumber_fieldblock}
+											
+{BEGIN powerCurrentSupplier_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentSupplier}  r-vertical-field" 
+	data-fieldname="powerCurrentSupplier" 
+	data-signal-error-for="powerCurrentSupplier{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="powerCurrentSupplier" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerCurrentSupplier}">
+		{BEGIN powerCurrentSupplier_label}{$label dbo_voltonAgentApplications powerCurrentSupplier }{END powerCurrentSupplier_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerCurrentSupplier_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerCurrentSupplier">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerCurrentSupplier }		</div>
+	</div>
+</div>
+
+
+{END powerCurrentSupplier_fieldblock}
+											
+{BEGIN powerCurrentDayMeter_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentDayMeter}  r-vertical-field" 
+	data-fieldname="powerCurrentDayMeter" 
+	data-signal-error-for="powerCurrentDayMeter{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="powerCurrentDayMeter" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerCurrentDayMeter}">
+		{BEGIN powerCurrentDayMeter_label}{$label dbo_voltonAgentApplications powerCurrentDayMeter }{END powerCurrentDayMeter_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerCurrentDayMeter_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerCurrentDayMeter">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerCurrentDayMeter }		</div>
+	</div>
+</div>
+
+
+{END powerCurrentDayMeter_fieldblock}
+											
+{BEGIN powerCurrentNightMeter_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentNightMeter}  r-vertical-field" 
+	data-fieldname="powerCurrentNightMeter" 
+	data-signal-error-for="powerCurrentNightMeter{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="powerCurrentNightMeter" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerCurrentNightMeter}">
+		{BEGIN powerCurrentNightMeter_label}{$label dbo_voltonAgentApplications powerCurrentNightMeter }{END powerCurrentNightMeter_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerCurrentNightMeter_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerCurrentNightMeter">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerCurrentNightMeter }		</div>
+	</div>
+</div>
+
+
+{END powerCurrentNightMeter_fieldblock}
+											
+{BEGIN powerActivationStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerActivationStatus}  r-vertical-field" 
+	data-fieldname="powerActivationStatus" 
+	data-signal-error-for="powerActivationStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="powerActivationStatus" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerActivationStatus}">
+		{BEGIN powerActivationStatus_label}{$label dbo_voltonAgentApplications powerActivationStatus }{END powerActivationStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerActivationStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerActivationStatus">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerActivationStatus }		</div>
+	</div>
+</div>
+
+
+{END powerActivationStatus_fieldblock}
+											
+{BEGIN voltonPlan_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonPlan}  r-vertical-field" 
+	data-fieldname="voltonPlan" 
+	data-signal-error-for="voltonPlan{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="voltonPlan" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonPlan}">
+		{BEGIN voltonPlan_label}{$label dbo_voltonAgentApplications voltonPlan }{END voltonPlan_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonPlan_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonPlan">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonPlan }		</div>
+	</div>
+</div>
+
+
+{END voltonPlan_fieldblock}
+											
+{BEGIN voltonContractDuration_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonContractDuration}  r-vertical-field" 
+	data-fieldname="voltonContractDuration" 
+	data-signal-error-for="voltonContractDuration{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="voltonContractDuration" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonContractDuration}">
+		{BEGIN voltonContractDuration_label}{$label dbo_voltonAgentApplications voltonContractDuration }{END voltonContractDuration_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonContractDuration_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonContractDuration">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonContractDuration }		</div>
+	</div>
+</div>
+
+
+{END voltonContractDuration_fieldblock}
+											
+{BEGIN voltonWarrantyAmount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonWarrantyAmount}  r-vertical-field" 
+	data-fieldname="voltonWarrantyAmount" 
+	data-signal-error-for="voltonWarrantyAmount{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="voltonWarrantyAmount" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonWarrantyAmount}">
+		{BEGIN voltonWarrantyAmount_label}{$label dbo_voltonAgentApplications voltonWarrantyAmount }{END voltonWarrantyAmount_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonWarrantyAmount_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonWarrantyAmount">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonWarrantyAmount }		</div>
+	</div>
+</div>
+
+
+{END voltonWarrantyAmount_fieldblock}
+											
+{BEGIN voltonWarrantyOnFirstBill_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonWarrantyOnFirstBill}  r-vertical-field" 
+	data-fieldname="voltonWarrantyOnFirstBill" 
+	data-signal-error-for="voltonWarrantyOnFirstBill{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="voltonWarrantyOnFirstBill" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonWarrantyOnFirstBill}">
+		{BEGIN voltonWarrantyOnFirstBill_label}{$label dbo_voltonAgentApplications voltonWarrantyOnFirstBill }{END voltonWarrantyOnFirstBill_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonWarrantyOnFirstBill_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonWarrantyOnFirstBill">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonWarrantyOnFirstBill }		</div>
+	</div>
+</div>
+
+
+{END voltonWarrantyOnFirstBill_fieldblock}
+											
+{BEGIN voltonOther_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonOther}  r-vertical-field" 
+	data-fieldname="voltonOther" 
+	data-signal-error-for="voltonOther{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="voltonOther" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonOther}">
+		{BEGIN voltonOther_label}{$label dbo_voltonAgentApplications voltonOther }{END voltonOther_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonOther_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonOther">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonOther }		</div>
+	</div>
+</div>
+
+
+{END voltonOther_fieldblock}
+											
+{BEGIN voltonComments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonComments}  r-vertical-field" 
+	data-fieldname="voltonComments" 
+	data-signal-error-for="voltonComments{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="voltonComments" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonComments}">
+		{BEGIN voltonComments_label}{$label dbo_voltonAgentApplications voltonComments }{END voltonComments_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonComments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonComments">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonComments }		</div>
+	</div>
+</div>
+
+
+{END voltonComments_fieldblock}
+											
+{BEGIN voltonAutoPayment_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonAutoPayment}  r-vertical-field" 
+	data-fieldname="voltonAutoPayment" 
+	data-signal-error-for="voltonAutoPayment{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="voltonAutoPayment" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_voltonAutoPayment}">
+		{BEGIN voltonAutoPayment_label}{$label dbo_voltonAgentApplications voltonAutoPayment }{END voltonAutoPayment_label}
+	</label>
+	<div class="r-edit-field">
+		{$voltonAutoPayment_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="voltonAutoPayment">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications voltonAutoPayment }		</div>
+	</div>
+</div>
+
+
+{END voltonAutoPayment_fieldblock}
+											
+{BEGIN applicationType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationType}  r-vertical-field" 
+	data-fieldname="applicationType" 
+	data-signal-error-for="applicationType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="applicationType" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicationType}">
+		{BEGIN applicationType_label}{$label dbo_voltonAgentApplications applicationType }{END applicationType_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicationType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicationType">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicationType }		</div>
+	</div>
+</div>
+
+
+{END applicationType_fieldblock}
+											
+{BEGIN applicantWorkPhone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantWorkPhone}  r-vertical-field" 
+	data-fieldname="applicantWorkPhone" 
+	data-signal-error-for="applicantWorkPhone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="applicantWorkPhone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantWorkPhone}">
+		{BEGIN applicantWorkPhone_label}{$label dbo_voltonAgentApplications applicantWorkPhone }{END applicantWorkPhone_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantWorkPhone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantWorkPhone">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantWorkPhone }		</div>
+	</div>
+</div>
+
+
+{END applicantWorkPhone_fieldblock}
+											
+{BEGIN document1_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document1}  r-vertical-field" 
+	data-fieldname="document1" 
+	data-signal-error-for="document1{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="document1" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document1}">
+		{BEGIN document1_label}{$label dbo_voltonAgentApplications document1 }{END document1_label}
+	</label>
+	<div class="r-edit-field">
+		{$document1_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document1">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document1 }		</div>
+	</div>
+</div>
+
+
+{END document1_fieldblock}
+											
+{BEGIN document2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document2}  r-vertical-field" 
+	data-fieldname="document2" 
+	data-signal-error-for="document2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="document2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document2}">
+		{BEGIN document2_label}{$label dbo_voltonAgentApplications document2 }{END document2_label}
+	</label>
+	<div class="r-edit-field">
+		{$document2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document2">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document2 }		</div>
+	</div>
+</div>
+
+
+{END document2_fieldblock}
+											
+{BEGIN document3_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document3}  r-vertical-field" 
+	data-fieldname="document3" 
+	data-signal-error-for="document3{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="document3" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document3}">
+		{BEGIN document3_label}{$label dbo_voltonAgentApplications document3 }{END document3_label}
+	</label>
+	<div class="r-edit-field">
+		{$document3_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document3">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document3 }		</div>
+	</div>
+</div>
+
+
+{END document3_fieldblock}
+											
+{BEGIN document4_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document4}  r-vertical-field" 
+	data-fieldname="document4" 
+	data-signal-error-for="document4{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="document4" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document4}">
+		{BEGIN document4_label}{$label dbo_voltonAgentApplications document4 }{END document4_label}
+	</label>
+	<div class="r-edit-field">
+		{$document4_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document4">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document4 }		</div>
+	</div>
+</div>
+
+
+{END document4_fieldblock}
+											
+{BEGIN document5_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document5}  r-vertical-field" 
+	data-fieldname="document5" 
+	data-signal-error-for="document5{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="document5" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document5}">
+		{BEGIN document5_label}{$label dbo_voltonAgentApplications document5 }{END document5_label}
+	</label>
+	<div class="r-edit-field">
+		{$document5_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document5">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document5 }		</div>
+	</div>
+</div>
+
+
+{END document5_fieldblock}
+											
+{BEGIN document6_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document6}  r-vertical-field" 
+	data-fieldname="document6" 
+	data-signal-error-for="document6{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="document6" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document6}">
+		{BEGIN document6_label}{$label dbo_voltonAgentApplications document6 }{END document6_label}
+	</label>
+	<div class="r-edit-field">
+		{$document6_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document6">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document6 }		</div>
+	</div>
+</div>
+
+
+{END document6_fieldblock}
+											
+{BEGIN document7_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document7}  r-vertical-field" 
+	data-fieldname="document7" 
+	data-signal-error-for="document7{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="document7" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document7}">
+		{BEGIN document7_label}{$label dbo_voltonAgentApplications document7 }{END document7_label}
+	</label>
+	<div class="r-edit-field">
+		{$document7_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document7">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document7 }		</div>
+	</div>
+</div>
+
+
+{END document7_fieldblock}
+											
+{BEGIN document8_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document8}  r-vertical-field" 
+	data-fieldname="document8" 
+	data-signal-error-for="document8{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="document8" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document8}">
+		{BEGIN document8_label}{$label dbo_voltonAgentApplications document8 }{END document8_label}
+	</label>
+	<div class="r-edit-field">
+		{$document8_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document8">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document8 }		</div>
+	</div>
+</div>
+
+
+{END document8_fieldblock}
+											
+{BEGIN document9_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document9}  r-vertical-field" 
+	data-fieldname="document9" 
+	data-signal-error-for="document9{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="document9" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document9}">
+		{BEGIN document9_label}{$label dbo_voltonAgentApplications document9 }{END document9_label}
+	</label>
+	<div class="r-edit-field">
+		{$document9_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document9">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document9 }		</div>
+	</div>
+</div>
+
+
+{END document9_fieldblock}
+											
+{BEGIN document10_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document10}  r-vertical-field" 
+	data-fieldname="document10" 
+	data-signal-error-for="document10{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="document10" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document10}">
+		{BEGIN document10_label}{$label dbo_voltonAgentApplications document10 }{END document10_label}
+	</label>
+	<div class="r-edit-field">
+		{$document10_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document10">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document10 }		</div>
+	</div>
+</div>
+
+
+{END document10_fieldblock}
+											
+{BEGIN document11_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document11}  r-vertical-field" 
+	data-fieldname="document11" 
+	data-signal-error-for="document11{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="document11" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document11}">
+		{BEGIN document11_label}{$label dbo_voltonAgentApplications document11 }{END document11_label}
+	</label>
+	<div class="r-edit-field">
+		{$document11_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document11">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document11 }		</div>
+	</div>
+</div>
+
+
+{END document11_fieldblock}
+											
+{BEGIN document12_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document12}  r-vertical-field" 
+	data-fieldname="document12" 
+	data-signal-error-for="document12{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-field="document12" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document12}">
+		{BEGIN document12_label}{$label dbo_voltonAgentApplications document12 }{END document12_label}
+	</label>
+	<div class="r-edit-field">
+		{$document12_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document12">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document12 }		</div>
+	</div>
+</div>
+
+
+{END document12_fieldblock}
+											
+{BEGIN document13_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document13}  r-vertical-field" 
+	data-fieldname="document13" 
+	data-signal-error-for="document13{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field58" {$item_integrated_edit_field58} data-pageid="{$pageid}" data-field="document13" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document13}">
+		{BEGIN document13_label}{$label dbo_voltonAgentApplications document13 }{END document13_label}
+	</label>
+	<div class="r-edit-field">
+		{$document13_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document13">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document13 }		</div>
+	</div>
+</div>
+
+
+{END document13_fieldblock}
+											
+{BEGIN document14_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document14}  r-vertical-field" 
+	data-fieldname="document14" 
+	data-signal-error-for="document14{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field59" {$item_integrated_edit_field59} data-pageid="{$pageid}" data-field="document14" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document14}">
+		{BEGIN document14_label}{$label dbo_voltonAgentApplications document14 }{END document14_label}
+	</label>
+	<div class="r-edit-field">
+		{$document14_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document14">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document14 }		</div>
+	</div>
+</div>
+
+
+{END document14_fieldblock}
+											
+{BEGIN document15_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document15}  r-vertical-field" 
+	data-fieldname="document15" 
+	data-signal-error-for="document15{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="document15" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_document15}">
+		{BEGIN document15_label}{$label dbo_voltonAgentApplications document15 }{END document15_label}
+	</label>
+	<div class="r-edit-field">
+		{$document15_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="document15">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications document15 }		</div>
+	</div>
+</div>
+
+
+{END document15_fieldblock}
+											
+{BEGIN applicationStatusId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationStatusId}  r-vertical-field" 
+	data-fieldname="applicationStatusId" 
+	data-signal-error-for="applicationStatusId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="applicationStatusId" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicationStatusId}">
+		{BEGIN applicationStatusId_label}{$label dbo_voltonAgentApplications applicationStatusId }{END applicationStatusId_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicationStatusId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicationStatusId">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicationStatusId }		</div>
+	</div>
+</div>
+
+
+{END applicationStatusId_fieldblock}
+											
+{BEGIN applicantArea_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantArea}  r-vertical-field" 
+	data-fieldname="applicantArea" 
+	data-signal-error-for="applicantArea{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="applicantArea" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantArea}">
+		{BEGIN applicantArea_label}{$label dbo_voltonAgentApplications applicantArea }{END applicantArea_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantArea_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantArea">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantArea }		</div>
+	</div>
+</div>
+
+
+{END applicantArea_fieldblock}
+											
+{BEGIN applicantCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantCity}  r-vertical-field" 
+	data-fieldname="applicantCity" 
+	data-signal-error-for="applicantCity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="applicantCity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicantCity}">
+		{BEGIN applicantCity_label}{$label dbo_voltonAgentApplications applicantCity }{END applicantCity_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicantCity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicantCity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicantCity }		</div>
+	</div>
+</div>
+
+
+{END applicantCity_fieldblock}
+											
+{BEGIN mailArea_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailArea}  r-vertical-field" 
+	data-fieldname="mailArea" 
+	data-signal-error-for="mailArea{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="mailArea" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_mailArea}">
+		{BEGIN mailArea_label}{$label dbo_voltonAgentApplications mailArea }{END mailArea_label}
+	</label>
+	<div class="r-edit-field">
+		{$mailArea_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mailArea">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications mailArea }		</div>
+	</div>
+</div>
+
+
+{END mailArea_fieldblock}
+											
+{BEGIN mailCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailCity}  r-vertical-field" 
+	data-fieldname="mailCity" 
+	data-signal-error-for="mailCity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="mailCity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_mailCity}">
+		{BEGIN mailCity_label}{$label dbo_voltonAgentApplications mailCity }{END mailCity_label}
+	</label>
+	<div class="r-edit-field">
+		{$mailCity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="mailCity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications mailCity }		</div>
+	</div>
+</div>
+
+
+{END mailCity_fieldblock}
+											
+{BEGIN powerArea_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerArea}  r-vertical-field" 
+	data-fieldname="powerArea" 
+	data-signal-error-for="powerArea{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="powerArea" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerArea}">
+		{BEGIN powerArea_label}{$label dbo_voltonAgentApplications powerArea }{END powerArea_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerArea_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerArea">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerArea }		</div>
+	</div>
+</div>
+
+
+{END powerArea_fieldblock}
+											
+{BEGIN powerCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCity}  r-vertical-field" 
+	data-fieldname="powerCity" 
+	data-signal-error-for="powerCity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field61" {$item_integrated_edit_field61} data-pageid="{$pageid}" data-field="powerCity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_powerCity}">
+		{BEGIN powerCity_label}{$label dbo_voltonAgentApplications powerCity }{END powerCity_label}
+	</label>
+	<div class="r-edit-field">
+		{$powerCity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="powerCity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications powerCity }		</div>
+	</div>
+</div>
+
+
+{END powerCity_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				
+{BEGIN details_internalcomments}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_internalComments }				
+							<span>
+					{$detailslButtons_internalcomments}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_internalcomments}
+		</div>
+	</div>
+</div>
+{END details_internalcomments}
+											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ngAddress_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngAddress}  r-vertical-field" 
+	data-fieldname="ngAddress" 
+	data-signal-error-for="ngAddress{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="ngAddress" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngAddress}">
+		{BEGIN ngAddress_label}{$label dbo_voltonAgentApplications ngAddress }{END ngAddress_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngAddress_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngAddress">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngAddress }		</div>
+	</div>
+</div>
+
+
+{END ngAddress_fieldblock}
+											
+{BEGIN ngPostalCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngPostalCode}  r-vertical-field" 
+	data-fieldname="ngPostalCode" 
+	data-signal-error-for="ngPostalCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field62" {$item_integrated_edit_field62} data-pageid="{$pageid}" data-field="ngPostalCode" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngPostalCode}">
+		{BEGIN ngPostalCode_label}{$label dbo_voltonAgentApplications ngPostalCode }{END ngPostalCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngPostalCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngPostalCode">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngPostalCode }		</div>
+	</div>
+</div>
+
+
+{END ngPostalCode_fieldblock}
+											
+{BEGIN ngArea_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngArea}  r-vertical-field" 
+	data-fieldname="ngArea" 
+	data-signal-error-for="ngArea{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field63" {$item_integrated_edit_field63} data-pageid="{$pageid}" data-field="ngArea" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngArea}">
+		{BEGIN ngArea_label}{$label dbo_voltonAgentApplications ngArea }{END ngArea_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngArea_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngArea">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngArea }		</div>
+	</div>
+</div>
+
+
+{END ngArea_fieldblock}
+											
+{BEGIN ngCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngCity}  r-vertical-field" 
+	data-fieldname="ngCity" 
+	data-signal-error-for="ngCity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field64" {$item_integrated_edit_field64} data-pageid="{$pageid}" data-field="ngCity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngCity}">
+		{BEGIN ngCity_label}{$label dbo_voltonAgentApplications ngCity }{END ngCity_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngCity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngCity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngCity }		</div>
+	</div>
+</div>
+
+
+{END ngCity_fieldblock}
+											
+{BEGIN ngPressure_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngPressure}  r-vertical-field" 
+	data-fieldname="ngPressure" 
+	data-signal-error-for="ngPressure{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field65" {$item_integrated_edit_field65} data-pageid="{$pageid}" data-field="ngPressure" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngPressure}">
+		{BEGIN ngPressure_label}{$label dbo_voltonAgentApplications ngPressure }{END ngPressure_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngPressure_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngPressure">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngPressure }		</div>
+	</div>
+</div>
+
+
+{END ngPressure_fieldblock}
+											
+{BEGIN ngHourlyCapacity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngHourlyCapacity}  r-vertical-field" 
+	data-fieldname="ngHourlyCapacity" 
+	data-signal-error-for="ngHourlyCapacity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field66" {$item_integrated_edit_field66} data-pageid="{$pageid}" data-field="ngHourlyCapacity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngHourlyCapacity}">
+		{BEGIN ngHourlyCapacity_label}{$label dbo_voltonAgentApplications ngHourlyCapacity }{END ngHourlyCapacity_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngHourlyCapacity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngHourlyCapacity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngHourlyCapacity }		</div>
+	</div>
+</div>
+
+
+{END ngHourlyCapacity_fieldblock}
+											
+{BEGIN ngHkasp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngHkasp}  r-vertical-field" 
+	data-fieldname="ngHkasp" 
+	data-signal-error-for="ngHkasp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field67" {$item_integrated_edit_field67} data-pageid="{$pageid}" data-field="ngHkasp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngHkasp}">
+		{BEGIN ngHkasp_label}{$label dbo_voltonAgentApplications ngHkasp }{END ngHkasp_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngHkasp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngHkasp">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngHkasp }		</div>
+	</div>
+</div>
+
+
+{END ngHkasp_fieldblock}
+											
+{BEGIN ngMeterNumber_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngMeterNumber}  r-vertical-field" 
+	data-fieldname="ngMeterNumber" 
+	data-signal-error-for="ngMeterNumber{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field69" {$item_integrated_edit_field69} data-pageid="{$pageid}" data-field="ngMeterNumber" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngMeterNumber}">
+		{BEGIN ngMeterNumber_label}{$label dbo_voltonAgentApplications ngMeterNumber }{END ngMeterNumber_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngMeterNumber_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngMeterNumber">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngMeterNumber }		</div>
+	</div>
+</div>
+
+
+{END ngMeterNumber_fieldblock}
+											
+{BEGIN ngMeterType_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngMeterType}  r-vertical-field" 
+	data-fieldname="ngMeterType" 
+	data-signal-error-for="ngMeterType{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field70" {$item_integrated_edit_field70} data-pageid="{$pageid}" data-field="ngMeterType" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngMeterType}">
+		{BEGIN ngMeterType_label}{$label dbo_voltonAgentApplications ngMeterType }{END ngMeterType_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngMeterType_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngMeterType">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngMeterType }		</div>
+	</div>
+</div>
+
+
+{END ngMeterType_fieldblock}
+											
+{BEGIN ngCurrentMeterValue_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngCurrentMeterValue}  r-vertical-field" 
+	data-fieldname="ngCurrentMeterValue" 
+	data-signal-error-for="ngCurrentMeterValue{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field71" {$item_integrated_edit_field71} data-pageid="{$pageid}" data-field="ngCurrentMeterValue" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngCurrentMeterValue}">
+		{BEGIN ngCurrentMeterValue_label}{$label dbo_voltonAgentApplications ngCurrentMeterValue }{END ngCurrentMeterValue_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngCurrentMeterValue_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngCurrentMeterValue">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngCurrentMeterValue }		</div>
+	</div>
+</div>
+
+
+{END ngCurrentMeterValue_fieldblock}
+											
+{BEGIN ngConnectionExists_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngConnectionExists}  r-vertical-field" 
+	data-fieldname="ngConnectionExists" 
+	data-signal-error-for="ngConnectionExists{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field72" {$item_integrated_edit_field72} data-pageid="{$pageid}" data-field="ngConnectionExists" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngConnectionExists}">
+		{BEGIN ngConnectionExists_label}{$label dbo_voltonAgentApplications ngConnectionExists }{END ngConnectionExists_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngConnectionExists_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngConnectionExists">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngConnectionExists }		</div>
+	</div>
+</div>
+
+
+{END ngConnectionExists_fieldblock}
+											
+{BEGIN ngSupplyIsNew_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngSupplyIsNew}  r-vertical-field" 
+	data-fieldname="ngSupplyIsNew" 
+	data-signal-error-for="ngSupplyIsNew{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field73" {$item_integrated_edit_field73} data-pageid="{$pageid}" data-field="ngSupplyIsNew" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngSupplyIsNew}">
+		{BEGIN ngSupplyIsNew_label}{$label dbo_voltonAgentApplications ngSupplyIsNew }{END ngSupplyIsNew_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngSupplyIsNew_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngSupplyIsNew">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngSupplyIsNew }		</div>
+	</div>
+</div>
+
+
+{END ngSupplyIsNew_fieldblock}
+											
+{BEGIN ngSupplyReactivation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngSupplyReactivation}  r-vertical-field" 
+	data-fieldname="ngSupplyReactivation" 
+	data-signal-error-for="ngSupplyReactivation{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field74" {$item_integrated_edit_field74} data-pageid="{$pageid}" data-field="ngSupplyReactivation" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ngSupplyReactivation}">
+		{BEGIN ngSupplyReactivation_label}{$label dbo_voltonAgentApplications ngSupplyReactivation }{END ngSupplyReactivation_label}
+	</label>
+	<div class="r-edit-field">
+		{$ngSupplyReactivation_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ngSupplyReactivation">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ngSupplyReactivation }		</div>
+	</div>
+</div>
+
+
+{END ngSupplyReactivation_fieldblock}
+											
+{BEGIN applicationAgentStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationAgentStatus}  r-vertical-field" 
+	data-fieldname="applicationAgentStatus" 
+	data-signal-error-for="applicationAgentStatus{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field68" {$item_integrated_edit_field68} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicationAgentStatus}">
+		{BEGIN applicationAgentStatus_label}{$label dbo_voltonAgentApplications applicationAgentStatus }{END applicationAgentStatus_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicationAgentStatus_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicationAgentStatus">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicationAgentStatus }		</div>
+	</div>
+</div>
+
+
+{END applicationAgentStatus_fieldblock}
+											
+{BEGIN applicationLastStatusDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationLastStatusDate}  r-vertical-field" 
+	data-fieldname="applicationLastStatusDate" 
+	data-signal-error-for="applicationLastStatusDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field75" {$item_integrated_edit_field75} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicationLastStatusDate}">
+		{BEGIN applicationLastStatusDate_label}{$label dbo_voltonAgentApplications applicationLastStatusDate }{END applicationLastStatusDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicationLastStatusDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicationLastStatusDate">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications applicationLastStatusDate }		</div>
+	</div>
+</div>
+
+
+{END applicationLastStatusDate_fieldblock}
+											
+{BEGIN dialerList_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerList}  r-vertical-field" 
+	data-fieldname="dialerList" 
+	data-signal-error-for="dialerList{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field77" {$item_integrated_edit_field77} data-pageid="{$pageid}" data-field="dialerList" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerList}">
+		{BEGIN dialerList_label}{$label dbo_voltonAgentApplications dialerList }{END dialerList_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerList_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerList">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications dialerList }		</div>
+	</div>
+</div>
+
+
+{END dialerList_fieldblock}
+											
+{BEGIN dialerAgent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerAgent}  r-vertical-field" 
+	data-fieldname="dialerAgent" 
+	data-signal-error-for="dialerAgent{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field78" {$item_integrated_edit_field78} data-pageid="{$pageid}" data-field="dialerAgent" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerAgent}">
+		{BEGIN dialerAgent_label}{$label dbo_voltonAgentApplications dialerAgent }{END dialerAgent_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerAgent_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerAgent">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications dialerAgent }		</div>
+	</div>
+</div>
+
+
+{END dialerAgent_fieldblock}
+											
+{BEGIN dialerRecording_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerRecording}  r-vertical-field" 
+	data-fieldname="dialerRecording" 
+	data-signal-error-for="dialerRecording{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field79" {$item_integrated_edit_field79} data-pageid="{$pageid}" data-field="dialerRecording" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerRecording}">
+		{BEGIN dialerRecording_label}{$label dbo_voltonAgentApplications dialerRecording }{END dialerRecording_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerRecording_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerRecording">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications dialerRecording }		</div>
+	</div>
+</div>
+
+
+{END dialerRecording_fieldblock}
+											
+{BEGIN orderShipCompany_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderShipCompany}  r-vertical-field" 
+	data-fieldname="orderShipCompany" 
+	data-signal-error-for="orderShipCompany{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field80" {$item_integrated_edit_field80} data-pageid="{$pageid}" data-field="orderShipCompany" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_orderShipCompany}">
+		{BEGIN orderShipCompany_label}{$label dbo_voltonAgentApplications orderShipCompany }{END orderShipCompany_label}
+	</label>
+	<div class="r-edit-field">
+		{$orderShipCompany_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="orderShipCompany">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications orderShipCompany }		</div>
+	</div>
+</div>
+
+
+{END orderShipCompany_fieldblock}
+											
+{BEGIN orderInvoiceRequired_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderInvoiceRequired}  r-vertical-field" 
+	data-fieldname="orderInvoiceRequired" 
+	data-signal-error-for="orderInvoiceRequired{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field81" {$item_integrated_edit_field81} data-pageid="{$pageid}" data-field="orderInvoiceRequired" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_orderInvoiceRequired}">
+		{BEGIN orderInvoiceRequired_label}{$label dbo_voltonAgentApplications orderInvoiceRequired }{END orderInvoiceRequired_label}
+	</label>
+	<div class="r-edit-field">
+		{$orderInvoiceRequired_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="orderInvoiceRequired">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications orderInvoiceRequired }		</div>
+	</div>
+</div>
+
+
+{END orderInvoiceRequired_fieldblock}
+											
+{BEGIN callComments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callComments}  r-vertical-field" 
+	data-fieldname="callComments" 
+	data-signal-error-for="callComments{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field82" {$item_integrated_edit_field82} data-pageid="{$pageid}" data-field="callComments" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callComments}">
+		{BEGIN callComments_label}{$label dbo_voltonAgentApplications callComments }{END callComments_label}
+	</label>
+	<div class="r-edit-field">
+		{$callComments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callComments">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications callComments }		</div>
+	</div>
+</div>
+
+
+{END callComments_fieldblock}
+											
+{BEGIN internalCommunication_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_internalCommunication}  r-vertical-field" 
+	data-fieldname="internalCommunication" 
+	data-signal-error-for="internalCommunication{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field83" {$item_integrated_edit_field83} data-pageid="{$pageid}" data-field="internalCommunication" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_internalCommunication}">
+		{BEGIN internalCommunication_label}{$label dbo_voltonAgentApplications internalCommunication }{END internalCommunication_label}
+	</label>
+	<div class="r-edit-field">
+		{$internalCommunication_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="internalCommunication">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications internalCommunication }		</div>
+	</div>
+</div>
+
+
+{END internalCommunication_fieldblock}
+											
+{BEGIN callGdprAcceptance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callGdprAcceptance}  r-vertical-field" 
+	data-fieldname="callGdprAcceptance" 
+	data-signal-error-for="callGdprAcceptance{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field84" {$item_integrated_edit_field84} data-pageid="{$pageid}" data-field="callGdprAcceptance" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callGdprAcceptance}">
+		{BEGIN callGdprAcceptance_label}{$label dbo_voltonAgentApplications callGdprAcceptance }{END callGdprAcceptance_label}
+	</label>
+	<div class="r-edit-field">
+		{$callGdprAcceptance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callGdprAcceptance">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications callGdprAcceptance }		</div>
+	</div>
+</div>
+
+
+{END callGdprAcceptance_fieldblock}
+											
+{BEGIN callGdprRecordingAcceptance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callGdprRecordingAcceptance}  r-vertical-field" 
+	data-fieldname="callGdprRecordingAcceptance" 
+	data-signal-error-for="callGdprRecordingAcceptance{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field85" {$item_integrated_edit_field85} data-pageid="{$pageid}" data-field="callGdprRecordingAcceptance" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_callGdprRecordingAcceptance}">
+		{BEGIN callGdprRecordingAcceptance_label}{$label dbo_voltonAgentApplications callGdprRecordingAcceptance }{END callGdprRecordingAcceptance_label}
+	</label>
+	<div class="r-edit-field">
+		{$callGdprRecordingAcceptance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="callGdprRecordingAcceptance">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications callGdprRecordingAcceptance }		</div>
+	</div>
+</div>
+
+
+{END callGdprRecordingAcceptance_fieldblock}
+											
+{BEGIN orderPaymentMethod_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderPaymentMethod}  r-vertical-field" 
+	data-fieldname="orderPaymentMethod" 
+	data-signal-error-for="orderPaymentMethod{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field86" {$item_integrated_edit_field86} data-pageid="{$pageid}" data-field="orderPaymentMethod" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_orderPaymentMethod}">
+		{BEGIN orderPaymentMethod_label}{$label dbo_voltonAgentApplications orderPaymentMethod }{END orderPaymentMethod_label}
+	</label>
+	<div class="r-edit-field">
+		{$orderPaymentMethod_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="orderPaymentMethod">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications orderPaymentMethod }		</div>
+	</div>
+</div>
+
+
+{END orderPaymentMethod_fieldblock}
+											
+{BEGIN Expr2_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Expr2}  r-vertical-field" 
+	data-fieldname="Expr2" 
+	data-signal-error-for="Expr2{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field87" {$item_integrated_edit_field87} data-pageid="{$pageid}" data-field="Expr2" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Expr2}">
+		{BEGIN Expr2_label}{$label dbo_voltonAgentApplications Expr2 }{END Expr2_label}
+	</label>
+	<div class="r-edit-field">
+		{$Expr2_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Expr2">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications Expr2 }		</div>
+	</div>
+</div>
+
+
+{END Expr2_fieldblock}
+											
+{BEGIN contactZipCode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactZipCode}  r-vertical-field" 
+	data-fieldname="contactZipCode" 
+	data-signal-error-for="contactZipCode{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field88" {$item_integrated_edit_field88} data-pageid="{$pageid}" data-field="contactZipCode" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactZipCode}">
+		{BEGIN contactZipCode_label}{$label dbo_voltonAgentApplications contactZipCode }{END contactZipCode_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactZipCode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactZipCode">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactZipCode }		</div>
+	</div>
+</div>
+
+
+{END contactZipCode_fieldblock}
+											
+{BEGIN contactCity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactCity}  r-vertical-field" 
+	data-fieldname="contactCity" 
+	data-signal-error-for="contactCity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field89" {$item_integrated_edit_field89} data-pageid="{$pageid}" data-field="contactCity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactCity}">
+		{BEGIN contactCity_label}{$label dbo_voltonAgentApplications contactCity }{END contactCity_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactCity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactCity">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactCity }		</div>
+	</div>
+</div>
+
+
+{END contactCity_fieldblock}
+											
+{BEGIN ContactArea_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ContactArea}  r-vertical-field" 
+	data-fieldname="ContactArea" 
+	data-signal-error-for="ContactArea{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field90" {$item_integrated_edit_field90} data-pageid="{$pageid}" data-field="ContactArea" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ContactArea}">
+		{BEGIN ContactArea_label}{$label dbo_voltonAgentApplications ContactArea }{END ContactArea_label}
+	</label>
+	<div class="r-edit-field">
+		{$ContactArea_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ContactArea">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications ContactArea }		</div>
+	</div>
+</div>
+
+
+{END ContactArea_fieldblock}
+											
+{BEGIN contactGender_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactGender}  r-vertical-field" 
+	data-fieldname="contactGender" 
+	data-signal-error-for="contactGender{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field91" {$item_integrated_edit_field91} data-pageid="{$pageid}" data-field="contactGender" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactGender}">
+		{BEGIN contactGender_label}{$label dbo_voltonAgentApplications contactGender }{END contactGender_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactGender_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactGender">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactGender }		</div>
+	</div>
+</div>
+
+
+{END contactGender_fieldblock}
+											
+{BEGIN contactAge_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactAge}  r-vertical-field" 
+	data-fieldname="contactAge" 
+	data-signal-error-for="contactAge{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field92" {$item_integrated_edit_field92} data-pageid="{$pageid}" data-field="contactAge" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactAge}">
+		{BEGIN contactAge_label}{$label dbo_voltonAgentApplications contactAge }{END contactAge_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactAge_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactAge">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactAge }		</div>
+	</div>
+</div>
+
+
+{END contactAge_fieldblock}
+											
+{BEGIN crmUser_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_crmUser}  r-vertical-field" 
+	data-fieldname="crmUser" 
+	data-signal-error-for="crmUser{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field93" {$item_integrated_edit_field93} data-pageid="{$pageid}" data-field="crmUser" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_crmUser}">
+		{BEGIN crmUser_label}{$label dbo_voltonAgentApplications crmUser }{END crmUser_label}
+	</label>
+	<div class="r-edit-field">
+		{$crmUser_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="crmUser">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications crmUser }		</div>
+	</div>
+</div>
+
+
+{END crmUser_fieldblock}
+											
+{BEGIN pauseAfterCall_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pauseAfterCall}  r-vertical-field" 
+	data-fieldname="pauseAfterCall" 
+	data-signal-error-for="pauseAfterCall{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field94" {$item_integrated_edit_field94} data-pageid="{$pageid}" data-field="pauseAfterCall" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pauseAfterCall}">
+		{BEGIN pauseAfterCall_label}{$label dbo_voltonAgentApplications pauseAfterCall }{END pauseAfterCall_label}
+	</label>
+	<div class="r-edit-field">
+		{$pauseAfterCall_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pauseAfterCall">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications pauseAfterCall }		</div>
+	</div>
+</div>
+
+
+{END pauseAfterCall_fieldblock}
+											
+{BEGIN dialerPhone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerPhone}  r-vertical-field" 
+	data-fieldname="dialerPhone" 
+	data-signal-error-for="dialerPhone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field95" {$item_integrated_edit_field95} data-pageid="{$pageid}" data-field="dialerPhone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerPhone}">
+		{BEGIN dialerPhone_label}{$label dbo_voltonAgentApplications dialerPhone }{END dialerPhone_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerPhone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerPhone">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications dialerPhone }		</div>
+	</div>
+</div>
+
+
+{END dialerPhone_fieldblock}
+											
+{BEGIN dialerCampaign_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCampaign}  r-vertical-field" 
+	data-fieldname="dialerCampaign" 
+	data-signal-error-for="dialerCampaign{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field96" {$item_integrated_edit_field96} data-pageid="{$pageid}" data-field="dialerCampaign" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dialerCampaign}">
+		{BEGIN dialerCampaign_label}{$label dbo_voltonAgentApplications dialerCampaign }{END dialerCampaign_label}
+	</label>
+	<div class="r-edit-field">
+		{$dialerCampaign_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dialerCampaign">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications dialerCampaign }		</div>
+	</div>
+</div>
+
+
+{END dialerCampaign_fieldblock}
+											
+{BEGIN productFamilyId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_productFamilyId}  r-vertical-field" 
+	data-fieldname="productFamilyId" 
+	data-signal-error-for="productFamilyId{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field97" {$item_integrated_edit_field97} data-pageid="{$pageid}" data-field="productFamilyId" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_productFamilyId}">
+		{BEGIN productFamilyId_label}{$label dbo_voltonAgentApplications productFamilyId }{END productFamilyId_label}
+	</label>
+	<div class="r-edit-field">
+		{$productFamilyId_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="productFamilyId">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications productFamilyId }		</div>
+	</div>
+</div>
+
+
+{END productFamilyId_fieldblock}
+											
+{BEGIN contactMethod_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactMethod}  r-vertical-field" 
+	data-fieldname="contactMethod" 
+	data-signal-error-for="contactMethod{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field98" {$item_integrated_edit_field98} data-pageid="{$pageid}" data-field="contactMethod" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contactMethod}">
+		{BEGIN contactMethod_label}{$label dbo_voltonAgentApplications contactMethod }{END contactMethod_label}
+	</label>
+	<div class="r-edit-field">
+		{$contactMethod_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contactMethod">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications contactMethod }		</div>
+	</div>
+</div>
+
+
+{END contactMethod_fieldblock}
+											
+{BEGIN courier_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courier}  r-vertical-field" 
+	data-fieldname="courier" 
+	data-signal-error-for="courier{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field99" {$item_integrated_edit_field99} data-pageid="{$pageid}" data-field="courier" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_courier}">
+		{BEGIN courier_label}{$label dbo_voltonAgentApplications courier }{END courier_label}
+	</label>
+	<div class="r-edit-field">
+		{$courier_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="courier">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications courier }		</div>
+	</div>
+</div>
+
+
+{END courier_fieldblock}
+											
+{BEGIN deliveryComments_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_deliveryComments}  r-vertical-field" 
+	data-fieldname="deliveryComments" 
+	data-signal-error-for="deliveryComments{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field100" {$item_integrated_edit_field100} data-pageid="{$pageid}" data-field="deliveryComments" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_deliveryComments}">
+		{BEGIN deliveryComments_label}{$label dbo_voltonAgentApplications deliveryComments }{END deliveryComments_label}
+	</label>
+	<div class="r-edit-field">
+		{$deliveryComments_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="deliveryComments">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications deliveryComments }		</div>
+	</div>
+</div>
+
+
+{END deliveryComments_fieldblock}
+											
+{BEGIN courierDeliveryDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierDeliveryDate}  r-vertical-field" 
+	data-fieldname="courierDeliveryDate" 
+	data-signal-error-for="courierDeliveryDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field101" {$item_integrated_edit_field101} data-pageid="{$pageid}" data-field="courierDeliveryDate" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_courierDeliveryDate}">
+		{BEGIN courierDeliveryDate_label}{$label dbo_voltonAgentApplications courierDeliveryDate }{END courierDeliveryDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$courierDeliveryDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="courierDeliveryDate">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications courierDeliveryDate }		</div>
+	</div>
+</div>
+
+
+{END courierDeliveryDate_fieldblock}
+											
+{BEGIN courierTimeFrom_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierTimeFrom}  r-vertical-field" 
+	data-fieldname="courierTimeFrom" 
+	data-signal-error-for="courierTimeFrom{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field102" {$item_integrated_edit_field102} data-pageid="{$pageid}" data-field="courierTimeFrom" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_courierTimeFrom}">
+		{BEGIN courierTimeFrom_label}{$label dbo_voltonAgentApplications courierTimeFrom }{END courierTimeFrom_label}
+	</label>
+	<div class="r-edit-field">
+		{$courierTimeFrom_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="courierTimeFrom">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications courierTimeFrom }		</div>
+	</div>
+</div>
+
+
+{END courierTimeFrom_fieldblock}
+											
+{BEGIN courierTimeTo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierTimeTo}  r-vertical-field" 
+	data-fieldname="courierTimeTo" 
+	data-signal-error-for="courierTimeTo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field103" {$item_integrated_edit_field103} data-pageid="{$pageid}" data-field="courierTimeTo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_courierTimeTo}">
+		{BEGIN courierTimeTo_label}{$label dbo_voltonAgentApplications courierTimeTo }{END courierTimeTo_label}
+	</label>
+	<div class="r-edit-field">
+		{$courierTimeTo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="courierTimeTo">
+		<div class="text-muted" >
+		{$tooltip dbo_voltonAgentApplications courierTimeTo }		</div>
+	</div>
+</div>
+
+
+{END courierTimeTo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Αποθήκευση			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Ακύρωση			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Επαναφορά		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="voltonagentapplications_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Προβολή		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

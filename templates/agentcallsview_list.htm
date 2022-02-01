@@ -1,0 +1,4770 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Προβολή όλων">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="agentcallsview_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Εύρεση		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Εμφάνιση πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Απόκρυψη πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c3" data-pageid="{$pageid}"	{$cell_top_c3}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-left" {$blockattr_left} {$form_left} >
+										{BEGIN left_block}
+<table class="r-fluid r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="left_c1" data-pageid="{$pageid}">
+ 
+<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Αναζήτηση			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Εμφάνιση επιλογών</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>Όλες οι συνθήκες</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>Όποια από τις συνθήκες</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>Απόκρυψη</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id}" {$filterRow_attrs_id}>
+			<label>{$label agentCallsView id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id}</span>
+						</div>
+		{END searchCtrlBlock_id}
+																{BEGIN searchCtrlBlock_pauseAfterCall}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pauseAfterCall}" {$filterRow_attrs_pauseAfterCall}>
+			<label>{$label agentCallsView pauseAfterCall }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pauseAfterCall}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pauseAfterCall}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pauseAfterCall}</span>
+						</div>
+		{END searchCtrlBlock_pauseAfterCall}
+																{BEGIN searchCtrlBlock_crmUser}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_crmUser}" {$filterRow_attrs_crmUser}>
+			<label>{$label agentCallsView crmUser }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_crmUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_crmUser}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_crmUser}</span>
+						</div>
+		{END searchCtrlBlock_crmUser}
+																{BEGIN searchCtrlBlock_contactAge}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactAge}" {$filterRow_attrs_contactAge}>
+			<label>{$label agentCallsView contactAge }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactAge}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactAge}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactAge}</span>
+						</div>
+		{END searchCtrlBlock_contactAge}
+																{BEGIN searchCtrlBlock_contactGender}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactGender}" {$filterRow_attrs_contactGender}>
+			<label>{$label agentCallsView contactGender }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactGender}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactGender}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactGender}</span>
+						</div>
+		{END searchCtrlBlock_contactGender}
+																{BEGIN searchCtrlBlock_ContactArea}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ContactArea}" {$filterRow_attrs_ContactArea}>
+			<label>{$label agentCallsView ContactArea }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ContactArea}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ContactArea}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ContactArea}</span>
+						</div>
+		{END searchCtrlBlock_ContactArea}
+																{BEGIN searchCtrlBlock_contactCity}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactCity}" {$filterRow_attrs_contactCity}>
+			<label>{$label agentCallsView contactCity }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactCity}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactCity}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactCity}</span>
+						</div>
+		{END searchCtrlBlock_contactCity}
+																{BEGIN searchCtrlBlock_contactZipCode}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactZipCode}" {$filterRow_attrs_contactZipCode}>
+			<label>{$label agentCallsView contactZipCode }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactZipCode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactZipCode}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactZipCode}</span>
+						</div>
+		{END searchCtrlBlock_contactZipCode}
+																{BEGIN searchCtrlBlock_contactName}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactName}" {$filterRow_attrs_contactName}>
+			<label>{$label agentCallsView contactName }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactName}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactName}</span>
+						</div>
+		{END searchCtrlBlock_contactName}
+																{BEGIN searchCtrlBlock_orderPaymentMethod}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_orderPaymentMethod}" {$filterRow_attrs_orderPaymentMethod}>
+			<label>{$label agentCallsView orderPaymentMethod }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_orderPaymentMethod}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_orderPaymentMethod}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_orderPaymentMethod}</span>
+						</div>
+		{END searchCtrlBlock_orderPaymentMethod}
+																{BEGIN searchCtrlBlock_callGdprRecordingAcceptance}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callGdprRecordingAcceptance}" {$filterRow_attrs_callGdprRecordingAcceptance}>
+			<label>{$label agentCallsView callGdprRecordingAcceptance }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callGdprRecordingAcceptance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callGdprRecordingAcceptance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callGdprRecordingAcceptance}</span>
+						</div>
+		{END searchCtrlBlock_callGdprRecordingAcceptance}
+																{BEGIN searchCtrlBlock_callGdprAcceptance}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callGdprAcceptance}" {$filterRow_attrs_callGdprAcceptance}>
+			<label>{$label agentCallsView callGdprAcceptance }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callGdprAcceptance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callGdprAcceptance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callGdprAcceptance}</span>
+						</div>
+		{END searchCtrlBlock_callGdprAcceptance}
+																{BEGIN searchCtrlBlock_internalCommunication}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_internalCommunication}" {$filterRow_attrs_internalCommunication}>
+			<label>{$label agentCallsView internalCommunication }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_internalCommunication}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_internalCommunication}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_internalCommunication}</span>
+						</div>
+		{END searchCtrlBlock_internalCommunication}
+																{BEGIN searchCtrlBlock_callComments}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callComments}" {$filterRow_attrs_callComments}>
+			<label>{$label agentCallsView callComments }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callComments}</span>
+						</div>
+		{END searchCtrlBlock_callComments}
+																{BEGIN searchCtrlBlock_orderInvoiceRequired}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_orderInvoiceRequired}" {$filterRow_attrs_orderInvoiceRequired}>
+			<label>{$label agentCallsView orderInvoiceRequired }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_orderInvoiceRequired}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_orderInvoiceRequired}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_orderInvoiceRequired}</span>
+						</div>
+		{END searchCtrlBlock_orderInvoiceRequired}
+																{BEGIN searchCtrlBlock_orderShipCompany}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_orderShipCompany}" {$filterRow_attrs_orderShipCompany}>
+			<label>{$label agentCallsView orderShipCompany }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_orderShipCompany}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_orderShipCompany}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_orderShipCompany}</span>
+						</div>
+		{END searchCtrlBlock_orderShipCompany}
+																{BEGIN searchCtrlBlock_productFamilyId}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_productFamilyId}" {$filterRow_attrs_productFamilyId}>
+			<label>{$label agentCallsView productFamilyId }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_productFamilyId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_productFamilyId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_productFamilyId}</span>
+						</div>
+		{END searchCtrlBlock_productFamilyId}
+																{BEGIN searchCtrlBlock_dialerRecording}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerRecording}" {$filterRow_attrs_dialerRecording}>
+			<label>{$label agentCallsView dialerRecording }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerRecording}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerRecording}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerRecording}</span>
+						</div>
+		{END searchCtrlBlock_dialerRecording}
+																{BEGIN searchCtrlBlock_dialerAgent}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerAgent}" {$filterRow_attrs_dialerAgent}>
+			<label>{$label agentCallsView dialerAgent }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerAgent}</span>
+						</div>
+		{END searchCtrlBlock_dialerAgent}
+																{BEGIN searchCtrlBlock_dialerLeadID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerLeadID}" {$filterRow_attrs_dialerLeadID}>
+			<label>{$label agentCallsView dialerLeadID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerLeadID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerLeadID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerLeadID}</span>
+						</div>
+		{END searchCtrlBlock_dialerLeadID}
+																{BEGIN searchCtrlBlock_dialerList}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerList}" {$filterRow_attrs_dialerList}>
+			<label>{$label agentCallsView dialerList }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerList}</span>
+						</div>
+		{END searchCtrlBlock_dialerList}
+																{BEGIN searchCtrlBlock_dialerCampaign}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerCampaign}" {$filterRow_attrs_dialerCampaign}>
+			<label>{$label agentCallsView dialerCampaign }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerCampaign}</span>
+						</div>
+		{END searchCtrlBlock_dialerCampaign}
+																{BEGIN searchCtrlBlock_dialerCallEpoch}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerCallEpoch}" {$filterRow_attrs_dialerCallEpoch}>
+			<label>{$label agentCallsView dialerCallEpoch }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerCallEpoch}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerCallEpoch}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerCallEpoch}</span>
+						</div>
+		{END searchCtrlBlock_dialerCallEpoch}
+																{BEGIN searchCtrlBlock_dialerPhone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerPhone}" {$filterRow_attrs_dialerPhone}>
+			<label>{$label agentCallsView dialerPhone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerPhone}</span>
+						</div>
+		{END searchCtrlBlock_dialerPhone}
+																{BEGIN searchCtrlBlock_courierTimeTo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_courierTimeTo}" {$filterRow_attrs_courierTimeTo}>
+			<label>{$label agentCallsView courierTimeTo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_courierTimeTo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_courierTimeTo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_courierTimeTo}</span>
+						</div>
+		{END searchCtrlBlock_courierTimeTo}
+																{BEGIN searchCtrlBlock_courierTimeFrom}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_courierTimeFrom}" {$filterRow_attrs_courierTimeFrom}>
+			<label>{$label agentCallsView courierTimeFrom }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_courierTimeFrom}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_courierTimeFrom}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_courierTimeFrom}</span>
+						</div>
+		{END searchCtrlBlock_courierTimeFrom}
+																{BEGIN searchCtrlBlock_courierDeliveryDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_courierDeliveryDate}" {$filterRow_attrs_courierDeliveryDate}>
+			<label>{$label agentCallsView courierDeliveryDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_courierDeliveryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_courierDeliveryDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_courierDeliveryDate}</span>
+						</div>
+		{END searchCtrlBlock_courierDeliveryDate}
+																{BEGIN searchCtrlBlock_deliveryComments}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_deliveryComments}" {$filterRow_attrs_deliveryComments}>
+			<label>{$label agentCallsView deliveryComments }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_deliveryComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_deliveryComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_deliveryComments}</span>
+						</div>
+		{END searchCtrlBlock_deliveryComments}
+																{BEGIN searchCtrlBlock_courier}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_courier}" {$filterRow_attrs_courier}>
+			<label>{$label agentCallsView courier }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_courier}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_courier}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_courier}</span>
+						</div>
+		{END searchCtrlBlock_courier}
+																{BEGIN searchCtrlBlock_contactMethod}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactMethod}" {$filterRow_attrs_contactMethod}>
+			<label>{$label agentCallsView contactMethod }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactMethod}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactMethod}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactMethod}</span>
+						</div>
+		{END searchCtrlBlock_contactMethod}
+																{BEGIN searchCtrlBlock_redialDone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_redialDone}" {$filterRow_attrs_redialDone}>
+			<label>{$label agentCallsView redialDone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_redialDone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_redialDone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_redialDone}</span>
+						</div>
+		{END searchCtrlBlock_redialDone}
+																{BEGIN searchCtrlBlock_redialIsPrivate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_redialIsPrivate}" {$filterRow_attrs_redialIsPrivate}>
+			<label>{$label agentCallsView redialIsPrivate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_redialIsPrivate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_redialIsPrivate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_redialIsPrivate}</span>
+						</div>
+		{END searchCtrlBlock_redialIsPrivate}
+																{BEGIN searchCtrlBlock_redialComments}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_redialComments}" {$filterRow_attrs_redialComments}>
+			<label>{$label agentCallsView redialComments }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_redialComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_redialComments}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_redialComments}</span>
+						</div>
+		{END searchCtrlBlock_redialComments}
+																{BEGIN searchCtrlBlock_redialDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_redialDate}" {$filterRow_attrs_redialDate}>
+			<label>{$label agentCallsView redialDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_redialDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_redialDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_redialDate}</span>
+						</div>
+		{END searchCtrlBlock_redialDate}
+																{BEGIN searchCtrlBlock_remarks}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_remarks}" {$filterRow_attrs_remarks}>
+			<label>{$label agentCallsView remarks }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_remarks}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_remarks}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_remarks}</span>
+						</div>
+		{END searchCtrlBlock_remarks}
+																{BEGIN searchCtrlBlock_callSubClassificationID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callSubClassificationID}" {$filterRow_attrs_callSubClassificationID}>
+			<label>{$label agentCallsView callSubClassificationID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callSubClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callSubClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callSubClassificationID}</span>
+						</div>
+		{END searchCtrlBlock_callSubClassificationID}
+																{BEGIN searchCtrlBlock_callClassificationID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callClassificationID}" {$filterRow_attrs_callClassificationID}>
+			<label>{$label agentCallsView callClassificationID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callClassificationID}</span>
+						</div>
+		{END searchCtrlBlock_callClassificationID}
+																{BEGIN searchCtrlBlock_callDenialReasonID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callDenialReasonID}" {$filterRow_attrs_callDenialReasonID}>
+			<label>{$label agentCallsView callDenialReasonID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callDenialReasonID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callDenialReasonID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callDenialReasonID}</span>
+						</div>
+		{END searchCtrlBlock_callDenialReasonID}
+																{BEGIN searchCtrlBlock_callStatusId}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callStatusId}" {$filterRow_attrs_callStatusId}>
+			<label>{$label agentCallsView callStatusId }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callStatusId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callStatusId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callStatusId}</span>
+						</div>
+		{END searchCtrlBlock_callStatusId}
+																{BEGIN searchCtrlBlock_seller}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_seller}" {$filterRow_attrs_seller}>
+			<label>{$label agentCallsView seller }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_seller}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_seller}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_seller}</span>
+						</div>
+		{END searchCtrlBlock_seller}
+																{BEGIN searchCtrlBlock_broadcast}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_broadcast}" {$filterRow_attrs_broadcast}>
+			<label>{$label agentCallsView broadcast }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_broadcast}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_broadcast}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_broadcast}</span>
+						</div>
+		{END searchCtrlBlock_broadcast}
+																{BEGIN searchCtrlBlock_tvchannel}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tvchannel}" {$filterRow_attrs_tvchannel}>
+			<label>{$label agentCallsView tvchannel }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tvchannel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tvchannel}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tvchannel}</span>
+						</div>
+		{END searchCtrlBlock_tvchannel}
+																{BEGIN searchCtrlBlock_totalCallTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_totalCallTime}" {$filterRow_attrs_totalCallTime}>
+			<label>{$label agentCallsView totalCallTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_totalCallTime}</span>
+						</div>
+		{END searchCtrlBlock_totalCallTime}
+																{BEGIN searchCtrlBlock_typingTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_typingTime}" {$filterRow_attrs_typingTime}>
+			<label>{$label agentCallsView typingTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_typingTime}</span>
+						</div>
+		{END searchCtrlBlock_typingTime}
+																{BEGIN searchCtrlBlock_talkTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_talkTime}" {$filterRow_attrs_talkTime}>
+			<label>{$label agentCallsView talkTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_talkTime}</span>
+						</div>
+		{END searchCtrlBlock_talkTime}
+																{BEGIN searchCtrlBlock_callEnd}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callEnd}" {$filterRow_attrs_callEnd}>
+			<label>{$label agentCallsView callEnd }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callEnd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callEnd}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callEnd}</span>
+						</div>
+		{END searchCtrlBlock_callEnd}
+																{BEGIN searchCtrlBlock_callHangup}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callHangup}" {$filterRow_attrs_callHangup}>
+			<label>{$label agentCallsView callHangup }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callHangup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callHangup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callHangup}</span>
+						</div>
+		{END searchCtrlBlock_callHangup}
+																{BEGIN searchCtrlBlock_callTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callTime}" {$filterRow_attrs_callTime}>
+			<label>{$label agentCallsView callTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callTime}</span>
+						</div>
+		{END searchCtrlBlock_callTime}
+																{BEGIN searchCtrlBlock_callDate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callDate}" {$filterRow_attrs_callDate}>
+			<label>{$label agentCallsView callDate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callDate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callDate}</span>
+						</div>
+		{END searchCtrlBlock_callDate}
+																{BEGIN searchCtrlBlock_callStart}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callStart}" {$filterRow_attrs_callStart}>
+			<label>{$label agentCallsView callStart }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callStart}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callStart}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callStart}</span>
+						</div>
+		{END searchCtrlBlock_callStart}
+																{BEGIN searchCtrlBlock_contactId}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contactId}" {$filterRow_attrs_contactId}>
+			<label>{$label agentCallsView contactId }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contactId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contactId}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contactId}</span>
+						</div>
+		{END searchCtrlBlock_contactId}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Αναζήτηση</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Προβολή όλων</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+</td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END left_block}
+						</div>
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="agentcallsview_add.php{$stateLink_full}" >
+							Εισαγωγή			</a>
+</span>
+{END add_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Εκτυπώσιμη σελίδα" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Εκτύπωση λεπτομερειών`	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_novaapplications}
+			<div>
+				<label for="printDetailsnovaapplications{$id}">
+					<input type="checkbox" value="novaapplications" id="printDetailsnovaapplications{$id}" checked>
+									</label>
+			</div>
+			{END print_details_novaapplications}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id"]:before {
+		content: "{$label agentCallsView id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactId"]:before {
+		content: "{$label agentCallsView contactId}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callStart"]:before {
+		content: "{$label agentCallsView callStart}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callDate"]:before {
+		content: "{$label agentCallsView callDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callTime"]:before {
+		content: "{$label agentCallsView callTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callHangup"]:before {
+		content: "{$label agentCallsView callHangup}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callEnd"]:before {
+		content: "{$label agentCallsView callEnd}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="talkTime"]:before {
+		content: "{$label agentCallsView talkTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="typingTime"]:before {
+		content: "{$label agentCallsView typingTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="totalCallTime"]:before {
+		content: "{$label agentCallsView totalCallTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tvchannel"]:before {
+		content: "{$label agentCallsView tvchannel}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="broadcast"]:before {
+		content: "{$label agentCallsView broadcast}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="seller"]:before {
+		content: "{$label agentCallsView seller}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callStatusId"]:before {
+		content: "{$label agentCallsView callStatusId}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callDenialReasonID"]:before {
+		content: "{$label agentCallsView callDenialReasonID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callClassificationID"]:before {
+		content: "{$label agentCallsView callClassificationID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callSubClassificationID"]:before {
+		content: "{$label agentCallsView callSubClassificationID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="remarks"]:before {
+		content: "{$label agentCallsView remarks}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="redialDate"]:before {
+		content: "{$label agentCallsView redialDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="redialComments"]:before {
+		content: "{$label agentCallsView redialComments}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="redialIsPrivate"]:before {
+		content: "{$label agentCallsView redialIsPrivate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="redialDone"]:before {
+		content: "{$label agentCallsView redialDone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactMethod"]:before {
+		content: "{$label agentCallsView contactMethod}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="courier"]:before {
+		content: "{$label agentCallsView courier}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="deliveryComments"]:before {
+		content: "{$label agentCallsView deliveryComments}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="courierDeliveryDate"]:before {
+		content: "{$label agentCallsView courierDeliveryDate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="courierTimeFrom"]:before {
+		content: "{$label agentCallsView courierTimeFrom}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="courierTimeTo"]:before {
+		content: "{$label agentCallsView courierTimeTo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerPhone"]:before {
+		content: "{$label agentCallsView dialerPhone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerCallEpoch"]:before {
+		content: "{$label agentCallsView dialerCallEpoch}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerCampaign"]:before {
+		content: "{$label agentCallsView dialerCampaign}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerList"]:before {
+		content: "{$label agentCallsView dialerList}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerLeadID"]:before {
+		content: "{$label agentCallsView dialerLeadID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerAgent"]:before {
+		content: "{$label agentCallsView dialerAgent}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerRecording"]:before {
+		content: "{$label agentCallsView dialerRecording}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="productFamilyId"]:before {
+		content: "{$label agentCallsView productFamilyId}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="orderShipCompany"]:before {
+		content: "{$label agentCallsView orderShipCompany}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="orderInvoiceRequired"]:before {
+		content: "{$label agentCallsView orderInvoiceRequired}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callComments"]:before {
+		content: "{$label agentCallsView callComments}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="internalCommunication"]:before {
+		content: "{$label agentCallsView internalCommunication}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callGdprAcceptance"]:before {
+		content: "{$label agentCallsView callGdprAcceptance}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callGdprRecordingAcceptance"]:before {
+		content: "{$label agentCallsView callGdprRecordingAcceptance}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="orderPaymentMethod"]:before {
+		content: "{$label agentCallsView orderPaymentMethod}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactName"]:before {
+		content: "{$label agentCallsView contactName}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactZipCode"]:before {
+		content: "{$label agentCallsView contactZipCode}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactCity"]:before {
+		content: "{$label agentCallsView contactCity}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ContactArea"]:before {
+		content: "{$label agentCallsView ContactArea}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactGender"]:before {
+		content: "{$label agentCallsView contactGender}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="contactAge"]:before {
+		content: "{$label agentCallsView contactAge}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="crmUser"]:before {
+		content: "{$label agentCallsView crmUser}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="pauseAfterCall"]:before {
+		content: "{$label agentCallsView pauseAfterCall}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldheadercolumn}
+	{BEGIN id_fieldheader}
+	<SPAN {$id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id">
+	{$label agentCallsView id }	{$arrow_icon_id}
+	</SPAN>
+	{END id_fieldheader}
+{END id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactId_class}
+			"
+
+			data-field="contactId"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactId_fieldheadercolumn}
+	{BEGIN contactId_fieldheader}
+	<SPAN {$contactId_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactId">
+	{$label agentCallsView contactId }	{$arrow_icon_contactId}
+	</SPAN>
+	{END contactId_fieldheader}
+{END contactId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStart_class}
+			"
+
+			data-field="callStart"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStart_fieldheadercolumn}
+	{BEGIN callStart_fieldheader}
+	<SPAN {$callStart_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStart">
+	{$label agentCallsView callStart }	{$arrow_icon_callStart}
+	</SPAN>
+	{END callStart_fieldheader}
+{END callStart_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDate_class}
+			"
+
+			data-field="callDate"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDate_fieldheadercolumn}
+	{BEGIN callDate_fieldheader}
+	<SPAN {$callDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDate">
+	{$label agentCallsView callDate }	{$arrow_icon_callDate}
+	</SPAN>
+	{END callDate_fieldheader}
+{END callDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callTime_class}
+			"
+
+			data-field="callTime"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callTime_fieldheadercolumn}
+	{BEGIN callTime_fieldheader}
+	<SPAN {$callTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callTime">
+	{$label agentCallsView callTime }	{$arrow_icon_callTime}
+	</SPAN>
+	{END callTime_fieldheader}
+{END callTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callHangup_class}
+			"
+
+			data-field="callHangup"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callHangup_fieldheadercolumn}
+	{BEGIN callHangup_fieldheader}
+	<SPAN {$callHangup_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callHangup">
+	{$label agentCallsView callHangup }	{$arrow_icon_callHangup}
+	</SPAN>
+	{END callHangup_fieldheader}
+{END callHangup_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callEnd_class}
+			"
+
+			data-field="callEnd"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callEnd_fieldheadercolumn}
+	{BEGIN callEnd_fieldheader}
+	<SPAN {$callEnd_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callEnd">
+	{$label agentCallsView callEnd }	{$arrow_icon_callEnd}
+	</SPAN>
+	{END callEnd_fieldheader}
+{END callEnd_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldheadercolumn}
+	{BEGIN talkTime_fieldheader}
+	<SPAN {$talkTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime">
+	{$label agentCallsView talkTime }	{$arrow_icon_talkTime}
+	</SPAN>
+	{END talkTime_fieldheader}
+{END talkTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldheadercolumn}
+	{BEGIN typingTime_fieldheader}
+	<SPAN {$typingTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime">
+	{$label agentCallsView typingTime }	{$arrow_icon_typingTime}
+	</SPAN>
+	{END typingTime_fieldheader}
+{END typingTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldheadercolumn}
+	{BEGIN totalCallTime_fieldheader}
+	<SPAN {$totalCallTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime">
+	{$label agentCallsView totalCallTime }	{$arrow_icon_totalCallTime}
+	</SPAN>
+	{END totalCallTime_fieldheader}
+{END totalCallTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tvchannel_class}
+			"
+
+			data-field="tvchannel"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tvchannel_fieldheadercolumn}
+	{BEGIN tvchannel_fieldheader}
+	<SPAN {$tvchannel_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tvchannel">
+	{$label agentCallsView tvchannel }	{$arrow_icon_tvchannel}
+	</SPAN>
+	{END tvchannel_fieldheader}
+{END tvchannel_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$broadcast_class}
+			"
+
+			data-field="broadcast"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN broadcast_fieldheadercolumn}
+	{BEGIN broadcast_fieldheader}
+	<SPAN {$broadcast_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="broadcast">
+	{$label agentCallsView broadcast }	{$arrow_icon_broadcast}
+	</SPAN>
+	{END broadcast_fieldheader}
+{END broadcast_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$seller_class}
+			"
+
+			data-field="seller"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN seller_fieldheadercolumn}
+	{BEGIN seller_fieldheader}
+	<SPAN {$seller_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="seller">
+	{$label agentCallsView seller }	{$arrow_icon_seller}
+	</SPAN>
+	{END seller_fieldheader}
+{END seller_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatusId_class}
+			"
+
+			data-field="callStatusId"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatusId_fieldheadercolumn}
+	{BEGIN callStatusId_fieldheader}
+	<SPAN {$callStatusId_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatusId">
+	{$label agentCallsView callStatusId }	{$arrow_icon_callStatusId}
+	</SPAN>
+	{END callStatusId_fieldheader}
+{END callStatusId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDenialReasonID_class}
+			"
+
+			data-field="callDenialReasonID"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDenialReasonID_fieldheadercolumn}
+	{BEGIN callDenialReasonID_fieldheader}
+	<SPAN {$callDenialReasonID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDenialReasonID">
+	{$label agentCallsView callDenialReasonID }	{$arrow_icon_callDenialReasonID}
+	</SPAN>
+	{END callDenialReasonID_fieldheader}
+{END callDenialReasonID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callClassificationID_class}
+			"
+
+			data-field="callClassificationID"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callClassificationID_fieldheadercolumn}
+	{BEGIN callClassificationID_fieldheader}
+	<SPAN {$callClassificationID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callClassificationID">
+	{$label agentCallsView callClassificationID }	{$arrow_icon_callClassificationID}
+	</SPAN>
+	{END callClassificationID_fieldheader}
+{END callClassificationID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callSubClassificationID_class}
+			"
+
+			data-field="callSubClassificationID"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callSubClassificationID_fieldheadercolumn}
+	{BEGIN callSubClassificationID_fieldheader}
+	<SPAN {$callSubClassificationID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callSubClassificationID">
+	{$label agentCallsView callSubClassificationID }	{$arrow_icon_callSubClassificationID}
+	</SPAN>
+	{END callSubClassificationID_fieldheader}
+{END callSubClassificationID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$remarks_class}
+			"
+
+			data-field="remarks"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarks_fieldheadercolumn}
+	{BEGIN remarks_fieldheader}
+	<SPAN {$remarks_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarks">
+	{$label agentCallsView remarks }	{$arrow_icon_remarks}
+	</SPAN>
+	{END remarks_fieldheader}
+{END remarks_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialDate_class}
+			"
+
+			data-field="redialDate"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialDate_fieldheadercolumn}
+	{BEGIN redialDate_fieldheader}
+	<SPAN {$redialDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialDate">
+	{$label agentCallsView redialDate }	{$arrow_icon_redialDate}
+	</SPAN>
+	{END redialDate_fieldheader}
+{END redialDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialComments_class}
+			"
+
+			data-field="redialComments"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialComments_fieldheadercolumn}
+	{BEGIN redialComments_fieldheader}
+	<SPAN {$redialComments_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialComments">
+	{$label agentCallsView redialComments }	{$arrow_icon_redialComments}
+	</SPAN>
+	{END redialComments_fieldheader}
+{END redialComments_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialIsPrivate_class}
+			"
+
+			data-field="redialIsPrivate"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialIsPrivate_fieldheadercolumn}
+	{BEGIN redialIsPrivate_fieldheader}
+	<SPAN {$redialIsPrivate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialIsPrivate">
+	{$label agentCallsView redialIsPrivate }	{$arrow_icon_redialIsPrivate}
+	</SPAN>
+	{END redialIsPrivate_fieldheader}
+{END redialIsPrivate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialDone_class}
+			"
+
+			data-field="redialDone"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialDone_fieldheadercolumn}
+	{BEGIN redialDone_fieldheader}
+	<SPAN {$redialDone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialDone">
+	{$label agentCallsView redialDone }	{$arrow_icon_redialDone}
+	</SPAN>
+	{END redialDone_fieldheader}
+{END redialDone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactMethod_class}
+			"
+
+			data-field="contactMethod"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactMethod_fieldheadercolumn}
+	{BEGIN contactMethod_fieldheader}
+	<SPAN {$contactMethod_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMethod">
+	{$label agentCallsView contactMethod }	{$arrow_icon_contactMethod}
+	</SPAN>
+	{END contactMethod_fieldheader}
+{END contactMethod_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courier_class}
+			"
+
+			data-field="courier"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courier_fieldheadercolumn}
+	{BEGIN courier_fieldheader}
+	<SPAN {$courier_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courier">
+	{$label agentCallsView courier }	{$arrow_icon_courier}
+	</SPAN>
+	{END courier_fieldheader}
+{END courier_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$deliveryComments_class}
+			"
+
+			data-field="deliveryComments"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deliveryComments_fieldheadercolumn}
+	{BEGIN deliveryComments_fieldheader}
+	<SPAN {$deliveryComments_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deliveryComments">
+	{$label agentCallsView deliveryComments }	{$arrow_icon_deliveryComments}
+	</SPAN>
+	{END deliveryComments_fieldheader}
+{END deliveryComments_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierDeliveryDate_class}
+			"
+
+			data-field="courierDeliveryDate"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierDeliveryDate_fieldheadercolumn}
+	{BEGIN courierDeliveryDate_fieldheader}
+	<SPAN {$courierDeliveryDate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierDeliveryDate">
+	{$label agentCallsView courierDeliveryDate }	{$arrow_icon_courierDeliveryDate}
+	</SPAN>
+	{END courierDeliveryDate_fieldheader}
+{END courierDeliveryDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeFrom_class}
+			"
+
+			data-field="courierTimeFrom"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeFrom_fieldheadercolumn}
+	{BEGIN courierTimeFrom_fieldheader}
+	<SPAN {$courierTimeFrom_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeFrom">
+	{$label agentCallsView courierTimeFrom }	{$arrow_icon_courierTimeFrom}
+	</SPAN>
+	{END courierTimeFrom_fieldheader}
+{END courierTimeFrom_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeTo_class}
+			"
+
+			data-field="courierTimeTo"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeTo_fieldheadercolumn}
+	{BEGIN courierTimeTo_fieldheader}
+	<SPAN {$courierTimeTo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeTo">
+	{$label agentCallsView courierTimeTo }	{$arrow_icon_courierTimeTo}
+	</SPAN>
+	{END courierTimeTo_fieldheader}
+{END courierTimeTo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldheadercolumn}
+	{BEGIN dialerPhone_fieldheader}
+	<SPAN {$dialerPhone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone">
+	{$label agentCallsView dialerPhone }	{$arrow_icon_dialerPhone}
+	</SPAN>
+	{END dialerPhone_fieldheader}
+{END dialerPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCallEpoch_class}
+			"
+
+			data-field="dialerCallEpoch"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCallEpoch_fieldheadercolumn}
+	{BEGIN dialerCallEpoch_fieldheader}
+	<SPAN {$dialerCallEpoch_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCallEpoch">
+	{$label agentCallsView dialerCallEpoch }	{$arrow_icon_dialerCallEpoch}
+	</SPAN>
+	{END dialerCallEpoch_fieldheader}
+{END dialerCallEpoch_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldheadercolumn}
+	{BEGIN dialerCampaign_fieldheader}
+	<SPAN {$dialerCampaign_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign">
+	{$label agentCallsView dialerCampaign }	{$arrow_icon_dialerCampaign}
+	</SPAN>
+	{END dialerCampaign_fieldheader}
+{END dialerCampaign_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldheadercolumn}
+	{BEGIN dialerList_fieldheader}
+	<SPAN {$dialerList_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList">
+	{$label agentCallsView dialerList }	{$arrow_icon_dialerList}
+	</SPAN>
+	{END dialerList_fieldheader}
+{END dialerList_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerLeadID_class}
+			"
+
+			data-field="dialerLeadID"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerLeadID_fieldheadercolumn}
+	{BEGIN dialerLeadID_fieldheader}
+	<SPAN {$dialerLeadID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerLeadID">
+	{$label agentCallsView dialerLeadID }	{$arrow_icon_dialerLeadID}
+	</SPAN>
+	{END dialerLeadID_fieldheader}
+{END dialerLeadID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldheadercolumn}
+	{BEGIN dialerAgent_fieldheader}
+	<SPAN {$dialerAgent_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent">
+	{$label agentCallsView dialerAgent }	{$arrow_icon_dialerAgent}
+	</SPAN>
+	{END dialerAgent_fieldheader}
+{END dialerAgent_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerRecording_class}
+			"
+
+			data-field="dialerRecording"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerRecording_fieldheadercolumn}
+	{BEGIN dialerRecording_fieldheader}
+	<SPAN {$dialerRecording_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerRecording">
+	{$label agentCallsView dialerRecording }	{$arrow_icon_dialerRecording}
+	</SPAN>
+	{END dialerRecording_fieldheader}
+{END dialerRecording_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$productFamilyId_class}
+			"
+
+			data-field="productFamilyId"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN productFamilyId_fieldheadercolumn}
+	{BEGIN productFamilyId_fieldheader}
+	<SPAN {$productFamilyId_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="productFamilyId">
+	{$label agentCallsView productFamilyId }	{$arrow_icon_productFamilyId}
+	</SPAN>
+	{END productFamilyId_fieldheader}
+{END productFamilyId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderShipCompany_class}
+			"
+
+			data-field="orderShipCompany"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderShipCompany_fieldheadercolumn}
+	{BEGIN orderShipCompany_fieldheader}
+	<SPAN {$orderShipCompany_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderShipCompany">
+	{$label agentCallsView orderShipCompany }	{$arrow_icon_orderShipCompany}
+	</SPAN>
+	{END orderShipCompany_fieldheader}
+{END orderShipCompany_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderInvoiceRequired_class}
+			"
+
+			data-field="orderInvoiceRequired"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderInvoiceRequired_fieldheadercolumn}
+	{BEGIN orderInvoiceRequired_fieldheader}
+	<SPAN {$orderInvoiceRequired_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderInvoiceRequired">
+	{$label agentCallsView orderInvoiceRequired }	{$arrow_icon_orderInvoiceRequired}
+	</SPAN>
+	{END orderInvoiceRequired_fieldheader}
+{END orderInvoiceRequired_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callComments_class}
+			"
+
+			data-field="callComments"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callComments_fieldheadercolumn}
+	{BEGIN callComments_fieldheader}
+	<SPAN {$callComments_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callComments">
+	{$label agentCallsView callComments }	{$arrow_icon_callComments}
+	</SPAN>
+	{END callComments_fieldheader}
+{END callComments_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$internalCommunication_class}
+			"
+
+			data-field="internalCommunication"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN internalCommunication_fieldheadercolumn}
+	{BEGIN internalCommunication_fieldheader}
+	<SPAN {$internalCommunication_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="internalCommunication">
+	{$label agentCallsView internalCommunication }	{$arrow_icon_internalCommunication}
+	</SPAN>
+	{END internalCommunication_fieldheader}
+{END internalCommunication_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprAcceptance_class}
+			"
+
+			data-field="callGdprAcceptance"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprAcceptance_fieldheadercolumn}
+	{BEGIN callGdprAcceptance_fieldheader}
+	<SPAN {$callGdprAcceptance_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprAcceptance">
+	{$label agentCallsView callGdprAcceptance }	{$arrow_icon_callGdprAcceptance}
+	</SPAN>
+	{END callGdprAcceptance_fieldheader}
+{END callGdprAcceptance_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprRecordingAcceptance_class}
+			"
+
+			data-field="callGdprRecordingAcceptance"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprRecordingAcceptance_fieldheadercolumn}
+	{BEGIN callGdprRecordingAcceptance_fieldheader}
+	<SPAN {$callGdprRecordingAcceptance_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprRecordingAcceptance">
+	{$label agentCallsView callGdprRecordingAcceptance }	{$arrow_icon_callGdprRecordingAcceptance}
+	</SPAN>
+	{END callGdprRecordingAcceptance_fieldheader}
+{END callGdprRecordingAcceptance_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderPaymentMethod_class}
+			"
+
+			data-field="orderPaymentMethod"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderPaymentMethod_fieldheadercolumn}
+	{BEGIN orderPaymentMethod_fieldheader}
+	<SPAN {$orderPaymentMethod_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderPaymentMethod">
+	{$label agentCallsView orderPaymentMethod }	{$arrow_icon_orderPaymentMethod}
+	</SPAN>
+	{END orderPaymentMethod_fieldheader}
+{END orderPaymentMethod_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactName_class}
+			"
+
+			data-field="contactName"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactName_fieldheadercolumn}
+	{BEGIN contactName_fieldheader}
+	<SPAN {$contactName_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactName">
+	{$label agentCallsView contactName }	{$arrow_icon_contactName}
+	</SPAN>
+	{END contactName_fieldheader}
+{END contactName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactZipCode_class}
+			"
+
+			data-field="contactZipCode"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactZipCode_fieldheadercolumn}
+	{BEGIN contactZipCode_fieldheader}
+	<SPAN {$contactZipCode_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactZipCode">
+	{$label agentCallsView contactZipCode }	{$arrow_icon_contactZipCode}
+	</SPAN>
+	{END contactZipCode_fieldheader}
+{END contactZipCode_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactCity_class}
+			"
+
+			data-field="contactCity"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactCity_fieldheadercolumn}
+	{BEGIN contactCity_fieldheader}
+	<SPAN {$contactCity_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactCity">
+	{$label agentCallsView contactCity }	{$arrow_icon_contactCity}
+	</SPAN>
+	{END contactCity_fieldheader}
+{END contactCity_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ContactArea_class}
+			"
+
+			data-field="ContactArea"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactArea_fieldheadercolumn}
+	{BEGIN ContactArea_fieldheader}
+	<SPAN {$ContactArea_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactArea">
+	{$label agentCallsView ContactArea }	{$arrow_icon_ContactArea}
+	</SPAN>
+	{END ContactArea_fieldheader}
+{END ContactArea_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactGender_class}
+			"
+
+			data-field="contactGender"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactGender_fieldheadercolumn}
+	{BEGIN contactGender_fieldheader}
+	<SPAN {$contactGender_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactGender">
+	{$label agentCallsView contactGender }	{$arrow_icon_contactGender}
+	</SPAN>
+	{END contactGender_fieldheader}
+{END contactGender_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactAge_class}
+			"
+
+			data-field="contactAge"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactAge_fieldheadercolumn}
+	{BEGIN contactAge_fieldheader}
+	<SPAN {$contactAge_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactAge">
+	{$label agentCallsView contactAge }	{$arrow_icon_contactAge}
+	</SPAN>
+	{END contactAge_fieldheader}
+{END contactAge_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$crmUser_class}
+			"
+
+			data-field="crmUser"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN crmUser_fieldheadercolumn}
+	{BEGIN crmUser_fieldheader}
+	<SPAN {$crmUser_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="crmUser">
+	{$label agentCallsView crmUser }	{$arrow_icon_crmUser}
+	</SPAN>
+	{END crmUser_fieldheader}
+{END crmUser_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pauseAfterCall_class}
+			"
+
+			data-field="pauseAfterCall"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pauseAfterCall_fieldheadercolumn}
+	{BEGIN pauseAfterCall_fieldheader}
+	<SPAN {$pauseAfterCall_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pauseAfterCall">
+	{$label agentCallsView pauseAfterCall }	{$arrow_icon_pauseAfterCall}
+	</SPAN>
+	{END pauseAfterCall_fieldheader}
+{END pauseAfterCall_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+							</tr>
+					 
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Επεξεργασία" class="btn-link   
+	 glyphicon glyphicon-pencil" href="agentcallsview_edit.php?{$editlink}" {$editlink_attrs} title="Επεξεργασία" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Προβολή εγγραφών" class="btn-link   
+	 glyphicon glyphicon-search" href="agentcallsview_view.php?{$editlink}" {$viewlink_attrs} title="Προβολή" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Εμφάνιση λεπτομεριών"
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
+	
+	</td>
+	{END cellblock_grid_cell_details}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-default-width >
+{$id_value}
+</span>
+{END id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactId_class}
+			"
+
+			data-field="contactId"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactId" data-default-width >
+{$contactId_value}
+</span>
+{END contactId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStart_class}
+			"
+
+			data-field="callStart"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStart_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStart" data-default-width >
+{$callStart_value}
+</span>
+{END callStart_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDate_class}
+			"
+
+			data-field="callDate"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDate" data-default-width >
+{$callDate_value}
+</span>
+{END callDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callTime_class}
+			"
+
+			data-field="callTime"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callTime" data-default-width >
+{$callTime_value}
+</span>
+{END callTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callHangup_class}
+			"
+
+			data-field="callHangup"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callHangup_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callHangup" data-default-width >
+{$callHangup_value}
+</span>
+{END callHangup_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callEnd_class}
+			"
+
+			data-field="callEnd"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callEnd_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callEnd" data-default-width >
+{$callEnd_value}
+</span>
+{END callEnd_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime" data-default-width >
+{$talkTime_value}
+</span>
+{END talkTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime" data-default-width >
+{$typingTime_value}
+</span>
+{END typingTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime" data-default-width >
+{$totalCallTime_value}
+</span>
+{END totalCallTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tvchannel_class}
+			"
+
+			data-field="tvchannel"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tvchannel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tvchannel" data-default-width >
+{$tvchannel_value}
+</span>
+{END tvchannel_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$broadcast_class}
+			"
+
+			data-field="broadcast"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN broadcast_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="broadcast" data-default-width >
+{$broadcast_value}
+</span>
+{END broadcast_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$seller_class}
+			"
+
+			data-field="seller"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN seller_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="seller" data-default-width >
+{$seller_value}
+</span>
+{END seller_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatusId_class}
+			"
+
+			data-field="callStatusId"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatusId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatusId" data-default-width >
+{$callStatusId_value}
+</span>
+{END callStatusId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDenialReasonID_class}
+			"
+
+			data-field="callDenialReasonID"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDenialReasonID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDenialReasonID" data-default-width >
+{$callDenialReasonID_value}
+</span>
+{END callDenialReasonID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callClassificationID_class}
+			"
+
+			data-field="callClassificationID"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callClassificationID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callClassificationID" data-default-width >
+{$callClassificationID_value}
+</span>
+{END callClassificationID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callSubClassificationID_class}
+			"
+
+			data-field="callSubClassificationID"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callSubClassificationID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callSubClassificationID" data-default-width >
+{$callSubClassificationID_value}
+</span>
+{END callSubClassificationID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$remarks_class}
+			"
+
+			data-field="remarks"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarks_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarks" data-default-width >
+{$remarks_value}
+</span>
+{END remarks_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialDate_class}
+			"
+
+			data-field="redialDate"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialDate" data-default-width >
+{$redialDate_value}
+</span>
+{END redialDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialComments_class}
+			"
+
+			data-field="redialComments"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialComments" data-default-width >
+{$redialComments_value}
+</span>
+{END redialComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialIsPrivate_class}
+			"
+
+			data-field="redialIsPrivate"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialIsPrivate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialIsPrivate" data-default-width >
+{$redialIsPrivate_value}
+</span>
+{END redialIsPrivate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$redialDone_class}
+			"
+
+			data-field="redialDone"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN redialDone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="redialDone" data-default-width >
+{$redialDone_value}
+</span>
+{END redialDone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactMethod_class}
+			"
+
+			data-field="contactMethod"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactMethod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactMethod" data-default-width >
+{$contactMethod_value}
+</span>
+{END contactMethod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courier_class}
+			"
+
+			data-field="courier"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courier_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courier" data-default-width >
+{$courier_value}
+</span>
+{END courier_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$deliveryComments_class}
+			"
+
+			data-field="deliveryComments"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN deliveryComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="deliveryComments" data-default-width >
+{$deliveryComments_value}
+</span>
+{END deliveryComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierDeliveryDate_class}
+			"
+
+			data-field="courierDeliveryDate"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierDeliveryDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierDeliveryDate" data-default-width >
+{$courierDeliveryDate_value}
+</span>
+{END courierDeliveryDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeFrom_class}
+			"
+
+			data-field="courierTimeFrom"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeFrom_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeFrom" data-default-width >
+{$courierTimeFrom_value}
+</span>
+{END courierTimeFrom_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$courierTimeTo_class}
+			"
+
+			data-field="courierTimeTo"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN courierTimeTo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="courierTimeTo" data-default-width >
+{$courierTimeTo_value}
+</span>
+{END courierTimeTo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone" data-default-width >
+{$dialerPhone_value}
+</span>
+{END dialerPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCallEpoch_class}
+			"
+
+			data-field="dialerCallEpoch"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCallEpoch_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCallEpoch" data-default-width >
+{$dialerCallEpoch_value}
+</span>
+{END dialerCallEpoch_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign" data-default-width >
+{$dialerCampaign_value}
+</span>
+{END dialerCampaign_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList" data-default-width >
+{$dialerList_value}
+</span>
+{END dialerList_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerLeadID_class}
+			"
+
+			data-field="dialerLeadID"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerLeadID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerLeadID" data-default-width >
+{$dialerLeadID_value}
+</span>
+{END dialerLeadID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent" data-default-width >
+{$dialerAgent_value}
+</span>
+{END dialerAgent_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerRecording_class}
+			"
+
+			data-field="dialerRecording"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerRecording_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerRecording" data-default-width >
+{$dialerRecording_value}
+</span>
+{END dialerRecording_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$productFamilyId_class}
+			"
+
+			data-field="productFamilyId"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN productFamilyId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="productFamilyId" data-default-width >
+{$productFamilyId_value}
+</span>
+{END productFamilyId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderShipCompany_class}
+			"
+
+			data-field="orderShipCompany"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderShipCompany_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderShipCompany" data-default-width >
+{$orderShipCompany_value}
+</span>
+{END orderShipCompany_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderInvoiceRequired_class}
+			"
+
+			data-field="orderInvoiceRequired"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderInvoiceRequired_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderInvoiceRequired" data-default-width >
+{$orderInvoiceRequired_value}
+</span>
+{END orderInvoiceRequired_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callComments_class}
+			"
+
+			data-field="callComments"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callComments" data-default-width >
+{$callComments_value}
+</span>
+{END callComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$internalCommunication_class}
+			"
+
+			data-field="internalCommunication"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN internalCommunication_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="internalCommunication" data-default-width >
+{$internalCommunication_value}
+</span>
+{END internalCommunication_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprAcceptance_class}
+			"
+
+			data-field="callGdprAcceptance"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprAcceptance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprAcceptance" data-default-width >
+{$callGdprAcceptance_value}
+</span>
+{END callGdprAcceptance_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callGdprRecordingAcceptance_class}
+			"
+
+			data-field="callGdprRecordingAcceptance"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callGdprRecordingAcceptance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callGdprRecordingAcceptance" data-default-width >
+{$callGdprRecordingAcceptance_value}
+</span>
+{END callGdprRecordingAcceptance_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$orderPaymentMethod_class}
+			"
+
+			data-field="orderPaymentMethod"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN orderPaymentMethod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="orderPaymentMethod" data-default-width >
+{$orderPaymentMethod_value}
+</span>
+{END orderPaymentMethod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactName_class}
+			"
+
+			data-field="contactName"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactName" data-default-width >
+{$contactName_value}
+</span>
+{END contactName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactZipCode_class}
+			"
+
+			data-field="contactZipCode"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactZipCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactZipCode" data-default-width >
+{$contactZipCode_value}
+</span>
+{END contactZipCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactCity_class}
+			"
+
+			data-field="contactCity"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactCity" data-default-width >
+{$contactCity_value}
+</span>
+{END contactCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ContactArea_class}
+			"
+
+			data-field="ContactArea"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ContactArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ContactArea" data-default-width >
+{$ContactArea_value}
+</span>
+{END ContactArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactGender_class}
+			"
+
+			data-field="contactGender"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactGender_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactGender" data-default-width >
+{$contactGender_value}
+</span>
+{END contactGender_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$contactAge_class}
+			"
+
+			data-field="contactAge"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contactAge_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contactAge" data-default-width >
+{$contactAge_value}
+</span>
+{END contactAge_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$crmUser_class}
+			"
+
+			data-field="crmUser"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN crmUser_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="crmUser" data-default-width >
+{$crmUser_value}
+</span>
+{END crmUser_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$pauseAfterCall_class}
+			"
+
+			data-field="pauseAfterCall"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN pauseAfterCall_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pauseAfterCall" data-default-width >
+{$pauseAfterCall_value}
+</span>
+{END pauseAfterCall_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+							</tr>
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+								
+							">
+				 
+					{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="novaapplications"
+			data-details-novaapplications	>
+		<span data-details-inside data-short-table="novaapplications">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_3} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="agentcallsview_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,635 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel CallsResultsSummaryReport search}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="5"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c30}
+<td
+	{$cell_grid_c30}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c30" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_callDate}" data-itemtype="search_field_label" data-itemid="search_field_label3" {$item_search_field_label3} data-pageid="{$pageid}" data-field="callDate">
+	{$label CallsResultsSummaryReport callDate }</label>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c30}
+			 
+																
+
+{BEGIN cellblock_grid_c31}
+<td
+	{$cell_grid_c31}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c31" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options3" {$item_search_field_options3} data-pageid="{$pageid}" data-field="callDate" >
+	{$searchtype_callDate}
+</div>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c31}
+			 
+																
+
+{BEGIN cellblock_grid_c32}
+<td
+	{$cell_grid_c32}
+	class=""
+	
+			
+			data-cellId="grid_c32" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="callDate" data-before-same-field >
+	{$callDate_editcontrol}</div>
+{END callDate_fieldblock}
+											{BEGIN callDate_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between3" {$item_search_field_between3} data-pageid="{$pageid}" data-field="callDate" >
+	{$callDate_editcontrol1}
+</div>
+{END callDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c32}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerCampaign_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_dialerCampaign}" data-itemtype="search_field_label" data-itemid="search_field_label6" {$item_search_field_label6} data-pageid="{$pageid}" data-field="dialerCampaign">
+	{$label CallsResultsSummaryReport dialerCampaign }</label>
+{END dialerCampaign_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c9}
+			 
+																
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerCampaign_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options6" {$item_search_field_options6} data-pageid="{$pageid}" data-field="dialerCampaign" >
+	{$searchtype_dialerCampaign}
+</div>
+{END dialerCampaign_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c23}
+<td
+	{$cell_grid_c23}
+	class=""
+	
+			
+			data-cellId="grid_c23" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerCampaign_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="dialerCampaign" data-before-same-field >
+	{$dialerCampaign_editcontrol}</div>
+{END dialerCampaign_fieldblock}
+											{BEGIN dialerCampaign_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between6" {$item_search_field_between6} data-pageid="{$pageid}" data-field="dialerCampaign" >
+	{$dialerCampaign_editcontrol1}
+</div>
+{END dialerCampaign_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c23}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerList_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_dialerList}" data-itemtype="search_field_label" data-itemid="search_field_label5" {$item_search_field_label5} data-pageid="{$pageid}" data-field="dialerList">
+	{$label CallsResultsSummaryReport dialerList }</label>
+{END dialerList_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+			 
+																
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerList_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options5" {$item_search_field_options5} data-pageid="{$pageid}" data-field="dialerList" >
+	{$searchtype_dialerList}
+</div>
+{END dialerList_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c24}
+<td
+	{$cell_grid_c24}
+	class=""
+	
+			
+			data-cellId="grid_c24" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerList_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="dialerList" data-before-same-field >
+	{$dialerList_editcontrol}</div>
+{END dialerList_fieldblock}
+											{BEGIN dialerList_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between5" {$item_search_field_between5} data-pageid="{$pageid}" data-field="dialerList" >
+	{$dialerList_editcontrol1}
+</div>
+{END dialerList_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c24}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerAgent_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_dialerAgent}" data-itemtype="search_field_label" data-itemid="search_field_label4" {$item_search_field_label4} data-pageid="{$pageid}" data-field="dialerAgent">
+	{$label CallsResultsSummaryReport dialerAgent }</label>
+{END dialerAgent_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c11}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerAgent_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options4" {$item_search_field_options4} data-pageid="{$pageid}" data-field="dialerAgent" >
+	{$searchtype_dialerAgent}
+</div>
+{END dialerAgent_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+			 
+																
+
+{BEGIN cellblock_grid_c25}
+<td
+	{$cell_grid_c25}
+	class=""
+	
+			
+			data-cellId="grid_c25" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN dialerAgent_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="dialerAgent" data-before-same-field >
+	{$dialerAgent_editcontrol}</div>
+{END dialerAgent_fieldblock}
+											{BEGIN dialerAgent_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between4" {$item_search_field_between4} data-pageid="{$pageid}" data-field="dialerAgent" >
+	{$dialerAgent_editcontrol1}
+</div>
+{END dialerAgent_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c25}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c14}
+<td
+	{$cell_grid_c14}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c14" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN forCount_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_forCount}" data-itemtype="search_field_label" data-itemid="search_field_label1" {$item_search_field_label1} data-pageid="{$pageid}" data-field="forCount">
+	{$label CallsResultsSummaryReport forCount }</label>
+{END forCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c14}
+			 
+																
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN forCount_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options1" {$item_search_field_options1} data-pageid="{$pageid}" data-field="forCount" >
+	{$searchtype_forCount}
+</div>
+{END forCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c28}
+<td
+	{$cell_grid_c28}
+	class=""
+	
+			
+			data-cellId="grid_c28" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN forCount_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="forCount" data-before-same-field >
+	{$forCount_editcontrol}</div>
+{END forCount_fieldblock}
+											{BEGIN forCount_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between1" {$item_search_field_between1} data-pageid="{$pageid}" data-field="forCount" >
+	{$forCount_editcontrol1}
+</div>
+{END forCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c28}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c15}
+<td
+	{$cell_grid_c15}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c15" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callAppsCount_fieldblock}
+<label class="control-label r-search-label" for="{$labelfor_callAppsCount}" data-itemtype="search_field_label" data-itemid="search_field_label" {$item_search_field_label} data-pageid="{$pageid}" data-field="callAppsCount">
+	{$label CallsResultsSummaryReport callAppsCount }</label>
+{END callAppsCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c15}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callAppsCount_fieldblock}
+<div class="r-search-option" data-itemtype="search_field_options" data-itemid="search_field_options" {$item_search_field_options} data-pageid="{$pageid}" data-field="callAppsCount" >
+	{$searchtype_callAppsCount}
+</div>
+{END callAppsCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+			 
+																
+
+{BEGIN cellblock_grid_c29}
+<td
+	{$cell_grid_c29}
+	class=""
+	
+			
+			data-cellId="grid_c29" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN callAppsCount_fieldblock}
+<div class="r-search-field" data-itemtype="search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="callAppsCount" data-before-same-field >
+	{$callAppsCount_editcontrol}</div>
+{END callAppsCount_fieldblock}
+											{BEGIN callAppsCount_fieldblock}
+<div class="r-search-field" data-itemtype="search_field_between" data-itemid="search_field_between" {$item_search_field_between} data-pageid="{$pageid}" data-field="callAppsCount" >
+	{$callAppsCount_editcontrol1}
+</div>
+{END callAppsCount_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c29}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Επαναφορά			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Ακύρωση			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["noComm"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='noComm';if(!pageObj.buttonEventBefore['noComm']){pageObj.buttonEventBefore['noComm']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;params["txt"]="Hello";ajax.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['noComm']){pageObj.buttonEventAfter['noComm']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["txt"]+" !!!";ajax.setMessage(message);}}
+$('a[id="noComm"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="noComm"+"_"+Runner.genId();var button_noComm=new Runner.form.Button({id:this.id,btnName:"noComm"});button_noComm.init({args:[pageObj,proxy,pageid]});});};

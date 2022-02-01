@@ -1,0 +1,4559 @@
+<div class="panel panel-primary">
+		<div class="panel-heading">
+						{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel-only" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h3 class="panel-title" data-itemtype="masterprint_header" data-itemid="masterprint_header" {$item_masterprint_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_novaApplicationsBackofficeView masterprint}</h3>
+		</div>			</div>		
+{END top_block}
+			</div>
+		<div class="panel-body">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel-only" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+								{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table data-location="grid" id="form_grid_{$pageid}" data-makeup="panel-only" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field64" {$item_simple_grid_field64} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id">
+	{$label dbo_novaApplicationsBackofficeView id }	</span>
+{END id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callid_class}
+			"
+
+			data-field="callid"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callid_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field71" {$item_simple_grid_field71} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callid">
+	{$label dbo_novaApplicationsBackofficeView callid }	</span>
+{END callid_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationType_class}
+			"
+
+			data-field="applicationType"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationType_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field72" {$item_simple_grid_field72} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationType">
+	{$label dbo_novaApplicationsBackofficeView applicationType }	</span>
+{END applicationType_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantName_class}
+			"
+
+			data-field="applicantName"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field73" {$item_simple_grid_field73} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantName">
+	{$label dbo_novaApplicationsBackofficeView applicantName }	</span>
+{END applicantName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantFirstName_class}
+			"
+
+			data-field="applicantFirstName"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantFirstName_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field74" {$item_simple_grid_field74} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantFirstName">
+	{$label dbo_novaApplicationsBackofficeView applicantFirstName }	</span>
+{END applicantFirstName_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantBirthdate_class}
+			"
+
+			data-field="applicantBirthdate"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantBirthdate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field75" {$item_simple_grid_field75} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantBirthdate">
+	{$label dbo_novaApplicationsBackofficeView applicantBirthdate }	</span>
+{END applicantBirthdate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantProfession_class}
+			"
+
+			data-field="applicantProfession"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantProfession_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field76" {$item_simple_grid_field76} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantProfession">
+	{$label dbo_novaApplicationsBackofficeView applicantProfession }	</span>
+{END applicantProfession_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantIdNumber_class}
+			"
+
+			data-field="applicantIdNumber"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantIdNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field77" {$item_simple_grid_field77} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantIdNumber">
+	{$label dbo_novaApplicationsBackofficeView applicantIdNumber }	</span>
+{END applicantIdNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantAddress_class}
+			"
+
+			data-field="applicantAddress"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field78" {$item_simple_grid_field78} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantAddress">
+	{$label dbo_novaApplicationsBackofficeView applicantAddress }	</span>
+{END applicantAddress_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPostalCode_class}
+			"
+
+			data-field="applicantPostalCode"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field79" {$item_simple_grid_field79} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPostalCode">
+	{$label dbo_novaApplicationsBackofficeView applicantPostalCode }	</span>
+{END applicantPostalCode_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantArea_class}
+			"
+
+			data-field="applicantArea"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field80" {$item_simple_grid_field80} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantArea">
+	{$label dbo_novaApplicationsBackofficeView applicantArea }	</span>
+{END applicantArea_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantCity_class}
+			"
+
+			data-field="applicantCity"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field81" {$item_simple_grid_field81} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantCity">
+	{$label dbo_novaApplicationsBackofficeView applicantCity }	</span>
+{END applicantCity_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxRegistrationNumber_class}
+			"
+
+			data-field="applicantTaxRegistrationNumber"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantTaxRegistrationNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field82" {$item_simple_grid_field82} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxRegistrationNumber">
+	{$label dbo_novaApplicationsBackofficeView applicantTaxRegistrationNumber }	</span>
+{END applicantTaxRegistrationNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxOffice_class}
+			"
+
+			data-field="applicantTaxOffice"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantTaxOffice_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field83" {$item_simple_grid_field83} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxOffice">
+	{$label dbo_novaApplicationsBackofficeView applicantTaxOffice }	</span>
+{END applicantTaxOffice_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPhone_class}
+			"
+
+			data-field="applicantPhone"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field84" {$item_simple_grid_field84} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPhone">
+	{$label dbo_novaApplicationsBackofficeView applicantPhone }	</span>
+{END applicantPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantMobile_class}
+			"
+
+			data-field="applicantMobile"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantMobile_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field85" {$item_simple_grid_field85} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantMobile">
+	{$label dbo_novaApplicationsBackofficeView applicantMobile }	</span>
+{END applicantMobile_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantEmail_class}
+			"
+
+			data-field="applicantEmail"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantEmail_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field86" {$item_simple_grid_field86} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantEmail">
+	{$label dbo_novaApplicationsBackofficeView applicantEmail }	</span>
+{END applicantEmail_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$standAloneProgram_class}
+			"
+
+			data-field="standAloneProgram"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN standAloneProgram_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field87" {$item_simple_grid_field87} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="standAloneProgram">
+	{$label dbo_novaApplicationsBackofficeView standAloneProgram }	</span>
+{END standAloneProgram_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+				 
+					{BEGIN cellblock_grid_headcell_field18}
+	<th
+	
+	{$cell_grid_headcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$doublePlayProgram_class}
+			"
+
+			data-field="doublePlayProgram"
+	
+	data-cellId="grid_headcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN doublePlayProgram_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field88" {$item_simple_grid_field88} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doublePlayProgram">
+	{$label dbo_novaApplicationsBackofficeView doublePlayProgram }	</span>
+{END doublePlayProgram_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field18}
+				 
+					{BEGIN cellblock_grid_headcell_field19}
+	<th
+	
+	{$cell_grid_headcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ProgramSpeed_class}
+			"
+
+			data-field="ProgramSpeed"
+	
+	data-cellId="grid_headcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ProgramSpeed_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field89" {$item_simple_grid_field89} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ProgramSpeed">
+	{$label dbo_novaApplicationsBackofficeView ProgramSpeed }	</span>
+{END ProgramSpeed_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field19}
+				 
+					{BEGIN cellblock_grid_headcell_field20}
+	<th
+	
+	{$cell_grid_headcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$triplePlayProgram_class}
+			"
+
+			data-field="triplePlayProgram"
+	
+	data-cellId="grid_headcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN triplePlayProgram_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field90" {$item_simple_grid_field90} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="triplePlayProgram">
+	{$label dbo_novaApplicationsBackofficeView triplePlayProgram }	</span>
+{END triplePlayProgram_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field20}
+				 
+					{BEGIN cellblock_grid_headcell_field21}
+	<th
+	
+	{$cell_grid_headcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$triplePlayProgramType_class}
+			"
+
+			data-field="triplePlayProgramType"
+	
+	data-cellId="grid_headcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN triplePlayProgramType_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field91" {$item_simple_grid_field91} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="triplePlayProgramType">
+	{$label dbo_novaApplicationsBackofficeView triplePlayProgramType }	</span>
+{END triplePlayProgramType_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field21}
+				 
+					{BEGIN cellblock_grid_headcell_field22}
+	<th
+	
+	{$cell_grid_headcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternet_class}
+			"
+
+			data-field="additionalServiceInternet"
+	
+	data-cellId="grid_headcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternet_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field92" {$item_simple_grid_field92} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternet">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceInternet }	</span>
+{END additionalServiceInternet_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field22}
+				 
+					{BEGIN cellblock_grid_headcell_field23}
+	<th
+	
+	{$cell_grid_headcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternetSpeed_class}
+			"
+
+			data-field="additionalServiceInternetSpeed"
+	
+	data-cellId="grid_headcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternetSpeed_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field93" {$item_simple_grid_field93} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternetSpeed">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceInternetSpeed }	</span>
+{END additionalServiceInternetSpeed_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field23}
+				 
+					{BEGIN cellblock_grid_headcell_field24}
+	<th
+	
+	{$cell_grid_headcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternationalCalls_class}
+			"
+
+			data-field="additionalServiceInternationalCalls"
+	
+	data-cellId="grid_headcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternationalCalls_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field94" {$item_simple_grid_field94} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternationalCalls">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceInternationalCalls }	</span>
+{END additionalServiceInternationalCalls_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field24}
+				 
+					{BEGIN cellblock_grid_headcell_field25}
+	<th
+	
+	{$cell_grid_headcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceStaticIp_class}
+			"
+
+			data-field="additionalServiceStaticIp"
+	
+	data-cellId="grid_headcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceStaticIp_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field95" {$item_simple_grid_field95} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceStaticIp">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceStaticIp }	</span>
+{END additionalServiceStaticIp_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field25}
+				 
+					{BEGIN cellblock_grid_headcell_field26}
+	<th
+	
+	{$cell_grid_headcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceStaticBlock8Ip_class}
+			"
+
+			data-field="additionalServiceStaticBlock8Ip"
+	
+	data-cellId="grid_headcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceStaticBlock8Ip_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field96" {$item_simple_grid_field96} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceStaticBlock8Ip">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceStaticBlock8Ip }	</span>
+{END additionalServiceStaticBlock8Ip_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field26}
+				 
+					{BEGIN cellblock_grid_headcell_field27}
+	<th
+	
+	{$cell_grid_headcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceSecondLine_class}
+			"
+
+			data-field="additionalServiceSecondLine"
+	
+	data-cellId="grid_headcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceSecondLine_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field97" {$item_simple_grid_field97} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceSecondLine">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceSecondLine }	</span>
+{END additionalServiceSecondLine_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceLandLine1000Minutes_class}
+			"
+
+			data-field="additionalServiceLandLine1000Minutes"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceLandLine1000Minutes_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field98" {$item_simple_grid_field98} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceLandLine1000Minutes">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceLandLine1000Minutes }	</span>
+{END additionalServiceLandLine1000Minutes_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEquipment_class}
+			"
+
+			data-field="additionalServiceEquipment"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEquipment_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field99" {$item_simple_grid_field99} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEquipment">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceEquipment }	</span>
+{END additionalServiceEquipment_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEquipmentInstallation_class}
+			"
+
+			data-field="additionalServiceEquipmentInstallation"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEquipmentInstallation_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field100" {$item_simple_grid_field100} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEquipmentInstallation">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceEquipmentInstallation }	</span>
+{END additionalServiceEquipmentInstallation_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityIsNewLine_class}
+			"
+
+			data-field="portabilityIsNewLine"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityIsNewLine_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field101" {$item_simple_grid_field101} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityIsNewLine">
+	{$label dbo_novaApplicationsBackofficeView portabilityIsNewLine }	</span>
+{END portabilityIsNewLine_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityOldNumber_class}
+			"
+
+			data-field="portabilityOldNumber"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityOldNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field102" {$item_simple_grid_field102} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityOldNumber">
+	{$label dbo_novaApplicationsBackofficeView portabilityOldNumber }	</span>
+{END portabilityOldNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
+				 
+					{BEGIN cellblock_grid_headcell_field33}
+	<th
+	
+	{$cell_grid_headcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityOldOwner_class}
+			"
+
+			data-field="portabilityOldOwner"
+	
+	data-cellId="grid_headcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityOldOwner_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field103" {$item_simple_grid_field103} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityOldOwner">
+	{$label dbo_novaApplicationsBackofficeView portabilityOldOwner }	</span>
+{END portabilityOldOwner_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field33}
+				 
+					{BEGIN cellblock_grid_headcell_field34}
+	<th
+	
+	{$cell_grid_headcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationAddress_class}
+			"
+
+			data-field="portabilityActivationAddress"
+	
+	data-cellId="grid_headcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationAddress_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field104" {$item_simple_grid_field104} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationAddress">
+	{$label dbo_novaApplicationsBackofficeView portabilityActivationAddress }	</span>
+{END portabilityActivationAddress_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field34}
+				 
+					{BEGIN cellblock_grid_headcell_field35}
+	<th
+	
+	{$cell_grid_headcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationPostalCode_class}
+			"
+
+			data-field="portabilityActivationPostalCode"
+	
+	data-cellId="grid_headcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationPostalCode_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field105" {$item_simple_grid_field105} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationPostalCode">
+	{$label dbo_novaApplicationsBackofficeView portabilityActivationPostalCode }	</span>
+{END portabilityActivationPostalCode_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field35}
+				 
+					{BEGIN cellblock_grid_headcell_field36}
+	<th
+	
+	{$cell_grid_headcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationArea_class}
+			"
+
+			data-field="portabilityActivationArea"
+	
+	data-cellId="grid_headcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationArea_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field106" {$item_simple_grid_field106} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationArea">
+	{$label dbo_novaApplicationsBackofficeView portabilityActivationArea }	</span>
+{END portabilityActivationArea_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationCity_class}
+			"
+
+			data-field="portabilityActivationCity"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationCity_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field107" {$item_simple_grid_field107} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationCity">
+	{$label dbo_novaApplicationsBackofficeView portabilityActivationCity }	</span>
+{END portabilityActivationCity_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityPstnIsdn_class}
+			"
+
+			data-field="portabilityPstnIsdn"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityPstnIsdn_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field108" {$item_simple_grid_field108} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityPstnIsdn">
+	{$label dbo_novaApplicationsBackofficeView portabilityPstnIsdn }	</span>
+{END portabilityPstnIsdn_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
+				 
+					{BEGIN cellblock_grid_headcell_field39}
+	<th
+	
+	{$cell_grid_headcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine1PhoneNumber_class}
+			"
+
+			data-field="portabilityLine1PhoneNumber"
+	
+	data-cellId="grid_headcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine1PhoneNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field109" {$item_simple_grid_field109} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine1PhoneNumber">
+	{$label dbo_novaApplicationsBackofficeView portabilityLine1PhoneNumber }	</span>
+{END portabilityLine1PhoneNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field39}
+				 
+					{BEGIN cellblock_grid_headcell_field40}
+	<th
+	
+	{$cell_grid_headcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine2PhoneNumber_class}
+			"
+
+			data-field="portabilityLine2PhoneNumber"
+	
+	data-cellId="grid_headcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine2PhoneNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field110" {$item_simple_grid_field110} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine2PhoneNumber">
+	{$label dbo_novaApplicationsBackofficeView portabilityLine2PhoneNumber }	</span>
+{END portabilityLine2PhoneNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field40}
+				 
+					{BEGIN cellblock_grid_headcell_field41}
+	<th
+	
+	{$cell_grid_headcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine3PhoneNumber_class}
+			"
+
+			data-field="portabilityLine3PhoneNumber"
+	
+	data-cellId="grid_headcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine3PhoneNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field111" {$item_simple_grid_field111} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine3PhoneNumber">
+	{$label dbo_novaApplicationsBackofficeView portabilityLine3PhoneNumber }	</span>
+{END portabilityLine3PhoneNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field41}
+				 
+					{BEGIN cellblock_grid_headcell_field42}
+	<th
+	
+	{$cell_grid_headcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine4PhoneNumber_class}
+			"
+
+			data-field="portabilityLine4PhoneNumber"
+	
+	data-cellId="grid_headcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine4PhoneNumber_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field112" {$item_simple_grid_field112} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine4PhoneNumber">
+	{$label dbo_novaApplicationsBackofficeView portabilityLine4PhoneNumber }	</span>
+{END portabilityLine4PhoneNumber_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field42}
+				 
+					{BEGIN cellblock_grid_headcell_field43}
+	<th
+	
+	{$cell_grid_headcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityUsername1_class}
+			"
+
+			data-field="portabilityUsername1"
+	
+	data-cellId="grid_headcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityUsername1_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field113" {$item_simple_grid_field113} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityUsername1">
+	{$label dbo_novaApplicationsBackofficeView portabilityUsername1 }	</span>
+{END portabilityUsername1_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field43}
+				 
+					{BEGIN cellblock_grid_headcell_field44}
+	<th
+	
+	{$cell_grid_headcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityusername2_class}
+			"
+
+			data-field="portabilityusername2"
+	
+	data-cellId="grid_headcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityusername2_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field114" {$item_simple_grid_field114} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityusername2">
+	{$label dbo_novaApplicationsBackofficeView portabilityusername2 }	</span>
+{END portabilityusername2_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field44}
+				 
+					{BEGIN cellblock_grid_headcell_field45}
+	<th
+	
+	{$cell_grid_headcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentIdPassport_class}
+			"
+
+			data-field="documentIdPassport"
+	
+	data-cellId="grid_headcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentIdPassport_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field115" {$item_simple_grid_field115} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentIdPassport">
+	{$label dbo_novaApplicationsBackofficeView documentIdPassport }	</span>
+{END documentIdPassport_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field45}
+				 
+					{BEGIN cellblock_grid_headcell_field46}
+	<th
+	
+	{$cell_grid_headcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentIdPassportPreviousOwner_class}
+			"
+
+			data-field="documentIdPassportPreviousOwner"
+	
+	data-cellId="grid_headcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentIdPassportPreviousOwner_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field116" {$item_simple_grid_field116} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentIdPassportPreviousOwner">
+	{$label dbo_novaApplicationsBackofficeView documentIdPassportPreviousOwner }	</span>
+{END documentIdPassportPreviousOwner_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field46}
+				 
+					{BEGIN cellblock_grid_headcell_field47}
+	<th
+	
+	{$cell_grid_headcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentLastBill_class}
+			"
+
+			data-field="documentLastBill"
+	
+	data-cellId="grid_headcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentLastBill_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field117" {$item_simple_grid_field117} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentLastBill">
+	{$label dbo_novaApplicationsBackofficeView documentLastBill }	</span>
+{END documentLastBill_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field47}
+				 
+					{BEGIN cellblock_grid_headcell_field48}
+	<th
+	
+	{$cell_grid_headcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentAddressValidation_class}
+			"
+
+			data-field="documentAddressValidation"
+	
+	data-cellId="grid_headcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentAddressValidation_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field118" {$item_simple_grid_field118} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentAddressValidation">
+	{$label dbo_novaApplicationsBackofficeView documentAddressValidation }	</span>
+{END documentAddressValidation_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field48}
+				 
+					{BEGIN cellblock_grid_headcell_field49}
+	<th
+	
+	{$cell_grid_headcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentDeathCertificate_class}
+			"
+
+			data-field="documentDeathCertificate"
+	
+	data-cellId="grid_headcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentDeathCertificate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field119" {$item_simple_grid_field119} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentDeathCertificate">
+	{$label dbo_novaApplicationsBackofficeView documentDeathCertificate }	</span>
+{END documentDeathCertificate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field49}
+				 
+					{BEGIN cellblock_grid_headcell_field50}
+	<th
+	
+	{$cell_grid_headcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentAuthorization_class}
+			"
+
+			data-field="documentAuthorization"
+	
+	data-cellId="grid_headcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentAuthorization_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field120" {$item_simple_grid_field120} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentAuthorization">
+	{$label dbo_novaApplicationsBackofficeView documentAuthorization }	</span>
+{END documentAuthorization_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field50}
+				 
+					{BEGIN cellblock_grid_headcell_field51}
+	<th
+	
+	{$cell_grid_headcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentOther_class}
+			"
+
+			data-field="documentOther"
+	
+	data-cellId="grid_headcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentOther_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field121" {$item_simple_grid_field121} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentOther">
+	{$label dbo_novaApplicationsBackofficeView documentOther }	</span>
+{END documentOther_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field51}
+				 
+					{BEGIN cellblock_grid_headcell_field52}
+	<th
+	
+	{$cell_grid_headcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentOtherType_class}
+			"
+
+			data-field="documentOtherType"
+	
+	data-cellId="grid_headcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentOtherType_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field122" {$item_simple_grid_field122} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentOtherType">
+	{$label dbo_novaApplicationsBackofficeView documentOtherType }	</span>
+{END documentOtherType_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field52}
+				 
+					{BEGIN cellblock_grid_headcell_field53}
+	<th
+	
+	{$cell_grid_headcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationAgentStatus_class}
+			"
+
+			data-field="applicationAgentStatus"
+	
+	data-cellId="grid_headcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationAgentStatus_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field123" {$item_simple_grid_field123} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationAgentStatus">
+	{$label dbo_novaApplicationsBackofficeView applicationAgentStatus }	</span>
+{END applicationAgentStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field53}
+				 
+					{BEGIN cellblock_grid_headcell_field54}
+	<th
+	
+	{$cell_grid_headcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationContactMethod_class}
+			"
+
+			data-field="applicationContactMethod"
+	
+	data-cellId="grid_headcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationContactMethod_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field124" {$item_simple_grid_field124} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationContactMethod">
+	{$label dbo_novaApplicationsBackofficeView applicationContactMethod }	</span>
+{END applicationContactMethod_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field54}
+				 
+					{BEGIN cellblock_grid_headcell_field55}
+	<th
+	
+	{$cell_grid_headcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourier_class}
+			"
+
+			data-field="applicationCourier"
+	
+	data-cellId="grid_headcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourier_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field125" {$item_simple_grid_field125} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourier">
+	{$label dbo_novaApplicationsBackofficeView applicationCourier }	</span>
+{END applicationCourier_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field55}
+				 
+					{BEGIN cellblock_grid_headcell_field56}
+	<th
+	
+	{$cell_grid_headcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierDate_class}
+			"
+
+			data-field="applicationCourierDate"
+	
+	data-cellId="grid_headcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierDate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field126" {$item_simple_grid_field126} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierDate">
+	{$label dbo_novaApplicationsBackofficeView applicationCourierDate }	</span>
+{END applicationCourierDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field56}
+				 
+					{BEGIN cellblock_grid_headcell_field57}
+	<th
+	
+	{$cell_grid_headcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierTimeFrom_class}
+			"
+
+			data-field="applicationCourierTimeFrom"
+	
+	data-cellId="grid_headcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierTimeFrom_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field127" {$item_simple_grid_field127} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierTimeFrom">
+	{$label dbo_novaApplicationsBackofficeView applicationCourierTimeFrom }	</span>
+{END applicationCourierTimeFrom_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field57}
+				 
+					{BEGIN cellblock_grid_headcell_field58}
+	<th
+	
+	{$cell_grid_headcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierTimeTo_class}
+			"
+
+			data-field="applicationCourierTimeTo"
+	
+	data-cellId="grid_headcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierTimeTo_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field128" {$item_simple_grid_field128} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierTimeTo">
+	{$label dbo_novaApplicationsBackofficeView applicationCourierTimeTo }	</span>
+{END applicationCourierTimeTo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field58}
+				 
+					{BEGIN cellblock_grid_headcell_field59}
+	<th
+	
+	{$cell_grid_headcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierComments_class}
+			"
+
+			data-field="applicationCourierComments"
+	
+	data-cellId="grid_headcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierComments_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field129" {$item_simple_grid_field129} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierComments">
+	{$label dbo_novaApplicationsBackofficeView applicationCourierComments }	</span>
+{END applicationCourierComments_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field59}
+				 
+					{BEGIN cellblock_grid_headcell_field60}
+	<th
+	
+	{$cell_grid_headcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$adittionalServiceMobileNoLimit_class}
+			"
+
+			data-field="adittionalServiceMobileNoLimit"
+	
+	data-cellId="grid_headcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN adittionalServiceMobileNoLimit_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field130" {$item_simple_grid_field130} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="adittionalServiceMobileNoLimit">
+	{$label dbo_novaApplicationsBackofficeView adittionalServiceMobileNoLimit }	</span>
+{END adittionalServiceMobileNoLimit_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field60}
+				 
+					{BEGIN cellblock_grid_headcell_field61}
+	<th
+	
+	{$cell_grid_headcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEONMultiScreen_class}
+			"
+
+			data-field="additionalServiceEONMultiScreen"
+	
+	data-cellId="grid_headcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEONMultiScreen_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field131" {$item_simple_grid_field131} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEONMultiScreen">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceEONMultiScreen }	</span>
+{END additionalServiceEONMultiScreen_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field61}
+				 
+					{BEGIN cellblock_grid_headcell_field62}
+	<th
+	
+	{$cell_grid_headcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceNovaMultiroom_class}
+			"
+
+			data-field="additionalServiceNovaMultiroom"
+	
+	data-cellId="grid_headcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceNovaMultiroom_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field132" {$item_simple_grid_field132} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceNovaMultiroom">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceNovaMultiroom }	</span>
+{END additionalServiceNovaMultiroom_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field62}
+				 
+					{BEGIN cellblock_grid_headcell_field63}
+	<th
+	
+	{$cell_grid_headcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceAdultPack_class}
+			"
+
+			data-field="additionalServiceAdultPack"
+	
+	data-cellId="grid_headcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceAdultPack_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field133" {$item_simple_grid_field133} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceAdultPack">
+	{$label dbo_novaApplicationsBackofficeView additionalServiceAdultPack }	</span>
+{END additionalServiceAdultPack_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field63}
+				 
+					{BEGIN cellblock_grid_headcell_field64}
+	<th
+	
+	{$cell_grid_headcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationStatusId_class}
+			"
+
+			data-field="applicationStatusId"
+	
+	data-cellId="grid_headcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationStatusId_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field134" {$item_simple_grid_field134} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId">
+	{$label dbo_novaApplicationsBackofficeView applicationStatusId }	</span>
+{END applicationStatusId_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field64}
+				 
+					{BEGIN cellblock_grid_headcell_field65}
+	<th
+	
+	{$cell_grid_headcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationPhase_class}
+			"
+
+			data-field="applicationPhase"
+	
+	data-cellId="grid_headcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationPhase_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field135" {$item_simple_grid_field135} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationPhase">
+	{$label dbo_novaApplicationsBackofficeView applicationPhase }	</span>
+{END applicationPhase_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field65}
+				 
+					{BEGIN cellblock_grid_headcell_field66}
+	<th
+	
+	{$cell_grid_headcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$salesPhase_class}
+			"
+
+			data-field="salesPhase"
+	
+	data-cellId="grid_headcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN salesPhase_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field136" {$item_simple_grid_field136} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="salesPhase">
+	{$label dbo_novaApplicationsBackofficeView salesPhase }	</span>
+{END salesPhase_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field66}
+				 
+					{BEGIN cellblock_grid_headcell_field67}
+	<th
+	
+	{$cell_grid_headcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDate_class}
+			"
+
+			data-field="callDate"
+	
+	data-cellId="grid_headcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field137" {$item_simple_grid_field137} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDate">
+	{$label dbo_novaApplicationsBackofficeView callDate }	</span>
+{END callDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field67}
+				 
+					{BEGIN cellblock_grid_headcell_field68}
+	<th
+	
+	{$cell_grid_headcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callPhone_class}
+			"
+
+			data-field="callPhone"
+	
+	data-cellId="grid_headcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callPhone_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field138" {$item_simple_grid_field138} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callPhone">
+	{$label dbo_novaApplicationsBackofficeView callPhone }	</span>
+{END callPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field68}
+				 
+					{BEGIN cellblock_grid_headcell_field69}
+	<th
+	
+	{$cell_grid_headcell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationLastStatusDate_class}
+			"
+
+			data-field="applicationLastStatusDate"
+	
+	data-cellId="grid_headcell_field69" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationLastStatusDate_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field139" {$item_simple_grid_field139} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationLastStatusDate">
+	{$label dbo_novaApplicationsBackofficeView applicationLastStatusDate }	</span>
+{END applicationLastStatusDate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field69}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-default-width >
+{$id_value}
+</span>
+{END id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callid_class}
+			"
+
+			data-field="callid"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callid_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callid" data-default-width >
+{$callid_value}
+</span>
+{END callid_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationType_class}
+			"
+
+			data-field="applicationType"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationType" data-default-width >
+{$applicationType_value}
+</span>
+{END applicationType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantName_class}
+			"
+
+			data-field="applicantName"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantName" data-default-width >
+{$applicantName_value}
+</span>
+{END applicantName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantFirstName_class}
+			"
+
+			data-field="applicantFirstName"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantFirstName_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantFirstName" data-default-width >
+{$applicantFirstName_value}
+</span>
+{END applicantFirstName_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantBirthdate_class}
+			"
+
+			data-field="applicantBirthdate"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantBirthdate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantBirthdate" data-default-width >
+{$applicantBirthdate_value}
+</span>
+{END applicantBirthdate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantProfession_class}
+			"
+
+			data-field="applicantProfession"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantProfession_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantProfession" data-default-width >
+{$applicantProfession_value}
+</span>
+{END applicantProfession_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantIdNumber_class}
+			"
+
+			data-field="applicantIdNumber"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantIdNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantIdNumber" data-default-width >
+{$applicantIdNumber_value}
+</span>
+{END applicantIdNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantAddress_class}
+			"
+
+			data-field="applicantAddress"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantAddress" data-default-width >
+{$applicantAddress_value}
+</span>
+{END applicantAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPostalCode_class}
+			"
+
+			data-field="applicantPostalCode"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPostalCode" data-default-width >
+{$applicantPostalCode_value}
+</span>
+{END applicantPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantArea_class}
+			"
+
+			data-field="applicantArea"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantArea" data-default-width >
+{$applicantArea_value}
+</span>
+{END applicantArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantCity_class}
+			"
+
+			data-field="applicantCity"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantCity" data-default-width >
+{$applicantCity_value}
+</span>
+{END applicantCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxRegistrationNumber_class}
+			"
+
+			data-field="applicantTaxRegistrationNumber"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantTaxRegistrationNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxRegistrationNumber" data-default-width >
+{$applicantTaxRegistrationNumber_value}
+</span>
+{END applicantTaxRegistrationNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantTaxOffice_class}
+			"
+
+			data-field="applicantTaxOffice"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantTaxOffice_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantTaxOffice" data-default-width >
+{$applicantTaxOffice_value}
+</span>
+{END applicantTaxOffice_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantPhone_class}
+			"
+
+			data-field="applicantPhone"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantPhone" data-default-width >
+{$applicantPhone_value}
+</span>
+{END applicantPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantMobile_class}
+			"
+
+			data-field="applicantMobile"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantMobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantMobile" data-default-width >
+{$applicantMobile_value}
+</span>
+{END applicantMobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicantEmail_class}
+			"
+
+			data-field="applicantEmail"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicantEmail_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicantEmail" data-default-width >
+{$applicantEmail_value}
+</span>
+{END applicantEmail_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$standAloneProgram_class}
+			"
+
+			data-field="standAloneProgram"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN standAloneProgram_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="standAloneProgram" data-default-width >
+{$standAloneProgram_value}
+</span>
+{END standAloneProgram_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+				 
+					{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$doublePlayProgram_class}
+			"
+
+			data-field="doublePlayProgram"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN doublePlayProgram_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doublePlayProgram" data-default-width >
+{$doublePlayProgram_value}
+</span>
+{END doublePlayProgram_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+				 
+					{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ProgramSpeed_class}
+			"
+
+			data-field="ProgramSpeed"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ProgramSpeed_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ProgramSpeed" data-default-width >
+{$ProgramSpeed_value}
+</span>
+{END ProgramSpeed_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+				 
+					{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$triplePlayProgram_class}
+			"
+
+			data-field="triplePlayProgram"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN triplePlayProgram_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="triplePlayProgram" data-default-width >
+{$triplePlayProgram_value}
+</span>
+{END triplePlayProgram_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+				 
+					{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$triplePlayProgramType_class}
+			"
+
+			data-field="triplePlayProgramType"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN triplePlayProgramType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="triplePlayProgramType" data-default-width >
+{$triplePlayProgramType_value}
+</span>
+{END triplePlayProgramType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+				 
+					{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternet_class}
+			"
+
+			data-field="additionalServiceInternet"
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternet_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternet" data-default-width >
+{$additionalServiceInternet_value}
+</span>
+{END additionalServiceInternet_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field22}
+				 
+					{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternetSpeed_class}
+			"
+
+			data-field="additionalServiceInternetSpeed"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternetSpeed_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternetSpeed" data-default-width >
+{$additionalServiceInternetSpeed_value}
+</span>
+{END additionalServiceInternetSpeed_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+				 
+					{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceInternationalCalls_class}
+			"
+
+			data-field="additionalServiceInternationalCalls"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceInternationalCalls_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceInternationalCalls" data-default-width >
+{$additionalServiceInternationalCalls_value}
+</span>
+{END additionalServiceInternationalCalls_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+				 
+					{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceStaticIp_class}
+			"
+
+			data-field="additionalServiceStaticIp"
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceStaticIp_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceStaticIp" data-default-width >
+{$additionalServiceStaticIp_value}
+</span>
+{END additionalServiceStaticIp_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field25}
+				 
+					{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceStaticBlock8Ip_class}
+			"
+
+			data-field="additionalServiceStaticBlock8Ip"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceStaticBlock8Ip_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceStaticBlock8Ip" data-default-width >
+{$additionalServiceStaticBlock8Ip_value}
+</span>
+{END additionalServiceStaticBlock8Ip_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+				 
+					{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceSecondLine_class}
+			"
+
+			data-field="additionalServiceSecondLine"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceSecondLine_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceSecondLine" data-default-width >
+{$additionalServiceSecondLine_value}
+</span>
+{END additionalServiceSecondLine_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceLandLine1000Minutes_class}
+			"
+
+			data-field="additionalServiceLandLine1000Minutes"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceLandLine1000Minutes_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceLandLine1000Minutes" data-default-width >
+{$additionalServiceLandLine1000Minutes_value}
+</span>
+{END additionalServiceLandLine1000Minutes_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEquipment_class}
+			"
+
+			data-field="additionalServiceEquipment"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEquipment_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEquipment" data-default-width >
+{$additionalServiceEquipment_value}
+</span>
+{END additionalServiceEquipment_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEquipmentInstallation_class}
+			"
+
+			data-field="additionalServiceEquipmentInstallation"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEquipmentInstallation_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEquipmentInstallation" data-default-width >
+{$additionalServiceEquipmentInstallation_value}
+</span>
+{END additionalServiceEquipmentInstallation_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityIsNewLine_class}
+			"
+
+			data-field="portabilityIsNewLine"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityIsNewLine_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityIsNewLine" data-default-width >
+{$portabilityIsNewLine_value}
+</span>
+{END portabilityIsNewLine_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityOldNumber_class}
+			"
+
+			data-field="portabilityOldNumber"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityOldNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityOldNumber" data-default-width >
+{$portabilityOldNumber_value}
+</span>
+{END portabilityOldNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
+				 
+					{BEGIN cellblock_grid_cell_field33}
+	<td
+	
+	{$cell_grid_cell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityOldOwner_class}
+			"
+
+			data-field="portabilityOldOwner"
+	
+	data-cellId="grid_cell_field33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityOldOwner_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityOldOwner" data-default-width >
+{$portabilityOldOwner_value}
+</span>
+{END portabilityOldOwner_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field33}
+				 
+					{BEGIN cellblock_grid_cell_field34}
+	<td
+	
+	{$cell_grid_cell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationAddress_class}
+			"
+
+			data-field="portabilityActivationAddress"
+	
+	data-cellId="grid_cell_field34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationAddress_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationAddress" data-default-width >
+{$portabilityActivationAddress_value}
+</span>
+{END portabilityActivationAddress_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field34}
+				 
+					{BEGIN cellblock_grid_cell_field35}
+	<td
+	
+	{$cell_grid_cell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationPostalCode_class}
+			"
+
+			data-field="portabilityActivationPostalCode"
+	
+	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationPostalCode_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationPostalCode" data-default-width >
+{$portabilityActivationPostalCode_value}
+</span>
+{END portabilityActivationPostalCode_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field35}
+				 
+					{BEGIN cellblock_grid_cell_field36}
+	<td
+	
+	{$cell_grid_cell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationArea_class}
+			"
+
+			data-field="portabilityActivationArea"
+	
+	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationArea_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationArea" data-default-width >
+{$portabilityActivationArea_value}
+</span>
+{END portabilityActivationArea_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityActivationCity_class}
+			"
+
+			data-field="portabilityActivationCity"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityActivationCity_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityActivationCity" data-default-width >
+{$portabilityActivationCity_value}
+</span>
+{END portabilityActivationCity_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityPstnIsdn_class}
+			"
+
+			data-field="portabilityPstnIsdn"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityPstnIsdn_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityPstnIsdn" data-default-width >
+{$portabilityPstnIsdn_value}
+</span>
+{END portabilityPstnIsdn_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+				 
+					{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine1PhoneNumber_class}
+			"
+
+			data-field="portabilityLine1PhoneNumber"
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine1PhoneNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine1PhoneNumber" data-default-width >
+{$portabilityLine1PhoneNumber_value}
+</span>
+{END portabilityLine1PhoneNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field39}
+				 
+					{BEGIN cellblock_grid_cell_field40}
+	<td
+	
+	{$cell_grid_cell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine2PhoneNumber_class}
+			"
+
+			data-field="portabilityLine2PhoneNumber"
+	
+	data-cellId="grid_cell_field40" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine2PhoneNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine2PhoneNumber" data-default-width >
+{$portabilityLine2PhoneNumber_value}
+</span>
+{END portabilityLine2PhoneNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field40}
+				 
+					{BEGIN cellblock_grid_cell_field41}
+	<td
+	
+	{$cell_grid_cell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine3PhoneNumber_class}
+			"
+
+			data-field="portabilityLine3PhoneNumber"
+	
+	data-cellId="grid_cell_field41" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine3PhoneNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine3PhoneNumber" data-default-width >
+{$portabilityLine3PhoneNumber_value}
+</span>
+{END portabilityLine3PhoneNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field41}
+				 
+					{BEGIN cellblock_grid_cell_field42}
+	<td
+	
+	{$cell_grid_cell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityLine4PhoneNumber_class}
+			"
+
+			data-field="portabilityLine4PhoneNumber"
+	
+	data-cellId="grid_cell_field42" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityLine4PhoneNumber_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityLine4PhoneNumber" data-default-width >
+{$portabilityLine4PhoneNumber_value}
+</span>
+{END portabilityLine4PhoneNumber_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field42}
+				 
+					{BEGIN cellblock_grid_cell_field43}
+	<td
+	
+	{$cell_grid_cell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityUsername1_class}
+			"
+
+			data-field="portabilityUsername1"
+	
+	data-cellId="grid_cell_field43" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityUsername1_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityUsername1" data-default-width >
+{$portabilityUsername1_value}
+</span>
+{END portabilityUsername1_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field43}
+				 
+					{BEGIN cellblock_grid_cell_field44}
+	<td
+	
+	{$cell_grid_cell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$portabilityusername2_class}
+			"
+
+			data-field="portabilityusername2"
+	
+	data-cellId="grid_cell_field44" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN portabilityusername2_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="portabilityusername2" data-default-width >
+{$portabilityusername2_value}
+</span>
+{END portabilityusername2_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field44}
+				 
+					{BEGIN cellblock_grid_cell_field45}
+	<td
+	
+	{$cell_grid_cell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentIdPassport_class}
+			"
+
+			data-field="documentIdPassport"
+	
+	data-cellId="grid_cell_field45" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentIdPassport_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentIdPassport" data-default-width >
+{$documentIdPassport_value}
+</span>
+{END documentIdPassport_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field45}
+				 
+					{BEGIN cellblock_grid_cell_field46}
+	<td
+	
+	{$cell_grid_cell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentIdPassportPreviousOwner_class}
+			"
+
+			data-field="documentIdPassportPreviousOwner"
+	
+	data-cellId="grid_cell_field46" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentIdPassportPreviousOwner_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentIdPassportPreviousOwner" data-default-width >
+{$documentIdPassportPreviousOwner_value}
+</span>
+{END documentIdPassportPreviousOwner_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field46}
+				 
+					{BEGIN cellblock_grid_cell_field47}
+	<td
+	
+	{$cell_grid_cell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentLastBill_class}
+			"
+
+			data-field="documentLastBill"
+	
+	data-cellId="grid_cell_field47" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentLastBill_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentLastBill" data-default-width >
+{$documentLastBill_value}
+</span>
+{END documentLastBill_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field47}
+				 
+					{BEGIN cellblock_grid_cell_field48}
+	<td
+	
+	{$cell_grid_cell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentAddressValidation_class}
+			"
+
+			data-field="documentAddressValidation"
+	
+	data-cellId="grid_cell_field48" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentAddressValidation_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentAddressValidation" data-default-width >
+{$documentAddressValidation_value}
+</span>
+{END documentAddressValidation_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field48}
+				 
+					{BEGIN cellblock_grid_cell_field49}
+	<td
+	
+	{$cell_grid_cell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentDeathCertificate_class}
+			"
+
+			data-field="documentDeathCertificate"
+	
+	data-cellId="grid_cell_field49" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentDeathCertificate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentDeathCertificate" data-default-width >
+{$documentDeathCertificate_value}
+</span>
+{END documentDeathCertificate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field49}
+				 
+					{BEGIN cellblock_grid_cell_field50}
+	<td
+	
+	{$cell_grid_cell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentAuthorization_class}
+			"
+
+			data-field="documentAuthorization"
+	
+	data-cellId="grid_cell_field50" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentAuthorization_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentAuthorization" data-default-width >
+{$documentAuthorization_value}
+</span>
+{END documentAuthorization_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field50}
+				 
+					{BEGIN cellblock_grid_cell_field51}
+	<td
+	
+	{$cell_grid_cell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentOther_class}
+			"
+
+			data-field="documentOther"
+	
+	data-cellId="grid_cell_field51" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentOther_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentOther" data-default-width >
+{$documentOther_value}
+</span>
+{END documentOther_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field51}
+				 
+					{BEGIN cellblock_grid_cell_field52}
+	<td
+	
+	{$cell_grid_cell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documentOtherType_class}
+			"
+
+			data-field="documentOtherType"
+	
+	data-cellId="grid_cell_field52" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documentOtherType_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documentOtherType" data-default-width >
+{$documentOtherType_value}
+</span>
+{END documentOtherType_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field52}
+				 
+					{BEGIN cellblock_grid_cell_field53}
+	<td
+	
+	{$cell_grid_cell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationAgentStatus_class}
+			"
+
+			data-field="applicationAgentStatus"
+	
+	data-cellId="grid_cell_field53" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationAgentStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationAgentStatus" data-default-width >
+{$applicationAgentStatus_value}
+</span>
+{END applicationAgentStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field53}
+				 
+					{BEGIN cellblock_grid_cell_field54}
+	<td
+	
+	{$cell_grid_cell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationContactMethod_class}
+			"
+
+			data-field="applicationContactMethod"
+	
+	data-cellId="grid_cell_field54" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationContactMethod_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field56" {$item_simple_grid_field56} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationContactMethod" data-default-width >
+{$applicationContactMethod_value}
+</span>
+{END applicationContactMethod_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field54}
+				 
+					{BEGIN cellblock_grid_cell_field55}
+	<td
+	
+	{$cell_grid_cell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourier_class}
+			"
+
+			data-field="applicationCourier"
+	
+	data-cellId="grid_cell_field55" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourier_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field57" {$item_simple_grid_field57} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourier" data-default-width >
+{$applicationCourier_value}
+</span>
+{END applicationCourier_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field55}
+				 
+					{BEGIN cellblock_grid_cell_field56}
+	<td
+	
+	{$cell_grid_cell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierDate_class}
+			"
+
+			data-field="applicationCourierDate"
+	
+	data-cellId="grid_cell_field56" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field58" {$item_simple_grid_field58} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierDate" data-default-width >
+{$applicationCourierDate_value}
+</span>
+{END applicationCourierDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field56}
+				 
+					{BEGIN cellblock_grid_cell_field57}
+	<td
+	
+	{$cell_grid_cell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierTimeFrom_class}
+			"
+
+			data-field="applicationCourierTimeFrom"
+	
+	data-cellId="grid_cell_field57" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierTimeFrom_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field59" {$item_simple_grid_field59} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierTimeFrom" data-default-width >
+{$applicationCourierTimeFrom_value}
+</span>
+{END applicationCourierTimeFrom_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field57}
+				 
+					{BEGIN cellblock_grid_cell_field58}
+	<td
+	
+	{$cell_grid_cell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierTimeTo_class}
+			"
+
+			data-field="applicationCourierTimeTo"
+	
+	data-cellId="grid_cell_field58" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierTimeTo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field60" {$item_simple_grid_field60} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierTimeTo" data-default-width >
+{$applicationCourierTimeTo_value}
+</span>
+{END applicationCourierTimeTo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field58}
+				 
+					{BEGIN cellblock_grid_cell_field59}
+	<td
+	
+	{$cell_grid_cell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationCourierComments_class}
+			"
+
+			data-field="applicationCourierComments"
+	
+	data-cellId="grid_cell_field59" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationCourierComments_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field61" {$item_simple_grid_field61} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationCourierComments" data-default-width >
+{$applicationCourierComments_value}
+</span>
+{END applicationCourierComments_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field59}
+				 
+					{BEGIN cellblock_grid_cell_field60}
+	<td
+	
+	{$cell_grid_cell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$adittionalServiceMobileNoLimit_class}
+			"
+
+			data-field="adittionalServiceMobileNoLimit"
+	
+	data-cellId="grid_cell_field60" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN adittionalServiceMobileNoLimit_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field65" {$item_simple_grid_field65} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="adittionalServiceMobileNoLimit" data-default-width >
+{$adittionalServiceMobileNoLimit_value}
+</span>
+{END adittionalServiceMobileNoLimit_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field60}
+				 
+					{BEGIN cellblock_grid_cell_field61}
+	<td
+	
+	{$cell_grid_cell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceEONMultiScreen_class}
+			"
+
+			data-field="additionalServiceEONMultiScreen"
+	
+	data-cellId="grid_cell_field61" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceEONMultiScreen_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceEONMultiScreen" data-default-width >
+{$additionalServiceEONMultiScreen_value}
+</span>
+{END additionalServiceEONMultiScreen_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field61}
+				 
+					{BEGIN cellblock_grid_cell_field62}
+	<td
+	
+	{$cell_grid_cell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceNovaMultiroom_class}
+			"
+
+			data-field="additionalServiceNovaMultiroom"
+	
+	data-cellId="grid_cell_field62" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceNovaMultiroom_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field67" {$item_simple_grid_field67} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceNovaMultiroom" data-default-width >
+{$additionalServiceNovaMultiroom_value}
+</span>
+{END additionalServiceNovaMultiroom_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field62}
+				 
+					{BEGIN cellblock_grid_cell_field63}
+	<td
+	
+	{$cell_grid_cell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$additionalServiceAdultPack_class}
+			"
+
+			data-field="additionalServiceAdultPack"
+	
+	data-cellId="grid_cell_field63" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN additionalServiceAdultPack_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field68" {$item_simple_grid_field68} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="additionalServiceAdultPack" data-default-width >
+{$additionalServiceAdultPack_value}
+</span>
+{END additionalServiceAdultPack_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field63}
+				 
+					{BEGIN cellblock_grid_cell_field64}
+	<td
+	
+	{$cell_grid_cell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationStatusId_class}
+			"
+
+			data-field="applicationStatusId"
+	
+	data-cellId="grid_cell_field64" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationStatusId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId" data-default-width >
+{$applicationStatusId_value}
+</span>
+{END applicationStatusId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field64}
+				 
+					{BEGIN cellblock_grid_cell_field65}
+	<td
+	
+	{$cell_grid_cell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationPhase_class}
+			"
+
+			data-field="applicationPhase"
+	
+	data-cellId="grid_cell_field65" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationPhase_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field69" {$item_simple_grid_field69} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationPhase" data-default-width >
+{$applicationPhase_value}
+</span>
+{END applicationPhase_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field65}
+				 
+					{BEGIN cellblock_grid_cell_field66}
+	<td
+	
+	{$cell_grid_cell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$salesPhase_class}
+			"
+
+			data-field="salesPhase"
+	
+	data-cellId="grid_cell_field66" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN salesPhase_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field70" {$item_simple_grid_field70} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="salesPhase" data-default-width >
+{$salesPhase_value}
+</span>
+{END salesPhase_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field66}
+				 
+					{BEGIN cellblock_grid_cell_field67}
+	<td
+	
+	{$cell_grid_cell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callDate_class}
+			"
+
+			data-field="callDate"
+	
+	data-cellId="grid_cell_field67" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callDate" data-default-width >
+{$callDate_value}
+</span>
+{END callDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field67}
+				 
+					{BEGIN cellblock_grid_cell_field68}
+	<td
+	
+	{$cell_grid_cell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callPhone_class}
+			"
+
+			data-field="callPhone"
+	
+	data-cellId="grid_cell_field68" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field62" {$item_simple_grid_field62} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callPhone" data-default-width >
+{$callPhone_value}
+</span>
+{END callPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field68}
+				 
+					{BEGIN cellblock_grid_cell_field69}
+	<td
+	
+	{$cell_grid_cell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$applicationLastStatusDate_class}
+			"
+
+			data-field="applicationLastStatusDate"
+	
+	data-cellId="grid_cell_field69" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN applicationLastStatusDate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field63" {$item_simple_grid_field63} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationLastStatusDate" data-default-width >
+{$applicationLastStatusDate_value}
+</span>
+{END applicationLastStatusDate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field69}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+				 
+					{BEGIN cellblock_grid_footcell_field18}
+	<td
+	
+	{$cell_grid_footcell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field18}
+				 
+					{BEGIN cellblock_grid_footcell_field19}
+	<td
+	
+	{$cell_grid_footcell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field19}
+				 
+					{BEGIN cellblock_grid_footcell_field20}
+	<td
+	
+	{$cell_grid_footcell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field20" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field20}
+				 
+					{BEGIN cellblock_grid_footcell_field21}
+	<td
+	
+	{$cell_grid_footcell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field21" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field21}
+				 
+					{BEGIN cellblock_grid_footcell_field22}
+	<td
+	
+	{$cell_grid_footcell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field22" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field22}
+				 
+					{BEGIN cellblock_grid_footcell_field23}
+	<td
+	
+	{$cell_grid_footcell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field23}
+				 
+					{BEGIN cellblock_grid_footcell_field24}
+	<td
+	
+	{$cell_grid_footcell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field24}
+				 
+					{BEGIN cellblock_grid_footcell_field25}
+	<td
+	
+	{$cell_grid_footcell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field25" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field25}
+				 
+					{BEGIN cellblock_grid_footcell_field26}
+	<td
+	
+	{$cell_grid_footcell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field26" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field26}
+				 
+					{BEGIN cellblock_grid_footcell_field27}
+	<td
+	
+	{$cell_grid_footcell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field27" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
+				 
+					{BEGIN cellblock_grid_footcell_field33}
+	<td
+	
+	{$cell_grid_footcell_field33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field33" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field33}
+				 
+					{BEGIN cellblock_grid_footcell_field34}
+	<td
+	
+	{$cell_grid_footcell_field34}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field34" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field34}
+				 
+					{BEGIN cellblock_grid_footcell_field35}
+	<td
+	
+	{$cell_grid_footcell_field35}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field35" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field35}
+				 
+					{BEGIN cellblock_grid_footcell_field36}
+	<td
+	
+	{$cell_grid_footcell_field36}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field36" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
+				 
+					{BEGIN cellblock_grid_footcell_field39}
+	<td
+	
+	{$cell_grid_footcell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field39}
+				 
+					{BEGIN cellblock_grid_footcell_field40}
+	<td
+	
+	{$cell_grid_footcell_field40}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field40" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field40}
+				 
+					{BEGIN cellblock_grid_footcell_field41}
+	<td
+	
+	{$cell_grid_footcell_field41}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field41" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field41}
+				 
+					{BEGIN cellblock_grid_footcell_field42}
+	<td
+	
+	{$cell_grid_footcell_field42}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field42" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field42}
+				 
+					{BEGIN cellblock_grid_footcell_field43}
+	<td
+	
+	{$cell_grid_footcell_field43}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field43" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field43}
+				 
+					{BEGIN cellblock_grid_footcell_field44}
+	<td
+	
+	{$cell_grid_footcell_field44}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field44}
+				 
+					{BEGIN cellblock_grid_footcell_field45}
+	<td
+	
+	{$cell_grid_footcell_field45}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field45" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field45}
+				 
+					{BEGIN cellblock_grid_footcell_field46}
+	<td
+	
+	{$cell_grid_footcell_field46}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field46" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field46}
+				 
+					{BEGIN cellblock_grid_footcell_field47}
+	<td
+	
+	{$cell_grid_footcell_field47}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field47" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field47}
+				 
+					{BEGIN cellblock_grid_footcell_field48}
+	<td
+	
+	{$cell_grid_footcell_field48}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field48" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field48}
+				 
+					{BEGIN cellblock_grid_footcell_field49}
+	<td
+	
+	{$cell_grid_footcell_field49}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field49" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field49}
+				 
+					{BEGIN cellblock_grid_footcell_field50}
+	<td
+	
+	{$cell_grid_footcell_field50}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field50" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field50}
+				 
+					{BEGIN cellblock_grid_footcell_field51}
+	<td
+	
+	{$cell_grid_footcell_field51}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field51" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field51}
+				 
+					{BEGIN cellblock_grid_footcell_field52}
+	<td
+	
+	{$cell_grid_footcell_field52}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field52" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field52}
+				 
+					{BEGIN cellblock_grid_footcell_field53}
+	<td
+	
+	{$cell_grid_footcell_field53}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field53" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field53}
+				 
+					{BEGIN cellblock_grid_footcell_field54}
+	<td
+	
+	{$cell_grid_footcell_field54}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field54" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field54}
+				 
+					{BEGIN cellblock_grid_footcell_field55}
+	<td
+	
+	{$cell_grid_footcell_field55}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field55" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field55}
+				 
+					{BEGIN cellblock_grid_footcell_field56}
+	<td
+	
+	{$cell_grid_footcell_field56}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field56" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field56}
+				 
+					{BEGIN cellblock_grid_footcell_field57}
+	<td
+	
+	{$cell_grid_footcell_field57}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field57" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field57}
+				 
+					{BEGIN cellblock_grid_footcell_field58}
+	<td
+	
+	{$cell_grid_footcell_field58}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field58" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field58}
+				 
+					{BEGIN cellblock_grid_footcell_field59}
+	<td
+	
+	{$cell_grid_footcell_field59}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field59" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field59}
+				 
+					{BEGIN cellblock_grid_footcell_field60}
+	<td
+	
+	{$cell_grid_footcell_field60}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field60" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field60}
+				 
+					{BEGIN cellblock_grid_footcell_field61}
+	<td
+	
+	{$cell_grid_footcell_field61}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field61" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field61}
+				 
+					{BEGIN cellblock_grid_footcell_field62}
+	<td
+	
+	{$cell_grid_footcell_field62}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field62" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field62}
+				 
+					{BEGIN cellblock_grid_footcell_field63}
+	<td
+	
+	{$cell_grid_footcell_field63}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field63}
+				 
+					{BEGIN cellblock_grid_footcell_field64}
+	<td
+	
+	{$cell_grid_footcell_field64}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field64}
+				 
+					{BEGIN cellblock_grid_footcell_field65}
+	<td
+	
+	{$cell_grid_footcell_field65}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field65" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field65}
+				 
+					{BEGIN cellblock_grid_footcell_field66}
+	<td
+	
+	{$cell_grid_footcell_field66}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field66}
+				 
+					{BEGIN cellblock_grid_footcell_field67}
+	<td
+	
+	{$cell_grid_footcell_field67}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field67}
+				 
+					{BEGIN cellblock_grid_footcell_field68}
+	<td
+	
+	{$cell_grid_footcell_field68}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field68}
+				 
+					{BEGIN cellblock_grid_footcell_field69}
+	<td
+	
+	{$cell_grid_footcell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field69" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="novaapplicationsbackofficeview_masterprint"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field69}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+								</div>
+</div>

@@ -1,0 +1,8691 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption dbo_voltonApplications}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0 : 0;
+					} else  {
+						return 0; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"*",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 1,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_inline_add3}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_inline_save_all}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+								[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Εμφανίζονται οι %first% - %last% από %total%","hidden":"{$item_hide_details_found}","isHtml":true,"page_indicator":true},
+				
+				
+			{"text":"","hidden":"{$item_hide_page_size}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_print_panel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+								[
+												{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$pdf_image images/volton%20header.png 0 0},"hidden":"{$item_hide_image1}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+	{BEGIN grid_row}
+	[ 
+	
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	
+		{ 
+			layout: 'vrecord',
+			table: {
+				widths: ['*'],
+				body: [[
+					{
+						
+						table: {
+							tableForm: true,
+							widths: [
+																{BEGIN col_grid_0}
+								"%",
+								{END col_grid_0}
+																{BEGIN col_grid_1}
+								"%",
+								{END col_grid_1}
+																{BEGIN col_grid_2}
+								"%",
+								{END col_grid_2}
+																{BEGIN col_grid_3}
+								"%",
+								{END col_grid_3}
+																{BEGIN col_grid_4}
+								"%",
+								{END col_grid_4}
+																{BEGIN col_grid_5}
+								"%",
+								{END col_grid_5}
+																{BEGIN col_grid_6}
+								"%",
+								{END col_grid_6}
+																{BEGIN col_grid_7}
+								"%",
+								{END col_grid_7}
+															],
+													heights: [
+															{BEGIN row_grid_0}			
+								"%",
+								{END row_grid_0}
+															{BEGIN row_grid_1}			
+								"%",
+								{END row_grid_1}
+															{BEGIN row_grid_2}			
+								"%",
+								{END row_grid_2}
+															{BEGIN row_grid_3}			
+								"%",
+								{END row_grid_3}
+															{BEGIN row_grid_4}			
+								"%",
+								{END row_grid_4}
+															{BEGIN row_grid_5}			
+								"%",
+								{END row_grid_5}
+															{BEGIN row_grid_6}			
+								"%",
+								{END row_grid_6}
+															{BEGIN row_grid_7}			
+								"%",
+								{END row_grid_7}
+															{BEGIN row_grid_8}			
+								"%",
+								{END row_grid_8}
+															{BEGIN row_grid_9}			
+								"%",
+								{END row_grid_9}
+															{BEGIN row_grid_10}			
+								"%",
+								{END row_grid_10}
+															{BEGIN row_grid_11}			
+								"%",
+								{END row_grid_11}
+															{BEGIN row_grid_12}			
+								"%",
+								{END row_grid_12}
+															{BEGIN row_grid_13}			
+								"%",
+								{END row_grid_13}
+															{BEGIN row_grid_14}			
+								"%",
+								{END row_grid_14}
+															{BEGIN row_grid_15}			
+								"%",
+								{END row_grid_15}
+															{BEGIN row_grid_16}			
+								"%",
+								{END row_grid_16}
+															{BEGIN row_grid_17}			
+								"%",
+								{END row_grid_17}
+															{BEGIN row_grid_18}			
+								"%",
+								{END row_grid_18}
+															{BEGIN row_grid_19}			
+								"%",
+								{END row_grid_19}
+															{BEGIN row_grid_20}			
+								"%",
+								{END row_grid_20}
+															{BEGIN row_grid_21}			
+								"%",
+								{END row_grid_21}
+															{BEGIN row_grid_22}			
+								"%",
+								{END row_grid_22}
+															{BEGIN row_grid_23}			
+								"%",
+								{END row_grid_23}
+															{BEGIN row_grid_24}			
+								"%",
+								{END row_grid_24}
+															{BEGIN row_grid_25}			
+								"%",
+								{END row_grid_25}
+															{BEGIN row_grid_26}			
+								"%",
+								{END row_grid_26}
+															{BEGIN row_grid_27}			
+								"%",
+								{END row_grid_27}
+															{BEGIN row_grid_28}			
+								"%",
+								{END row_grid_28}
+															{BEGIN row_grid_29}			
+								"%",
+								{END row_grid_29}
+															{BEGIN row_grid_30}			
+								"%",
+								{END row_grid_30}
+															{BEGIN row_grid_31}			
+								"%",
+								{END row_grid_31}
+															{BEGIN row_grid_32}			
+								"%",
+								{END row_grid_32}
+															{BEGIN row_grid_33}			
+								"%",
+								{END row_grid_33}
+															{BEGIN row_grid_34}			
+								"%",
+								{END row_grid_34}
+															{BEGIN row_grid_35}			
+								"%",
+								{END row_grid_35}
+															{BEGIN row_grid_36}			
+								"%",
+								{END row_grid_36}
+															{BEGIN row_grid_37}			
+								"%",
+								{END row_grid_37}
+															{BEGIN row_grid_38}			
+								"%",
+								{END row_grid_38}
+															{BEGIN row_grid_39}			
+								"%",
+								{END row_grid_39}
+															{BEGIN row_grid_40}			
+								"%",
+								{END row_grid_40}
+															{BEGIN row_grid_41}			
+								"%",
+								{END row_grid_41}
+															{BEGIN row_grid_42}			
+								"%",
+								{END row_grid_42}
+															{BEGIN row_grid_43}			
+								"%",
+								{END row_grid_43}
+															{BEGIN row_grid_44}			
+								"%",
+								{END row_grid_44}
+															{BEGIN row_grid_45}			
+								"%",
+								{END row_grid_45}
+															{BEGIN row_grid_46}			
+								"%",
+								{END row_grid_46}
+															{BEGIN row_grid_47}			
+								"%",
+								{END row_grid_47}
+															{BEGIN row_grid_48}			
+								"%",
+								{END row_grid_48}
+															{BEGIN row_grid_49}			
+								"%",
+								{END row_grid_49}
+															{BEGIN row_grid_50}			
+								"%",
+								{END row_grid_50}
+															{BEGIN row_grid_51}			
+								"%",
+								{END row_grid_51}
+															{BEGIN row_grid_52}			
+								"%",
+								{END row_grid_52}
+															{BEGIN row_grid_53}			
+								"%",
+								{END row_grid_53}
+														],
+													
+							body: [
+									
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_cell_top}
+{
+	cellId: 'cell_top',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_top}
+			colSpan: {$colspan_grid_cell_top},
+			{END colspan_grid_cell_top}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_grid_checkbox}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_edit}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_edit}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_copy}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_view}"},
+				
+		  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_top}
+																		{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field}
+			colSpan: {$colspan_grid_cell_field},
+			{END colspan_grid_cell_field}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$pdf_image images/volton%20header.png 0 0},"hidden":"{$item_hide_image}"},
+				
+		  ],
+  "border": [false,false,false,false],
+          "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field}
+																		{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_cell_field64}
+{
+	cellId: 'cell_field64',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field64}
+			colSpan: {$colspan_grid_cell_field64},
+			{END colspan_grid_cell_field64}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel dbo_voltonApplications applicationType }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_simple_grid_field3}","text":{$applicationType_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#fbffc6',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field64}
+																		{ 
+				cellId: 'cell_field64',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field64',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field64',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field66}
+{
+	cellId: 'cell_field66',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel dbo_voltonApplications applicationStatusId }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_simple_grid_field2}","text":{$applicationStatusId_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#fbffc6',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field66}
+																			{BEGIN cellblock_grid_cell_field67}
+{
+	cellId: 'cell_field67',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label14}","text":"{$jslabel dbo_voltonApplications applicationLastStatusDate }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_grid_field14}","text":{$applicationLastStatusDate_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#fbffc6',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field67}
+																			{BEGIN cellblock_grid_cell_field68}
+{
+	cellId: 'cell_field68',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label19}","text":"{$jslabel dbo_voltonApplications dialerAgent }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_grid_field21}","text":{$dialerAgent_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#fbffc6',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field68}
+																			{BEGIN cellblock_grid_cell_field69}
+{
+	cellId: 'cell_field69',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#fbffc6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field69}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_cell_label}
+{
+	cellId: 'cell_label',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label}
+			colSpan: {$colspan_grid_cell_label},
+			{END colspan_grid_cell_label}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ","hidden":"{$item_hide_text}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label}
+																		{ 
+				cellId: 'cell_label',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label1}
+{
+	cellId: 'cell_label1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label1}
+																			{BEGIN cellblock_grid_cell_field1}
+{
+	cellId: 'cell_field1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field1}
+																			{BEGIN cellblock_grid_cell_label2}
+{
+	cellId: 'cell_label2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label2}
+																			{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field2}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_cell_label4}
+{
+	cellId: 'cell_label4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label4}
+			colSpan: {$colspan_grid_cell_label4},
+			{END colspan_grid_cell_label4}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel dbo_voltonApplications applicantName }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label4}
+																		{ 
+				cellId: 'cell_label4',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label4',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field4}
+{
+	cellId: 'cell_field4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field4}","text":{$applicantName_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantName_align}',
+  },
+
+{END cellblock_grid_cell_field4}
+																			{BEGIN cellblock_grid_cell_label5}
+{
+	cellId: 'cell_label5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel dbo_voltonApplications applicantIdNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label5}
+																			{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field5}","text":{$applicantIdNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantIdNumber_align}',
+  },
+
+{END cellblock_grid_cell_field5}
+																			{BEGIN cellblock_grid_cell_label6}
+{
+	cellId: 'cell_label6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label6}
+																			{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field6}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
+												{BEGIN cellblock_grid_cell_label8}
+{
+	cellId: 'cell_label8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label8}
+			colSpan: {$colspan_grid_cell_label8},
+			{END colspan_grid_cell_label8}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel dbo_voltonApplications applicantAddress }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label8}
+																		{ 
+				cellId: 'cell_label8',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label8',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field8}
+{
+	cellId: 'cell_field8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field6}","text":{$applicantAddress_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantAddress_align}',
+  },
+
+{END cellblock_grid_cell_field8}
+																			{BEGIN cellblock_grid_cell_label9}
+{
+	cellId: 'cell_label9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel dbo_voltonApplications applicantPostalCode }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label9}
+																			{BEGIN cellblock_grid_cell_field9}
+{
+	cellId: 'cell_field9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":{$applicantPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_field9}
+																			{BEGIN cellblock_grid_cell_label10}
+{
+	cellId: 'cell_label10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label10}
+																			{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field10}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				[
+												{BEGIN cellblock_grid_cell_label12}
+{
+	cellId: 'cell_label12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label12}
+			colSpan: {$colspan_grid_cell_label12},
+			{END colspan_grid_cell_label12}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel dbo_voltonApplications applicantArea }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label12}
+																		{ 
+				cellId: 'cell_label12',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label12',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field8}","text":{$applicantArea_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantArea_align}',
+  },
+
+{END cellblock_grid_cell_field12}
+																			{BEGIN cellblock_grid_cell_label13}
+{
+	cellId: 'cell_label13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel dbo_voltonApplications applicantCity }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label13}
+																			{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field9}","text":{$applicantCity_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantCity_align}',
+  },
+
+{END cellblock_grid_cell_field13}
+																			{BEGIN cellblock_grid_cell_label14}
+{
+	cellId: 'cell_label14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label14}
+																			{BEGIN cellblock_grid_cell_field14}
+{
+	cellId: 'cell_field14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field14}
+											],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				[
+												{BEGIN cellblock_grid_cell_label64}
+{
+	cellId: 'cell_label64',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label64}
+			colSpan: {$colspan_grid_cell_label64},
+			{END colspan_grid_cell_label64}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel dbo_voltonApplications applicantPhone }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label64}
+																		{ 
+				cellId: 'cell_label64',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label64',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label65}
+{
+	cellId: 'cell_label65',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field16}","text":{$applicantPhone_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantPhone_align}',
+  },
+
+{END cellblock_grid_cell_label65}
+																			{BEGIN cellblock_grid_cell_label66}
+{
+	cellId: 'cell_label66',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel dbo_voltonApplications applicantWorkPhone }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label66}
+																			{BEGIN cellblock_grid_cell_label67}
+{
+	cellId: 'cell_label67',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field17}","text":{$applicantWorkPhone_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantWorkPhone_align}',
+  },
+
+{END cellblock_grid_cell_label67}
+																			{BEGIN cellblock_grid_cell_label68}
+{
+	cellId: 'cell_label68',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel dbo_voltonApplications applicantMobile }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label68}
+																			{BEGIN cellblock_grid_cell_label69}
+{
+	cellId: 'cell_label69',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field18}","text":{$applicantMobile_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantMobile_align}',
+  },
+
+{END cellblock_grid_cell_label69}
+											],
+				{END row_grid_7}
+								{BEGIN row_grid_8}
+				[
+												{BEGIN cellblock_grid_cell_field88}
+{
+	cellId: 'cell_field88',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field88}
+			colSpan: {$colspan_grid_cell_field88},
+			{END colspan_grid_cell_field88}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel dbo_voltonApplications applicantProfession }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field88}
+																		{ 
+				cellId: 'cell_field88',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field88',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field89}
+{
+	cellId: 'cell_field89',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field13}","text":{$applicantProfession_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantProfession_align}',
+  },
+
+{END cellblock_grid_cell_field89}
+																			{BEGIN cellblock_grid_cell_field90}
+{
+	cellId: 'cell_field90',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel dbo_voltonApplications applicantEmail }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field90}
+																			{BEGIN cellblock_grid_cell_field91}
+{
+	cellId: 'cell_field91',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":{$applicantEmail_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantEmail_align}',
+  },
+
+{END cellblock_grid_cell_field91}
+																			{BEGIN cellblock_grid_cell_field92}
+{
+	cellId: 'cell_field92',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel dbo_voltonApplications applicantGemi }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field92}
+																			{BEGIN cellblock_grid_cell_field93}
+{
+	cellId: 'cell_field93',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field15}","text":{$applicantGemi_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantGemi_align}',
+  },
+
+{END cellblock_grid_cell_field93}
+											],
+				{END row_grid_8}
+								{BEGIN row_grid_9}
+				[
+												{BEGIN cellblock_grid_cell_field80}
+{
+	cellId: 'cell_field80',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field80}
+			colSpan: {$colspan_grid_cell_field80},
+			{END colspan_grid_cell_field80}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel dbo_voltonApplications applicantTaxRegistrationNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field80}
+																		{ 
+				cellId: 'cell_field80',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field80',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field81}
+{
+	cellId: 'cell_field81',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field10}","text":{$applicantTaxRegistrationNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantTaxRegistrationNumber_align}',
+  },
+
+{END cellblock_grid_cell_field81}
+																			{BEGIN cellblock_grid_cell_field82}
+{
+	cellId: 'cell_field82',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel dbo_voltonApplications applicantTaxOffice }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field82}
+																			{BEGIN cellblock_grid_cell_field83}
+{
+	cellId: 'cell_field83',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field11}","text":{$applicantTaxOffice_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantTaxOffice_align}',
+  },
+
+{END cellblock_grid_cell_field83}
+																			{BEGIN cellblock_grid_cell_field84}
+{
+	cellId: 'cell_field84',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel dbo_voltonApplications applicantKod }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field84}
+																			{BEGIN cellblock_grid_cell_field85}
+{
+	cellId: 'cell_field85',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field14}","text":{$applicantKod_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicantKod_align}',
+  },
+
+{END cellblock_grid_cell_field85}
+											],
+				{END row_grid_9}
+								{BEGIN row_grid_10}
+				[
+												{BEGIN cellblock_grid_cell_label16}
+{
+	cellId: 'cell_label16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label16}
+			colSpan: {$colspan_grid_cell_label16},
+			{END colspan_grid_cell_label16}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΝΟΜΙΜΟΥ ΕΚΠΡΟΣΩΠΟΥ","hidden":"{$item_hide_text1}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label16}
+																		{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label16',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_10}
+								{BEGIN row_grid_11}
+				[
+												{BEGIN cellblock_grid_cell_field104}
+{
+	cellId: 'cell_field104',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field104}
+			colSpan: {$colspan_grid_cell_field104},
+			{END colspan_grid_cell_field104}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field104}
+																		{ 
+				cellId: 'cell_field104',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field104',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field105}
+{
+	cellId: 'cell_field105',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field105}
+																			{BEGIN cellblock_grid_cell_field106}
+{
+	cellId: 'cell_field106',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field106}
+																			{BEGIN cellblock_grid_cell_field107}
+{
+	cellId: 'cell_field107',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field107}
+																			{BEGIN cellblock_grid_cell_field108}
+{
+	cellId: 'cell_field108',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field108}
+																			{BEGIN cellblock_grid_cell_field109}
+{
+	cellId: 'cell_field109',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field109}
+											],
+				{END row_grid_11}
+								{BEGIN row_grid_12}
+				[
+												{BEGIN cellblock_grid_cell_label20}
+{
+	cellId: 'cell_label20',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label20}
+			colSpan: {$colspan_grid_cell_label20},
+			{END colspan_grid_cell_label20}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel dbo_voltonApplications legalName }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label20}
+																		{ 
+				cellId: 'cell_label20',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label20',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field20}
+{
+	cellId: 'cell_field20',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":{$legalName_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$legalName_align}',
+  },
+
+{END cellblock_grid_cell_field20}
+																			{BEGIN cellblock_grid_cell_label21}
+{
+	cellId: 'cell_label21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel dbo_voltonApplications legalIdNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label21}
+																			{BEGIN cellblock_grid_cell_field21}
+{
+	cellId: 'cell_field21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field24}","text":{$legalIdNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$legalIdNumber_align}',
+  },
+
+{END cellblock_grid_cell_field21}
+																			{BEGIN cellblock_grid_cell_label22}
+{
+	cellId: 'cell_label22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label22}
+																			{BEGIN cellblock_grid_cell_field22}
+{
+	cellId: 'cell_field22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field22}
+											],
+				{END row_grid_12}
+								{BEGIN row_grid_13}
+				[
+												{BEGIN cellblock_grid_cell_label24}
+{
+	cellId: 'cell_label24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label24}
+			colSpan: {$colspan_grid_cell_label24},
+			{END colspan_grid_cell_label24}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΥΠΕΥΘΥΝΟΥ ΕΠΙΚΟΙΝΩΝΙΑΣ","hidden":"{$item_hide_text6}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label24}
+																		{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label24',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_13}
+								{BEGIN row_grid_14}
+				[
+												{BEGIN cellblock_grid_cell_label28}
+{
+	cellId: 'cell_label28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label28}
+			colSpan: {$colspan_grid_cell_label28},
+			{END colspan_grid_cell_label28}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel dbo_voltonApplications contactName }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label28}
+																		{ 
+				cellId: 'cell_label28',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label28',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field28}
+{
+	cellId: 'cell_field28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field19}","text":{$contactName_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$contactName_align}',
+  },
+
+{END cellblock_grid_cell_field28}
+																			{BEGIN cellblock_grid_cell_label29}
+{
+	cellId: 'cell_label29',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel dbo_voltonApplications contactPhone }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label29}
+																			{BEGIN cellblock_grid_cell_field29}
+{
+	cellId: 'cell_field29',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field20}","text":{$contactPhone_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$contactPhone_align}',
+  },
+
+{END cellblock_grid_cell_field29}
+																			{BEGIN cellblock_grid_cell_label30}
+{
+	cellId: 'cell_label30',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel dbo_voltonApplications contactMobile }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label30}
+																			{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field21}","text":{$contactMobile_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$contactMobile_align}',
+  },
+
+{END cellblock_grid_cell_field30}
+											],
+				{END row_grid_14}
+								{BEGIN row_grid_15}
+				[
+												{BEGIN cellblock_grid_cell_label32}
+{
+	cellId: 'cell_label32',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label32}
+			colSpan: {$colspan_grid_cell_label32},
+			{END colspan_grid_cell_label32}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel dbo_voltonApplications contactEmail }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label32}
+																		{ 
+				cellId: 'cell_label32',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label32',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field22}","text":{$contactEmail_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$contactEmail_align}',
+  },
+
+{END cellblock_grid_cell_field32}
+																			{BEGIN cellblock_grid_cell_label33}
+{
+	cellId: 'cell_label33',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label33}
+																			{BEGIN cellblock_grid_cell_field33}
+{
+	cellId: 'cell_field33',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field33}
+																			{BEGIN cellblock_grid_cell_label34}
+{
+	cellId: 'cell_label34',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label34}
+																			{BEGIN cellblock_grid_cell_field34}
+{
+	cellId: 'cell_field34',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field34}
+											],
+				{END row_grid_15}
+								{BEGIN row_grid_16}
+				[
+												{BEGIN cellblock_grid_cell_label39}
+{
+	cellId: 'cell_label39',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label39}
+			colSpan: {$colspan_grid_cell_label39},
+			{END colspan_grid_cell_label39}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΔΙΕΥΘΥΝΣΗ ΑΠΟΣΤΟΛΗΣ ΛΟΓΑΡΙΑΣΜΟΥ","color":"#ffffff","hidden":"{$item_hide_text2}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label39}
+																		{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label39',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_16}
+								{BEGIN row_grid_17}
+				[
+												{BEGIN cellblock_grid_cell_label36}
+{
+	cellId: 'cell_label36',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label36}
+			colSpan: {$colspan_grid_cell_label36},
+			{END colspan_grid_cell_label36}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel dbo_voltonApplications mailAddress }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label36}
+																		{ 
+				cellId: 'cell_label36',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label36',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field36}
+{
+	cellId: 'cell_field36',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field25}","text":{$mailAddress_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$mailAddress_align}',
+  },
+
+{END cellblock_grid_cell_field36}
+																			{BEGIN cellblock_grid_cell_label37}
+{
+	cellId: 'cell_label37',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel dbo_voltonApplications mailPostalCode }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label37}
+																			{BEGIN cellblock_grid_cell_field37}
+{
+	cellId: 'cell_field37',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field26}","text":{$mailPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$mailPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_label38}
+{
+	cellId: 'cell_label38',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel dbo_voltonApplications mailArea }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label38}
+																			{BEGIN cellblock_grid_cell_field38}
+{
+	cellId: 'cell_field38',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field27}","text":{$mailArea_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$mailArea_align}',
+  },
+
+{END cellblock_grid_cell_field38}
+											],
+				{END row_grid_17}
+								{BEGIN row_grid_18}
+				[
+												{BEGIN cellblock_grid_cell_label40}
+{
+	cellId: 'cell_label40',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label40}
+			colSpan: {$colspan_grid_cell_label40},
+			{END colspan_grid_cell_label40}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label40}
+																		{ 
+				cellId: 'cell_label40',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label40',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field40}
+{
+	cellId: 'cell_field40',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field40}
+																			{BEGIN cellblock_grid_cell_label41}
+{
+	cellId: 'cell_label41',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label41}
+																			{BEGIN cellblock_grid_cell_field41}
+{
+	cellId: 'cell_field41',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field41}
+																			{BEGIN cellblock_grid_cell_label42}
+{
+	cellId: 'cell_label42',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel dbo_voltonApplications mailCity }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label42}
+																			{BEGIN cellblock_grid_cell_field42}
+{
+	cellId: 'cell_field42',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field28}","text":{$mailCity_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$mailCity_align}',
+  },
+
+{END cellblock_grid_cell_field42}
+											],
+				{END row_grid_18}
+								{BEGIN row_grid_19}
+				[
+												{BEGIN cellblock_grid_cell_label44}
+{
+	cellId: 'cell_label44',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label44}
+			colSpan: {$colspan_grid_cell_label44},
+			{END colspan_grid_cell_label44}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΡΕΥΜΑ)","hidden":"{$item_hide_text3}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label44}
+																		{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label44',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_19}
+								{BEGIN row_grid_20}
+				[
+												{BEGIN cellblock_grid_cell_label48}
+{
+	cellId: 'cell_label48',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label48}
+			colSpan: {$colspan_grid_cell_label48},
+			{END colspan_grid_cell_label48}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel dbo_voltonApplications powerAddress }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label48}
+																		{ 
+				cellId: 'cell_label48',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label48',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field48}
+{
+	cellId: 'cell_field48',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field29}","text":{$powerAddress_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerAddress_align}',
+  },
+
+{END cellblock_grid_cell_field48}
+																			{BEGIN cellblock_grid_cell_label49}
+{
+	cellId: 'cell_label49',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel dbo_voltonApplications powerAgreedKw }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label49}
+																			{BEGIN cellblock_grid_cell_field49}
+{
+	cellId: 'cell_field49',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field34}","text":{$powerAgreedKw_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerAgreedKw_align}',
+  },
+
+{END cellblock_grid_cell_field49}
+																			{BEGIN cellblock_grid_cell_label50}
+{
+	cellId: 'cell_label50',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label50}
+			colSpan: {$colspan_grid_cell_label50},
+			{END colspan_grid_cell_label50}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field30}","text":{$powerOwnershipType_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_label50}
+																		{ 
+				cellId: 'cell_label50',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_grid_20}
+								{BEGIN row_grid_21}
+				[
+												{BEGIN cellblock_grid_cell_label52}
+{
+	cellId: 'cell_label52',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label52}
+			colSpan: {$colspan_grid_cell_label52},
+			{END colspan_grid_cell_label52}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel dbo_voltonApplications powerPostalCode }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label52}
+																		{ 
+				cellId: 'cell_label52',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label52',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field52}
+{
+	cellId: 'cell_field52',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field31}","text":{$powerPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_field52}
+																			{BEGIN cellblock_grid_cell_label53}
+{
+	cellId: 'cell_label53',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel dbo_voltonApplications powerArea }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label53}
+																			{BEGIN cellblock_grid_cell_field53}
+{
+	cellId: 'cell_field53',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field32}","text":{$powerArea_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerArea_align}',
+  },
+
+{END cellblock_grid_cell_field53}
+																			{BEGIN cellblock_grid_cell_label54}
+{
+	cellId: 'cell_label54',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel dbo_voltonApplications powerCity }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label54}
+																			{BEGIN cellblock_grid_cell_field54}
+{
+	cellId: 'cell_field54',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field33}","text":{$powerCity_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerCity_align}',
+  },
+
+{END cellblock_grid_cell_field54}
+											],
+				{END row_grid_21}
+								{BEGIN row_grid_22}
+				[
+												{BEGIN cellblock_grid_cell_field59}
+{
+	cellId: 'cell_field59',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field59}
+			colSpan: {$colspan_grid_cell_field59},
+			{END colspan_grid_cell_field59}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel dbo_voltonApplications powerCurrentSupplier }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field59}
+																		{ 
+				cellId: 'cell_field59',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field59',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field63}
+{
+	cellId: 'cell_field63',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field37}","text":{$powerCurrentSupplier_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerCurrentSupplier_align}',
+  },
+
+{END cellblock_grid_cell_field63}
+																			{BEGIN cellblock_grid_cell_field71}
+{
+	cellId: 'cell_field71',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field71}
+			colSpan: {$colspan_grid_cell_field71},
+			{END colspan_grid_cell_field71}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field40}","text":{$powerActivationStatus_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field71}
+																		{ 
+				cellId: 'cell_field71',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field71',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field73}
+{
+	cellId: 'cell_field73',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field73}
+											],
+				{END row_grid_22}
+								{BEGIN row_grid_23}
+				[
+												{BEGIN cellblock_grid_cell_label56}
+{
+	cellId: 'cell_label56',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label56}
+			colSpan: {$colspan_grid_cell_label56},
+			{END colspan_grid_cell_label56}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel dbo_voltonApplications powerSupplyNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label56}
+																		{ 
+				cellId: 'cell_label56',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label56',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field56}
+{
+	cellId: 'cell_field56',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field35}","text":{$powerSupplyNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerSupplyNumber_align}',
+  },
+
+{END cellblock_grid_cell_field56}
+																			{BEGIN cellblock_grid_cell_label57}
+{
+	cellId: 'cell_label57',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel dbo_voltonApplications powerMeterNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label57}
+																			{BEGIN cellblock_grid_cell_field57}
+{
+	cellId: 'cell_field57',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field36}","text":{$powerMeterNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerMeterNumber_align}',
+  },
+
+{END cellblock_grid_cell_field57}
+																			{BEGIN cellblock_grid_cell_label58}
+{
+	cellId: 'cell_label58',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel dbo_voltonApplications powerCurrentDayMeter }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label58}
+																			{BEGIN cellblock_grid_cell_field58}
+{
+	cellId: 'cell_field58',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field38}","text":{$powerCurrentDayMeter_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerCurrentDayMeter_align}',
+  },
+
+{END cellblock_grid_cell_field58}
+											],
+				{END row_grid_23}
+								{BEGIN row_grid_24}
+				[
+												{BEGIN cellblock_grid_cell_label75}
+{
+	cellId: 'cell_label75',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label75}
+			colSpan: {$colspan_grid_cell_label75},
+			{END colspan_grid_cell_label75}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label75}
+																		{ 
+				cellId: 'cell_label75',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label75',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label76}
+{
+	cellId: 'cell_label76',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label76}
+																			{BEGIN cellblock_grid_cell_label77}
+{
+	cellId: 'cell_label77',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label77}
+																			{BEGIN cellblock_grid_cell_label78}
+{
+	cellId: 'cell_label78',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label78}
+																			{BEGIN cellblock_grid_cell_label79}
+{
+	cellId: 'cell_label79',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel dbo_voltonApplications powerCurrentNightMeter }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label79}
+																			{BEGIN cellblock_grid_cell_label80}
+{
+	cellId: 'cell_label80',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field39}","text":{$powerCurrentNightMeter_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$powerCurrentNightMeter_align}',
+  },
+
+{END cellblock_grid_cell_label80}
+											],
+				{END row_grid_24}
+								{BEGIN row_grid_25}
+				[
+												{BEGIN cellblock_grid_cell_label172}
+{
+	cellId: 'cell_label172',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label172}
+			colSpan: {$colspan_grid_cell_label172},
+			{END colspan_grid_cell_label172}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΦΥΣΙΚΟ ΑΕΡΙΟ)","color":"#ffffff","hidden":"{$item_hide_text7}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label172}
+																		{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label172',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_25}
+								{BEGIN row_grid_26}
+				[
+												{BEGIN cellblock_grid_cell_label166}
+{
+	cellId: 'cell_label166',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label166}
+			colSpan: {$colspan_grid_cell_label166},
+			{END colspan_grid_cell_label166}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label}","text":"{$jslabel dbo_voltonApplications ngAddress }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label166}
+																		{ 
+				cellId: 'cell_label166',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label166',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label167}
+{
+	cellId: 'cell_label167',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field}","text":{$ngAddress_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngAddress_align}',
+  },
+
+{END cellblock_grid_cell_label167}
+																			{BEGIN cellblock_grid_cell_label168}
+{
+	cellId: 'cell_label168',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label1}","text":"{$jslabel dbo_voltonApplications ngPostalCode }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label168}
+																			{BEGIN cellblock_grid_cell_label169}
+{
+	cellId: 'cell_label169',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field1}","text":{$ngPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_label169}
+																			{BEGIN cellblock_grid_cell_label170}
+{
+	cellId: 'cell_label170',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label170}
+																			{BEGIN cellblock_grid_cell_label171}
+{
+	cellId: 'cell_label171',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label171}
+											],
+				{END row_grid_26}
+								{BEGIN row_grid_27}
+				[
+												{BEGIN cellblock_grid_cell_label160}
+{
+	cellId: 'cell_label160',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label160}
+			colSpan: {$colspan_grid_cell_label160},
+			{END colspan_grid_cell_label160}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label3}","text":"{$jslabel dbo_voltonApplications ngCity }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label160}
+																		{ 
+				cellId: 'cell_label160',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label160',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label161}
+{
+	cellId: 'cell_label161',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field3}","text":{$ngCity_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngCity_align}',
+  },
+
+{END cellblock_grid_cell_label161}
+																			{BEGIN cellblock_grid_cell_label162}
+{
+	cellId: 'cell_label162',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label2}","text":"{$jslabel dbo_voltonApplications ngArea }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label162}
+																			{BEGIN cellblock_grid_cell_label163}
+{
+	cellId: 'cell_label163',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field2}","text":{$ngArea_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngArea_align}',
+  },
+
+{END cellblock_grid_cell_label163}
+																			{BEGIN cellblock_grid_cell_label164}
+{
+	cellId: 'cell_label164',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label164}
+																			{BEGIN cellblock_grid_cell_label165}
+{
+	cellId: 'cell_label165',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label165}
+											],
+				{END row_grid_27}
+								{BEGIN row_grid_28}
+				[
+												{BEGIN cellblock_grid_cell_label154}
+{
+	cellId: 'cell_label154',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label154}
+			colSpan: {$colspan_grid_cell_label154},
+			{END colspan_grid_cell_label154}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label4}","text":"{$jslabel dbo_voltonApplications ngPressure }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label154}
+																		{ 
+				cellId: 'cell_label154',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label154',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label155}
+{
+	cellId: 'cell_label155',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field4}","text":{$ngPressure_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngPressure_align}',
+  },
+
+{END cellblock_grid_cell_label155}
+																			{BEGIN cellblock_grid_cell_label156}
+{
+	cellId: 'cell_label156',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label156}
+																			{BEGIN cellblock_grid_cell_label157}
+{
+	cellId: 'cell_label157',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label157}
+																			{BEGIN cellblock_grid_cell_label158}
+{
+	cellId: 'cell_label158',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label158}
+																			{BEGIN cellblock_grid_cell_label159}
+{
+	cellId: 'cell_label159',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label159}
+											],
+				{END row_grid_28}
+								{BEGIN row_grid_29}
+				[
+												{BEGIN cellblock_grid_cell_label136}
+{
+	cellId: 'cell_label136',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label136}
+			colSpan: {$colspan_grid_cell_label136},
+			{END colspan_grid_cell_label136}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label5}","text":"{$jslabel dbo_voltonApplications ngHourlyCapacity }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label136}
+																		{ 
+				cellId: 'cell_label136',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label136',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label137}
+{
+	cellId: 'cell_label137',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field5}","text":{$ngHourlyCapacity_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngHourlyCapacity_align}',
+  },
+
+{END cellblock_grid_cell_label137}
+																			{BEGIN cellblock_grid_cell_label138}
+{
+	cellId: 'cell_label138',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label138}
+																			{BEGIN cellblock_grid_cell_label139}
+{
+	cellId: 'cell_label139',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label139}
+																			{BEGIN cellblock_grid_cell_label140}
+{
+	cellId: 'cell_label140',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label140}
+																			{BEGIN cellblock_grid_cell_label153}
+{
+	cellId: 'cell_label153',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label153}
+											],
+				{END row_grid_29}
+								{BEGIN row_grid_30}
+				[
+												{BEGIN cellblock_grid_cell_label130}
+{
+	cellId: 'cell_label130',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label130}
+			colSpan: {$colspan_grid_cell_label130},
+			{END colspan_grid_cell_label130}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label6}","text":"{$jslabel dbo_voltonApplications ngHkasp }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label130}
+																		{ 
+				cellId: 'cell_label130',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label130',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label131}
+{
+	cellId: 'cell_label131',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field6}","text":{$ngHkasp_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngHkasp_align}',
+  },
+
+{END cellblock_grid_cell_label131}
+																			{BEGIN cellblock_grid_cell_label132}
+{
+	cellId: 'cell_label132',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label132}
+																			{BEGIN cellblock_grid_cell_label133}
+{
+	cellId: 'cell_label133',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label133}
+																			{BEGIN cellblock_grid_cell_label134}
+{
+	cellId: 'cell_label134',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label134}
+																			{BEGIN cellblock_grid_cell_label135}
+{
+	cellId: 'cell_label135',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label135}
+											],
+				{END row_grid_30}
+								{BEGIN row_grid_31}
+				[
+												{BEGIN cellblock_grid_cell_label85}
+{
+	cellId: 'cell_label85',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label85}
+			colSpan: {$colspan_grid_cell_label85},
+			{END colspan_grid_cell_label85}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label7}","text":"{$jslabel dbo_voltonApplications ngMeterNumber }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label85}
+																		{ 
+				cellId: 'cell_label85',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label85',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label95}
+{
+	cellId: 'cell_label95',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field7}","text":{$ngMeterNumber_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngMeterNumber_align}',
+  },
+
+{END cellblock_grid_cell_label95}
+																			{BEGIN cellblock_grid_cell_label96}
+{
+	cellId: 'cell_label96',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label8}","text":"{$jslabel dbo_voltonApplications ngMeterType }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label96}
+																			{BEGIN cellblock_grid_cell_label97}
+{
+	cellId: 'cell_label97',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field8}","text":{$ngMeterType_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngMeterType_align}',
+  },
+
+{END cellblock_grid_cell_label97}
+																			{BEGIN cellblock_grid_cell_label98}
+{
+	cellId: 'cell_label98',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label9}","text":"{$jslabel dbo_voltonApplications ngCurrentMeterValue }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label98}
+																			{BEGIN cellblock_grid_cell_label129}
+{
+	cellId: 'cell_label129',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field9}","text":{$ngCurrentMeterValue_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngCurrentMeterValue_align}',
+  },
+
+{END cellblock_grid_cell_label129}
+											],
+				{END row_grid_31}
+								{BEGIN row_grid_32}
+				[
+												{BEGIN cellblock_grid_cell_label173}
+{
+	cellId: 'cell_label173',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label173}
+			colSpan: {$colspan_grid_cell_label173},
+			{END colspan_grid_cell_label173}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label10}","text":"{$jslabel dbo_voltonApplications ngConnectionExists }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label173}
+																		{ 
+				cellId: 'cell_label173',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label173',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label176}
+{
+	cellId: 'cell_label176',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field10}","text":{$ngConnectionExists_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngConnectionExists_align}',
+  },
+
+{END cellblock_grid_cell_label176}
+																			{BEGIN cellblock_grid_cell_label178}
+{
+	cellId: 'cell_label178',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label11}","text":"{$jslabel dbo_voltonApplications ngSupplyIsNew }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label178}
+																			{BEGIN cellblock_grid_cell_label179}
+{
+	cellId: 'cell_label179',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field11}","text":{$ngSupplyIsNew_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngSupplyIsNew_align}',
+  },
+
+{END cellblock_grid_cell_label179}
+																			{BEGIN cellblock_grid_cell_label180}
+{
+	cellId: 'cell_label180',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label12}","text":"{$jslabel dbo_voltonApplications ngSupplyReactivation }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label180}
+																			{BEGIN cellblock_grid_cell_label181}
+{
+	cellId: 'cell_label181',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field12}","text":{$ngSupplyReactivation_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$ngSupplyReactivation_align}',
+  },
+
+{END cellblock_grid_cell_label181}
+											],
+				{END row_grid_32}
+								{BEGIN row_grid_33}
+				[
+												{BEGIN cellblock_grid_cell_label63}
+{
+	cellId: 'cell_label63',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label63}
+			colSpan: {$colspan_grid_cell_label63},
+			{END colspan_grid_cell_label63}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΤΙΜΟΛΟΓΙΟ VOLTON","hidden":"{$item_hide_text4}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label63}
+																		{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label63',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_33}
+								{BEGIN row_grid_34}
+				[
+												{BEGIN cellblock_grid_cell_label60}
+{
+	cellId: 'cell_label60',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label60}
+			colSpan: {$colspan_grid_cell_label60},
+			{END colspan_grid_cell_label60}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel dbo_voltonApplications voltonPlan }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label60}
+																		{ 
+				cellId: 'cell_label60',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label60',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field60}
+{
+	cellId: 'cell_field60',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field41}","text":{$voltonPlan_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$voltonPlan_align}',
+  },
+
+{END cellblock_grid_cell_field60}
+																			{BEGIN cellblock_grid_cell_label61}
+{
+	cellId: 'cell_label61',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel dbo_voltonApplications voltonContractDuration }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label61}
+																			{BEGIN cellblock_grid_cell_field61}
+{
+	cellId: 'cell_field61',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field42}","text":{$voltonContractDuration_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$voltonContractDuration_align}',
+  },
+
+{END cellblock_grid_cell_field61}
+																			{BEGIN cellblock_grid_cell_label62}
+{
+	cellId: 'cell_label62',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label62}
+																			{BEGIN cellblock_grid_cell_field62}
+{
+	cellId: 'cell_field62',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field62}
+											],
+				{END row_grid_34}
+								{BEGIN row_grid_35}
+				[
+												{BEGIN cellblock_grid_cell_label81}
+{
+	cellId: 'cell_label81',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label81}
+			colSpan: {$colspan_grid_cell_label81},
+			{END colspan_grid_cell_label81}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel dbo_voltonApplications voltonWarrantyAmount }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label81}
+																		{ 
+				cellId: 'cell_label81',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label81',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label82}
+{
+	cellId: 'cell_label82',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field43}","text":{$voltonWarrantyAmount_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$voltonWarrantyAmount_align}',
+  },
+
+{END cellblock_grid_cell_label82}
+																			{BEGIN cellblock_grid_cell_label83}
+{
+	cellId: 'cell_label83',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel dbo_voltonApplications voltonWarrantyOnFirstBill }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label83}
+																			{BEGIN cellblock_grid_cell_label84}
+{
+	cellId: 'cell_label84',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label84}
+			colSpan: {$colspan_grid_cell_label84},
+			{END colspan_grid_cell_label84}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field44}","text":{$voltonWarrantyOnFirstBill_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_simple_grid_field45}","text":{$voltonOther_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel dbo_voltonApplications voltonOther }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label84}
+																		{ 
+				cellId: 'cell_label84',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label86}
+{
+	cellId: 'cell_label86',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label86}
+											],
+				{END row_grid_35}
+								{BEGIN row_grid_36}
+				[
+												{BEGIN cellblock_grid_cell_label87}
+{
+	cellId: 'cell_label87',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label87}
+			colSpan: {$colspan_grid_cell_label87},
+			{END colspan_grid_cell_label87}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label87}
+																		{ 
+				cellId: 'cell_label87',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label87',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label88}
+{
+	cellId: 'cell_label88',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label88}
+																			{BEGIN cellblock_grid_cell_label89}
+{
+	cellId: 'cell_label89',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label89}
+																			{BEGIN cellblock_grid_cell_label90}
+{
+	cellId: 'cell_label90',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label90}
+																			{BEGIN cellblock_grid_cell_label91}
+{
+	cellId: 'cell_label91',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label91}
+																			{BEGIN cellblock_grid_cell_label92}
+{
+	cellId: 'cell_label92',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label92}
+											],
+				{END row_grid_36}
+								{BEGIN row_grid_37}
+				[
+												{BEGIN cellblock_grid_cell_label99}
+{
+	cellId: 'cell_label99',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label99}
+			colSpan: {$colspan_grid_cell_label99},
+			{END colspan_grid_cell_label99}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel dbo_voltonApplications voltonAutoPayment }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label99}
+																		{ 
+				cellId: 'cell_label99',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label99',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label100}
+{
+	cellId: 'cell_label100',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field47}","text":{$voltonAutoPayment_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$voltonAutoPayment_align}',
+  },
+
+{END cellblock_grid_cell_label100}
+																			{BEGIN cellblock_grid_cell_label101}
+{
+	cellId: 'cell_label101',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label101}
+																			{BEGIN cellblock_grid_cell_label102}
+{
+	cellId: 'cell_label102',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label102}
+																			{BEGIN cellblock_grid_cell_label103}
+{
+	cellId: 'cell_label103',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label103}
+																			{BEGIN cellblock_grid_cell_label104}
+{
+	cellId: 'cell_label104',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label104}
+											],
+				{END row_grid_37}
+								{BEGIN row_grid_38}
+				[
+												{BEGIN cellblock_grid_cell_label93}
+{
+	cellId: 'cell_label93',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label93}
+			colSpan: {$colspan_grid_cell_label93},
+			{END colspan_grid_cell_label93}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel dbo_voltonApplications voltonComments }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label93}
+																		{ 
+				cellId: 'cell_label93',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label93',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label94}
+{
+	cellId: 'cell_label94',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label94}
+			colSpan: {$colspan_grid_cell_label94},
+			{END colspan_grid_cell_label94}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field46}","text":{$voltonComments_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$voltonComments_align}',
+  },
+
+{END cellblock_grid_cell_label94}
+																		{ 
+				cellId: 'cell_label94',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label94',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label94',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label94',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+							],
+				{END row_grid_38}
+								{BEGIN row_grid_39}
+				[
+												{BEGIN cellblock_grid_cell_label147}
+{
+	cellId: 'cell_label147',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label147}
+			colSpan: {$colspan_grid_cell_label147},
+			{END colspan_grid_cell_label147}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ","hidden":"{$item_hide_text5}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label147}
+																		{ 
+				cellId: 'cell_label147',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label147',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label148}
+{
+	cellId: 'cell_label148',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label148}
+																			{BEGIN cellblock_grid_cell_label149}
+{
+	cellId: 'cell_label149',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label149}
+																			{BEGIN cellblock_grid_cell_label150}
+{
+	cellId: 'cell_label150',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label150}
+																			{BEGIN cellblock_grid_cell_label151}
+{
+	cellId: 'cell_label151',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label151}
+																			{BEGIN cellblock_grid_cell_label152}
+{
+	cellId: 'cell_label152',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#110ad6',  color: '#ffffff',      "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label152}
+											],
+				{END row_grid_39}
+								{BEGIN row_grid_40}
+				[
+												{BEGIN cellblock_grid_cell_label123}
+{
+	cellId: 'cell_label123',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label123}
+			colSpan: {$colspan_grid_cell_label123},
+			{END colspan_grid_cell_label123}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel dbo_voltonApplications document1 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label123}
+																		{ 
+				cellId: 'cell_label123',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label123',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label124}
+{
+	cellId: 'cell_label124',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field48}","text":{$document1_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document1_align}',
+  },
+
+{END cellblock_grid_cell_label124}
+																			{BEGIN cellblock_grid_cell_label125}
+{
+	cellId: 'cell_label125',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel dbo_voltonApplications document6 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label125}
+																			{BEGIN cellblock_grid_cell_label126}
+{
+	cellId: 'cell_label126',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field53}","text":{$document6_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document6_align}',
+  },
+
+{END cellblock_grid_cell_label126}
+																			{BEGIN cellblock_grid_cell_label127}
+{
+	cellId: 'cell_label127',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel dbo_voltonApplications document11 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label127}
+																			{BEGIN cellblock_grid_cell_label128}
+{
+	cellId: 'cell_label128',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field58}","text":{$document11_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document11_align}',
+  },
+
+{END cellblock_grid_cell_label128}
+											],
+				{END row_grid_40}
+								{BEGIN row_grid_41}
+				[
+												{BEGIN cellblock_grid_cell_label117}
+{
+	cellId: 'cell_label117',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label117}
+			colSpan: {$colspan_grid_cell_label117},
+			{END colspan_grid_cell_label117}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel dbo_voltonApplications document2 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label117}
+																		{ 
+				cellId: 'cell_label117',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label117',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label118}
+{
+	cellId: 'cell_label118',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field49}","text":{$document2_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document2_align}',
+  },
+
+{END cellblock_grid_cell_label118}
+																			{BEGIN cellblock_grid_cell_label119}
+{
+	cellId: 'cell_label119',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel dbo_voltonApplications document7 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label119}
+																			{BEGIN cellblock_grid_cell_label120}
+{
+	cellId: 'cell_label120',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field54}","text":{$document7_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document7_align}',
+  },
+
+{END cellblock_grid_cell_label120}
+																			{BEGIN cellblock_grid_cell_label121}
+{
+	cellId: 'cell_label121',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel dbo_voltonApplications document12 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label121}
+																			{BEGIN cellblock_grid_cell_label122}
+{
+	cellId: 'cell_label122',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field59}","text":{$document12_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document12_align}',
+  },
+
+{END cellblock_grid_cell_label122}
+											],
+				{END row_grid_41}
+								{BEGIN row_grid_42}
+				[
+												{BEGIN cellblock_grid_cell_label111}
+{
+	cellId: 'cell_label111',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label111}
+			colSpan: {$colspan_grid_cell_label111},
+			{END colspan_grid_cell_label111}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel dbo_voltonApplications document5 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label111}
+																		{ 
+				cellId: 'cell_label111',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label111',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label112}
+{
+	cellId: 'cell_label112',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field50}","text":{$document3_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document3_align}',
+  },
+
+{END cellblock_grid_cell_label112}
+																			{BEGIN cellblock_grid_cell_label113}
+{
+	cellId: 'cell_label113',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel dbo_voltonApplications document8 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label113}
+																			{BEGIN cellblock_grid_cell_label114}
+{
+	cellId: 'cell_label114',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field55}","text":{$document8_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document8_align}',
+  },
+
+{END cellblock_grid_cell_label114}
+																			{BEGIN cellblock_grid_cell_label115}
+{
+	cellId: 'cell_label115',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel dbo_voltonApplications document13 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label115}
+																			{BEGIN cellblock_grid_cell_label116}
+{
+	cellId: 'cell_label116',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field60}","text":{$document13_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document13_align}',
+  },
+
+{END cellblock_grid_cell_label116}
+											],
+				{END row_grid_42}
+								{BEGIN row_grid_43}
+				[
+												{BEGIN cellblock_grid_cell_label105}
+{
+	cellId: 'cell_label105',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label105}
+			colSpan: {$colspan_grid_cell_label105},
+			{END colspan_grid_cell_label105}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel dbo_voltonApplications document4 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label105}
+																		{ 
+				cellId: 'cell_label105',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label105',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label106}
+{
+	cellId: 'cell_label106',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field51}","text":{$document4_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document4_align}',
+  },
+
+{END cellblock_grid_cell_label106}
+																			{BEGIN cellblock_grid_cell_label107}
+{
+	cellId: 'cell_label107',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel dbo_voltonApplications document9 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label107}
+																			{BEGIN cellblock_grid_cell_label108}
+{
+	cellId: 'cell_label108',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field56}","text":{$document9_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document9_align}',
+  },
+
+{END cellblock_grid_cell_label108}
+																			{BEGIN cellblock_grid_cell_label109}
+{
+	cellId: 'cell_label109',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel dbo_voltonApplications document14 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label109}
+																			{BEGIN cellblock_grid_cell_label110}
+{
+	cellId: 'cell_label110',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field61}","text":{$document14_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document14_align}',
+  },
+
+{END cellblock_grid_cell_label110}
+											],
+				{END row_grid_43}
+								{BEGIN row_grid_44}
+				[
+												{BEGIN cellblock_grid_cell_label141}
+{
+	cellId: 'cell_label141',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label141}
+			colSpan: {$colspan_grid_cell_label141},
+			{END colspan_grid_cell_label141}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel dbo_voltonApplications document3 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label141}
+																		{ 
+				cellId: 'cell_label141',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label141',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label142}
+{
+	cellId: 'cell_label142',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field52}","text":{$document5_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document5_align}',
+  },
+
+{END cellblock_grid_cell_label142}
+																			{BEGIN cellblock_grid_cell_label143}
+{
+	cellId: 'cell_label143',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel dbo_voltonApplications document10 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label143}
+																			{BEGIN cellblock_grid_cell_label144}
+{
+	cellId: 'cell_label144',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field57}","text":{$document10_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document10_align}',
+  },
+
+{END cellblock_grid_cell_label144}
+																			{BEGIN cellblock_grid_cell_label145}
+{
+	cellId: 'cell_label145',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel dbo_voltonApplications document15 }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label145}
+																			{BEGIN cellblock_grid_cell_label146}
+{
+	cellId: 'cell_label146',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field62}","text":{$document15_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$document15_align}',
+  },
+
+{END cellblock_grid_cell_label146}
+											],
+				{END row_grid_44}
+								{BEGIN row_grid_45}
+				[
+												{BEGIN cellblock_grid_cell_label174}
+{
+	cellId: 'cell_label174',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label174}
+			colSpan: {$colspan_grid_cell_label174},
+			{END colspan_grid_cell_label174}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label15}","text":"{$jslabel dbo_voltonApplications applicationContactMethod }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label174}
+																		{ 
+				cellId: 'cell_label174',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label174',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label175}
+{
+	cellId: 'cell_label175',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field15}","text":{$applicationContactMethod_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicationContactMethod_align}',
+  },
+
+{END cellblock_grid_cell_label175}
+																			{BEGIN cellblock_grid_cell_label177}
+{
+	cellId: 'cell_label177',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label177}
+																			{BEGIN cellblock_grid_cell_label182}
+{
+	cellId: 'cell_label182',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label182}
+																			{BEGIN cellblock_grid_cell_label183}
+{
+	cellId: 'cell_label183',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label183}
+																			{BEGIN cellblock_grid_cell_label184}
+{
+	cellId: 'cell_label184',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label184}
+											],
+				{END row_grid_45}
+								{BEGIN row_grid_46}
+				[
+												{BEGIN cellblock_grid_cell_label197}
+{
+	cellId: 'cell_label197',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label197}
+			colSpan: {$colspan_grid_cell_label197},
+			{END colspan_grid_cell_label197}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label13}","text":"{$jslabel dbo_voltonApplications applicationCourier }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label197}
+																		{ 
+				cellId: 'cell_label197',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label197',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label198}
+{
+	cellId: 'cell_label198',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field16}","text":{$applicationCourier_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicationCourier_align}',
+  },
+
+{END cellblock_grid_cell_label198}
+																			{BEGIN cellblock_grid_cell_label199}
+{
+	cellId: 'cell_label199',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label16}","text":"{$jslabel dbo_voltonApplications applicationCourierDate }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label199}
+																			{BEGIN cellblock_grid_cell_label200}
+{
+	cellId: 'cell_label200',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field17}","text":{$applicationCourierDate_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicationCourierDate_align}',
+  },
+
+{END cellblock_grid_cell_label200}
+																			{BEGIN cellblock_grid_cell_label201}
+{
+	cellId: 'cell_label201',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label17}","text":"{$jslabel dbo_voltonApplications applicationCourrierTimeFrom }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label201}
+																			{BEGIN cellblock_grid_cell_label202}
+{
+	cellId: 'cell_label202',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field18}","text":{$applicationCourrierTimeFrom_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_grid_field19}","text":{$applicationCourierTimeTo_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label202}
+											],
+				{END row_grid_46}
+								{BEGIN row_grid_47}
+				[
+												{BEGIN cellblock_grid_cell_label191}
+{
+	cellId: 'cell_label191',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label191}
+			colSpan: {$colspan_grid_cell_label191},
+			{END colspan_grid_cell_label191}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label18}","text":"{$jslabel dbo_voltonApplications applicationCourrierComments }","bold":true},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label191}
+																		{ 
+				cellId: 'cell_label191',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label191',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label192}
+{
+	cellId: 'cell_label192',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label192}
+			colSpan: {$colspan_grid_cell_label192},
+			{END colspan_grid_cell_label192}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field20}","text":{$applicationCourrierComments_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": '{$applicationCourrierComments_align}',
+  },
+
+{END cellblock_grid_cell_label192}
+																		{ 
+				cellId: 'cell_label192',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label192',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label192',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label192',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+							],
+				{END row_grid_47}
+								{BEGIN row_grid_48}
+				[
+												{BEGIN cellblock_grid_cell_label185}
+{
+	cellId: 'cell_label185',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label185}
+			colSpan: {$colspan_grid_cell_label185},
+			{END colspan_grid_cell_label185}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label185}
+																		{ 
+				cellId: 'cell_label185',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label185',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label186}
+{
+	cellId: 'cell_label186',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label186}
+																			{BEGIN cellblock_grid_cell_label187}
+{
+	cellId: 'cell_label187',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label187}
+																			{BEGIN cellblock_grid_cell_label188}
+{
+	cellId: 'cell_label188',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label188}
+																			{BEGIN cellblock_grid_cell_label189}
+{
+	cellId: 'cell_label189',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label189}
+																			{BEGIN cellblock_grid_cell_label190}
+{
+	cellId: 'cell_label190',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#f2fffe',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label190}
+											],
+				{END row_grid_48}
+								{BEGIN row_grid_49}
+				[
+												{BEGIN cellblock_grid_cell_label27}
+{
+	cellId: 'cell_label27',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label27}
+			colSpan: {$colspan_grid_cell_label27},
+			{END colspan_grid_cell_label27}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_label27}
+																		{ 
+				cellId: 'cell_label27',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label51}
+{
+	cellId: 'cell_label51',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label51}
+			colSpan: {$colspan_grid_cell_label51},
+			{END colspan_grid_cell_label51}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field13}","text":{$applicationAgentStatus_pdfvalue}},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_label51}
+																		{ 
+				cellId: 'cell_label51',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label35}
+{
+	cellId: 'cell_label35',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label35}
+																			{BEGIN cellblock_grid_cell_label43}
+{
+	cellId: 'cell_label43',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label43}
+																			{BEGIN cellblock_grid_cell_label45}
+{
+	cellId: 'cell_label45',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label45}
+																			{BEGIN cellblock_grid_cell_label46}
+{
+	cellId: 'cell_label46',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label46}
+											],
+				{END row_grid_49}
+								{BEGIN row_grid_50}
+				[
+												{BEGIN cellblock_grid_cell_label18}
+{
+	cellId: 'cell_label18',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label18}
+			colSpan: {$colspan_grid_cell_label18},
+			{END colspan_grid_cell_label18}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_inline_add}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_delete}"},
+				
+		  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_label18}
+																		{ 
+				cellId: 'cell_label18',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label18',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label18',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_label19}
+{
+	cellId: 'cell_label19',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_label19}
+																			{BEGIN cellblock_grid_cell_field18}
+{
+	cellId: 'cell_field18',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field18}
+																			{BEGIN cellblock_grid_cell_label23}
+{
+	cellId: 'cell_label23',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label23}
+																			{BEGIN cellblock_grid_cell_field19}
+{
+	cellId: 'cell_field19',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#d8e4ff',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field19}
+											],
+				{END row_grid_50}
+								{BEGIN row_grid_51}
+				[
+												{BEGIN cellblock_grid_cell_label3}
+{
+	cellId: 'cell_label3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label3}
+																			{BEGIN cellblock_grid_cell_field3}
+{
+	cellId: 'cell_field3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field3}
+																			{BEGIN cellblock_grid_cell_label7}
+{
+	cellId: 'cell_label7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label7}
+																			{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field7}
+																			{BEGIN cellblock_grid_cell_label11}
+{
+	cellId: 'cell_label11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label11}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field11}
+																			{BEGIN cellblock_grid_cell_label15}
+{
+	cellId: 'cell_label15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label15}
+																			{BEGIN cellblock_grid_cell_field15}
+{
+	cellId: 'cell_field15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field15}
+											],
+				{END row_grid_51}
+								{BEGIN row_grid_52}
+				[
+												{BEGIN cellblock_grid_cell_label17}
+{
+	cellId: 'cell_label17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label17}
+																			{BEGIN cellblock_grid_cell_field16}
+{
+	cellId: 'cell_field16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field16}
+																			{BEGIN cellblock_grid_cell_label25}
+{
+	cellId: 'cell_label25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label25}
+																			{BEGIN cellblock_grid_cell_field17}
+{
+	cellId: 'cell_field17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field17}
+																			{BEGIN cellblock_grid_cell_label26}
+{
+	cellId: 'cell_label26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label26}
+																			{BEGIN cellblock_grid_cell_field23}
+{
+	cellId: 'cell_field23',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field23}
+																			{BEGIN cellblock_grid_cell_label31}
+{
+	cellId: 'cell_label31',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label31}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field24}
+											],
+				{END row_grid_52}
+								{BEGIN row_grid_53}
+				[
+												{BEGIN cellblock_grid_cell_dpreview}
+{
+	cellId: 'cell_dpreview',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_dpreview}
+			colSpan: {$colspan_grid_cell_dpreview},
+			{END colspan_grid_cell_dpreview}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_internalcomments}
+			{$displayDetailTable_internalcomments }
+		{END details_internalcomments},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_dpreview}
+																		{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  6,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  7,
+				text: ''
+			},
+							],
+				{END row_grid_53}
+										]
+						}
+					}
+				]]
+			}
+		},
+	{END grid_vrecord}
+	{END grid_record}
+	]
+,
+	{END grid_row}
+	
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

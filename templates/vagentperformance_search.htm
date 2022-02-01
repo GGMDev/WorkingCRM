@@ -1,0 +1,637 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_vAgentPerformance search}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN agent_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agent}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="agent" 
+	
+	data-signal-error-for="agent{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="agent" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_agent}">
+		{$label dbo_vAgentPerformance agent }	</label>
+	<div class="r-search-option">
+		{$searchtype_agent}
+	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol}	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol1}
+	</div>
+	
+</div>
+
+{END agent_fieldblock}
+											
+{BEGIN callDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callDate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callDate" 
+	
+	data-signal-error-for="callDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="callDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callDate}">
+		{$label dbo_vAgentPerformance callDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_callDate}
+	</div>
+	<div class="r-search-field">
+		{$callDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END callDate_fieldblock}
+											
+{BEGIN dialerCampaign_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCampaign}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerCampaign" 
+	
+	data-signal-error-for="dialerCampaign{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="dialerCampaign" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerCampaign}">
+		{$label dbo_vAgentPerformance dialerCampaign }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerCampaign}
+	</div>
+	<div class="r-search-field">
+		{$dialerCampaign_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerCampaign_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerCampaign_fieldblock}
+											
+{BEGIN dialerList_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerList}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerList" 
+	
+	data-signal-error-for="dialerList{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="dialerList" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerList}">
+		{$label dbo_vAgentPerformance dialerList }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerList}
+	</div>
+	<div class="r-search-field">
+		{$dialerList_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerList_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerList_fieldblock}
+											
+{BEGIN callStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callStatus}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callStatus" 
+	
+	data-signal-error-for="callStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="callStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callStatus}">
+		{$label dbo_vAgentPerformance callStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_callStatus}
+	</div>
+	<div class="r-search-field">
+		{$callStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END callStatus_fieldblock}
+											
+{BEGIN totalCallsCount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_totalCallsCount}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="totalCallsCount" 
+	
+	data-signal-error-for="totalCallsCount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="totalCallsCount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_totalCallsCount}">
+		{$label dbo_vAgentPerformance totalCallsCount }	</label>
+	<div class="r-search-option">
+		{$searchtype_totalCallsCount}
+	</div>
+	<div class="r-search-field">
+		{$totalCallsCount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$totalCallsCount_editcontrol1}
+	</div>
+	
+</div>
+
+{END totalCallsCount_fieldblock}
+											
+{BEGIN statusCallsCount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusCallsCount}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusCallsCount" 
+	
+	data-signal-error-for="statusCallsCount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="statusCallsCount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusCallsCount}">
+		{$label dbo_vAgentPerformance statusCallsCount }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusCallsCount}
+	</div>
+	<div class="r-search-field">
+		{$statusCallsCount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusCallsCount_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusCallsCount_fieldblock}
+											
+{BEGIN statusCallsPcnt_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusCallsPcnt}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusCallsPcnt" 
+	
+	data-signal-error-for="statusCallsPcnt{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="statusCallsPcnt" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusCallsPcnt}">
+		{$label dbo_vAgentPerformance statusCallsPcnt }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusCallsPcnt}
+	</div>
+	<div class="r-search-field">
+		{$statusCallsPcnt_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusCallsPcnt_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusCallsPcnt_fieldblock}
+											
+{BEGIN totalTalkTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_totalTalkTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="totalTalkTime" 
+	
+	data-signal-error-for="totalTalkTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="totalTalkTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_totalTalkTime}">
+		{$label dbo_vAgentPerformance totalTalkTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_totalTalkTime}
+	</div>
+	<div class="r-search-field">
+		{$totalTalkTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$totalTalkTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END totalTalkTime_fieldblock}
+											
+{BEGIN StatusTalkTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_StatusTalkTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="StatusTalkTime" 
+	
+	data-signal-error-for="StatusTalkTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="StatusTalkTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_StatusTalkTime}">
+		{$label dbo_vAgentPerformance StatusTalkTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_StatusTalkTime}
+	</div>
+	<div class="r-search-field">
+		{$StatusTalkTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$StatusTalkTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END StatusTalkTime_fieldblock}
+											
+{BEGIN statustalkTimePcnt_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statustalkTimePcnt}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statustalkTimePcnt" 
+	
+	data-signal-error-for="statustalkTimePcnt{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="statustalkTimePcnt" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statustalkTimePcnt}">
+		{$label dbo_vAgentPerformance statustalkTimePcnt }	</label>
+	<div class="r-search-option">
+		{$searchtype_statustalkTimePcnt}
+	</div>
+	<div class="r-search-field">
+		{$statustalkTimePcnt_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statustalkTimePcnt_editcontrol1}
+	</div>
+	
+</div>
+
+{END statustalkTimePcnt_fieldblock}
+											
+{BEGIN totalTypingTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_totalTypingTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="totalTypingTime" 
+	
+	data-signal-error-for="totalTypingTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="totalTypingTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_totalTypingTime}">
+		{$label dbo_vAgentPerformance totalTypingTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_totalTypingTime}
+	</div>
+	<div class="r-search-field">
+		{$totalTypingTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$totalTypingTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END totalTypingTime_fieldblock}
+											
+{BEGIN statusTypingTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusTypingTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusTypingTime" 
+	
+	data-signal-error-for="statusTypingTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="statusTypingTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusTypingTime}">
+		{$label dbo_vAgentPerformance statusTypingTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusTypingTime}
+	</div>
+	<div class="r-search-field">
+		{$statusTypingTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusTypingTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusTypingTime_fieldblock}
+											
+{BEGIN statusTypingTimePcnt_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusTypingTimePcnt}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusTypingTimePcnt" 
+	
+	data-signal-error-for="statusTypingTimePcnt{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="statusTypingTimePcnt" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusTypingTimePcnt}">
+		{$label dbo_vAgentPerformance statusTypingTimePcnt }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusTypingTimePcnt}
+	</div>
+	<div class="r-search-field">
+		{$statusTypingTimePcnt_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusTypingTimePcnt_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusTypingTimePcnt_fieldblock}
+											
+{BEGIN agentDayTotalCallTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agentDayTotalCallTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="agentDayTotalCallTime" 
+	
+	data-signal-error-for="agentDayTotalCallTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="agentDayTotalCallTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_agentDayTotalCallTime}">
+		{$label dbo_vAgentPerformance agentDayTotalCallTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_agentDayTotalCallTime}
+	</div>
+	<div class="r-search-field">
+		{$agentDayTotalCallTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$agentDayTotalCallTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END agentDayTotalCallTime_fieldblock}
+											
+{BEGIN statusCallTime_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusCallTime}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusCallTime" 
+	
+	data-signal-error-for="statusCallTime{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="statusCallTime" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusCallTime}">
+		{$label dbo_vAgentPerformance statusCallTime }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusCallTime}
+	</div>
+	<div class="r-search-field">
+		{$statusCallTime_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusCallTime_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusCallTime_fieldblock}
+											
+{BEGIN statusTCallTimePcnt_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_statusTCallTimePcnt}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="statusTCallTimePcnt" 
+	
+	data-signal-error-for="statusTCallTimePcnt{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="statusTCallTimePcnt" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_statusTCallTimePcnt}">
+		{$label dbo_vAgentPerformance statusTCallTimePcnt }	</label>
+	<div class="r-search-option">
+		{$searchtype_statusTCallTimePcnt}
+	</div>
+	<div class="r-search-field">
+		{$statusTCallTimePcnt_editcontrol}	</div>
+	<div class="r-search-field">
+		{$statusTCallTimePcnt_editcontrol1}
+	</div>
+	
+</div>
+
+{END statusTCallTimePcnt_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Επαναφορά			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Ακύρωση			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

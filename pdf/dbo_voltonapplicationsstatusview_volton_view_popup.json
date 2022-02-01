@@ -1,0 +1,1623 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_voltonApplicationsStatusView volton_view_popup}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"*", 
+							{END col_grid_2}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
+								{BEGIN row_grid_6}
+						
+			"%",
+						{END row_grid_6}
+			 
+								{BEGIN row_grid_7}
+						
+			"%",
+						{END row_grid_7}
+			 
+								{BEGIN row_grid_8}
+						
+			"%",
+						{END row_grid_8}
+			 
+								{BEGIN row_grid_9}
+						
+			"%",
+						{END row_grid_9}
+			 
+								{BEGIN row_grid_10}
+						
+			"%",
+						{END row_grid_10}
+			 
+								{BEGIN row_grid_11}
+						
+			"%",
+						{END row_grid_11}
+			 
+								{BEGIN row_grid_12}
+						
+			"%",
+						{END row_grid_12}
+			 
+								{BEGIN row_grid_13}
+						
+			"%",
+						{END row_grid_13}
+			 
+								{BEGIN row_grid_14}
+						
+			"%",
+						{END row_grid_14}
+			 
+								{BEGIN row_grid_15}
+						
+			"%",
+						{END row_grid_15}
+			 
+								{BEGIN row_grid_16}
+						
+			"%",
+						{END row_grid_16}
+			 
+								{BEGIN row_grid_17}
+						
+			"%",
+						{END row_grid_17}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c59}
+{
+	cellId: 'c59',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#fffbe1',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c59}
+																			{BEGIN cellblock_grid_c89}
+{
+	cellId: 'c89',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#fffbe1',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c89}
+																			{BEGIN cellblock_grid_c97}
+{
+	cellId: 'c97',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView applicationStatusId }","bold":true}," ",{$applicationStatusId_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c97}
+											],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ","color":"#ffffff","hidden":"{$item_hide_text3}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c8}
+																			{BEGIN cellblock_grid_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c21}
+																			{BEGIN cellblock_grid_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c22}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_c36}
+{
+	cellId: 'c36',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΝΟΜΙΜΟΣ ΕΚΠΡΟΣΩΠΟΣ","color":"#ffffff","hidden":"{$item_hide_text1}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c36}
+																			{BEGIN cellblock_grid_c37}
+{
+	cellId: 'c37',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c37}
+																			{BEGIN cellblock_grid_c42}
+{
+	cellId: 'c42',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c42}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_c50}
+{
+	cellId: 'c50',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c50}
+																			{BEGIN cellblock_grid_c123}
+{
+	cellId: 'c123',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c123}
+																			{BEGIN cellblock_grid_c124}
+{
+	cellId: 'c124',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c124}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_c41}
+{
+	cellId: 'c41',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΥΠΕΥΘΥΝΟΣ ΕΠΙΚΟΙΝΩΝΙΑΣ","color":"#ffffff","hidden":"{$item_hide_text}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c41}
+																			{BEGIN cellblock_grid_c43}
+{
+	cellId: 'c43',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c43}
+																			{BEGIN cellblock_grid_c51}
+{
+	cellId: 'c51',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c51}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
+												{BEGIN cellblock_grid_c74}
+{
+	cellId: 'c74',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c74}
+																			{BEGIN cellblock_grid_c121}
+{
+	cellId: 'c121',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c121}
+																			{BEGIN cellblock_grid_c122}
+{
+	cellId: 'c122',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c122}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				[
+												{BEGIN cellblock_grid_c52}
+{
+	cellId: 'c52',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΔΙΕΥΘΥΝΣΗ ΑΠΟΣΤΟΛΗΣ ΛΟΓΑΡΙΑΣΜΟΥ","color":"#ffffff","hidden":"{$item_hide_text2}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c52}
+																			{BEGIN cellblock_grid_c60}
+{
+	cellId: 'c60',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c60}
+																			{BEGIN cellblock_grid_c61}
+{
+	cellId: 'c61',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c61}
+											],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				[
+												{BEGIN cellblock_grid_c118}
+{
+	cellId: 'c118',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c118}
+																			{BEGIN cellblock_grid_c119}
+{
+	cellId: 'c119',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c119}
+																			{BEGIN cellblock_grid_c120}
+{
+	cellId: 'c120',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c120}
+											],
+				{END row_grid_7}
+								{BEGIN row_grid_8}
+				[
+												{BEGIN cellblock_grid_c75}
+{
+	cellId: 'c75',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ","color":"#ffffff","hidden":"{$item_hide_text4}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c75}
+																			{BEGIN cellblock_grid_c76}
+{
+	cellId: 'c76',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c76}
+																			{BEGIN cellblock_grid_c90}
+{
+	cellId: 'c90',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c90}
+											],
+				{END row_grid_8}
+								{BEGIN row_grid_9}
+				[
+												{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+																			{BEGIN cellblock_grid_c116}
+{
+	cellId: 'c116',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c116}
+																			{BEGIN cellblock_grid_c117}
+{
+	cellId: 'c117',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c117}
+											],
+				{END row_grid_9}
+								{BEGIN row_grid_10}
+				[
+												{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c1}
+			colSpan: {$colspan_grid_c1},
+			{END colspan_grid_c1}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΦΥΣΙΚΟ ΑΕΡΙΟ)","color":"#ffffff","hidden":"{$item_hide_text7}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_grid_10}
+								{BEGIN row_grid_11}
+				[
+												{BEGIN cellblock_grid_c145}
+{
+	cellId: 'c145',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c145}
+																			{BEGIN cellblock_grid_c146}
+{
+	cellId: 'c146',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c146}
+																			{BEGIN cellblock_grid_c147}
+{
+	cellId: 'c147',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c147}
+											],
+				{END row_grid_11}
+								{BEGIN row_grid_12}
+				[
+												{BEGIN cellblock_grid_c91}
+{
+	cellId: 'c91',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΤΙΜΟΛΟΓΙΟ VOLTON","color":"#ffffff","hidden":"{$item_hide_text6}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c91}
+																			{BEGIN cellblock_grid_c92}
+{
+	cellId: 'c92',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c92}
+																			{BEGIN cellblock_grid_c93}
+{
+	cellId: 'c93',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c93}
+											],
+				{END row_grid_12}
+								{BEGIN row_grid_13}
+				[
+												{BEGIN cellblock_grid_c94}
+{
+	cellId: 'c94',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ","color":"#ffffff","hidden":"{$item_hide_text5}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c94}
+																			{BEGIN cellblock_grid_c95}
+{
+	cellId: 'c95',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c95}
+																			{BEGIN cellblock_grid_c96}
+{
+	cellId: 'c96',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#110ad6',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c96}
+											],
+				{END row_grid_13}
+								{BEGIN row_grid_14}
+				[
+												{BEGIN cellblock_grid_c98}
+{
+	cellId: 'c98',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c98}
+																			{BEGIN cellblock_grid_c99}
+{
+	cellId: 'c99',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c99}
+																			{BEGIN cellblock_grid_c100}
+{
+	cellId: 'c100',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c100}
+											],
+				{END row_grid_14}
+								{BEGIN row_grid_15}
+				[
+												{BEGIN cellblock_grid_c153}
+{
+	cellId: 'c153',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field83}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView applicationStatusId }","bold":true}," ",{$applicationStatusId_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c153}
+																			{BEGIN cellblock_grid_c154}
+{
+	cellId: 'c154',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c154}
+																			{BEGIN cellblock_grid_c155}
+{
+	cellId: 'c155',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c155}
+											],
+				{END row_grid_15}
+								{BEGIN row_grid_16}
+				[
+												{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c7}
+			colSpan: {$colspan_grid_c7},
+			{END colspan_grid_c7}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_internalcomments}
+			{$displayDetailTable_internalcomments }
+		{END details_internalcomments},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
+																		{ 
+				cellId: 'c7',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c7',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_grid_16}
+								{BEGIN row_grid_17}
+				[
+												{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView id }","bold":true}," ",{$id_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView callDate }","bold":true}," ",{$callDate_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView forCount }","bold":true}," ",{$forCount_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView dialerList }","bold":true}," ",{$dialerList_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c6}
+																			{BEGIN cellblock_grid_c148}
+{
+	cellId: 'c148',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView callphone }","bold":true}," ",{$callphone_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView agentApplicationStatus }","bold":true}," ",{$agentApplicationStatus_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView applicationPhaseStatusId }","bold":true}," ",{$applicationPhaseStatusId_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView applicationAge }","bold":true}," ",{$applicationAge_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c148}
+																			{BEGIN cellblock_grid_c149}
+{
+	cellId: 'c149',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView agent }","bold":true}," ",{$agent_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView lastStatusDate }","bold":true}," ",{$lastStatusDate_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","text":[{"text":"{$jslabel dbo_voltonApplicationsStatusView dialerCampaign }","bold":true}," ",{$dialerCampaign_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c149}
+											],
+				{END row_grid_17}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

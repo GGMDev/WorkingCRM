@@ -1,0 +1,5112 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_novaApplicationsBackofficeView edit}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Πίσω στη λίστα</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Προβολή</button>
+{END view_page_button}
+</div>
+</div>
+			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="6"
+		
+		data-v-width="9"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c23}
+<td
+	{$cell_grid_c23}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c23" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationAgentStatus_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationAgentStatus{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="applicationAgentStatus">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationAgentStatus}">
+			{BEGIN applicationAgentStatus_label}{$label dbo_novaApplicationsBackofficeView applicationAgentStatus }{END applicationAgentStatus_label}
+		</label>
+	</div>
+{END applicationAgentStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c23}
+			 
+																
+
+{BEGIN cellblock_grid_c24}
+<td
+	{$cell_grid_c24}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c24" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationAgentStatus_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationAgentStatus{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+		{$applicationAgentStatus_editcontrol}	</div>
+{END applicationAgentStatus_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c24}
+			 
+																
+
+{BEGIN cellblock_grid_c25}
+<td
+	{$cell_grid_c25}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c25" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationStatusId_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationStatusId{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label58" {$item_edit_field_label58} data-pageid="{$pageid}" data-field="applicationStatusId">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationStatusId}">
+			{BEGIN applicationStatusId_label}{$label dbo_novaApplicationsBackofficeView applicationStatusId }{END applicationStatusId_label}
+		</label>
+	</div>
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c25}
+			 
+																
+
+{BEGIN cellblock_grid_c26}
+<td
+	{$cell_grid_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c26" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationStatusId_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationStatusId{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="applicationStatusId" >
+		{$applicationStatusId_editcontrol}	</div>
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c26}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c27}
+<td
+	{$cell_grid_c27}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c27" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c27}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c28}
+<td
+	{$cell_grid_c28}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c28" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c28}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c11}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c12}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c13}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c14}
+<td
+	{$cell_grid_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c14}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c15}
+<td
+	{$cell_grid_c15}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c15" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c15}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c16}
+<td
+	{$cell_grid_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c16}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c53}
+<td
+	{$cell_grid_c53}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c53" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationType_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationType{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="applicationType">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationType}">
+			{BEGIN applicationType_label}{$label dbo_novaApplicationsBackofficeView applicationType }{END applicationType_label}
+		</label>
+	</div>
+{END applicationType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c53}
+			 
+																
+
+{BEGIN cellblock_grid_c54}
+<td
+	{$cell_grid_c54}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c54" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationType_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationType{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="applicationType" >
+		{$applicationType_editcontrol}	</div>
+{END applicationType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c54}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c55}
+<td
+	{$cell_grid_c55}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c55" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c55}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c56}
+<td
+	{$cell_grid_c56}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c56" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c56}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c57}
+<td
+	{$cell_grid_c57}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c57" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c57}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c58}
+<td
+	{$cell_grid_c58}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c58" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c58}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c47}
+<td
+	{$cell_grid_c47}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c47" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantName_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantName{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label3" {$item_edit_field_label3} data-pageid="{$pageid}" data-field="applicantName">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantName}">
+			{BEGIN applicantName_label}{$label dbo_novaApplicationsBackofficeView applicantName }{END applicantName_label}
+		</label>
+	</div>
+{END applicantName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c47}
+			 
+																
+
+{BEGIN cellblock_grid_c48}
+<td
+	{$cell_grid_c48}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c48" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantName_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantName{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="applicantName" >
+		{$applicantName_editcontrol}	</div>
+{END applicantName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c48}
+			 
+																
+
+{BEGIN cellblock_grid_c49}
+<td
+	{$cell_grid_c49}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c49" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantFirstName_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantFirstName{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label56" {$item_edit_field_label56} data-pageid="{$pageid}" data-field="applicantFirstName">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantFirstName}">
+			{BEGIN applicantFirstName_label}{$label dbo_novaApplicationsBackofficeView applicantFirstName }{END applicantFirstName_label}
+		</label>
+	</div>
+{END applicantFirstName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c49}
+			 
+																
+
+{BEGIN cellblock_grid_c50}
+<td
+	{$cell_grid_c50}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c50" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantFirstName_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantFirstName{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="applicantFirstName" >
+		{$applicantFirstName_editcontrol}	</div>
+{END applicantFirstName_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c50}
+			 
+																
+
+{BEGIN cellblock_grid_c51}
+<td
+	{$cell_grid_c51}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c51" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantIdNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantIdNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label64" {$item_edit_field_label64} data-pageid="{$pageid}" data-field="applicantIdNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantIdNumber}">
+			{BEGIN applicantIdNumber_label}{$label dbo_novaApplicationsBackofficeView applicantIdNumber }{END applicantIdNumber_label}
+		</label>
+	</div>
+{END applicantIdNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c51}
+			 
+																
+
+{BEGIN cellblock_grid_c52}
+<td
+	{$cell_grid_c52}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c52" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantIdNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantIdNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+		{$applicantIdNumber_editcontrol}	</div>
+{END applicantIdNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c52}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c41}
+<td
+	{$cell_grid_c41}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c41" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantBirthdate_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantBirthdate{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label4" {$item_edit_field_label4} data-pageid="{$pageid}" data-field="applicantBirthdate">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantBirthdate}">
+			{BEGIN applicantBirthdate_label}{$label dbo_novaApplicationsBackofficeView applicantBirthdate }{END applicantBirthdate_label}
+		</label>
+	</div>
+{END applicantBirthdate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c41}
+			 
+																
+
+{BEGIN cellblock_grid_c42}
+<td
+	{$cell_grid_c42}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c42" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantBirthdate_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantBirthdate{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="applicantBirthdate" >
+		{$applicantBirthdate_editcontrol}	</div>
+{END applicantBirthdate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c42}
+			 
+																
+
+{BEGIN cellblock_grid_c43}
+<td
+	{$cell_grid_c43}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c43" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantProfession_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantProfession{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label55" {$item_edit_field_label55} data-pageid="{$pageid}" data-field="applicantProfession">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantProfession}">
+			{BEGIN applicantProfession_label}{$label dbo_novaApplicationsBackofficeView applicantProfession }{END applicantProfession_label}
+		</label>
+	</div>
+{END applicantProfession_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c43}
+			 
+																
+
+{BEGIN cellblock_grid_c44}
+<td
+	{$cell_grid_c44}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c44" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantProfession_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantProfession{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="applicantProfession" >
+		{$applicantProfession_editcontrol}	</div>
+{END applicantProfession_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c44}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c45}
+<td
+	{$cell_grid_c45}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c45" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c45}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c46}
+<td
+	{$cell_grid_c46}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c46" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c46}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c35}
+<td
+	{$cell_grid_c35}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c35" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantAddress_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantAddress{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label5" {$item_edit_field_label5} data-pageid="{$pageid}" data-field="applicantAddress">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantAddress}">
+			{BEGIN applicantAddress_label}{$label dbo_novaApplicationsBackofficeView applicantAddress }{END applicantAddress_label}
+		</label>
+	</div>
+{END applicantAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c35}
+			 
+																
+
+{BEGIN cellblock_grid_c36}
+<td
+	{$cell_grid_c36}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c36" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantAddress_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantAddress{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="applicantAddress" >
+		{$applicantAddress_editcontrol}	</div>
+{END applicantAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c36}
+			 
+																
+
+{BEGIN cellblock_grid_c37}
+<td
+	{$cell_grid_c37}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c37" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPostalCode_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantPostalCode{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label54" {$item_edit_field_label54} data-pageid="{$pageid}" data-field="applicantPostalCode">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantPostalCode}">
+			{BEGIN applicantPostalCode_label}{$label dbo_novaApplicationsBackofficeView applicantPostalCode }{END applicantPostalCode_label}
+		</label>
+	</div>
+{END applicantPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c37}
+			 
+																
+
+{BEGIN cellblock_grid_c38}
+<td
+	{$cell_grid_c38}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c38" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPostalCode_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantPostalCode{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="applicantPostalCode" >
+		{$applicantPostalCode_editcontrol}	</div>
+{END applicantPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c38}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c39}
+<td
+	{$cell_grid_c39}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c39" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c39}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c40}
+<td
+	{$cell_grid_c40}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c40" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c40}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c29}
+<td
+	{$cell_grid_c29}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c29" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantArea_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantArea{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label6" {$item_edit_field_label6} data-pageid="{$pageid}" data-field="applicantArea">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantArea}">
+			{BEGIN applicantArea_label}{$label dbo_novaApplicationsBackofficeView applicantArea }{END applicantArea_label}
+		</label>
+	</div>
+{END applicantArea_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c29}
+			 
+																
+
+{BEGIN cellblock_grid_c30}
+<td
+	{$cell_grid_c30}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c30" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantArea_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantArea{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="applicantArea" >
+		{$applicantArea_editcontrol}	</div>
+{END applicantArea_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c30}
+			 
+																
+
+{BEGIN cellblock_grid_c31}
+<td
+	{$cell_grid_c31}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c31" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantCity_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantCity{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label53" {$item_edit_field_label53} data-pageid="{$pageid}" data-field="applicantCity">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantCity}">
+			{BEGIN applicantCity_label}{$label dbo_novaApplicationsBackofficeView applicantCity }{END applicantCity_label}
+		</label>
+	</div>
+{END applicantCity_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c31}
+			 
+																
+
+{BEGIN cellblock_grid_c32}
+<td
+	{$cell_grid_c32}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c32" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantCity_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantCity{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="applicantCity" >
+		{$applicantCity_editcontrol}	</div>
+{END applicantCity_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c32}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c33}
+<td
+	{$cell_grid_c33}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c33" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c33}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c34}
+<td
+	{$cell_grid_c34}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c34" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c34}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c89}
+<td
+	{$cell_grid_c89}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c89" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPhone_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantPhone{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label7" {$item_edit_field_label7} data-pageid="{$pageid}" data-field="applicantPhone">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantPhone}">
+			{BEGIN applicantPhone_label}{$label dbo_novaApplicationsBackofficeView applicantPhone }{END applicantPhone_label}
+		</label>
+	</div>
+{END applicantPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c89}
+			 
+																
+
+{BEGIN cellblock_grid_c90}
+<td
+	{$cell_grid_c90}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c90" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantPhone_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantPhone{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="applicantPhone" >
+		{$applicantPhone_editcontrol}	</div>
+{END applicantPhone_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c90}
+			 
+																
+
+{BEGIN cellblock_grid_c91}
+<td
+	{$cell_grid_c91}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c91" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantMobile_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantMobile{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label52" {$item_edit_field_label52} data-pageid="{$pageid}" data-field="applicantMobile">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantMobile}">
+			{BEGIN applicantMobile_label}{$label dbo_novaApplicationsBackofficeView applicantMobile }{END applicantMobile_label}
+		</label>
+	</div>
+{END applicantMobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c91}
+			 
+																
+
+{BEGIN cellblock_grid_c92}
+<td
+	{$cell_grid_c92}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c92" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantMobile_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantMobile{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="applicantMobile" >
+		{$applicantMobile_editcontrol}	</div>
+{END applicantMobile_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c92}
+			 
+																
+
+{BEGIN cellblock_grid_c93}
+<td
+	{$cell_grid_c93}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c93" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantEmail_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantEmail{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label65" {$item_edit_field_label65} data-pageid="{$pageid}" data-field="applicantEmail">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantEmail}">
+			{BEGIN applicantEmail_label}{$label dbo_novaApplicationsBackofficeView applicantEmail }{END applicantEmail_label}
+		</label>
+	</div>
+{END applicantEmail_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c93}
+			 
+																
+
+{BEGIN cellblock_grid_c94}
+<td
+	{$cell_grid_c94}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c94" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantEmail_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantEmail{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="applicantEmail" >
+		{$applicantEmail_editcontrol}	</div>
+{END applicantEmail_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c94}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c83}
+<td
+	{$cell_grid_c83}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c83" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxOffice_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantTaxOffice{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label8" {$item_edit_field_label8} data-pageid="{$pageid}" data-field="applicantTaxOffice">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantTaxOffice}">
+			{BEGIN applicantTaxOffice_label}{$label dbo_novaApplicationsBackofficeView applicantTaxOffice }{END applicantTaxOffice_label}
+		</label>
+	</div>
+{END applicantTaxOffice_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c83}
+			 
+																
+
+{BEGIN cellblock_grid_c84}
+<td
+	{$cell_grid_c84}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c84" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxOffice_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantTaxOffice{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="applicantTaxOffice" >
+		{$applicantTaxOffice_editcontrol}	</div>
+{END applicantTaxOffice_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c84}
+			 
+																
+
+{BEGIN cellblock_grid_c85}
+<td
+	{$cell_grid_c85}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c85" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxRegistrationNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicantTaxRegistrationNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label51" {$item_edit_field_label51} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_applicantTaxRegistrationNumber}">
+			{BEGIN applicantTaxRegistrationNumber_label}{$label dbo_novaApplicationsBackofficeView applicantTaxRegistrationNumber }{END applicantTaxRegistrationNumber_label}
+		</label>
+	</div>
+{END applicantTaxRegistrationNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c85}
+			 
+																
+
+{BEGIN cellblock_grid_c86}
+<td
+	{$cell_grid_c86}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c86" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicantTaxRegistrationNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicantTaxRegistrationNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+		{$applicantTaxRegistrationNumber_editcontrol}	</div>
+{END applicantTaxRegistrationNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c86}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c87}
+<td
+	{$cell_grid_c87}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c87" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c87}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c88}
+<td
+	{$cell_grid_c88}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c88" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c88}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c77}
+<td
+	{$cell_grid_c77}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c77" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c77}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c78}
+<td
+	{$cell_grid_c78}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c78" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c78}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c79}
+<td
+	{$cell_grid_c79}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c79" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c79}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c80}
+<td
+	{$cell_grid_c80}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c80" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c80}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c81}
+<td
+	{$cell_grid_c81}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c81" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c81}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c82}
+<td
+	{$cell_grid_c82}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c82" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c82}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c71}
+<td
+	{$cell_grid_c71}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c71" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN standAloneProgram_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="standAloneProgram{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label9" {$item_edit_field_label9} data-pageid="{$pageid}" data-field="standAloneProgram">
+		<label class="r-edit-label control-label" for="{$labelfor_standAloneProgram}">
+			{BEGIN standAloneProgram_label}{$label dbo_novaApplicationsBackofficeView standAloneProgram }{END standAloneProgram_label}
+		</label>
+	</div>
+{END standAloneProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c71}
+			 
+																
+
+{BEGIN cellblock_grid_c72}
+<td
+	{$cell_grid_c72}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c72" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN standAloneProgram_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="standAloneProgram{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="standAloneProgram" >
+		{$standAloneProgram_editcontrol}	</div>
+{END standAloneProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c72}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c73}
+<td
+	{$cell_grid_c73}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c73" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c73}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c74}
+<td
+	{$cell_grid_c74}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c74" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c74}
+			 
+																
+
+{BEGIN cellblock_grid_c75}
+<td
+	{$cell_grid_c75}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c75" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ProgramSpeed_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="ProgramSpeed{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label66" {$item_edit_field_label66} data-pageid="{$pageid}" data-field="ProgramSpeed">
+		<label class="r-edit-label control-label" for="{$labelfor_ProgramSpeed}">
+			{BEGIN ProgramSpeed_label}{$label dbo_novaApplicationsBackofficeView ProgramSpeed }{END ProgramSpeed_label}
+		</label>
+	</div>
+{END ProgramSpeed_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c75}
+			 
+																
+
+{BEGIN cellblock_grid_c76}
+<td
+	{$cell_grid_c76}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c76" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ProgramSpeed_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="ProgramSpeed{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="ProgramSpeed" >
+		{$ProgramSpeed_editcontrol}	</div>
+{END ProgramSpeed_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c76}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c107}
+<td
+	{$cell_grid_c107}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c107" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN doublePlayProgram_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="doublePlayProgram{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label10" {$item_edit_field_label10} data-pageid="{$pageid}" data-field="doublePlayProgram">
+		<label class="r-edit-label control-label" for="{$labelfor_doublePlayProgram}">
+			{BEGIN doublePlayProgram_label}{$label dbo_novaApplicationsBackofficeView doublePlayProgram }{END doublePlayProgram_label}
+		</label>
+	</div>
+{END doublePlayProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c107}
+			 
+																
+
+{BEGIN cellblock_grid_c108}
+<td
+	{$cell_grid_c108}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c108" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN doublePlayProgram_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="doublePlayProgram{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="doublePlayProgram" >
+		{$doublePlayProgram_editcontrol}	</div>
+{END doublePlayProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c108}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c109}
+<td
+	{$cell_grid_c109}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c109" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c109}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c110}
+<td
+	{$cell_grid_c110}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c110" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c110}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c111}
+<td
+	{$cell_grid_c111}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c111" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c111}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c112}
+<td
+	{$cell_grid_c112}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c112" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c112}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c101}
+<td
+	{$cell_grid_c101}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c101" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN triplePlayProgram_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="triplePlayProgram{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label11" {$item_edit_field_label11} data-pageid="{$pageid}" data-field="triplePlayProgram">
+		<label class="r-edit-label control-label" for="{$labelfor_triplePlayProgram}">
+			{BEGIN triplePlayProgram_label}{$label dbo_novaApplicationsBackofficeView triplePlayProgram }{END triplePlayProgram_label}
+		</label>
+	</div>
+{END triplePlayProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c101}
+			 
+																
+
+{BEGIN cellblock_grid_c102}
+<td
+	{$cell_grid_c102}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c102" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN triplePlayProgram_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="triplePlayProgram{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="triplePlayProgram" >
+		{$triplePlayProgram_editcontrol}	</div>
+{END triplePlayProgram_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c102}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c103}
+<td
+	{$cell_grid_c103}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c103" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c103}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c104}
+<td
+	{$cell_grid_c104}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c104" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c104}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c105}
+<td
+	{$cell_grid_c105}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c105" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c105}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c106}
+<td
+	{$cell_grid_c106}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c106" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c106}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c95}
+<td
+	{$cell_grid_c95}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c95" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN triplePlayProgramType_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="triplePlayProgramType{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label12" {$item_edit_field_label12} data-pageid="{$pageid}" data-field="triplePlayProgramType">
+		<label class="r-edit-label control-label" for="{$labelfor_triplePlayProgramType}">
+			{BEGIN triplePlayProgramType_label}{$label dbo_novaApplicationsBackofficeView triplePlayProgramType }{END triplePlayProgramType_label}
+		</label>
+	</div>
+{END triplePlayProgramType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c95}
+			 
+																
+
+{BEGIN cellblock_grid_c96}
+<td
+	{$cell_grid_c96}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c96" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN triplePlayProgramType_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="triplePlayProgramType{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="triplePlayProgramType" >
+		{$triplePlayProgramType_editcontrol}	</div>
+{END triplePlayProgramType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c96}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c97}
+<td
+	{$cell_grid_c97}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c97" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c97}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c98}
+<td
+	{$cell_grid_c98}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c98" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c98}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c99}
+<td
+	{$cell_grid_c99}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c99" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c99}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c100}
+<td
+	{$cell_grid_c100}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c100" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c100}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c137}
+<td
+	{$cell_grid_c137}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c137" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c137}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c138}
+<td
+	{$cell_grid_c138}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c138" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c138}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c139}
+<td
+	{$cell_grid_c139}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c139" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c139}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c140}
+<td
+	{$cell_grid_c140}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c140" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c140}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c141}
+<td
+	{$cell_grid_c141}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c141" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c141}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c142}
+<td
+	{$cell_grid_c142}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c142" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c142}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c131}
+<td
+	{$cell_grid_c131}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c131" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceInternet_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceInternet{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label13" {$item_edit_field_label13} data-pageid="{$pageid}" data-field="additionalServiceInternet">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceInternet}">
+			{BEGIN additionalServiceInternet_label}{$label dbo_novaApplicationsBackofficeView additionalServiceInternet }{END additionalServiceInternet_label}
+		</label>
+	</div>
+{END additionalServiceInternet_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c131}
+			 
+																
+
+{BEGIN cellblock_grid_c132}
+<td
+	{$cell_grid_c132}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c132" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceInternet_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceInternet{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="additionalServiceInternet" >
+		{$additionalServiceInternet_editcontrol}	</div>
+{END additionalServiceInternet_fieldblock}
+											{BEGIN additionalServiceInternetSpeed_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceInternetSpeed{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="additionalServiceInternetSpeed" >
+		{$additionalServiceInternetSpeed_editcontrol}	</div>
+{END additionalServiceInternetSpeed_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c132}
+			 
+																
+
+{BEGIN cellblock_grid_c133}
+<td
+	{$cell_grid_c133}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c133" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceInternationalCalls_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceInternationalCalls{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label17" {$item_edit_field_label17} data-pageid="{$pageid}" data-field="additionalServiceInternationalCalls">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceInternationalCalls}">
+			{BEGIN additionalServiceInternationalCalls_label}{$label dbo_novaApplicationsBackofficeView additionalServiceInternationalCalls }{END additionalServiceInternationalCalls_label}
+		</label>
+	</div>
+{END additionalServiceInternationalCalls_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c133}
+			 
+																
+
+{BEGIN cellblock_grid_c134}
+<td
+	{$cell_grid_c134}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c134" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceInternationalCalls_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceInternationalCalls{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="additionalServiceInternationalCalls" >
+		{$additionalServiceInternationalCalls_editcontrol}	</div>
+{END additionalServiceInternationalCalls_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c134}
+			 
+																
+
+{BEGIN cellblock_grid_c135}
+<td
+	{$cell_grid_c135}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c135" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceStaticIp_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceStaticIp{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label21" {$item_edit_field_label21} data-pageid="{$pageid}" data-field="additionalServiceStaticIp">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceStaticIp}">
+			{BEGIN additionalServiceStaticIp_label}{$label dbo_novaApplicationsBackofficeView additionalServiceStaticIp }{END additionalServiceStaticIp_label}
+		</label>
+	</div>
+{END additionalServiceStaticIp_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c135}
+			 
+																
+
+{BEGIN cellblock_grid_c136}
+<td
+	{$cell_grid_c136}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c136" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceStaticIp_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceStaticIp{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="additionalServiceStaticIp" >
+		{$additionalServiceStaticIp_editcontrol}	</div>
+{END additionalServiceStaticIp_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c136}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c125}
+<td
+	{$cell_grid_c125}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c125" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceSecondLine_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceSecondLine{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label14" {$item_edit_field_label14} data-pageid="{$pageid}" data-field="additionalServiceSecondLine">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceSecondLine}">
+			{BEGIN additionalServiceSecondLine_label}{$label dbo_novaApplicationsBackofficeView additionalServiceSecondLine }{END additionalServiceSecondLine_label}
+		</label>
+	</div>
+{END additionalServiceSecondLine_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c125}
+			 
+																
+
+{BEGIN cellblock_grid_c126}
+<td
+	{$cell_grid_c126}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c126" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceSecondLine_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceSecondLine{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="additionalServiceSecondLine" >
+		{$additionalServiceSecondLine_editcontrol}	</div>
+{END additionalServiceSecondLine_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c126}
+			 
+																
+
+{BEGIN cellblock_grid_c127}
+<td
+	{$cell_grid_c127}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c127" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceLandLine1000Minutes_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceLandLine1000Minutes{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label18" {$item_edit_field_label18} data-pageid="{$pageid}" data-field="additionalServiceLandLine1000Minutes">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceLandLine1000Minutes}">
+			{BEGIN additionalServiceLandLine1000Minutes_label}{$label dbo_novaApplicationsBackofficeView additionalServiceLandLine1000Minutes }{END additionalServiceLandLine1000Minutes_label}
+		</label>
+	</div>
+{END additionalServiceLandLine1000Minutes_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c127}
+			 
+																
+
+{BEGIN cellblock_grid_c128}
+<td
+	{$cell_grid_c128}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c128" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceLandLine1000Minutes_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceLandLine1000Minutes{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field41" {$item_integrated_edit_field41} data-pageid="{$pageid}" data-field="additionalServiceLandLine1000Minutes" >
+		{$additionalServiceLandLine1000Minutes_editcontrol}	</div>
+{END additionalServiceLandLine1000Minutes_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c128}
+			 
+																
+
+{BEGIN cellblock_grid_c129}
+<td
+	{$cell_grid_c129}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c129" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceStaticBlock8Ip_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceStaticBlock8Ip{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label22" {$item_edit_field_label22} data-pageid="{$pageid}" data-field="additionalServiceStaticBlock8Ip">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceStaticBlock8Ip}">
+			{BEGIN additionalServiceStaticBlock8Ip_label}{$label dbo_novaApplicationsBackofficeView additionalServiceStaticBlock8Ip }{END additionalServiceStaticBlock8Ip_label}
+		</label>
+	</div>
+{END additionalServiceStaticBlock8Ip_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c129}
+			 
+																
+
+{BEGIN cellblock_grid_c130}
+<td
+	{$cell_grid_c130}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c130" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceStaticBlock8Ip_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceStaticBlock8Ip{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="additionalServiceStaticBlock8Ip" >
+		{$additionalServiceStaticBlock8Ip_editcontrol}	</div>
+{END additionalServiceStaticBlock8Ip_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c130}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c119}
+<td
+	{$cell_grid_c119}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c119" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEquipment_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceEquipment{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label15" {$item_edit_field_label15} data-pageid="{$pageid}" data-field="additionalServiceEquipment">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceEquipment}">
+			{BEGIN additionalServiceEquipment_label}{$label dbo_novaApplicationsBackofficeView additionalServiceEquipment }{END additionalServiceEquipment_label}
+		</label>
+	</div>
+{END additionalServiceEquipment_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c119}
+			 
+																
+
+{BEGIN cellblock_grid_c120}
+<td
+	{$cell_grid_c120}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c120" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEquipment_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceEquipment{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field42" {$item_integrated_edit_field42} data-pageid="{$pageid}" data-field="additionalServiceEquipment" >
+		{$additionalServiceEquipment_editcontrol}	</div>
+{END additionalServiceEquipment_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c120}
+			 
+																
+
+{BEGIN cellblock_grid_c121}
+<td
+	{$cell_grid_c121}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c121" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEquipmentInstallation_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceEquipmentInstallation{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label19" {$item_edit_field_label19} data-pageid="{$pageid}" data-field="additionalServiceEquipmentInstallation">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceEquipmentInstallation}">
+			{BEGIN additionalServiceEquipmentInstallation_label}{$label dbo_novaApplicationsBackofficeView additionalServiceEquipmentInstallation }{END additionalServiceEquipmentInstallation_label}
+		</label>
+	</div>
+{END additionalServiceEquipmentInstallation_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c121}
+			 
+																
+
+{BEGIN cellblock_grid_c122}
+<td
+	{$cell_grid_c122}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c122" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEquipmentInstallation_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceEquipmentInstallation{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field43" {$item_integrated_edit_field43} data-pageid="{$pageid}" data-field="additionalServiceEquipmentInstallation" >
+		{$additionalServiceEquipmentInstallation_editcontrol}	</div>
+{END additionalServiceEquipmentInstallation_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c122}
+			 
+																
+
+{BEGIN cellblock_grid_c123}
+<td
+	{$cell_grid_c123}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c123" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEONMultiScreen_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceEONMultiScreen{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label23" {$item_edit_field_label23} data-pageid="{$pageid}" data-field="additionalServiceEONMultiScreen">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceEONMultiScreen}">
+			{BEGIN additionalServiceEONMultiScreen_label}{$label dbo_novaApplicationsBackofficeView additionalServiceEONMultiScreen }{END additionalServiceEONMultiScreen_label}
+		</label>
+	</div>
+{END additionalServiceEONMultiScreen_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c123}
+			 
+																
+
+{BEGIN cellblock_grid_c124}
+<td
+	{$cell_grid_c124}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c124" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceEONMultiScreen_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceEONMultiScreen{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field64" {$item_integrated_edit_field64} data-pageid="{$pageid}" data-field="additionalServiceEONMultiScreen" >
+		{$additionalServiceEONMultiScreen_editcontrol}	</div>
+{END additionalServiceEONMultiScreen_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c124}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c161}
+<td
+	{$cell_grid_c161}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c161" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceNovaMultiroom_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceNovaMultiroom{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label16" {$item_edit_field_label16} data-pageid="{$pageid}" data-field="additionalServiceNovaMultiroom">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceNovaMultiroom}">
+			{BEGIN additionalServiceNovaMultiroom_label}{$label dbo_novaApplicationsBackofficeView additionalServiceNovaMultiroom }{END additionalServiceNovaMultiroom_label}
+		</label>
+	</div>
+{END additionalServiceNovaMultiroom_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c161}
+			 
+																
+
+{BEGIN cellblock_grid_c162}
+<td
+	{$cell_grid_c162}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c162" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceNovaMultiroom_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceNovaMultiroom{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field65" {$item_integrated_edit_field65} data-pageid="{$pageid}" data-field="additionalServiceNovaMultiroom" >
+		{$additionalServiceNovaMultiroom_editcontrol}	</div>
+{END additionalServiceNovaMultiroom_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c162}
+			 
+																
+
+{BEGIN cellblock_grid_c163}
+<td
+	{$cell_grid_c163}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c163" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN adittionalServiceMobileNoLimit_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="adittionalServiceMobileNoLimit{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label20" {$item_edit_field_label20} data-pageid="{$pageid}" data-field="adittionalServiceMobileNoLimit">
+		<label class="r-edit-label control-label" for="{$labelfor_adittionalServiceMobileNoLimit}">
+			{BEGIN adittionalServiceMobileNoLimit_label}{$label dbo_novaApplicationsBackofficeView adittionalServiceMobileNoLimit }{END adittionalServiceMobileNoLimit_label}
+		</label>
+	</div>
+{END adittionalServiceMobileNoLimit_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c163}
+			 
+																
+
+{BEGIN cellblock_grid_c164}
+<td
+	{$cell_grid_c164}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c164" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN adittionalServiceMobileNoLimit_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="adittionalServiceMobileNoLimit{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field63" {$item_integrated_edit_field63} data-pageid="{$pageid}" data-field="adittionalServiceMobileNoLimit" >
+		{$adittionalServiceMobileNoLimit_editcontrol}	</div>
+{END adittionalServiceMobileNoLimit_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c164}
+			 
+																
+
+{BEGIN cellblock_grid_c165}
+<td
+	{$cell_grid_c165}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c165" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceAdultPack_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="additionalServiceAdultPack{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label24" {$item_edit_field_label24} data-pageid="{$pageid}" data-field="additionalServiceAdultPack">
+		<label class="r-edit-label control-label" for="{$labelfor_additionalServiceAdultPack}">
+			{BEGIN additionalServiceAdultPack_label}{$label dbo_novaApplicationsBackofficeView additionalServiceAdultPack }{END additionalServiceAdultPack_label}
+		</label>
+	</div>
+{END additionalServiceAdultPack_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c165}
+			 
+																
+
+{BEGIN cellblock_grid_c166}
+<td
+	{$cell_grid_c166}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c166" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN additionalServiceAdultPack_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="additionalServiceAdultPack{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field66" {$item_integrated_edit_field66} data-pageid="{$pageid}" data-field="additionalServiceAdultPack" >
+		{$additionalServiceAdultPack_editcontrol}	</div>
+{END additionalServiceAdultPack_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c166}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c155}
+<td
+	{$cell_grid_c155}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c155" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c155}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c156}
+<td
+	{$cell_grid_c156}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c156" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c156}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c157}
+<td
+	{$cell_grid_c157}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c157" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c157}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c158}
+<td
+	{$cell_grid_c158}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c158" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c158}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c159}
+<td
+	{$cell_grid_c159}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c159" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c159}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c160}
+<td
+	{$cell_grid_c160}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c160" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c160}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c149}
+<td
+	{$cell_grid_c149}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c149" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityIsNewLine_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityIsNewLine{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label25" {$item_edit_field_label25} data-pageid="{$pageid}" data-field="portabilityIsNewLine">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityIsNewLine}">
+			{BEGIN portabilityIsNewLine_label}{$label dbo_novaApplicationsBackofficeView portabilityIsNewLine }{END portabilityIsNewLine_label}
+		</label>
+	</div>
+{END portabilityIsNewLine_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c149}
+			 
+																
+
+{BEGIN cellblock_grid_c150}
+<td
+	{$cell_grid_c150}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c150" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityIsNewLine_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityIsNewLine{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="portabilityIsNewLine" >
+		{$portabilityIsNewLine_editcontrol}	</div>
+{END portabilityIsNewLine_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c150}
+			 
+																
+
+{BEGIN cellblock_grid_c151}
+<td
+	{$cell_grid_c151}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c151" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityPstnIsdn_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityPstnIsdn{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label50" {$item_edit_field_label50} data-pageid="{$pageid}" data-field="portabilityPstnIsdn">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityPstnIsdn}">
+			{BEGIN portabilityPstnIsdn_label}{$label dbo_novaApplicationsBackofficeView portabilityPstnIsdn }{END portabilityPstnIsdn_label}
+		</label>
+	</div>
+{END portabilityPstnIsdn_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c151}
+			 
+																
+
+{BEGIN cellblock_grid_c152}
+<td
+	{$cell_grid_c152}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c152" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityPstnIsdn_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityPstnIsdn{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="portabilityPstnIsdn" >
+		{$portabilityPstnIsdn_editcontrol}	</div>
+{END portabilityPstnIsdn_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c152}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c153}
+<td
+	{$cell_grid_c153}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c153" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c153}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c154}
+<td
+	{$cell_grid_c154}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c154" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c154}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c143}
+<td
+	{$cell_grid_c143}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c143" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityOldNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityOldNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label26" {$item_edit_field_label26} data-pageid="{$pageid}" data-field="portabilityOldNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityOldNumber}">
+			{BEGIN portabilityOldNumber_label}{$label dbo_novaApplicationsBackofficeView portabilityOldNumber }{END portabilityOldNumber_label}
+		</label>
+	</div>
+{END portabilityOldNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c143}
+			 
+																
+
+{BEGIN cellblock_grid_c144}
+<td
+	{$cell_grid_c144}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c144" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityOldNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityOldNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="portabilityOldNumber" >
+		{$portabilityOldNumber_editcontrol}	</div>
+{END portabilityOldNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c144}
+			 
+																
+
+{BEGIN cellblock_grid_c145}
+<td
+	{$cell_grid_c145}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c145" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityOldOwner_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityOldOwner{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label49" {$item_edit_field_label49} data-pageid="{$pageid}" data-field="portabilityOldOwner">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityOldOwner}">
+			{BEGIN portabilityOldOwner_label}{$label dbo_novaApplicationsBackofficeView portabilityOldOwner }{END portabilityOldOwner_label}
+		</label>
+	</div>
+{END portabilityOldOwner_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c145}
+			 
+																
+
+{BEGIN cellblock_grid_c146}
+<td
+	{$cell_grid_c146}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c146" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityOldOwner_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityOldOwner{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="portabilityOldOwner" >
+		{$portabilityOldOwner_editcontrol}	</div>
+{END portabilityOldOwner_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c146}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c147}
+<td
+	{$cell_grid_c147}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c147" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c147}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c148}
+<td
+	{$cell_grid_c148}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c148" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c148}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c113}
+<td
+	{$cell_grid_c113}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c113" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationAddress_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityActivationAddress{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label27" {$item_edit_field_label27} data-pageid="{$pageid}" data-field="portabilityActivationAddress">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityActivationAddress}">
+			{BEGIN portabilityActivationAddress_label}{$label dbo_novaApplicationsBackofficeView portabilityActivationAddress }{END portabilityActivationAddress_label}
+		</label>
+	</div>
+{END portabilityActivationAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c113}
+			 
+																
+
+{BEGIN cellblock_grid_c114}
+<td
+	{$cell_grid_c114}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c114" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationAddress_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityActivationAddress{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="portabilityActivationAddress" >
+		{$portabilityActivationAddress_editcontrol}	</div>
+{END portabilityActivationAddress_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c114}
+			 
+																
+
+{BEGIN cellblock_grid_c115}
+<td
+	{$cell_grid_c115}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c115" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationPostalCode_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityActivationPostalCode{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label48" {$item_edit_field_label48} data-pageid="{$pageid}" data-field="portabilityActivationPostalCode">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityActivationPostalCode}">
+			{BEGIN portabilityActivationPostalCode_label}{$label dbo_novaApplicationsBackofficeView portabilityActivationPostalCode }{END portabilityActivationPostalCode_label}
+		</label>
+	</div>
+{END portabilityActivationPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c115}
+			 
+																
+
+{BEGIN cellblock_grid_c116}
+<td
+	{$cell_grid_c116}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c116" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationPostalCode_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityActivationPostalCode{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="portabilityActivationPostalCode" >
+		{$portabilityActivationPostalCode_editcontrol}	</div>
+{END portabilityActivationPostalCode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c116}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c117}
+<td
+	{$cell_grid_c117}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c117" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c117}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c118}
+<td
+	{$cell_grid_c118}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c118" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c118}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c185}
+<td
+	{$cell_grid_c185}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c185" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationCity_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityActivationCity{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label28" {$item_edit_field_label28} data-pageid="{$pageid}" data-field="portabilityActivationCity">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityActivationCity}">
+			{BEGIN portabilityActivationCity_label}{$label dbo_novaApplicationsBackofficeView portabilityActivationCity }{END portabilityActivationCity_label}
+		</label>
+	</div>
+{END portabilityActivationCity_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c185}
+			 
+																
+
+{BEGIN cellblock_grid_c186}
+<td
+	{$cell_grid_c186}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c186" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationCity_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityActivationCity{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="portabilityActivationCity" >
+		{$portabilityActivationCity_editcontrol}	</div>
+{END portabilityActivationCity_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c186}
+			 
+																
+
+{BEGIN cellblock_grid_c187}
+<td
+	{$cell_grid_c187}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c187" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationArea_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityActivationArea{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label47" {$item_edit_field_label47} data-pageid="{$pageid}" data-field="portabilityActivationArea">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityActivationArea}">
+			{BEGIN portabilityActivationArea_label}{$label dbo_novaApplicationsBackofficeView portabilityActivationArea }{END portabilityActivationArea_label}
+		</label>
+	</div>
+{END portabilityActivationArea_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c187}
+			 
+																
+
+{BEGIN cellblock_grid_c188}
+<td
+	{$cell_grid_c188}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c188" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityActivationArea_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityActivationArea{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="portabilityActivationArea" >
+		{$portabilityActivationArea_editcontrol}	</div>
+{END portabilityActivationArea_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c188}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c189}
+<td
+	{$cell_grid_c189}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c189" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c189}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c190}
+<td
+	{$cell_grid_c190}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c190" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c190}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c179}
+<td
+	{$cell_grid_c179}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c179" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine1PhoneNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityLine1PhoneNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label29" {$item_edit_field_label29} data-pageid="{$pageid}" data-field="portabilityLine1PhoneNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityLine1PhoneNumber}">
+			{BEGIN portabilityLine1PhoneNumber_label}{$label dbo_novaApplicationsBackofficeView portabilityLine1PhoneNumber }{END portabilityLine1PhoneNumber_label}
+		</label>
+	</div>
+{END portabilityLine1PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c179}
+			 
+																
+
+{BEGIN cellblock_grid_c180}
+<td
+	{$cell_grid_c180}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c180" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine1PhoneNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityLine1PhoneNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="portabilityLine1PhoneNumber" >
+		{$portabilityLine1PhoneNumber_editcontrol}	</div>
+{END portabilityLine1PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c180}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c181}
+<td
+	{$cell_grid_c181}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c181" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c181}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c182}
+<td
+	{$cell_grid_c182}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c182" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c182}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c183}
+<td
+	{$cell_grid_c183}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c183" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c183}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c184}
+<td
+	{$cell_grid_c184}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c184" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c184}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c173}
+<td
+	{$cell_grid_c173}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c173" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine2PhoneNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityLine2PhoneNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label30" {$item_edit_field_label30} data-pageid="{$pageid}" data-field="portabilityLine2PhoneNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityLine2PhoneNumber}">
+			{BEGIN portabilityLine2PhoneNumber_label}{$label dbo_novaApplicationsBackofficeView portabilityLine2PhoneNumber }{END portabilityLine2PhoneNumber_label}
+		</label>
+	</div>
+{END portabilityLine2PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c173}
+			 
+																
+
+{BEGIN cellblock_grid_c174}
+<td
+	{$cell_grid_c174}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c174" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine2PhoneNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityLine2PhoneNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-field="portabilityLine2PhoneNumber" >
+		{$portabilityLine2PhoneNumber_editcontrol}	</div>
+{END portabilityLine2PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c174}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c175}
+<td
+	{$cell_grid_c175}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c175" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c175}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c176}
+<td
+	{$cell_grid_c176}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c176" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c176}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c177}
+<td
+	{$cell_grid_c177}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c177" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c177}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c178}
+<td
+	{$cell_grid_c178}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c178" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c178}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c167}
+<td
+	{$cell_grid_c167}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c167" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine3PhoneNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityLine3PhoneNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label31" {$item_edit_field_label31} data-pageid="{$pageid}" data-field="portabilityLine3PhoneNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityLine3PhoneNumber}">
+			{BEGIN portabilityLine3PhoneNumber_label}{$label dbo_novaApplicationsBackofficeView portabilityLine3PhoneNumber }{END portabilityLine3PhoneNumber_label}
+		</label>
+	</div>
+{END portabilityLine3PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c167}
+			 
+																
+
+{BEGIN cellblock_grid_c168}
+<td
+	{$cell_grid_c168}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c168" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine3PhoneNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityLine3PhoneNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="portabilityLine3PhoneNumber" >
+		{$portabilityLine3PhoneNumber_editcontrol}	</div>
+{END portabilityLine3PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c168}
+			 
+																
+
+{BEGIN cellblock_grid_c169}
+<td
+	{$cell_grid_c169}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c169" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityUsername1_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityUsername1{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label46" {$item_edit_field_label46} data-pageid="{$pageid}" data-field="portabilityUsername1">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityUsername1}">
+			{BEGIN portabilityUsername1_label}{$label dbo_novaApplicationsBackofficeView portabilityUsername1 }{END portabilityUsername1_label}
+		</label>
+	</div>
+{END portabilityUsername1_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c169}
+			 
+																
+
+{BEGIN cellblock_grid_c170}
+<td
+	{$cell_grid_c170}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c170" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityUsername1_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityUsername1{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="portabilityUsername1" >
+		{$portabilityUsername1_editcontrol}	</div>
+{END portabilityUsername1_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c170}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c171}
+<td
+	{$cell_grid_c171}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c171" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c171}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c172}
+<td
+	{$cell_grid_c172}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c172" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c172}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c191}
+<td
+	{$cell_grid_c191}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c191" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine4PhoneNumber_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityLine4PhoneNumber{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label32" {$item_edit_field_label32} data-pageid="{$pageid}" data-field="portabilityLine4PhoneNumber">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityLine4PhoneNumber}">
+			{BEGIN portabilityLine4PhoneNumber_label}{$label dbo_novaApplicationsBackofficeView portabilityLine4PhoneNumber }{END portabilityLine4PhoneNumber_label}
+		</label>
+	</div>
+{END portabilityLine4PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c191}
+			 
+																
+
+{BEGIN cellblock_grid_c192}
+<td
+	{$cell_grid_c192}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c192" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityLine4PhoneNumber_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityLine4PhoneNumber{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="portabilityLine4PhoneNumber" >
+		{$portabilityLine4PhoneNumber_editcontrol}	</div>
+{END portabilityLine4PhoneNumber_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c192}
+			 
+																
+
+{BEGIN cellblock_grid_c193}
+<td
+	{$cell_grid_c193}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c193" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityusername2_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="portabilityusername2{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label45" {$item_edit_field_label45} data-pageid="{$pageid}" data-field="portabilityusername2">
+		<label class="r-edit-label control-label" for="{$labelfor_portabilityusername2}">
+			{BEGIN portabilityusername2_label}{$label dbo_novaApplicationsBackofficeView portabilityusername2 }{END portabilityusername2_label}
+		</label>
+	</div>
+{END portabilityusername2_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c193}
+			 
+																
+
+{BEGIN cellblock_grid_c194}
+<td
+	{$cell_grid_c194}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c194" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN portabilityusername2_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="portabilityusername2{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="portabilityusername2" >
+		{$portabilityusername2_editcontrol}	</div>
+{END portabilityusername2_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c194}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c195}
+<td
+	{$cell_grid_c195}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c195" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c195}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c196}
+<td
+	{$cell_grid_c196}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c196" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c196}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c215}
+<td
+	{$cell_grid_c215}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c215" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c215}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c216}
+<td
+	{$cell_grid_c216}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c216" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c216}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c217}
+<td
+	{$cell_grid_c217}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c217" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c217}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c218}
+<td
+	{$cell_grid_c218}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c218" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c218}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c219}
+<td
+	{$cell_grid_c219}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c219" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c219}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c220}
+<td
+	{$cell_grid_c220}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c220" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c220}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c245}
+<td
+	{$cell_grid_c245}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c245" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentIdPassport_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentIdPassport{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label33" {$item_edit_field_label33} data-pageid="{$pageid}" data-field="documentIdPassport">
+		<label class="r-edit-label control-label" for="{$labelfor_documentIdPassport}">
+			{BEGIN documentIdPassport_label}{$label dbo_novaApplicationsBackofficeView documentIdPassport }{END documentIdPassport_label}
+		</label>
+	</div>
+{END documentIdPassport_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c245}
+			 
+																
+
+{BEGIN cellblock_grid_c246}
+<td
+	{$cell_grid_c246}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c246" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentIdPassport_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentIdPassport{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="documentIdPassport" >
+		{$documentIdPassport_editcontrol}	</div>
+{END documentIdPassport_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c246}
+			 
+																
+
+{BEGIN cellblock_grid_c247}
+<td
+	{$cell_grid_c247}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c247" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentIdPassportPreviousOwner_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentIdPassportPreviousOwner{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label44" {$item_edit_field_label44} data-pageid="{$pageid}" data-field="documentIdPassportPreviousOwner">
+		<label class="r-edit-label control-label" for="{$labelfor_documentIdPassportPreviousOwner}">
+			{BEGIN documentIdPassportPreviousOwner_label}{$label dbo_novaApplicationsBackofficeView documentIdPassportPreviousOwner }{END documentIdPassportPreviousOwner_label}
+		</label>
+	</div>
+{END documentIdPassportPreviousOwner_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c247}
+			 
+																
+
+{BEGIN cellblock_grid_c248}
+<td
+	{$cell_grid_c248}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c248" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentIdPassportPreviousOwner_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentIdPassportPreviousOwner{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="documentIdPassportPreviousOwner" >
+		{$documentIdPassportPreviousOwner_editcontrol}	</div>
+{END documentIdPassportPreviousOwner_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c248}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c249}
+<td
+	{$cell_grid_c249}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c249" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c249}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c250}
+<td
+	{$cell_grid_c250}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c250" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c250}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c239}
+<td
+	{$cell_grid_c239}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c239" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentLastBill_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentLastBill{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label34" {$item_edit_field_label34} data-pageid="{$pageid}" data-field="documentLastBill">
+		<label class="r-edit-label control-label" for="{$labelfor_documentLastBill}">
+			{BEGIN documentLastBill_label}{$label dbo_novaApplicationsBackofficeView documentLastBill }{END documentLastBill_label}
+		</label>
+	</div>
+{END documentLastBill_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c239}
+			 
+																
+
+{BEGIN cellblock_grid_c240}
+<td
+	{$cell_grid_c240}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c240" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentLastBill_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentLastBill{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field52" {$item_integrated_edit_field52} data-pageid="{$pageid}" data-field="documentLastBill" >
+		{$documentLastBill_editcontrol}	</div>
+{END documentLastBill_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c240}
+			 
+																
+
+{BEGIN cellblock_grid_c241}
+<td
+	{$cell_grid_c241}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c241" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentAddressValidation_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentAddressValidation{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label43" {$item_edit_field_label43} data-pageid="{$pageid}" data-field="documentAddressValidation">
+		<label class="r-edit-label control-label" for="{$labelfor_documentAddressValidation}">
+			{BEGIN documentAddressValidation_label}{$label dbo_novaApplicationsBackofficeView documentAddressValidation }{END documentAddressValidation_label}
+		</label>
+	</div>
+{END documentAddressValidation_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c241}
+			 
+																
+
+{BEGIN cellblock_grid_c242}
+<td
+	{$cell_grid_c242}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c242" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentAddressValidation_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentAddressValidation{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="documentAddressValidation" >
+		{$documentAddressValidation_editcontrol}	</div>
+{END documentAddressValidation_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c242}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c243}
+<td
+	{$cell_grid_c243}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c243" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c243}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c244}
+<td
+	{$cell_grid_c244}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c244" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c244}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c233}
+<td
+	{$cell_grid_c233}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c233" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentAuthorization_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentAuthorization{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label35" {$item_edit_field_label35} data-pageid="{$pageid}" data-field="documentAuthorization">
+		<label class="r-edit-label control-label" for="{$labelfor_documentAuthorization}">
+			{BEGIN documentAuthorization_label}{$label dbo_novaApplicationsBackofficeView documentAuthorization }{END documentAuthorization_label}
+		</label>
+	</div>
+{END documentAuthorization_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c233}
+			 
+																
+
+{BEGIN cellblock_grid_c234}
+<td
+	{$cell_grid_c234}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c234" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentAuthorization_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentAuthorization{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field55" {$item_integrated_edit_field55} data-pageid="{$pageid}" data-field="documentAuthorization" >
+		{$documentAuthorization_editcontrol}	</div>
+{END documentAuthorization_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c234}
+			 
+																
+
+{BEGIN cellblock_grid_c235}
+<td
+	{$cell_grid_c235}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c235" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentDeathCertificate_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentDeathCertificate{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label42" {$item_edit_field_label42} data-pageid="{$pageid}" data-field="documentDeathCertificate">
+		<label class="r-edit-label control-label" for="{$labelfor_documentDeathCertificate}">
+			{BEGIN documentDeathCertificate_label}{$label dbo_novaApplicationsBackofficeView documentDeathCertificate }{END documentDeathCertificate_label}
+		</label>
+	</div>
+{END documentDeathCertificate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c235}
+			 
+																
+
+{BEGIN cellblock_grid_c236}
+<td
+	{$cell_grid_c236}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c236" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentDeathCertificate_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentDeathCertificate{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="documentDeathCertificate" >
+		{$documentDeathCertificate_editcontrol}	</div>
+{END documentDeathCertificate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c236}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c237}
+<td
+	{$cell_grid_c237}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c237" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c237}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c238}
+<td
+	{$cell_grid_c238}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c238" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c238}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c227}
+<td
+	{$cell_grid_c227}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c227" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentOther_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentOther{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label36" {$item_edit_field_label36} data-pageid="{$pageid}" data-field="documentOther">
+		<label class="r-edit-label control-label" for="{$labelfor_documentOther}">
+			{BEGIN documentOther_label}{$label dbo_novaApplicationsBackofficeView documentOther }{END documentOther_label}
+		</label>
+	</div>
+{END documentOther_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c227}
+			 
+																
+
+{BEGIN cellblock_grid_c228}
+<td
+	{$cell_grid_c228}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c228" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentOther_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentOther{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="documentOther" >
+		{$documentOther_editcontrol}	</div>
+{END documentOther_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c228}
+			 
+																
+
+{BEGIN cellblock_grid_c229}
+<td
+	{$cell_grid_c229}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c229" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentOtherType_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="documentOtherType{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label41" {$item_edit_field_label41} data-pageid="{$pageid}" data-field="documentOtherType">
+		<label class="r-edit-label control-label" for="{$labelfor_documentOtherType}">
+			{BEGIN documentOtherType_label}{$label dbo_novaApplicationsBackofficeView documentOtherType }{END documentOtherType_label}
+		</label>
+	</div>
+{END documentOtherType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c229}
+			 
+																
+
+{BEGIN cellblock_grid_c230}
+<td
+	{$cell_grid_c230}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c230" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN documentOtherType_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="documentOtherType{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-field="documentOtherType" >
+		{$documentOtherType_editcontrol}	</div>
+{END documentOtherType_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c230}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c231}
+<td
+	{$cell_grid_c231}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c231" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c231}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c232}
+<td
+	{$cell_grid_c232}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c232" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c232}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c221}
+<td
+	{$cell_grid_c221}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c221" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c221}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c222}
+<td
+	{$cell_grid_c222}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c222" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c222}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c223}
+<td
+	{$cell_grid_c223}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c223" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c223}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c224}
+<td
+	{$cell_grid_c224}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c224" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c224}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c225}
+<td
+	{$cell_grid_c225}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c225" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c225}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c226}
+<td
+	{$cell_grid_c226}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c226" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c226}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c209}
+<td
+	{$cell_grid_c209}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c209" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationContactMethod_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationContactMethod{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label37" {$item_edit_field_label37} data-pageid="{$pageid}" data-field="applicationContactMethod">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationContactMethod}">
+			{BEGIN applicationContactMethod_label}{$label dbo_novaApplicationsBackofficeView applicationContactMethod }{END applicationContactMethod_label}
+		</label>
+	</div>
+{END applicationContactMethod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c209}
+			 
+																
+
+{BEGIN cellblock_grid_c210}
+<td
+	{$cell_grid_c210}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c210" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationContactMethod_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationContactMethod{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="applicationContactMethod" >
+		{$applicationContactMethod_editcontrol}	</div>
+{END applicationContactMethod_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c210}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c211}
+<td
+	{$cell_grid_c211}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c211" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c211}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c212}
+<td
+	{$cell_grid_c212}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c212" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c212}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c213}
+<td
+	{$cell_grid_c213}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c213" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c213}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c214}
+<td
+	{$cell_grid_c214}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c214" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c214}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c203}
+<td
+	{$cell_grid_c203}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c203" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourier_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationCourier{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label38" {$item_edit_field_label38} data-pageid="{$pageid}" data-field="applicationCourier">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationCourier}">
+			{BEGIN applicationCourier_label}{$label dbo_novaApplicationsBackofficeView applicationCourier }{END applicationCourier_label}
+		</label>
+	</div>
+{END applicationCourier_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c203}
+			 
+																
+
+{BEGIN cellblock_grid_c204}
+<td
+	{$cell_grid_c204}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c204" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourier_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationCourier{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="applicationCourier" >
+		{$applicationCourier_editcontrol}	</div>
+{END applicationCourier_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c204}
+			 
+																
+
+{BEGIN cellblock_grid_c205}
+<td
+	{$cell_grid_c205}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c205" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierDate_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationCourierDate{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label40" {$item_edit_field_label40} data-pageid="{$pageid}" data-field="applicationCourierDate">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationCourierDate}">
+			{BEGIN applicationCourierDate_label}{$label dbo_novaApplicationsBackofficeView applicationCourierDate }{END applicationCourierDate_label}
+		</label>
+	</div>
+{END applicationCourierDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c205}
+			 
+																
+
+{BEGIN cellblock_grid_c206}
+<td
+	{$cell_grid_c206}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c206" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierDate_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationCourierDate{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="applicationCourierDate" >
+		{$applicationCourierDate_editcontrol}	</div>
+{END applicationCourierDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c206}
+			 
+																
+
+{BEGIN cellblock_grid_c207}
+<td
+	{$cell_grid_c207}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c207" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierTimeFrom_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationCourierTimeFrom{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label60" {$item_edit_field_label60} data-pageid="{$pageid}" data-field="applicationCourierTimeFrom">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationCourierTimeFrom}">
+			{BEGIN applicationCourierTimeFrom_label}{$label dbo_novaApplicationsBackofficeView applicationCourierTimeFrom }{END applicationCourierTimeFrom_label}
+		</label>
+	</div>
+{END applicationCourierTimeFrom_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c207}
+			 
+																
+
+{BEGIN cellblock_grid_c251}
+<td
+	{$cell_grid_c251}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c251" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierTimeFrom_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationCourierTimeFrom{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field58" {$item_integrated_edit_field58} data-pageid="{$pageid}" data-field="applicationCourierTimeFrom" >
+		{$applicationCourierTimeFrom_editcontrol}	</div>
+{END applicationCourierTimeFrom_fieldblock}
+											{BEGIN applicationCourierTimeTo_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationCourierTimeTo{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field59" {$item_integrated_edit_field59} data-pageid="{$pageid}" data-field="applicationCourierTimeTo" >
+		{$applicationCourierTimeTo_editcontrol}	</div>
+{END applicationCourierTimeTo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c251}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c197}
+<td
+	{$cell_grid_c197}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c197" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierComments_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="applicationCourierComments{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label39" {$item_edit_field_label39} data-pageid="{$pageid}" data-field="applicationCourierComments">
+		<label class="r-edit-label control-label" for="{$labelfor_applicationCourierComments}">
+			{BEGIN applicationCourierComments_label}{$label dbo_novaApplicationsBackofficeView applicationCourierComments }{END applicationCourierComments_label}
+		</label>
+	</div>
+{END applicationCourierComments_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c197}
+			 
+																
+
+{BEGIN cellblock_grid_c198}
+<td
+	{$cell_grid_c198}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c198" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN applicationCourierComments_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="applicationCourierComments{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="applicationCourierComments" >
+		{$applicationCourierComments_editcontrol}	</div>
+{END applicationCourierComments_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c198}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c199}
+<td
+	{$cell_grid_c199}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c199" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c199}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c200}
+<td
+	{$cell_grid_c200}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c200" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c200}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c201}
+<td
+	{$cell_grid_c201}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c201" data-pageid="{$pageid}" data-page="novaapplicationsbackofficeview_edit"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c201}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c202}
+<td
+	{$cell_grid_c202}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c202" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c202}
+								</tr>
+	 
+	 
+																</tbody></table>
+				
+{BEGIN details_internalcomments}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_internalComments }				
+							<span>
+					{$detailslButtons_internalcomments}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_internalcomments}
+		</div>
+	</div>
+</div>
+{END details_internalcomments}
+	
+				 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="6"
+		
+		data-v-width="9"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="6"		data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="9"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN applicationLastStatusDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationLastStatusDate}  r-vertical-field" 
+	data-fieldname="applicationLastStatusDate" 
+	data-signal-error-for="applicationLastStatusDate{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_applicationLastStatusDate}">
+		{BEGIN applicationLastStatusDate_label}{$label dbo_novaApplicationsBackofficeView applicationLastStatusDate }{END applicationLastStatusDate_label}
+	</label>
+	<div class="r-edit-field">
+		{$applicationLastStatusDate_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="applicationLastStatusDate">
+		<div class="text-muted" >
+		{$tooltip dbo_novaApplicationsBackofficeView applicationLastStatusDate }		</div>
+	</div>
+</div>
+
+
+{END applicationLastStatusDate_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Αποθήκευση			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN save_update}
+<span data-itemtype="update_records" data-itemid="update_records" {$item_update_records} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+				 
+			{$update_records_label}	
+			</a>
+</span>
+{END save_update}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Ακύρωση			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Επαναφορά		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="novaapplicationsbackofficeview_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		Προβολή		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

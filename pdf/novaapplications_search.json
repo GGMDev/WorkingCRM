@@ -1,0 +1,387 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_novaApplications search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$callid_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$applicationStatusId_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$applicationType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$applicantName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$applicantFirstName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$applicantBirthdate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$applicantProfession_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$applicantIdNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$applicantAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$applicantPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$applicantArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$applicantCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$applicantTaxRegistrationNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$applicantTaxOffice_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$applicantPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$applicantMobile_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field17}","text":{$applicantEmail_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field18}","text":{$standAloneProgram_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field19}","text":{$doublePlayProgram_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field21}","text":{$triplePlayProgram_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field22}","text":{$triplePlayProgramType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field24}","text":{$additionalServiceInternet_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field25}","text":{$additionalServiceInternetSpeed_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$additionalServiceInternationalCalls_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field27}","text":{$additionalServiceStaticIp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field28}","text":{$additionalServiceStaticBlock8Ip_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field29}","text":{$additionalServiceSecondLine_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field30}","text":{$additionalServiceLandLine1000Minutes_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field31}","text":{$additionalServiceEquipment_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field32}","text":{$additionalServiceEquipmentInstallation_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field33}","text":{$portabilityIsNewLine_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field34}","text":{$portabilityOldNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field35}","text":{$portabilityOldOwner_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$portabilityActivationAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$portabilityActivationPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field38}","text":{$portabilityActivationArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field39}","text":{$portabilityActivationCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field40}","text":{$portabilityPstnIsdn_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field41}","text":{$portabilityLine1PhoneNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field42}","text":{$portabilityLine2PhoneNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field43}","text":{$portabilityLine3PhoneNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field44}","text":{$portabilityLine4PhoneNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field45}","text":{$portabilityUsername1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field46}","text":{$portabilityusername2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field47}","text":{$documentIdPassport_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field48}","text":{$documentIdPassportPreviousOwner_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field49}","text":{$documentLastBill_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field50}","text":{$documentAddressValidation_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field51}","text":{$documentDeathCertificate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$documentAuthorization_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field53}","text":{$documentOther_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field54}","text":{$documentOtherType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field20}","text":{$ProgramSpeed_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field23}","text":{$applicationAgentStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field55}","text":{$applicationLastStatusDate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field56}","text":{$applicationContactMethod_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field57}","text":{$applicationCourier_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field58}","text":{$applicationCourierDate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field59}","text":{$applicationCourierTimeFrom_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field60}","text":{$applicationCourierTimeTo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field61}","text":{$applicationCourierComments_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field62}","text":{$dialerAgent_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field63}","text":{$adittionalServiceMobileNoLimit_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field64}","text":{$additionalServiceEONMultiScreen_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field65}","text":{$additionalServiceNovaMultiroom_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field66}","text":{$additionalServiceAdultPack_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

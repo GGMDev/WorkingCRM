@@ -1,0 +1,1965 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption dbo_novaApplicationsStatusView}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0 : 0;
+					} else  {
+						return 0; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"*",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 1,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_breadcrumb}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_inline_add}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_inline_save_all}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_inline_cancel_all}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Εμφανίζονται οι %first% - %last% από %total%","hidden":"{$item_hide_details_found}","isHtml":true,"page_indicator":true},
+				
+				
+			{"text":"","hidden":"{$item_hide_page_size}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_print_panel}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_columns_control}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+	{BEGIN grid_row}
+	[ 
+	
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	
+		{ 
+			layout: 'vrecord',
+			table: {
+				widths: ['*'],
+				body: [[
+					{
+						
+						table: {
+							tableForm: true,
+							widths: [
+																{BEGIN col_grid_0}
+								"%",
+								{END col_grid_0}
+																{BEGIN col_grid_1}
+								"%",
+								{END col_grid_1}
+																{BEGIN col_grid_2}
+								"%",
+								{END col_grid_2}
+																{BEGIN col_grid_3}
+								"%",
+								{END col_grid_3}
+																{BEGIN col_grid_4}
+								"%",
+								{END col_grid_4}
+																{BEGIN col_grid_5}
+								"%",
+								{END col_grid_5}
+															],
+													heights: [
+															{BEGIN row_grid_0}			
+								"%",
+								{END row_grid_0}
+															{BEGIN row_grid_1}			
+								"%",
+								{END row_grid_1}
+															{BEGIN row_grid_2}			
+								"%",
+								{END row_grid_2}
+															{BEGIN row_grid_3}			
+								"%",
+								{END row_grid_3}
+															{BEGIN row_grid_4}			
+								"%",
+								{END row_grid_4}
+															{BEGIN row_grid_5}			
+								"%",
+								{END row_grid_5}
+															{BEGIN row_grid_6}			
+								"%",
+								{END row_grid_6}
+															{BEGIN row_grid_7}			
+								"%",
+								{END row_grid_7}
+															{BEGIN row_grid_8}			
+								"%",
+								{END row_grid_8}
+															{BEGIN row_grid_9}			
+								"%",
+								{END row_grid_9}
+															{BEGIN row_grid_10}			
+								"%",
+								{END row_grid_10}
+															{BEGIN row_grid_11}			
+								"%",
+								{END row_grid_11}
+															{BEGIN row_grid_12}			
+								"%",
+								{END row_grid_12}
+															{BEGIN row_grid_13}			
+								"%",
+								{END row_grid_13}
+															{BEGIN row_grid_14}			
+								"%",
+								{END row_grid_14}
+															{BEGIN row_grid_15}			
+								"%",
+								{END row_grid_15}
+														],
+													
+							body: [
+									
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_cell_top}
+{
+	cellId: 'cell_top',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_top}
+			colSpan: {$colspan_grid_cell_top},
+			{END colspan_grid_cell_top}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_grid_checkbox}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_edit}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_copy}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_alldetails_link}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_details_link}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_top}
+																		{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_field93}
+{
+	cellId: 'cell_field93',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+					{BEGIN rowspan_grid_cell_field93}
+			rowSpan: {$rowspan_grid_cell_field93},
+			{END rowspan_grid_cell_field93}
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":{$pdf_image images/nova-logo-new.png 0 0},"hidden":"{$item_hide_image}"},
+				
+		  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field93}
+																			{BEGIN cellblock_grid_cell_field94}
+{
+	cellId: 'cell_field94',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field94}
+			colSpan: {$colspan_grid_cell_field94},
+			{END colspan_grid_cell_field94}
+		
+					{BEGIN rowspan_grid_cell_field94}
+			rowSpan: {$rowspan_grid_cell_field94},
+			{END rowspan_grid_cell_field94}
+								// [left, top, right, bottom]
+		margin: [ 0, 30, 0, 0 ],
+		
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"ΑΙΤΗΣΗ ΕΝΕΡΓΟΠΟΙΗΣΗΣ ΥΠΗΡΕΣΙΩΝ","hidden":"{$item_hide_text5}","fontSize":20,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+          "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field94}
+																		{ 
+				cellId: 'cell_field94',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field94',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field120}
+{
+	cellId: 'cell_field120',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#fff9c8',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field120}
+																			{BEGIN cellblock_grid_cell_field121}
+{
+	cellId: 'cell_field121',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#fff9c8',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field121}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+											{ 
+				cellId: 'cell_field93',
+				row:  1,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field94',
+				row:  1,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field94',
+				row:  1,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field94',
+				row:  1,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field126}
+{
+	cellId: 'cell_field126',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#fff9c8',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field126}
+																			{BEGIN cellblock_grid_cell_field127}
+{
+	cellId: 'cell_field127',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+  fillColor: '#fff9c8',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field127}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_cell_field61}
+{
+	cellId: 'cell_field61',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field61}
+			colSpan: {$colspan_grid_cell_field61},
+			{END colspan_grid_cell_field61}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Στοιχεία Συνδρομητή","hidden":"{$item_hide_text}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [true,true,true,true],
+  fillColor: '#f1fafd',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field61}
+																		{ 
+				cellId: 'cell_field61',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field61',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field61',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field61',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field61',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_cell_label72}
+{
+	cellId: 'cell_label72',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label72}
+			colSpan: {$colspan_grid_cell_label72},
+			{END colspan_grid_cell_label72}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Επιλογή Προγράμματος","hidden":"{$item_hide_text1}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [true,true,true,true],
+  fillColor: '#f1fafd',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label72}
+																		{ 
+				cellId: 'cell_label72',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label72',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label72',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label72',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label72',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
+												{BEGIN cellblock_grid_cell_field95}
+{
+	cellId: 'cell_field95',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field95}
+																			{BEGIN cellblock_grid_cell_field124}
+{
+	cellId: 'cell_field124',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field124}
+			colSpan: {$colspan_grid_cell_field124},
+			{END colspan_grid_cell_field124}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field124}
+																		{ 
+				cellId: 'cell_field124',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field128}
+{
+	cellId: 'cell_field128',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field128}
+																			{BEGIN cellblock_grid_cell_field129}
+{
+	cellId: 'cell_field129',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field129}
+																			{BEGIN cellblock_grid_cell_field130}
+{
+	cellId: 'cell_field130',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field130}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				[
+												{BEGIN cellblock_grid_cell_label68}
+{
+	cellId: 'cell_label68',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label68}
+			colSpan: {$colspan_grid_cell_label68},
+			{END colspan_grid_cell_label68}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Πρόσθετες Υπηρεσίες","hidden":"{$item_hide_text2}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [true,true,true,true],
+  fillColor: '#f1fafd',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label68}
+																		{ 
+				cellId: 'cell_label68',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label68',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label68',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label68',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label68',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				[
+												{BEGIN cellblock_grid_cell_field114}
+{
+	cellId: 'cell_field114',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field114}
+																			{BEGIN cellblock_grid_cell_field115}
+{
+	cellId: 'cell_field115',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field115}
+																			{BEGIN cellblock_grid_cell_field116}
+{
+	cellId: 'cell_field116',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field116}
+																			{BEGIN cellblock_grid_cell_field117}
+{
+	cellId: 'cell_field117',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field117}
+																			{BEGIN cellblock_grid_cell_field118}
+{
+	cellId: 'cell_field118',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field118}
+																			{BEGIN cellblock_grid_cell_field119}
+{
+	cellId: 'cell_field119',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field119}
+											],
+				{END row_grid_7}
+								{BEGIN row_grid_8}
+				[
+												{BEGIN cellblock_grid_cell_label3}
+{
+	cellId: 'cell_label3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label3}
+			colSpan: {$colspan_grid_cell_label3},
+			{END colspan_grid_cell_label3}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Στοιχεία Φορητότητας","hidden":"{$item_hide_text3}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [true,true,true,true],
+  fillColor: '#f1fafd',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label3}
+																		{ 
+				cellId: 'cell_label3',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label3',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label3',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label3',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label3',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_8}
+								{BEGIN row_grid_9}
+				[
+												{BEGIN cellblock_grid_cell_label133}
+{
+	cellId: 'cell_label133',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label133}
+																			{BEGIN cellblock_grid_cell_label134}
+{
+	cellId: 'cell_label134',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label134}
+																			{BEGIN cellblock_grid_cell_label135}
+{
+	cellId: 'cell_label135',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label135}
+																			{BEGIN cellblock_grid_cell_label136}
+{
+	cellId: 'cell_label136',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label136}
+																			{BEGIN cellblock_grid_cell_label137}
+{
+	cellId: 'cell_label137',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label137}
+																			{BEGIN cellblock_grid_cell_label138}
+{
+	cellId: 'cell_label138',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label138}
+											],
+				{END row_grid_9}
+								{BEGIN row_grid_10}
+				[
+												{BEGIN cellblock_grid_cell_label114}
+{
+	cellId: 'cell_label114',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_label114}
+			colSpan: {$colspan_grid_cell_label114},
+			{END colspan_grid_cell_label114}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Δικαιολογητικά","hidden":"{$item_hide_text4}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [true,true,true,true],
+  fillColor: '#f1fafd',        "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label114}
+																		{ 
+				cellId: 'cell_label114',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label114',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label114',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label114',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_label114',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_10}
+								{BEGIN row_grid_11}
+				[
+												{BEGIN cellblock_grid_cell_label24}
+{
+	cellId: 'cell_label24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label24}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field24}
+																			{BEGIN cellblock_grid_cell_label25}
+{
+	cellId: 'cell_label25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label25}
+																			{BEGIN cellblock_grid_cell_field25}
+{
+	cellId: 'cell_field25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field25}
+																			{BEGIN cellblock_grid_cell_label26}
+{
+	cellId: 'cell_label26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label26}
+																			{BEGIN cellblock_grid_cell_field26}
+{
+	cellId: 'cell_field26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field26}
+											],
+				{END row_grid_11}
+								{BEGIN row_grid_12}
+				[
+												{BEGIN cellblock_grid_cell_label38}
+{
+	cellId: 'cell_label38',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label38}
+																			{BEGIN cellblock_grid_cell_label39}
+{
+	cellId: 'cell_label39',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label39}
+																			{BEGIN cellblock_grid_cell_label40}
+{
+	cellId: 'cell_label40',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label40}
+																			{BEGIN cellblock_grid_cell_label41}
+{
+	cellId: 'cell_label41',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label41}
+																			{BEGIN cellblock_grid_cell_label42}
+{
+	cellId: 'cell_label42',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"Από / Έως","hidden":"{$item_hide_text6}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label42}
+																			{BEGIN cellblock_grid_cell_label43}
+{
+	cellId: 'cell_label43',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label43}
+											],
+				{END row_grid_12}
+								{BEGIN row_grid_13}
+				[
+												{BEGIN cellblock_grid_cell_label}
+{
+	cellId: 'cell_label',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label}
+																			{BEGIN cellblock_grid_cell_label27}
+{
+	cellId: 'cell_label27',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label27}
+																			{BEGIN cellblock_grid_cell_label28}
+{
+	cellId: 'cell_label28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label28}
+																			{BEGIN cellblock_grid_cell_label29}
+{
+	cellId: 'cell_label29',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label29}
+																			{BEGIN cellblock_grid_cell_label30}
+{
+	cellId: 'cell_label30',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label30}
+																			{BEGIN cellblock_grid_cell_label31}
+{
+	cellId: 'cell_label31',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,false],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_label31}
+											],
+				{END row_grid_13}
+								{BEGIN row_grid_14}
+				[
+												{BEGIN cellblock_grid_cell_field28}
+{
+	cellId: 'cell_field28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field28}
+			colSpan: {$colspan_grid_cell_field28},
+			{END colspan_grid_cell_field28}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_inline_add1}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'center',
+  },
+
+{END cellblock_grid_cell_field28}
+																		{ 
+				cellId: 'cell_field28',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field28',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field30}
+																			{BEGIN cellblock_grid_cell_field31}
+{
+	cellId: 'cell_field31',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field32}
+											],
+				{END row_grid_14}
+								{BEGIN row_grid_15}
+				[
+												{BEGIN cellblock_grid_cell_dpreview}
+{
+	cellId: 'cell_dpreview',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_dpreview}
+			colSpan: {$colspan_grid_cell_dpreview},
+			{END colspan_grid_cell_dpreview}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_internalcomments}
+			{$displayDetailTable_internalcomments }
+		{END details_internalcomments},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_dpreview}
+																		{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  4,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  5,
+				text: ''
+			},
+							],
+				{END row_grid_15}
+										]
+						}
+					}
+				]]
+			}
+		},
+	{END grid_vrecord}
+	{END grid_record}
+	]
+,
+	{END grid_row}
+	
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

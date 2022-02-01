@@ -1,0 +1,177 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_vAgentPerformanceReportWithAppsV2 export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$dialerAgent_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$dialerPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$calldate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$denialReason_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$isPositive_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$callStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$dialerCampaign_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$dialerList_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$talkTime_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$typingTime_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$totalCallTime_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$novaTotalApps_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$voltonTotalApps_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$vsalesStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$vStatusCount_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$nSalesStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$nStatusCount_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$forCount_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$callid_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

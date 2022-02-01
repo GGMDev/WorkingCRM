@@ -1,0 +1,41 @@
+[data-page=".global_menu"][data-itemid="image"] {
+  width: 80px;
+}
+[data-page=".global_menu"][data-itemid="logout_link"] > .btn {
+  font-weight: bold;
+}
+[data-page=".global_menu"][data-itemid="logout_link"] {
+  padding-top: 10px;
+}
+[data-page=".global_menu"][data-itemid="custom_button"] > .btn {
+  text-shadow: none;
+  color: #278100;
+  font-weight: bold;
+}
+[data-page=".global_menu"][data-itemid="custom_button"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button1"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button2"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button3"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button4"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button5"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="custom_button6"] {
+  padding-top: 5px;
+}
+[data-page=".global_menu"][data-itemid="agentStatus"] {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+

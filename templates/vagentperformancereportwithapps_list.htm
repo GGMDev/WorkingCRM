@@ -1,0 +1,2020 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Προβολή όλων">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="vagentperformancereportwithapps_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Εύρεση		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Εμφάνιση πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Απόκρυψη πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Αποτελέσματα Εξαγωγής		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-left" {$blockattr_left} {$form_left} >
+										{BEGIN left_block}
+<table class="r-fluid r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="left_c1" data-pageid="{$pageid}">
+ 
+<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Αναζήτηση			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Εμφάνιση επιλογών</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>Όλες οι συνθήκες</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>Όποια από τις συνθήκες</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>Απόκρυψη</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_callStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callStatus}" {$filterRow_attrs_callStatus}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps callStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callStatus}</span>
+						</div>
+		{END searchCtrlBlock_callStatus}
+																{BEGIN searchCtrlBlock_dialerList}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerList}" {$filterRow_attrs_dialerList}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps dialerList }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerList}</span>
+						</div>
+		{END searchCtrlBlock_dialerList}
+																{BEGIN searchCtrlBlock_vTotalApps}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vTotalApps}" {$filterRow_attrs_vTotalApps}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps vTotalApps }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vTotalApps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vTotalApps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vTotalApps}</span>
+						</div>
+		{END searchCtrlBlock_vTotalApps}
+																{BEGIN searchCtrlBlock_vPending}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vPending}" {$filterRow_attrs_vPending}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps vPending }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vPending}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vPending}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vPending}</span>
+						</div>
+		{END searchCtrlBlock_vPending}
+																{BEGIN searchCtrlBlock_vConfirmed}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vConfirmed}" {$filterRow_attrs_vConfirmed}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps vConfirmed }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vConfirmed}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vConfirmed}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vConfirmed}</span>
+						</div>
+		{END searchCtrlBlock_vConfirmed}
+																{BEGIN searchCtrlBlock_vCanceled}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_vCanceled}" {$filterRow_attrs_vCanceled}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps vCanceled }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_vCanceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_vCanceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_vCanceled}</span>
+						</div>
+		{END searchCtrlBlock_vCanceled}
+																{BEGIN searchCtrlBlock_typingTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_typingTime}" {$filterRow_attrs_typingTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps typingTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_typingTime}</span>
+						</div>
+		{END searchCtrlBlock_typingTime}
+																{BEGIN searchCtrlBlock_totalCallTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_totalCallTime}" {$filterRow_attrs_totalCallTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps totalCallTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_totalCallTime}</span>
+						</div>
+		{END searchCtrlBlock_totalCallTime}
+																{BEGIN searchCtrlBlock_talkTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_talkTime}" {$filterRow_attrs_talkTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps talkTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_talkTime}</span>
+						</div>
+		{END searchCtrlBlock_talkTime}
+																{BEGIN searchCtrlBlock_nTotalApps}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nTotalApps}" {$filterRow_attrs_nTotalApps}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps nTotalApps }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nTotalApps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nTotalApps}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nTotalApps}</span>
+						</div>
+		{END searchCtrlBlock_nTotalApps}
+																{BEGIN searchCtrlBlock_nPending}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nPending}" {$filterRow_attrs_nPending}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps nPending }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nPending}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nPending}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nPending}</span>
+						</div>
+		{END searchCtrlBlock_nPending}
+																{BEGIN searchCtrlBlock_nConfirmed}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nConfirmed}" {$filterRow_attrs_nConfirmed}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps nConfirmed }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nConfirmed}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nConfirmed}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nConfirmed}</span>
+						</div>
+		{END searchCtrlBlock_nConfirmed}
+																{BEGIN searchCtrlBlock_nCanceled}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nCanceled}" {$filterRow_attrs_nCanceled}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps nCanceled }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nCanceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nCanceled}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nCanceled}</span>
+						</div>
+		{END searchCtrlBlock_nCanceled}
+																{BEGIN searchCtrlBlock_dialerPhone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerPhone}" {$filterRow_attrs_dialerPhone}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps dialerPhone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerPhone}</span>
+						</div>
+		{END searchCtrlBlock_dialerPhone}
+																{BEGIN searchCtrlBlock_dialerCampaign}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerCampaign}" {$filterRow_attrs_dialerCampaign}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps dialerCampaign }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerCampaign}</span>
+						</div>
+		{END searchCtrlBlock_dialerCampaign}
+																{BEGIN searchCtrlBlock_dialerAgent}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerAgent}" {$filterRow_attrs_dialerAgent}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps dialerAgent }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerAgent}</span>
+						</div>
+		{END searchCtrlBlock_dialerAgent}
+																{BEGIN searchCtrlBlock_denialReason}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_denialReason}" {$filterRow_attrs_denialReason}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps denialReason }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_denialReason}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_denialReason}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_denialReason}</span>
+						</div>
+		{END searchCtrlBlock_denialReason}
+																{BEGIN searchCtrlBlock_calldate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_calldate}" {$filterRow_attrs_calldate}>
+			<label>{$label dbo_vAgentPerformanceReportWithApps calldate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_calldate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_calldate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_calldate}</span>
+						</div>
+		{END searchCtrlBlock_calldate}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Αναζήτηση</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Προβολή όλων</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+</td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END left_block}
+						</div>
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Εκτυπώσιμη σελίδα" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="vagentperformancereportwithapps_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Εκτύπωση όλων των σελίδων`							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="vagentperformancereportwithapps_print.php?{$crosstable_attrs}">
+				Εκτύπωση αυτής της σελίδας			</label>
+		</div>
+	</div>
+	
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Εγγραφές/σελίδα							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Εκτύπωση			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+	 
+		<div id="fildhidepanel{$id}" class="bs-fildhidepanel 
+		 reorder	keep-open btn-group"
+	data-itemtype="columns_control" data-itemid="columns_control" {$item_columns_control} data-pageid="{$pageid}"	title="Εμφάνιση/Απόκρυψη στηλών"
+	>
+	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><i class="glyphicon glyphicon-th-list"></i> <span class="caret"></span></button>
+	<ul role="menu" class="dropdown-menu dropdown-left">
+							<li>
+		<a>
+						<span data-field="dialerAgent" data-fieldname="dialerAgent">{$label dbo_vAgentPerformanceReportWithApps dialerAgent }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="dialerPhone" data-fieldname="dialerPhone">{$label dbo_vAgentPerformanceReportWithApps dialerPhone }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="calldate" data-fieldname="calldate">{$label dbo_vAgentPerformanceReportWithApps calldate }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="callStatus" data-fieldname="callStatus">{$label dbo_vAgentPerformanceReportWithApps callStatus }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="denialReason" data-fieldname="denialReason">{$label dbo_vAgentPerformanceReportWithApps denialReason }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="dialerCampaign" data-fieldname="dialerCampaign">{$label dbo_vAgentPerformanceReportWithApps dialerCampaign }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="talkTime" data-fieldname="talkTime">{$label dbo_vAgentPerformanceReportWithApps talkTime }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="typingTime" data-fieldname="typingTime">{$label dbo_vAgentPerformanceReportWithApps typingTime }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="totalCallTime" data-fieldname="totalCallTime">{$label dbo_vAgentPerformanceReportWithApps totalCallTime }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="vTotalApps" data-fieldname="vTotalApps">{$label dbo_vAgentPerformanceReportWithApps vTotalApps }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="vPending" data-fieldname="vPending">{$label dbo_vAgentPerformanceReportWithApps vPending }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="vConfirmed" data-fieldname="vConfirmed">{$label dbo_vAgentPerformanceReportWithApps vConfirmed }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="vCanceled" data-fieldname="vCanceled">{$label dbo_vAgentPerformanceReportWithApps vCanceled }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="nTotalApps" data-fieldname="nTotalApps">{$label dbo_vAgentPerformanceReportWithApps nTotalApps }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="nPending" data-fieldname="nPending">{$label dbo_vAgentPerformanceReportWithApps nPending }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="nConfirmed" data-fieldname="nConfirmed">{$label dbo_vAgentPerformanceReportWithApps nConfirmed }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="nCanceled" data-fieldname="nCanceled">{$label dbo_vAgentPerformanceReportWithApps nCanceled }</span>
+					</a>
+		</li>
+							<li>
+		<a>
+						<span data-field="dialerList" data-fieldname="dialerList">{$label dbo_vAgentPerformanceReportWithApps dialerList }</span>
+					</a>
+		</li>
+			</ul>
+</div>
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerAgent"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps dialerAgent}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerPhone"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps dialerPhone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="calldate"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps calldate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callStatus"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps callStatus}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="denialReason"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps denialReason}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerCampaign"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps dialerCampaign}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerList"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps dialerList}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="talkTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps talkTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="typingTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps typingTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="totalCallTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps totalCallTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vTotalApps"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps vTotalApps}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vPending"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps vPending}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vConfirmed"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps vConfirmed}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="vCanceled"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps vCanceled}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nTotalApps"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps nTotalApps}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nPending"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps nPending}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nConfirmed"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps nConfirmed}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nCanceled"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithApps nCanceled}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldheadercolumn}
+	{BEGIN dialerAgent_fieldheader}
+	<SPAN {$dialerAgent_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent">
+	{$label dbo_vAgentPerformanceReportWithApps dialerAgent }	{$arrow_icon_dialerAgent}
+	</SPAN>
+	{END dialerAgent_fieldheader}
+{END dialerAgent_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldheadercolumn}
+	{BEGIN dialerPhone_fieldheader}
+	<SPAN {$dialerPhone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone">
+	{$label dbo_vAgentPerformanceReportWithApps dialerPhone }	{$arrow_icon_dialerPhone}
+	</SPAN>
+	{END dialerPhone_fieldheader}
+{END dialerPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calldate_class}
+			"
+
+			data-field="calldate"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calldate_fieldheadercolumn}
+	{BEGIN calldate_fieldheader}
+	<SPAN {$calldate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calldate">
+	{$label dbo_vAgentPerformanceReportWithApps calldate }	{$arrow_icon_calldate}
+	</SPAN>
+	{END calldate_fieldheader}
+{END calldate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatus_class}
+			"
+
+			data-field="callStatus"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatus_fieldheadercolumn}
+	{BEGIN callStatus_fieldheader}
+	<SPAN {$callStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatus">
+	{$label dbo_vAgentPerformanceReportWithApps callStatus }	{$arrow_icon_callStatus}
+	</SPAN>
+	{END callStatus_fieldheader}
+{END callStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$denialReason_class}
+			"
+
+			data-field="denialReason"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN denialReason_fieldheadercolumn}
+	{BEGIN denialReason_fieldheader}
+	<SPAN {$denialReason_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="denialReason">
+	{$label dbo_vAgentPerformanceReportWithApps denialReason }	{$arrow_icon_denialReason}
+	</SPAN>
+	{END denialReason_fieldheader}
+{END denialReason_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldheadercolumn}
+	{BEGIN dialerCampaign_fieldheader}
+	<SPAN {$dialerCampaign_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign">
+	{$label dbo_vAgentPerformanceReportWithApps dialerCampaign }	{$arrow_icon_dialerCampaign}
+	</SPAN>
+	{END dialerCampaign_fieldheader}
+{END dialerCampaign_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldheadercolumn}
+	{BEGIN talkTime_fieldheader}
+	<SPAN {$talkTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime">
+	{$label dbo_vAgentPerformanceReportWithApps talkTime }	{$arrow_icon_talkTime}
+	</SPAN>
+	{END talkTime_fieldheader}
+{END talkTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldheadercolumn}
+	{BEGIN typingTime_fieldheader}
+	<SPAN {$typingTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime">
+	{$label dbo_vAgentPerformanceReportWithApps typingTime }	{$arrow_icon_typingTime}
+	</SPAN>
+	{END typingTime_fieldheader}
+{END typingTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldheadercolumn}
+	{BEGIN totalCallTime_fieldheader}
+	<SPAN {$totalCallTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime">
+	{$label dbo_vAgentPerformanceReportWithApps totalCallTime }	{$arrow_icon_totalCallTime}
+	</SPAN>
+	{END totalCallTime_fieldheader}
+{END totalCallTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vTotalApps_class}
+			"
+
+			data-field="vTotalApps"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vTotalApps_fieldheadercolumn}
+	{BEGIN vTotalApps_fieldheader}
+	<SPAN {$vTotalApps_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vTotalApps">
+	{$label dbo_vAgentPerformanceReportWithApps vTotalApps }	{$arrow_icon_vTotalApps}
+	</SPAN>
+	{END vTotalApps_fieldheader}
+{END vTotalApps_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vPending_class}
+			"
+
+			data-field="vPending"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vPending_fieldheadercolumn}
+	{BEGIN vPending_fieldheader}
+	<SPAN {$vPending_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vPending">
+	{$label dbo_vAgentPerformanceReportWithApps vPending }	{$arrow_icon_vPending}
+	</SPAN>
+	{END vPending_fieldheader}
+{END vPending_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vConfirmed_class}
+			"
+
+			data-field="vConfirmed"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vConfirmed_fieldheadercolumn}
+	{BEGIN vConfirmed_fieldheader}
+	<SPAN {$vConfirmed_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vConfirmed">
+	{$label dbo_vAgentPerformanceReportWithApps vConfirmed }	{$arrow_icon_vConfirmed}
+	</SPAN>
+	{END vConfirmed_fieldheader}
+{END vConfirmed_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vCanceled_class}
+			"
+
+			data-field="vCanceled"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vCanceled_fieldheadercolumn}
+	{BEGIN vCanceled_fieldheader}
+	<SPAN {$vCanceled_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vCanceled">
+	{$label dbo_vAgentPerformanceReportWithApps vCanceled }	{$arrow_icon_vCanceled}
+	</SPAN>
+	{END vCanceled_fieldheader}
+{END vCanceled_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nTotalApps_class}
+			"
+
+			data-field="nTotalApps"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nTotalApps_fieldheadercolumn}
+	{BEGIN nTotalApps_fieldheader}
+	<SPAN {$nTotalApps_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nTotalApps">
+	{$label dbo_vAgentPerformanceReportWithApps nTotalApps }	{$arrow_icon_nTotalApps}
+	</SPAN>
+	{END nTotalApps_fieldheader}
+{END nTotalApps_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nPending_class}
+			"
+
+			data-field="nPending"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nPending_fieldheadercolumn}
+	{BEGIN nPending_fieldheader}
+	<SPAN {$nPending_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nPending">
+	{$label dbo_vAgentPerformanceReportWithApps nPending }	{$arrow_icon_nPending}
+	</SPAN>
+	{END nPending_fieldheader}
+{END nPending_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nConfirmed_class}
+			"
+
+			data-field="nConfirmed"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nConfirmed_fieldheadercolumn}
+	{BEGIN nConfirmed_fieldheader}
+	<SPAN {$nConfirmed_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nConfirmed">
+	{$label dbo_vAgentPerformanceReportWithApps nConfirmed }	{$arrow_icon_nConfirmed}
+	</SPAN>
+	{END nConfirmed_fieldheader}
+{END nConfirmed_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nCanceled_class}
+			"
+
+			data-field="nCanceled"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nCanceled_fieldheadercolumn}
+	{BEGIN nCanceled_fieldheader}
+	<SPAN {$nCanceled_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nCanceled">
+	{$label dbo_vAgentPerformanceReportWithApps nCanceled }	{$arrow_icon_nCanceled}
+	</SPAN>
+	{END nCanceled_fieldheader}
+{END nCanceled_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+				 
+					{BEGIN cellblock_grid_headcell_field17}
+	<th
+	
+	{$cell_grid_headcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldheadercolumn}
+	{BEGIN dialerList_fieldheader}
+	<SPAN {$dialerList_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList">
+	{$label dbo_vAgentPerformanceReportWithApps dialerList }	{$arrow_icon_dialerList}
+	</SPAN>
+	{END dialerList_fieldheader}
+{END dialerList_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field17}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent" data-default-width >
+{$dialerAgent_value}
+</span>
+{END dialerAgent_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone" data-default-width >
+{$dialerPhone_value}
+</span>
+{END dialerPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calldate_class}
+			"
+
+			data-field="calldate"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calldate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calldate" data-default-width >
+{$calldate_value}
+</span>
+{END calldate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatus_class}
+			"
+
+			data-field="callStatus"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatus" data-default-width >
+{$callStatus_value}
+</span>
+{END callStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$denialReason_class}
+			"
+
+			data-field="denialReason"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN denialReason_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="denialReason" data-default-width >
+{$denialReason_value}
+</span>
+{END denialReason_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign" data-default-width >
+{$dialerCampaign_value}
+</span>
+{END dialerCampaign_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime" data-default-width >
+{$talkTime_value}
+</span>
+{END talkTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime" data-default-width >
+{$typingTime_value}
+</span>
+{END typingTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime" data-default-width >
+{$totalCallTime_value}
+</span>
+{END totalCallTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vTotalApps_class}
+			"
+
+			data-field="vTotalApps"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vTotalApps_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vTotalApps" data-default-width >
+{$vTotalApps_value}
+</span>
+{END vTotalApps_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vPending_class}
+			"
+
+			data-field="vPending"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vPending_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vPending" data-default-width >
+{$vPending_value}
+</span>
+{END vPending_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vConfirmed_class}
+			"
+
+			data-field="vConfirmed"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vConfirmed_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vConfirmed" data-default-width >
+{$vConfirmed_value}
+</span>
+{END vConfirmed_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$vCanceled_class}
+			"
+
+			data-field="vCanceled"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN vCanceled_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="vCanceled" data-default-width >
+{$vCanceled_value}
+</span>
+{END vCanceled_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nTotalApps_class}
+			"
+
+			data-field="nTotalApps"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nTotalApps_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nTotalApps" data-default-width >
+{$nTotalApps_value}
+</span>
+{END nTotalApps_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nPending_class}
+			"
+
+			data-field="nPending"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nPending_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nPending" data-default-width >
+{$nPending_value}
+</span>
+{END nPending_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nConfirmed_class}
+			"
+
+			data-field="nConfirmed"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nConfirmed_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nConfirmed" data-default-width >
+{$nConfirmed_value}
+</span>
+{END nConfirmed_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nCanceled_class}
+			"
+
+			data-field="nCanceled"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nCanceled_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nCanceled" data-default-width >
+{$nCanceled_value}
+</span>
+{END nCanceled_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+				 
+					{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList" data-default-width >
+{$dialerList_value}
+</span>
+{END dialerList_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+				 
+					{BEGIN cellblock_grid_footcell_field17}
+	<td
+	
+	{$cell_grid_footcell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithapps_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field17}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

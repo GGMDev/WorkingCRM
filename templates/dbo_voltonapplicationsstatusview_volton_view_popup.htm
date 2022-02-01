@@ -1,0 +1,1414 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_voltonApplicationsStatusView volton_view_popup}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="9"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c59}
+<td
+	{$cell_grid_c59}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c59" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c59}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c89}
+<td
+	{$cell_grid_c89}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c89" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c89}
+			 
+																
+
+{BEGIN cellblock_grid_c97}
+<td
+	{$cell_grid_c97}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c97" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN applicationStatusId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationStatusId}  form-horizontal clearfix" data-fieldname="applicationStatusId" data-signal-error-for="applicationStatusId{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="applicationStatusId" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_applicationStatusId}">
+		
+		{BEGIN applicationStatusId_label}{$label dbo_voltonApplicationsStatusView applicationStatusId }{END applicationStatusId_label}
+	</label>
+	<div class="col-md-8" >
+		{$applicationStatusId_value}	</div>
+
+		
+</div>
+
+
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c97}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ</span>
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c21}
+<td
+	{$cell_grid_c21}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c21" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c21}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c22}
+<td
+	{$cell_grid_c22}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c22" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c22}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c36}
+<td
+	{$cell_grid_c36}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c36" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΝΟΜΙΜΟΣ ΕΚΠΡΟΣΩΠΟΣ</span>
+	
+								</td>
+			{END cellblock_grid_c36}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c37}
+<td
+	{$cell_grid_c37}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c37" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c37}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c42}
+<td
+	{$cell_grid_c42}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c42" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c42}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c50}
+<td
+	{$cell_grid_c50}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c50" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c50}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c123}
+<td
+	{$cell_grid_c123}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c123" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c123}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c124}
+<td
+	{$cell_grid_c124}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c124" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c124}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c41}
+<td
+	{$cell_grid_c41}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c41" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΥΠΕΥΘΥΝΟΣ ΕΠΙΚΟΙΝΩΝΙΑΣ</span>
+	
+								</td>
+			{END cellblock_grid_c41}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c43}
+<td
+	{$cell_grid_c43}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c43" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c43}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c51}
+<td
+	{$cell_grid_c51}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c51" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c51}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c74}
+<td
+	{$cell_grid_c74}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c74" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c74}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c121}
+<td
+	{$cell_grid_c121}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c121" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c121}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c122}
+<td
+	{$cell_grid_c122}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c122" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c122}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c52}
+<td
+	{$cell_grid_c52}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c52" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΔΙΕΥΘΥΝΣΗ ΑΠΟΣΤΟΛΗΣ ΛΟΓΑΡΙΑΣΜΟΥ</span>
+	
+								</td>
+			{END cellblock_grid_c52}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c60}
+<td
+	{$cell_grid_c60}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c60" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c60}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c61}
+<td
+	{$cell_grid_c61}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c61" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c61}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c118}
+<td
+	{$cell_grid_c118}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c118" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c118}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c119}
+<td
+	{$cell_grid_c119}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c119" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c119}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c120}
+<td
+	{$cell_grid_c120}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c120" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c120}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c75}
+<td
+	{$cell_grid_c75}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c75" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text4" {$item_text4} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ</span>
+	
+								</td>
+			{END cellblock_grid_c75}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c76}
+<td
+	{$cell_grid_c76}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c76" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c76}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c90}
+<td
+	{$cell_grid_c90}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c90" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c90}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c116}
+<td
+	{$cell_grid_c116}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c116" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c116}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c117}
+<td
+	{$cell_grid_c117}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c117" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c117}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="3"		data-cellId="grid_c1" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="9"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text7" {$item_text7} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΦΥΣΙΚΟ ΑΕΡΙΟ)</span>
+	
+								</td>
+			{END cellblock_grid_c1}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c145}
+<td
+	{$cell_grid_c145}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c145" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c145}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c146}
+<td
+	{$cell_grid_c146}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c146" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c146}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c147}
+<td
+	{$cell_grid_c147}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c147" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c147}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c91}
+<td
+	{$cell_grid_c91}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c91" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text6" {$item_text6} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΤΙΜΟΛΟΓΙΟ VOLTON</span>
+	
+								</td>
+			{END cellblock_grid_c91}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c92}
+<td
+	{$cell_grid_c92}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c92" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c92}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c93}
+<td
+	{$cell_grid_c93}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c93" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c93}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c94}
+<td
+	{$cell_grid_c94}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c94" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text5" {$item_text5} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup" data-small > 
+	ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</span>
+	
+								</td>
+			{END cellblock_grid_c94}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c95}
+<td
+	{$cell_grid_c95}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c95" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c95}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c96}
+<td
+	{$cell_grid_c96}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c96" data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_volton_view_popup"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c96}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c98}
+<td
+	{$cell_grid_c98}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c98" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c98}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c99}
+<td
+	{$cell_grid_c99}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c99" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c99}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c100}
+<td
+	{$cell_grid_c100}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c100" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c100}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c153}
+<td
+	{$cell_grid_c153}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c153" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN applicationStatusId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationStatusId}  form-horizontal clearfix" data-fieldname="applicationStatusId" data-signal-error-for="applicationStatusId{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field83" {$item_integrated_edit_field83} data-pageid="{$pageid}" data-field="applicationStatusId" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_applicationStatusId}">
+		
+		{BEGIN applicationStatusId_label}{$label dbo_voltonApplicationsStatusView applicationStatusId }{END applicationStatusId_label}
+	</label>
+	<div class="col-md-8" >
+		{$applicationStatusId_value}	</div>
+
+		
+</div>
+
+
+{END applicationStatusId_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c153}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c154}
+<td
+	{$cell_grid_c154}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c154" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c154}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c155}
+<td
+	{$cell_grid_c155}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c155" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c155}
+								</tr>
+	 
+	 
+																</tbody></table>
+				
+{BEGIN details_internalcomments}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption dbo_internalComments }				
+							<span>
+					{$detailslButtons_internalcomments}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_internalcomments}
+		</div>
+	</div>
+</div>
+{END details_internalcomments}
+	
+				 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="9"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  form-horizontal clearfix" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label dbo_voltonApplicationsStatusView id }{END id_label}
+	</label>
+	<div class="col-md-8" >
+		{$id_value}	</div>
+
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN callDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callDate}  form-horizontal clearfix" data-fieldname="callDate" data-signal-error-for="callDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="callDate" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_callDate}">
+		
+		{BEGIN callDate_label}{$label dbo_voltonApplicationsStatusView callDate }{END callDate_label}
+	</label>
+	<div class="col-md-8" >
+		{$callDate_value}	</div>
+
+		
+</div>
+
+
+{END callDate_fieldblock}
+											
+{BEGIN forCount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_forCount}  form-horizontal clearfix" data-fieldname="forCount" data-signal-error-for="forCount{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="forCount" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_forCount}">
+		
+		{BEGIN forCount_label}{$label dbo_voltonApplicationsStatusView forCount }{END forCount_label}
+	</label>
+	<div class="col-md-8" >
+		{$forCount_value}	</div>
+
+		
+</div>
+
+
+{END forCount_fieldblock}
+											
+{BEGIN dialerList_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerList}  form-horizontal clearfix" data-fieldname="dialerList" data-signal-error-for="dialerList{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="dialerList" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_dialerList}">
+		
+		{BEGIN dialerList_label}{$label dbo_voltonApplicationsStatusView dialerList }{END dialerList_label}
+	</label>
+	<div class="col-md-8" >
+		{$dialerList_value}	</div>
+
+		
+</div>
+
+
+{END dialerList_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c148}
+<td
+	{$cell_grid_c148}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c148" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN callphone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callphone}  form-horizontal clearfix" data-fieldname="callphone" data-signal-error-for="callphone{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="callphone" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_callphone}">
+		
+		{BEGIN callphone_label}{$label dbo_voltonApplicationsStatusView callphone }{END callphone_label}
+	</label>
+	<div class="col-md-8" >
+		{$callphone_value}	</div>
+
+		
+</div>
+
+
+{END callphone_fieldblock}
+											
+{BEGIN agentApplicationStatus_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agentApplicationStatus}  form-horizontal clearfix" data-fieldname="agentApplicationStatus" data-signal-error-for="agentApplicationStatus{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="agentApplicationStatus" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_agentApplicationStatus}">
+		
+		{BEGIN agentApplicationStatus_label}{$label dbo_voltonApplicationsStatusView agentApplicationStatus }{END agentApplicationStatus_label}
+	</label>
+	<div class="col-md-8" >
+		{$agentApplicationStatus_value}	</div>
+
+		
+</div>
+
+
+{END agentApplicationStatus_fieldblock}
+											
+{BEGIN applicationPhaseStatusId_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationPhaseStatusId}  form-horizontal clearfix" data-fieldname="applicationPhaseStatusId" data-signal-error-for="applicationPhaseStatusId{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="applicationPhaseStatusId" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_applicationPhaseStatusId}">
+		
+		{BEGIN applicationPhaseStatusId_label}{$label dbo_voltonApplicationsStatusView applicationPhaseStatusId }{END applicationPhaseStatusId_label}
+	</label>
+	<div class="col-md-8" >
+		{$applicationPhaseStatusId_value}	</div>
+
+		
+</div>
+
+
+{END applicationPhaseStatusId_fieldblock}
+											
+{BEGIN applicationAge_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationAge}  form-horizontal clearfix" data-fieldname="applicationAge" data-signal-error-for="applicationAge{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="applicationAge" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_applicationAge}">
+		
+		{BEGIN applicationAge_label}{$label dbo_voltonApplicationsStatusView applicationAge }{END applicationAge_label}
+	</label>
+	<div class="col-md-8" >
+		{$applicationAge_value}	</div>
+
+		
+</div>
+
+
+{END applicationAge_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c148}
+			 
+																
+
+{BEGIN cellblock_grid_c149}
+<td
+	{$cell_grid_c149}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c149" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN agent_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agent}  form-horizontal clearfix" data-fieldname="agent" data-signal-error-for="agent{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="agent" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_agent}">
+		
+		{BEGIN agent_label}{$label dbo_voltonApplicationsStatusView agent }{END agent_label}
+	</label>
+	<div class="col-md-8" >
+		{$agent_value}	</div>
+
+		
+</div>
+
+
+{END agent_fieldblock}
+											
+{BEGIN lastStatusDate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lastStatusDate}  form-horizontal clearfix" data-fieldname="lastStatusDate" data-signal-error-for="lastStatusDate{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="lastStatusDate" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_lastStatusDate}">
+		
+		{BEGIN lastStatusDate_label}{$label dbo_voltonApplicationsStatusView lastStatusDate }{END lastStatusDate_label}
+	</label>
+	<div class="col-md-8" >
+		{$lastStatusDate_value}	</div>
+
+		
+</div>
+
+
+{END lastStatusDate_fieldblock}
+											
+{BEGIN dialerCampaign_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCampaign}  form-horizontal clearfix" data-fieldname="dialerCampaign" data-signal-error-for="dialerCampaign{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="dialerCampaign" >
+
+	
+	<label class="col-md-4 text-right bs-view-label" for="{$labelfor_dialerCampaign}">
+		
+		{BEGIN dialerCampaign_label}{$label dbo_voltonApplicationsStatusView dialerCampaign }{END dialerCampaign_label}
+	</label>
+	<div class="col-md-8" >
+		{$dialerCampaign_value}	</div>
+
+		
+</div>
+
+
+{END dialerCampaign_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c149}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	
+">
+		 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Κλείσε το παράθυρο			</a>
+</span>
+{END close_button}
+		</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

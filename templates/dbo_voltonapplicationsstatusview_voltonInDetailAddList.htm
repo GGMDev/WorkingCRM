@@ -1,0 +1,1677 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Προβολή όλων">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_selected" data-itemid="edit_selected" {$item_edit_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$editselectedlink_attrs} {$editselectedlink_span}  title="" >
+				
+		Επεξεργασία		
+		</a>
+	</li>
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Διαγραφή Επιλεγμένων		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Αποτελέσματα Εξαγωγής		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							<li role="separator" class="divider"></li>							<li role="separator" class="divider"></li>							<li role="separator" class="divider"></li>					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c3" data-pageid="{$pageid}"	{$cell_top_c3}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-left" {$blockattr_left} {$form_left} >
+										{BEGIN left_block}
+<table class="r-fluid r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="left_c2" data-pageid="{$pageid}">
+ 
+<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+<!--
+	<button type="button" class="btn btn-info bs-togglebutton bottom-margin collapsed" data-runner-toggle="collapse" data-target=".filterPanelContainer">	
+		<span class="glyphicon glyphicon-filter"><span> Filter	
+	</button>
+-->	
+	<div class="filterPanelContainer {$filterPanelStateClass}">
+
+
+
+	</div>
+</div></td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END left_block}
+						</div>
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add3" {$item_inline_add3} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success  btn-lg 
+	" {$inlineaddlink_attrs} >
+							Νέα Αίτηση			</a>
+</span>
+{END inlineadd_link}
+	 
+		{BEGIN saveall_link}
+<span data-itemtype="inline_save_all" data-itemid="inline_save_all" {$item_inline_save_all} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savealllink_attrs} {$savealllink_span} >
+							Αποθήκευση όλων			</a>
+</span>
+{END saveall_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c5" data-pageid="{$pageid}"	{$cell_above-grid_c5}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+			</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Εκτυπώσιμη σελίδα" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="dbo_voltonapplicationsstatusview_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Εκτύπωση όλων των σελίδων`							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="dbo_voltonapplicationsstatusview_print.php?{$crosstable_attrs}">
+				Εκτύπωση αυτής της σελίδας			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Εκτύπωση επιλεγμένων`			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Εκτύπωση λεπτομερειών`	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_internalcomments}
+			<div>
+				<label for="printDetailsinternalcomments{$id}">
+					<input type="checkbox" value="internalcomments" id="printDetailsinternalcomments{$id}" checked>
+					Internal Comments				</label>
+			</div>
+			{END print_details_internalcomments}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Εγγραφές/σελίδα							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Εκτύπωση			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<img src="{$file_url images/volton%20header.png}" data-itemtype="image" data-itemid="image1" {$item_image1} data-pageid="{$pageid}" />
+		</div>			 
+				<div 
+	data-cellId="above-grid_c4" data-pageid="{$pageid}"	{$cell_above-grid_c4}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	 
+		{BEGIN inlineedit_column}
+{BEGIN inlineedit_link}
+<span data-itemtype="grid_inline_edit" data-itemid="grid_inline_edit" {$item_grid_inline_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Επεξεργασία" class="btn-link   
+	 glyphicon glyphicon-edit" {$inlineeditlink_attrs} title="Επεξεργασία" >		
+				
+								</a>
+</span>
+{END inlineedit_link}
+{END inlineedit_column}
+	 
+		{BEGIN inline_save}
+<span data-itemtype="grid_inline_save" data-itemid="grid_inline_save" {$item_grid_inline_save} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Αποθήκευση" class="btn-link   
+	 glyphicon glyphicon-ok" {$inlinesavelink_attrs} title="Αποθήκευση" >		
+				
+								</a>
+</span>
+{END inline_save}
+	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ακύρωση" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Ακύρωση" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN copy_column}
+{BEGIN copy_link}
+<span data-itemtype="grid_copy" data-itemid="grid_copy" {$item_grid_copy} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Αντιγραφή" class="btn-link   
+	 glyphicon glyphicon-duplicate" href="dbo_voltonapplicationsstatusview_add.php?{$copylink}" {$copylink_attrs} title="Αντιγραφή" >		
+				
+								</a>
+</span>
+{END copy_link}
+{END copy_column}
+	
+	</th>
+	{END cellblock_grid_cell_top}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<img src="{$file_url images/volton%20header.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" data-record-id="{$recId}" />
+	
+	</td>
+	{END cellblock_grid_cell_field}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field64}
+	<td
+	
+	{$cell_grid_cell_field64}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field64" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field64}
+						 
+							{BEGIN cellblock_grid_cell_field66}
+	<td
+	
+	{$cell_grid_cell_field66}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert				{$applicationStatusId_class}
+			"
+
+			data-field="applicationStatusId"
+	
+	data-cellId="grid_cell_field66" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		{BEGIN applicationStatusId_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field66" {$item_simple_grid_field66} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId">
+	{$label dbo_voltonApplicationsStatusView applicationStatusId }	</span>
+{END applicationStatusId_fieldheadercolumn}
+
+	 
+		{BEGIN applicationStatusId_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="applicationStatusId" data-default-width >
+{$applicationStatusId_value}
+</span>
+{END applicationStatusId_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field66}
+						 
+							{BEGIN cellblock_grid_cell_field67}
+	<td
+	
+	{$cell_grid_cell_field67}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field67" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field67}
+						 
+							{BEGIN cellblock_grid_cell_field68}
+	<td
+	
+	{$cell_grid_cell_field68}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field68" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field68}
+						 
+							{BEGIN cellblock_grid_cell_field69}
+	<td
+	
+	{$cell_grid_cell_field69}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field69" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field69}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_label1}
+	<td
+	
+	{$cell_grid_cell_label1}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label1}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field1}
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field2}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label16}
+	<td
+	
+	{$cell_grid_cell_label16}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΝΟΜΙΜΟΥ ΕΚΠΡΟΣΩΠΟΥ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label16}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_field104}
+	<td
+	
+	{$cell_grid_cell_field104}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field104" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field104}
+						 
+							{BEGIN cellblock_grid_cell_field105}
+	<td
+	
+	{$cell_grid_cell_field105}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field105" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field105}
+						 
+							{BEGIN cellblock_grid_cell_field106}
+	<td
+	
+	{$cell_grid_cell_field106}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field106" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field106}
+						 
+							{BEGIN cellblock_grid_cell_field107}
+	<td
+	
+	{$cell_grid_cell_field107}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field107" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field107}
+						 
+							{BEGIN cellblock_grid_cell_field108}
+	<td
+	
+	{$cell_grid_cell_field108}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field108" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field108}
+						 
+							{BEGIN cellblock_grid_cell_field109}
+	<td
+	
+	{$cell_grid_cell_field109}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field109" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field109}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label24}
+	<td
+	
+	{$cell_grid_cell_label24}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label24" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text6" {$item_text6} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΥΠΕΥΘΥΝΟΥ ΕΠΙΚΟΙΝΩΝΙΑΣ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label24}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label39}
+	<td
+	
+	{$cell_grid_cell_label39}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label39" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList" data-record-id="{$recId}" data-small > 
+	ΔΙΕΥΘΥΝΣΗ ΑΠΟΣΤΟΛΗΣ ΛΟΓΑΡΙΑΣΜΟΥ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label39}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label44}
+	<td
+	
+	{$cell_grid_cell_label44}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label44" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΡΕΥΜΑ)</span>
+	
+	</td>
+	{END cellblock_grid_cell_label44}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label172}
+	<td
+	
+	{$cell_grid_cell_label172}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label172" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text7" {$item_text7} data-pageid="{$pageid}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList" data-record-id="{$recId}" data-small > 
+	ΣΤΟΙΧΕΙΑ ΠΑΡΟΧΗΣ (ΦΥΣΙΚΟ ΑΕΡΙΟ)</span>
+	
+	</td>
+	{END cellblock_grid_cell_label172}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label63}
+	<td
+	
+	{$cell_grid_cell_label63}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label63" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text4" {$item_text4} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΤΙΜΟΛΟΓΙΟ VOLTON</span>
+	
+	</td>
+	{END cellblock_grid_cell_label63}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label87}
+	<td
+	
+	{$cell_grid_cell_label87}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label87" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label87}
+						 
+							{BEGIN cellblock_grid_cell_label88}
+	<td
+	
+	{$cell_grid_cell_label88}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label88" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label88}
+						 
+							{BEGIN cellblock_grid_cell_label89}
+	<td
+	
+	{$cell_grid_cell_label89}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label89" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label89}
+						 
+							{BEGIN cellblock_grid_cell_label90}
+	<td
+	
+	{$cell_grid_cell_label90}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label90" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label90}
+						 
+							{BEGIN cellblock_grid_cell_label91}
+	<td
+	
+	{$cell_grid_cell_label91}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label91" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label91}
+						 
+							{BEGIN cellblock_grid_cell_label92}
+	<td
+	
+	{$cell_grid_cell_label92}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label92" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label92}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label147}
+	<td
+	
+	{$cell_grid_cell_label147}
+	{$recordattrs}
+	class="
+		r-align-left r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label147" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		<span data-itemtype="text" data-itemid="text5" {$item_text5} data-pageid="{$pageid}" data-record-id="{$recId}" data-small > 
+	ΔΙΚΑΙΟΛΟΓΗΤΙΚΑ</span>
+	
+	</td>
+	{END cellblock_grid_cell_label147}
+						 
+							{BEGIN cellblock_grid_cell_label148}
+	<td
+	
+	{$cell_grid_cell_label148}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label148" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label148}
+						 
+							{BEGIN cellblock_grid_cell_label149}
+	<td
+	
+	{$cell_grid_cell_label149}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label149" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label149}
+						 
+							{BEGIN cellblock_grid_cell_label150}
+	<td
+	
+	{$cell_grid_cell_label150}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label150" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label150}
+						 
+							{BEGIN cellblock_grid_cell_label151}
+	<td
+	
+	{$cell_grid_cell_label151}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label151" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label151}
+						 
+							{BEGIN cellblock_grid_cell_label152}
+	<td
+	
+	{$cell_grid_cell_label152}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label152" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label152}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label185}
+	<td
+	
+	{$cell_grid_cell_label185}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label185" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label185}
+						 
+							{BEGIN cellblock_grid_cell_label186}
+	<td
+	
+	{$cell_grid_cell_label186}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label186" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label186}
+						 
+							{BEGIN cellblock_grid_cell_label187}
+	<td
+	
+	{$cell_grid_cell_label187}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label187" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label187}
+						 
+							{BEGIN cellblock_grid_cell_label188}
+	<td
+	
+	{$cell_grid_cell_label188}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label188" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label188}
+						 
+							{BEGIN cellblock_grid_cell_label189}
+	<td
+	
+	{$cell_grid_cell_label189}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label189" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label189}
+						 
+							{BEGIN cellblock_grid_cell_label190}
+	<td
+	
+	{$cell_grid_cell_label190}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label190" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label190}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label18}
+	<td
+	
+	{$cell_grid_cell_label18}
+	{$recordattrs}
+	class="
+		r-align-center			"
+
+	
+	data-cellId="grid_cell_label18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success  btn-lg 
+	" {$inlineaddlink_attrs} >
+							Νέα Αίτηση			</a>
+</span>
+{END inlineadd_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-danger  btn-lg 
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Διαγραφή			</a>
+</span>
+{END deleteselected_link}
+	
+	</td>
+	{END cellblock_grid_cell_label18}
+						 
+							{BEGIN cellblock_grid_cell_label19}
+	<td
+	
+	{$cell_grid_cell_label19}
+	{$recordattrs}
+	class="
+		r-align-center r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label19}
+						 
+							{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field18}
+						 
+							{BEGIN cellblock_grid_cell_label23}
+	<td
+	
+	{$cell_grid_cell_label23}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label23" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label23}
+						 
+							{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="dbo_voltonapplicationsstatusview_voltonInDetailAddList"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field19}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field3}
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_label11}
+	<td
+	
+	{$cell_grid_cell_label11}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label11}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field11}
+						 
+							{BEGIN cellblock_grid_cell_label15}
+	<td
+	
+	{$cell_grid_cell_label15}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label15}
+						 
+							{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field15}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label17}
+	<td
+	
+	{$cell_grid_cell_label17}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label17}
+						 
+							{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field16}
+						 
+							{BEGIN cellblock_grid_cell_label25}
+	<td
+	
+	{$cell_grid_cell_label25}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label25}
+						 
+							{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field17}
+						 
+							{BEGIN cellblock_grid_cell_label26}
+	<td
+	
+	{$cell_grid_cell_label26}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label26}
+						 
+							{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field23}
+						 
+							{BEGIN cellblock_grid_cell_label31}
+	<td
+	
+	{$cell_grid_cell_label31}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label31}
+						 
+							{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field24}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+		 
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders=""
+	>
+		<div data-details-preview>
+	</div>
+</div>
+	{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c" data-pageid="{$pageid}"	{$cell_below-grid_c}
+	class="r-align-left			col-md-12
+	
+">
+		 
+		{BEGIN cancelall_link}
+<span data-itemtype="inline_cancel_all" data-itemid="inline_cancel_all1" {$item_inline_cancel_all1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$cancelalllink_attrs} {$cancelalllink_span} >
+							Ακύρωση			</a>
+</span>
+{END cancelall_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete1" {$item_delete1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Διαγραφή			</a>
+</span>
+{END deleteselected_link}
+	 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

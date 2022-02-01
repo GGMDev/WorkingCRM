@@ -1,0 +1,2225 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_CallsBackofficeView edit}","hidden":"{$item_hide_edit_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_message}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"80%", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'Στοιχεία Κλήσης', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section2_0}
+								'*', 
+								{END col_section2_0}
+							 
+								{BEGIN col_section2_1}
+								'*', 
+								{END col_section2_1}
+							 
+								{BEGIN col_section2_2}
+								'*', 
+								{END col_section2_2}
+							 
+								{BEGIN col_section2_3}
+								'*', 
+								{END col_section2_3}
+							 
+								{BEGIN col_section2_4}
+								'*', 
+								{END col_section2_4}
+													],
+						body: [
+								
+					{BEGIN row_section2_0}
+				[
+												{BEGIN cellblock_section2_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c15}
+			colSpan: {$colspan_section2_c15},
+			{END colspan_section2_c15}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView dialerAgent }","bold":true},{"text":{$dialerAgent_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c15}
+																		{ 
+				cellId: 'c15',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c15',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_section2_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callStart }","bold":true},{"text":{$callStart_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c20}
+																			{BEGIN cellblock_section2_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c21}
+											],
+				{END row_section2_0}
+								{BEGIN row_section2_1}
+				[
+												{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c7}
+			colSpan: {$colspan_section2_c7},
+			{END colspan_section2_c7}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView dialerPhone }","bold":true},{"text":{$dialerPhone_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c7}
+																		{ 
+				cellId: 'c7',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c7',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+															{BEGIN cellblock_section2_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callClassificationID }","bold":true},{"text":{$callClassificationID_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c16}
+																			{BEGIN cellblock_section2_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callSubClassificationID }","bold":true},{"text":{$callSubClassificationID_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c17}
+											],
+				{END row_section2_1}
+								{BEGIN row_section2_2}
+				[
+												{BEGIN cellblock_section2_c47}
+{
+	cellId: 'c47',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c47}
+			colSpan: {$colspan_section2_c47},
+			{END colspan_section2_c47}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callStatusId }","bold":true},{"text":{$callStatusId_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c47}
+																		{ 
+				cellId: 'c47',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+															{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c}
+			colSpan: {$colspan_section2_c},
+			{END colspan_section2_c}
+		
+					{BEGIN rowspan_section2_c}
+			rowSpan: {$rowspan_section2_c},
+			{END rowspan_section2_c}
+								// [left, top, right, bottom]
+		margin: [ 5, 0, 0, 0 ],
+		
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Αγορές Πελάτη', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section1_0}
+								'*', 
+								{END col_section1_0}
+													],
+						body: [
+								
+					{BEGIN row_section1_0}
+				[
+												{BEGIN cellblock_section1_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section1_c1}
+											],
+				{END row_section1_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'Εικόνα Πελάτη', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section_0}
+								'*', 
+								{END col_section_0}
+													],
+						body: [
+								
+					{BEGIN row_section_0}
+				[
+												{BEGIN cellblock_section_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section_c1}
+											],
+				{END row_section_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section4',
+			widths: ['*'],
+			body: [
+				[{text: 'Πληροφορίες Κλήσης', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section4_0}
+								'*', 
+								{END col_section4_0}
+							 
+								{BEGIN col_section4_1}
+								'*', 
+								{END col_section4_1}
+													],
+						body: [
+								
+					{BEGIN row_section4_0}
+				[
+												{BEGIN cellblock_section4_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label8}","text":"{$jslabel dbo_CallsBackofficeView tvchannel }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c3}
+																			{BEGIN cellblock_section4_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","text":{$tvchannel_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c2}
+											],
+				{END row_section4_0}
+								{BEGIN row_section4_1}
+				[
+												{BEGIN cellblock_section4_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label6}","text":"{$jslabel dbo_CallsBackofficeView broadcast }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c10}
+																			{BEGIN cellblock_section4_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","text":{$broadcast_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c9}
+											],
+				{END row_section4_1}
+								{BEGIN row_section4_2}
+				[
+												{BEGIN cellblock_section4_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label7}","text":"{$jslabel dbo_CallsBackofficeView seller }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c7}
+																			{BEGIN cellblock_section4_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","text":{$seller_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#effffe',        "alignment": 'left',
+  },
+
+{END cellblock_section4_c8}
+											],
+				{END row_section4_2}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section8',
+			widths: ['*'],
+			body: [
+				[{text: 'Χρόνοι', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section8_0}
+								'*', 
+								{END col_section8_0}
+							 
+								{BEGIN col_section8_1}
+								'*', 
+								{END col_section8_1}
+							 
+								{BEGIN col_section8_2}
+								'*', 
+								{END col_section8_2}
+							 
+								{BEGIN col_section8_3}
+								'*', 
+								{END col_section8_3}
+													],
+						body: [
+								
+					{BEGIN row_section8_0}
+				[
+												{BEGIN cellblock_section8_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label}","text":"{$jslabel dbo_CallsBackofficeView callStart }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c6}
+																			{BEGIN cellblock_section8_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":{$callStart_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c24}
+																			{BEGIN cellblock_section8_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label3}","text":"{$jslabel dbo_CallsBackofficeView talkTime }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c17}
+																			{BEGIN cellblock_section8_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","text":{$talkTime_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c10}
+											],
+				{END row_section8_0}
+								{BEGIN row_section8_1}
+				[
+												{BEGIN cellblock_section8_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label1}","text":"{$jslabel dbo_CallsBackofficeView callHangup }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c8}
+																			{BEGIN cellblock_section8_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","text":{$callHangup_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c25}
+																			{BEGIN cellblock_section8_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label4}","text":"{$jslabel dbo_CallsBackofficeView typingTime }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c18}
+																			{BEGIN cellblock_section8_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","text":{$typingTime_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c11}
+											],
+				{END row_section8_1}
+								{BEGIN row_section8_2}
+				[
+												{BEGIN cellblock_section8_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label2}","text":"{$jslabel dbo_CallsBackofficeView callEnd }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c7}
+																			{BEGIN cellblock_section8_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","text":{$callEnd_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c26}
+																			{BEGIN cellblock_section8_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label5}","text":"{$jslabel dbo_CallsBackofficeView totalCallTime }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_section8_c19}
+																			{BEGIN cellblock_section8_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","bold":true,"text":{$totalCallTime_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c12}
+											],
+				{END row_section8_2}
+								{BEGIN row_section8_3}
+				[
+												{BEGIN cellblock_section8_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'center',
+  },
+
+{END cellblock_section8_c9}
+																			{BEGIN cellblock_section8_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c27}
+																			{BEGIN cellblock_section8_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c20}
+																			{BEGIN cellblock_section8_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section8_c13}
+											],
+				{END row_section8_3}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section3',
+			widths: ['*'],
+			body: [
+				[{text: 'Dialer Data', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section3_0}
+								'*', 
+								{END col_section3_0}
+													],
+						body: [
+								
+					{BEGIN row_section3_0}
+				[
+												{BEGIN cellblock_section3_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","text":[{"text":"{$jslabel dbo_CallsBackofficeView dialerCampaign }","bold":true}," ",{$dialerCampaign_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","text":[{"text":"{$jslabel dbo_CallsBackofficeView dialerList }","bold":true}," ",{$dialerList_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","text":[{"text":"{$jslabel dbo_CallsBackofficeView dialerRecording }","bold":true}," ",{$dialerRecording_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","text":[{"text":"{$jslabel dbo_CallsBackofficeView dialerLeadID }","bold":true}," ",{$dialerLeadID_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","text":[{"text":"{$jslabel dbo_CallsBackofficeView dialerCallEpoch }","bold":true}," ",{$dialerCallEpoch_pdfvalue}]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","text":[{"text":"{$jslabel dbo_CallsBackofficeView pauseAfterCall }","bold":true}," ",{$pauseAfterCall_pdfvalue}]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c}
+											],
+				{END row_section3_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#fdffe7',        "alignment": 'left',
+  },
+
+{END cellblock_section2_c}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_2}
+								{BEGIN row_section2_3}
+				[
+												{BEGIN cellblock_section2_c49}
+{
+	cellId: 'c49',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c49}
+			colSpan: {$colspan_section2_c49},
+			{END colspan_section2_c49}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callDenialReasonID }","bold":true},{"text":{$callDenialReasonID_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c49}
+																		{ 
+				cellId: 'c49',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  1,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  1,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  1,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_3}
+								{BEGIN row_section2_4}
+				[
+												{BEGIN cellblock_section2_c52}
+{
+	cellId: 'c52',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c52}
+			colSpan: {$colspan_section2_c52},
+			{END colspan_section2_c52}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView remarks }","bold":true},{"text":{$remarks_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c52}
+																		{ 
+				cellId: 'c52',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  2,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  2,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  2,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_4}
+								{BEGIN row_section2_5}
+				[
+												{BEGIN cellblock_section2_c53}
+{
+	cellId: 'c53',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView redialDate }","bold":true},{"text":{$redialDate_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c53}
+																			{BEGIN cellblock_section2_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView redialIsPrivate }","bold":true},{"text":{$redialIsPrivate_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'center',
+  },
+
+{END cellblock_section2_c11}
+																		{ 
+				cellId: 'c',
+				row:  3,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  3,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  3,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_5}
+								{BEGIN row_section2_6}
+				[
+												{BEGIN cellblock_section2_c56}
+{
+	cellId: 'c56',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c56}
+			colSpan: {$colspan_section2_c56},
+			{END colspan_section2_c56}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView redialComments }","bold":true},{"text":{$redialComments_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c56}
+																		{ 
+				cellId: 'c56',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  4,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  4,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  4,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_6}
+								{BEGIN row_section2_7}
+				[
+												{BEGIN cellblock_section2_c57}
+{
+	cellId: 'c57',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c57}
+			colSpan: {$colspan_section2_c57},
+			{END colspan_section2_c57}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView callComments }","bold":true},{"text":{$callComments_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c57}
+																		{ 
+				cellId: 'c57',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  5,
+				col:  0,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  5,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'c',
+				row:  5,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_section2_7}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+  fillColor: '#ffe6ad',        "alignment": 'left',
+  },
+
+{END cellblock_grid_c8}
+											],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section5',
+			widths: ['*'],
+			body: [
+				[{text: 'Αιτήσεις Volton', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section5_0}
+								'*', 
+								{END col_section5_0}
+													],
+						body: [
+								
+					{BEGIN row_section5_0}
+				[
+												{BEGIN cellblock_section5_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_dbo_voltonapplications}
+			{$displayDetailTable_dbo_voltonapplications }
+		{END details_dbo_voltonapplications},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section5_c1}
+											],
+				{END row_section5_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section9',
+			widths: ['*'],
+			body: [
+				[{text: 'Αιτήσεις Nova', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section9_0}
+								'*', 
+								{END col_section9_0}
+													],
+						body: [
+								
+					{BEGIN row_section9_0}
+				[
+												{BEGIN cellblock_section9_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_novaapplications}
+			{$displayDetailTable_novaapplications }
+		{END details_novaapplications},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section9_c1}
+											],
+				{END row_section9_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section6',
+			widths: ['*'],
+			body: [
+				[{text: 'Παραγγελία Προϊόντων', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section6_0}
+								'*', 
+								{END col_section6_0}
+							 
+								{BEGIN col_section6_1}
+								'*', 
+								{END col_section6_1}
+							 
+								{BEGIN col_section6_2}
+								'*', 
+								{END col_section6_2}
+							 
+								{BEGIN col_section6_3}
+								'*', 
+								{END col_section6_3}
+													],
+						body: [
+								
+					{BEGIN row_section6_0}
+				[
+												{BEGIN cellblock_section6_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel dbo_CallsBackofficeView contactId }","bold":true},{"text":{$contactId_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c3}
+																			{BEGIN cellblock_section6_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c}
+																			{BEGIN cellblock_section6_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c4}
+																			{BEGIN cellblock_section6_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c5}
+											],
+				{END row_section6_0}
+								{BEGIN row_section6_1}
+				[
+												{BEGIN cellblock_section6_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c25}
+																			{BEGIN cellblock_section6_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c26}
+																			{BEGIN cellblock_section6_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c27}
+																			{BEGIN cellblock_section6_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c28}
+											],
+				{END row_section6_1}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section7',
+			widths: ['*'],
+			body: [
+				[{text: 'Εσωτερική Επικοινωνία', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section7_0}
+								'*', 
+								{END col_section7_0}
+													],
+						body: [
+								
+					{BEGIN row_section7_0}
+				[
+												{BEGIN cellblock_section7_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_internalcomments}
+			{$displayDetailTable_internalcomments }
+		{END details_internalcomments},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section7_c1}
+											],
+				{END row_section7_0}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+											],
+				{END row_grid_2}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_update_records}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

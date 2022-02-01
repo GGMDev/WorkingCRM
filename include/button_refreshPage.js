@@ -1,0 +1,5 @@
+
+Runner.buttonEvents["refreshPage"]=function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='refreshPage';if(!pageObj.buttonEventBefore['refreshPage']){pageObj.buttonEventBefore['refreshPage']=function(params,ctrl,pageObj,proxy,pageid,rowData,row,submit){var ajax=ctrl;window.location.reload();return false;}}
+if(!pageObj.buttonEventAfter['refreshPage']){pageObj.buttonEventAfter['refreshPage']=function(result,ctrl,pageObj,proxy,pageid,rowData,row,params){var ajax=ctrl;var message=result["txt"]+" !!!";ajax.setMessage(message);}}
+$('a[id="refreshPage"]').each(function(){if($(this).closest('.gridRowAdd').length){return;}
+this.id="refreshPage"+"_"+Runner.genId();var button_refreshPage=new Runner.form.Button({id:this.id,btnName:"refreshPage"});button_refreshPage.init({args:[pageObj,proxy,pageid]});});};

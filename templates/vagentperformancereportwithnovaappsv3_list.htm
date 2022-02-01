@@ -1,0 +1,1765 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+		 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class="r-align-left navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Προβολή όλων">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="vagentperformancereportwithnovaappsv3_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Εύρεση		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Εμφάνιση πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Απόκρυψη πάνελ αναζήτησης		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Αποτελέσματα Εξαγωγής		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="vagentperformancereportwithnovaappsv3_import.php{$stateLink_full}"  title="" >
+				
+		Εισαγωγή Αρχείου		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Περιοχή Διαχειριστή		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-left" {$blockattr_left} {$form_left} >
+										{BEGIN left_block}
+<table class="r-fluid r-form" data-location="left" id="form_left_{$pageid}" data-makeup="topbar" {$form_left} data-pageid="{$pageid}" >
+						<tbody>
+			
+								<tr>
+									<td 
+	class=" r-ori-vert			"
+			 
+	data-cellId="left_c1" data-pageid="{$pageid}">
+ 
+<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Αναζήτηση			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Εμφάνιση επιλογών</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>Όλες οι συνθήκες</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>Όποια από τις συνθήκες</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>Απόκρυψη</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_appStatusRatioInCall}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_appStatusRatioInCall}" {$filterRow_attrs_appStatusRatioInCall}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 appStatusRatioInCall }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_appStatusRatioInCall}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_appStatusRatioInCall}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_appStatusRatioInCall}</span>
+						</div>
+		{END searchCtrlBlock_appStatusRatioInCall}
+																{BEGIN searchCtrlBlock_callSubClassificationID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callSubClassificationID}" {$filterRow_attrs_callSubClassificationID}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callSubClassificationID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callSubClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callSubClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callSubClassificationID}</span>
+						</div>
+		{END searchCtrlBlock_callSubClassificationID}
+																{BEGIN searchCtrlBlock_callClassificationID}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callClassificationID}" {$filterRow_attrs_callClassificationID}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callClassificationID }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callClassificationID}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callClassificationID}</span>
+						</div>
+		{END searchCtrlBlock_callClassificationID}
+																{BEGIN searchCtrlBlock_salesStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_salesStatus}" {$filterRow_attrs_salesStatus}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 salesStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_salesStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_salesStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_salesStatus}</span>
+						</div>
+		{END searchCtrlBlock_salesStatus}
+																{BEGIN searchCtrlBlock_callStatus}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_callStatus}" {$filterRow_attrs_callStatus}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callStatus }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_callStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_callStatus}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_callStatus}</span>
+						</div>
+		{END searchCtrlBlock_callStatus}
+																{BEGIN searchCtrlBlock_totalCallTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_totalCallTime}" {$filterRow_attrs_totalCallTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalCallTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_totalCallTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_totalCallTime}</span>
+						</div>
+		{END searchCtrlBlock_totalCallTime}
+																{BEGIN searchCtrlBlock_typingTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_typingTime}" {$filterRow_attrs_typingTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 typingTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_typingTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_typingTime}</span>
+						</div>
+		{END searchCtrlBlock_typingTime}
+																{BEGIN searchCtrlBlock_talkTime}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_talkTime}" {$filterRow_attrs_talkTime}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 talkTime }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_talkTime}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_talkTime}</span>
+						</div>
+		{END searchCtrlBlock_talkTime}
+																{BEGIN searchCtrlBlock_dialerList}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerList}" {$filterRow_attrs_dialerList}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerList }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerList}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerList}</span>
+						</div>
+		{END searchCtrlBlock_dialerList}
+																{BEGIN searchCtrlBlock_dialerCampaign}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerCampaign}" {$filterRow_attrs_dialerCampaign}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerCampaign }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerCampaign}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerCampaign}</span>
+						</div>
+		{END searchCtrlBlock_dialerCampaign}
+																{BEGIN searchCtrlBlock_calldate}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_calldate}" {$filterRow_attrs_calldate}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 calldate }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_calldate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_calldate}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_calldate}</span>
+						</div>
+		{END searchCtrlBlock_calldate}
+																{BEGIN searchCtrlBlock_dialerAgent}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerAgent}" {$filterRow_attrs_dialerAgent}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerAgent }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerAgent}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerAgent}</span>
+						</div>
+		{END searchCtrlBlock_dialerAgent}
+																{BEGIN searchCtrlBlock_totalAppsQty}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_totalAppsQty}" {$filterRow_attrs_totalAppsQty}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalAppsQty }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_totalAppsQty}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_totalAppsQty}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_totalAppsQty}</span>
+						</div>
+		{END searchCtrlBlock_totalAppsQty}
+																{BEGIN searchCtrlBlock_statusAppsCount}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_statusAppsCount}" {$filterRow_attrs_statusAppsCount}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 statusAppsCount }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_statusAppsCount}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_statusAppsCount}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_statusAppsCount}</span>
+						</div>
+		{END searchCtrlBlock_statusAppsCount}
+																{BEGIN searchCtrlBlock_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id}" {$filterRow_attrs_id}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id}</span>
+						</div>
+		{END searchCtrlBlock_id}
+																{BEGIN searchCtrlBlock_dialerPhone}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_dialerPhone}" {$filterRow_attrs_dialerPhone}>
+			<label>{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerPhone }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_dialerPhone}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_dialerPhone}</span>
+						</div>
+		{END searchCtrlBlock_dialerPhone}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Αναζήτηση</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Προβολή όλων</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+</td>
+							</tr>
+					
+					</tbody>
+				</table>
+{END left_block}
+						</div>
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Εκτυπώσιμη σελίδα" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Scope:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="vagentperformancereportwithnovaappsv3_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Εκτύπωση όλων των σελίδων`							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="vagentperformancereportwithnovaappsv3_print.php?{$crosstable_attrs}">
+				Εκτύπωση αυτής της σελίδας			</label>
+		</div>
+	</div>
+	
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Εγγραφές/σελίδα							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Εκτύπωση			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 id}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerPhone"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerPhone}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerAgent"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerAgent}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="calldate"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 calldate}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerCampaign"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerCampaign}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dialerList"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerList}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="talkTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 talkTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="typingTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 typingTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="totalCallTime"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalCallTime}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callStatus"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callStatus}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="salesStatus"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 salesStatus}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callClassificationID"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callClassificationID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="callSubClassificationID"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callSubClassificationID}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="totalAppsQty"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalAppsQty}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="statusAppsCount"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 statusAppsCount}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="appStatusRatioInCall"]:before {
+		content: "{$label dbo_vAgentPerformanceReportWithNovaAppsV3 appStatusRatioInCall}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldheadercolumn}
+	{BEGIN id_fieldheader}
+	<SPAN {$id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 id }	{$arrow_icon_id}
+	</SPAN>
+	{END id_fieldheader}
+{END id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldheadercolumn}
+	{BEGIN dialerPhone_fieldheader}
+	<SPAN {$dialerPhone_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerPhone }	{$arrow_icon_dialerPhone}
+	</SPAN>
+	{END dialerPhone_fieldheader}
+{END dialerPhone_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalAppsQty_class}
+			"
+
+			data-field="totalAppsQty"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalAppsQty_fieldheadercolumn}
+	{BEGIN totalAppsQty_fieldheader}
+	<SPAN {$totalAppsQty_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalAppsQty">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalAppsQty }	{$arrow_icon_totalAppsQty}
+	</SPAN>
+	{END totalAppsQty_fieldheader}
+{END totalAppsQty_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusAppsCount_class}
+			"
+
+			data-field="statusAppsCount"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusAppsCount_fieldheadercolumn}
+	{BEGIN statusAppsCount_fieldheader}
+	<SPAN {$statusAppsCount_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusAppsCount">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 statusAppsCount }	{$arrow_icon_statusAppsCount}
+	</SPAN>
+	{END statusAppsCount_fieldheader}
+{END statusAppsCount_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$appStatusRatioInCall_class}
+			"
+
+			data-field="appStatusRatioInCall"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN appStatusRatioInCall_fieldheadercolumn}
+	{BEGIN appStatusRatioInCall_fieldheader}
+	<SPAN {$appStatusRatioInCall_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="appStatusRatioInCall">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 appStatusRatioInCall }	{$arrow_icon_appStatusRatioInCall}
+	</SPAN>
+	{END appStatusRatioInCall_fieldheader}
+{END appStatusRatioInCall_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldheadercolumn}
+	{BEGIN dialerAgent_fieldheader}
+	<SPAN {$dialerAgent_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerAgent }	{$arrow_icon_dialerAgent}
+	</SPAN>
+	{END dialerAgent_fieldheader}
+{END dialerAgent_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calldate_class}
+			"
+
+			data-field="calldate"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calldate_fieldheadercolumn}
+	{BEGIN calldate_fieldheader}
+	<SPAN {$calldate_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calldate">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 calldate }	{$arrow_icon_calldate}
+	</SPAN>
+	{END calldate_fieldheader}
+{END calldate_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldheadercolumn}
+	{BEGIN dialerCampaign_fieldheader}
+	<SPAN {$dialerCampaign_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerCampaign }	{$arrow_icon_dialerCampaign}
+	</SPAN>
+	{END dialerCampaign_fieldheader}
+{END dialerCampaign_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldheadercolumn}
+	{BEGIN dialerList_fieldheader}
+	<SPAN {$dialerList_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 dialerList }	{$arrow_icon_dialerList}
+	</SPAN>
+	{END dialerList_fieldheader}
+{END dialerList_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldheadercolumn}
+	{BEGIN talkTime_fieldheader}
+	<SPAN {$talkTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 talkTime }	{$arrow_icon_talkTime}
+	</SPAN>
+	{END talkTime_fieldheader}
+{END talkTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldheadercolumn}
+	{BEGIN typingTime_fieldheader}
+	<SPAN {$typingTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 typingTime }	{$arrow_icon_typingTime}
+	</SPAN>
+	{END typingTime_fieldheader}
+{END typingTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldheadercolumn}
+	{BEGIN totalCallTime_fieldheader}
+	<SPAN {$totalCallTime_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 totalCallTime }	{$arrow_icon_totalCallTime}
+	</SPAN>
+	{END totalCallTime_fieldheader}
+{END totalCallTime_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatus_class}
+			"
+
+			data-field="callStatus"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatus_fieldheadercolumn}
+	{BEGIN callStatus_fieldheader}
+	<SPAN {$callStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatus">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callStatus }	{$arrow_icon_callStatus}
+	</SPAN>
+	{END callStatus_fieldheader}
+{END callStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$salesStatus_class}
+			"
+
+			data-field="salesStatus"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN salesStatus_fieldheadercolumn}
+	{BEGIN salesStatus_fieldheader}
+	<SPAN {$salesStatus_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="salesStatus">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 salesStatus }	{$arrow_icon_salesStatus}
+	</SPAN>
+	{END salesStatus_fieldheader}
+{END salesStatus_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callClassificationID_class}
+			"
+
+			data-field="callClassificationID"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callClassificationID_fieldheadercolumn}
+	{BEGIN callClassificationID_fieldheader}
+	<SPAN {$callClassificationID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callClassificationID">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callClassificationID }	{$arrow_icon_callClassificationID}
+	</SPAN>
+	{END callClassificationID_fieldheader}
+{END callClassificationID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callSubClassificationID_class}
+			"
+
+			data-field="callSubClassificationID"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callSubClassificationID_fieldheadercolumn}
+	{BEGIN callSubClassificationID_fieldheader}
+	<SPAN {$callSubClassificationID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callSubClassificationID">
+	{$label dbo_vAgentPerformanceReportWithNovaAppsV3 callSubClassificationID }	{$arrow_icon_callSubClassificationID}
+	</SPAN>
+	{END callSubClassificationID_fieldheader}
+{END callSubClassificationID_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_class}
+			"
+
+			data-field="id"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-default-width >
+{$id_value}
+</span>
+{END id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerPhone_class}
+			"
+
+			data-field="dialerPhone"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerPhone_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerPhone" data-default-width >
+{$dialerPhone_value}
+</span>
+{END dialerPhone_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalAppsQty_class}
+			"
+
+			data-field="totalAppsQty"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalAppsQty_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalAppsQty" data-default-width >
+{$totalAppsQty_value}
+</span>
+{END totalAppsQty_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$statusAppsCount_class}
+			"
+
+			data-field="statusAppsCount"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN statusAppsCount_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="statusAppsCount" data-default-width >
+{$statusAppsCount_value}
+</span>
+{END statusAppsCount_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$appStatusRatioInCall_class}
+			"
+
+			data-field="appStatusRatioInCall"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN appStatusRatioInCall_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="appStatusRatioInCall" data-default-width >
+{$appStatusRatioInCall_value}
+</span>
+{END appStatusRatioInCall_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerAgent_class}
+			"
+
+			data-field="dialerAgent"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerAgent_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerAgent" data-default-width >
+{$dialerAgent_value}
+</span>
+{END dialerAgent_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calldate_class}
+			"
+
+			data-field="calldate"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calldate_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calldate" data-default-width >
+{$calldate_value}
+</span>
+{END calldate_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerCampaign_class}
+			"
+
+			data-field="dialerCampaign"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerCampaign_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerCampaign" data-default-width >
+{$dialerCampaign_value}
+</span>
+{END dialerCampaign_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dialerList_class}
+			"
+
+			data-field="dialerList"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dialerList_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dialerList" data-default-width >
+{$dialerList_value}
+</span>
+{END dialerList_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$talkTime_class}
+			"
+
+			data-field="talkTime"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN talkTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="talkTime" data-default-width >
+{$talkTime_value}
+</span>
+{END talkTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$typingTime_class}
+			"
+
+			data-field="typingTime"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN typingTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="typingTime" data-default-width >
+{$typingTime_value}
+</span>
+{END typingTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$totalCallTime_class}
+			"
+
+			data-field="totalCallTime"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN totalCallTime_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="totalCallTime" data-default-width >
+{$totalCallTime_value}
+</span>
+{END totalCallTime_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callStatus_class}
+			"
+
+			data-field="callStatus"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callStatus" data-default-width >
+{$callStatus_value}
+</span>
+{END callStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$salesStatus_class}
+			"
+
+			data-field="salesStatus"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN salesStatus_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="salesStatus" data-default-width >
+{$salesStatus_value}
+</span>
+{END salesStatus_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callClassificationID_class}
+			"
+
+			data-field="callClassificationID"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callClassificationID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callClassificationID" data-default-width >
+{$callClassificationID_value}
+</span>
+{END callClassificationID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$callSubClassificationID_class}
+			"
+
+			data-field="callSubClassificationID"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN callSubClassificationID_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="callSubClassificationID" data-default-width >
+{$callSubClassificationID_value}
+</span>
+{END callSubClassificationID_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="vagentperformancereportwithnovaappsv3_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

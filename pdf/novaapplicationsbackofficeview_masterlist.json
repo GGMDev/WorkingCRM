@@ -1,0 +1,5700 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption dbo_novaApplicationsBackofficeView}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 1 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														{BEGIN col_grid_0}
+					"%",
+					{END col_grid_0}
+										{BEGIN col_grid_1}
+					"%",
+					{END col_grid_1}
+										{BEGIN col_grid_2}
+					"%",
+					{END col_grid_2}
+										{BEGIN col_grid_3}
+					"%",
+					{END col_grid_3}
+										{BEGIN col_grid_4}
+					"%",
+					{END col_grid_4}
+										{BEGIN col_grid_5}
+					"%",
+					{END col_grid_5}
+										{BEGIN col_grid_6}
+					"%",
+					{END col_grid_6}
+										{BEGIN col_grid_7}
+					"%",
+					{END col_grid_7}
+										{BEGIN col_grid_8}
+					"%",
+					{END col_grid_8}
+										{BEGIN col_grid_9}
+					"%",
+					{END col_grid_9}
+										{BEGIN col_grid_10}
+					"%",
+					{END col_grid_10}
+										{BEGIN col_grid_11}
+					"%",
+					{END col_grid_11}
+										{BEGIN col_grid_12}
+					"%",
+					{END col_grid_12}
+										{BEGIN col_grid_13}
+					"%",
+					{END col_grid_13}
+										{BEGIN col_grid_14}
+					"%",
+					{END col_grid_14}
+										{BEGIN col_grid_15}
+					"%",
+					{END col_grid_15}
+										{BEGIN col_grid_16}
+					"%",
+					{END col_grid_16}
+										{BEGIN col_grid_17}
+					"%",
+					{END col_grid_17}
+										{BEGIN col_grid_18}
+					"%",
+					{END col_grid_18}
+										{BEGIN col_grid_19}
+					"%",
+					{END col_grid_19}
+										{BEGIN col_grid_20}
+					"%",
+					{END col_grid_20}
+										{BEGIN col_grid_21}
+					"%",
+					{END col_grid_21}
+										{BEGIN col_grid_22}
+					"%",
+					{END col_grid_22}
+										{BEGIN col_grid_23}
+					"%",
+					{END col_grid_23}
+										{BEGIN col_grid_24}
+					"%",
+					{END col_grid_24}
+										{BEGIN col_grid_25}
+					"%",
+					{END col_grid_25}
+										{BEGIN col_grid_26}
+					"%",
+					{END col_grid_26}
+										{BEGIN col_grid_27}
+					"%",
+					{END col_grid_27}
+										{BEGIN col_grid_28}
+					"%",
+					{END col_grid_28}
+										{BEGIN col_grid_29}
+					"%",
+					{END col_grid_29}
+										{BEGIN col_grid_30}
+					"%",
+					{END col_grid_30}
+										{BEGIN col_grid_31}
+					"%",
+					{END col_grid_31}
+										{BEGIN col_grid_32}
+					"%",
+					{END col_grid_32}
+										{BEGIN col_grid_33}
+					"%",
+					{END col_grid_33}
+										{BEGIN col_grid_34}
+					"%",
+					{END col_grid_34}
+										{BEGIN col_grid_35}
+					"%",
+					{END col_grid_35}
+										{BEGIN col_grid_36}
+					"%",
+					{END col_grid_36}
+										{BEGIN col_grid_37}
+					"%",
+					{END col_grid_37}
+										{BEGIN col_grid_38}
+					"%",
+					{END col_grid_38}
+										{BEGIN col_grid_39}
+					"%",
+					{END col_grid_39}
+										{BEGIN col_grid_40}
+					"%",
+					{END col_grid_40}
+										{BEGIN col_grid_41}
+					"%",
+					{END col_grid_41}
+										{BEGIN col_grid_42}
+					"%",
+					{END col_grid_42}
+										{BEGIN col_grid_43}
+					"%",
+					{END col_grid_43}
+										{BEGIN col_grid_44}
+					"%",
+					{END col_grid_44}
+										{BEGIN col_grid_45}
+					"%",
+					{END col_grid_45}
+										{BEGIN col_grid_46}
+					"%",
+					{END col_grid_46}
+										{BEGIN col_grid_47}
+					"%",
+					{END col_grid_47}
+										{BEGIN col_grid_48}
+					"%",
+					{END col_grid_48}
+										{BEGIN col_grid_49}
+					"%",
+					{END col_grid_49}
+										{BEGIN col_grid_50}
+					"%",
+					{END col_grid_50}
+										{BEGIN col_grid_51}
+					"%",
+					{END col_grid_51}
+										{BEGIN col_grid_52}
+					"%",
+					{END col_grid_52}
+										{BEGIN col_grid_53}
+					"%",
+					{END col_grid_53}
+										{BEGIN col_grid_54}
+					"%",
+					{END col_grid_54}
+										{BEGIN col_grid_55}
+					"%",
+					{END col_grid_55}
+										{BEGIN col_grid_56}
+					"%",
+					{END col_grid_56}
+										{BEGIN col_grid_57}
+					"%",
+					{END col_grid_57}
+										{BEGIN col_grid_58}
+					"%",
+					{END col_grid_58}
+										{BEGIN col_grid_59}
+					"%",
+					{END col_grid_59}
+										{BEGIN col_grid_60}
+					"%",
+					{END col_grid_60}
+										{BEGIN col_grid_61}
+					"%",
+					{END col_grid_61}
+										{BEGIN col_grid_62}
+					"%",
+					{END col_grid_62}
+										{BEGIN col_grid_63}
+					"%",
+					{END col_grid_63}
+										{BEGIN col_grid_64}
+					"%",
+					{END col_grid_64}
+										{BEGIN col_grid_65}
+					"%",
+					{END col_grid_65}
+										{BEGIN col_grid_66}
+					"%",
+					{END col_grid_66}
+										{BEGIN col_grid_67}
+					"%",
+					{END col_grid_67}
+										{BEGIN col_grid_68}
+					"%",
+					{END col_grid_68}
+										{BEGIN col_grid_69}
+					"%",
+					{END col_grid_69}
+															],
+											heights: [ // first height for header part
+					"%",
+																		{BEGIN row_grid_0}
+							"%",
+							{END row_grid_0}
+																							 	{BEGIN grid_row}
+													{BEGIN row_grid_1}
+							"%",
+							{END row_grid_1}
+													{END grid_row}
+																								{BEGIN row_grid_2}
+							"%",
+							{END row_grid_2}
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: {$formwidth_grid},
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":"{$jspagetitlelabel dbo_novaApplicationsBackofficeView masterlist}","hidden":"{$item_hide_masterlist_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+''
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_headcell_field}
+{
+	cellId: 'headcell_field',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel dbo_novaApplicationsBackofficeView id }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_headcell_field}
+																			{BEGIN cellblock_grid_headcell_field1}
+{
+	cellId: 'headcell_field1',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel dbo_novaApplicationsBackofficeView callid }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callid_align}',
+  },
+
+{END cellblock_grid_headcell_field1}
+																			{BEGIN cellblock_grid_headcell_field2}
+{
+	cellId: 'headcell_field2',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationType }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationType_align}',
+  },
+
+{END cellblock_grid_headcell_field2}
+																			{BEGIN cellblock_grid_headcell_field3}
+{
+	cellId: 'headcell_field3',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantName }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantName_align}',
+  },
+
+{END cellblock_grid_headcell_field3}
+																			{BEGIN cellblock_grid_headcell_field4}
+{
+	cellId: 'headcell_field4',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantFirstName }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantFirstName_align}',
+  },
+
+{END cellblock_grid_headcell_field4}
+																			{BEGIN cellblock_grid_headcell_field5}
+{
+	cellId: 'headcell_field5',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantBirthdate }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantBirthdate_align}',
+  },
+
+{END cellblock_grid_headcell_field5}
+																			{BEGIN cellblock_grid_headcell_field6}
+{
+	cellId: 'headcell_field6',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantProfession }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantProfession_align}',
+  },
+
+{END cellblock_grid_headcell_field6}
+																			{BEGIN cellblock_grid_headcell_field7}
+{
+	cellId: 'headcell_field7',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantIdNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantIdNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field7}
+																			{BEGIN cellblock_grid_headcell_field8}
+{
+	cellId: 'headcell_field8',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantAddress }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantAddress_align}',
+  },
+
+{END cellblock_grid_headcell_field8}
+																			{BEGIN cellblock_grid_headcell_field9}
+{
+	cellId: 'headcell_field9',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantPostalCode }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantPostalCode_align}',
+  },
+
+{END cellblock_grid_headcell_field9}
+																			{BEGIN cellblock_grid_headcell_field10}
+{
+	cellId: 'headcell_field10',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantArea }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantArea_align}',
+  },
+
+{END cellblock_grid_headcell_field10}
+																			{BEGIN cellblock_grid_headcell_field11}
+{
+	cellId: 'headcell_field11',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantCity }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantCity_align}',
+  },
+
+{END cellblock_grid_headcell_field11}
+																			{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantTaxRegistrationNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantTaxRegistrationNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field12}
+																			{BEGIN cellblock_grid_headcell_field13}
+{
+	cellId: 'headcell_field13',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantTaxOffice }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantTaxOffice_align}',
+  },
+
+{END cellblock_grid_headcell_field13}
+																			{BEGIN cellblock_grid_headcell_field14}
+{
+	cellId: 'headcell_field14',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantPhone }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantPhone_align}',
+  },
+
+{END cellblock_grid_headcell_field14}
+																			{BEGIN cellblock_grid_headcell_field15}
+{
+	cellId: 'headcell_field15',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantMobile }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantMobile_align}',
+  },
+
+{END cellblock_grid_headcell_field15}
+																			{BEGIN cellblock_grid_headcell_field16}
+{
+	cellId: 'headcell_field16',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicantEmail }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantEmail_align}',
+  },
+
+{END cellblock_grid_headcell_field16}
+																			{BEGIN cellblock_grid_headcell_field17}
+{
+	cellId: 'headcell_field17',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel dbo_novaApplicationsBackofficeView standAloneProgram }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$standAloneProgram_align}',
+  },
+
+{END cellblock_grid_headcell_field17}
+																			{BEGIN cellblock_grid_headcell_field18}
+{
+	cellId: 'headcell_field18',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel dbo_novaApplicationsBackofficeView doublePlayProgram }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$doublePlayProgram_align}',
+  },
+
+{END cellblock_grid_headcell_field18}
+																			{BEGIN cellblock_grid_headcell_field19}
+{
+	cellId: 'headcell_field19',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel dbo_novaApplicationsBackofficeView ProgramSpeed }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$ProgramSpeed_align}',
+  },
+
+{END cellblock_grid_headcell_field19}
+																			{BEGIN cellblock_grid_headcell_field20}
+{
+	cellId: 'headcell_field20',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel dbo_novaApplicationsBackofficeView triplePlayProgram }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$triplePlayProgram_align}',
+  },
+
+{END cellblock_grid_headcell_field20}
+																			{BEGIN cellblock_grid_headcell_field21}
+{
+	cellId: 'headcell_field21',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel dbo_novaApplicationsBackofficeView triplePlayProgramType }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$triplePlayProgramType_align}',
+  },
+
+{END cellblock_grid_headcell_field21}
+																			{BEGIN cellblock_grid_headcell_field22}
+{
+	cellId: 'headcell_field22',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceInternet }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternet_align}',
+  },
+
+{END cellblock_grid_headcell_field22}
+																			{BEGIN cellblock_grid_headcell_field23}
+{
+	cellId: 'headcell_field23',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceInternetSpeed }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternetSpeed_align}',
+  },
+
+{END cellblock_grid_headcell_field23}
+																			{BEGIN cellblock_grid_headcell_field24}
+{
+	cellId: 'headcell_field24',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceInternationalCalls }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternationalCalls_align}',
+  },
+
+{END cellblock_grid_headcell_field24}
+																			{BEGIN cellblock_grid_headcell_field25}
+{
+	cellId: 'headcell_field25',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceStaticIp }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceStaticIp_align}',
+  },
+
+{END cellblock_grid_headcell_field25}
+																			{BEGIN cellblock_grid_headcell_field26}
+{
+	cellId: 'headcell_field26',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceStaticBlock8Ip }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceStaticBlock8Ip_align}',
+  },
+
+{END cellblock_grid_headcell_field26}
+																			{BEGIN cellblock_grid_headcell_field27}
+{
+	cellId: 'headcell_field27',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceSecondLine }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceSecondLine_align}',
+  },
+
+{END cellblock_grid_headcell_field27}
+																			{BEGIN cellblock_grid_headcell_field28}
+{
+	cellId: 'headcell_field28',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceLandLine1000Minutes }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceLandLine1000Minutes_align}',
+  },
+
+{END cellblock_grid_headcell_field28}
+																			{BEGIN cellblock_grid_headcell_field29}
+{
+	cellId: 'headcell_field29',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceEquipment }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEquipment_align}',
+  },
+
+{END cellblock_grid_headcell_field29}
+																			{BEGIN cellblock_grid_headcell_field30}
+{
+	cellId: 'headcell_field30',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceEquipmentInstallation }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEquipmentInstallation_align}',
+  },
+
+{END cellblock_grid_headcell_field30}
+																			{BEGIN cellblock_grid_headcell_field31}
+{
+	cellId: 'headcell_field31',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityIsNewLine }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityIsNewLine_align}',
+  },
+
+{END cellblock_grid_headcell_field31}
+																			{BEGIN cellblock_grid_headcell_field32}
+{
+	cellId: 'headcell_field32',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityOldNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityOldNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field32}
+																			{BEGIN cellblock_grid_headcell_field33}
+{
+	cellId: 'headcell_field33',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityOldOwner }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityOldOwner_align}',
+  },
+
+{END cellblock_grid_headcell_field33}
+																			{BEGIN cellblock_grid_headcell_field34}
+{
+	cellId: 'headcell_field34',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field104}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityActivationAddress }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationAddress_align}',
+  },
+
+{END cellblock_grid_headcell_field34}
+																			{BEGIN cellblock_grid_headcell_field35}
+{
+	cellId: 'headcell_field35',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityActivationPostalCode }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationPostalCode_align}',
+  },
+
+{END cellblock_grid_headcell_field35}
+																			{BEGIN cellblock_grid_headcell_field36}
+{
+	cellId: 'headcell_field36',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityActivationArea }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationArea_align}',
+  },
+
+{END cellblock_grid_headcell_field36}
+																			{BEGIN cellblock_grid_headcell_field37}
+{
+	cellId: 'headcell_field37',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityActivationCity }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationCity_align}',
+  },
+
+{END cellblock_grid_headcell_field37}
+																			{BEGIN cellblock_grid_headcell_field38}
+{
+	cellId: 'headcell_field38',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityPstnIsdn }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityPstnIsdn_align}',
+  },
+
+{END cellblock_grid_headcell_field38}
+																			{BEGIN cellblock_grid_headcell_field39}
+{
+	cellId: 'headcell_field39',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityLine1PhoneNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine1PhoneNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field39}
+																			{BEGIN cellblock_grid_headcell_field40}
+{
+	cellId: 'headcell_field40',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityLine2PhoneNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine2PhoneNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field40}
+																			{BEGIN cellblock_grid_headcell_field41}
+{
+	cellId: 'headcell_field41',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityLine3PhoneNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine3PhoneNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field41}
+																			{BEGIN cellblock_grid_headcell_field42}
+{
+	cellId: 'headcell_field42',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityLine4PhoneNumber }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine4PhoneNumber_align}',
+  },
+
+{END cellblock_grid_headcell_field42}
+																			{BEGIN cellblock_grid_headcell_field43}
+{
+	cellId: 'headcell_field43',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityUsername1 }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityUsername1_align}',
+  },
+
+{END cellblock_grid_headcell_field43}
+																			{BEGIN cellblock_grid_headcell_field44}
+{
+	cellId: 'headcell_field44',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel dbo_novaApplicationsBackofficeView portabilityusername2 }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityusername2_align}',
+  },
+
+{END cellblock_grid_headcell_field44}
+																			{BEGIN cellblock_grid_headcell_field45}
+{
+	cellId: 'headcell_field45',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentIdPassport }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentIdPassport_align}',
+  },
+
+{END cellblock_grid_headcell_field45}
+																			{BEGIN cellblock_grid_headcell_field46}
+{
+	cellId: 'headcell_field46',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentIdPassportPreviousOwner }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentIdPassportPreviousOwner_align}',
+  },
+
+{END cellblock_grid_headcell_field46}
+																			{BEGIN cellblock_grid_headcell_field47}
+{
+	cellId: 'headcell_field47',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentLastBill }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentLastBill_align}',
+  },
+
+{END cellblock_grid_headcell_field47}
+																			{BEGIN cellblock_grid_headcell_field48}
+{
+	cellId: 'headcell_field48',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentAddressValidation }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentAddressValidation_align}',
+  },
+
+{END cellblock_grid_headcell_field48}
+																			{BEGIN cellblock_grid_headcell_field49}
+{
+	cellId: 'headcell_field49',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentDeathCertificate }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentDeathCertificate_align}',
+  },
+
+{END cellblock_grid_headcell_field49}
+																			{BEGIN cellblock_grid_headcell_field50}
+{
+	cellId: 'headcell_field50',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentAuthorization }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentAuthorization_align}',
+  },
+
+{END cellblock_grid_headcell_field50}
+																			{BEGIN cellblock_grid_headcell_field51}
+{
+	cellId: 'headcell_field51',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentOther }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentOther_align}',
+  },
+
+{END cellblock_grid_headcell_field51}
+																			{BEGIN cellblock_grid_headcell_field52}
+{
+	cellId: 'headcell_field52',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel dbo_novaApplicationsBackofficeView documentOtherType }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentOtherType_align}',
+  },
+
+{END cellblock_grid_headcell_field52}
+																			{BEGIN cellblock_grid_headcell_field53}
+{
+	cellId: 'headcell_field53',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationAgentStatus }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationAgentStatus_align}',
+  },
+
+{END cellblock_grid_headcell_field53}
+																			{BEGIN cellblock_grid_headcell_field54}
+{
+	cellId: 'headcell_field54',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationContactMethod }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationContactMethod_align}',
+  },
+
+{END cellblock_grid_headcell_field54}
+																			{BEGIN cellblock_grid_headcell_field55}
+{
+	cellId: 'headcell_field55',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationCourier }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourier_align}',
+  },
+
+{END cellblock_grid_headcell_field55}
+																			{BEGIN cellblock_grid_headcell_field56}
+{
+	cellId: 'headcell_field56',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationCourierDate }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierDate_align}',
+  },
+
+{END cellblock_grid_headcell_field56}
+																			{BEGIN cellblock_grid_headcell_field57}
+{
+	cellId: 'headcell_field57',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field127}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationCourierTimeFrom }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierTimeFrom_align}',
+  },
+
+{END cellblock_grid_headcell_field57}
+																			{BEGIN cellblock_grid_headcell_field58}
+{
+	cellId: 'headcell_field58',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field128}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationCourierTimeTo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierTimeTo_align}',
+  },
+
+{END cellblock_grid_headcell_field58}
+																			{BEGIN cellblock_grid_headcell_field59}
+{
+	cellId: 'headcell_field59',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field129}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationCourierComments }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierComments_align}',
+  },
+
+{END cellblock_grid_headcell_field59}
+																			{BEGIN cellblock_grid_headcell_field60}
+{
+	cellId: 'headcell_field60',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field130}","text":"{$jslabel dbo_novaApplicationsBackofficeView adittionalServiceMobileNoLimit }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$adittionalServiceMobileNoLimit_align}',
+  },
+
+{END cellblock_grid_headcell_field60}
+																			{BEGIN cellblock_grid_headcell_field61}
+{
+	cellId: 'headcell_field61',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field131}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceEONMultiScreen }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEONMultiScreen_align}',
+  },
+
+{END cellblock_grid_headcell_field61}
+																			{BEGIN cellblock_grid_headcell_field62}
+{
+	cellId: 'headcell_field62',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field132}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceNovaMultiroom }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceNovaMultiroom_align}',
+  },
+
+{END cellblock_grid_headcell_field62}
+																			{BEGIN cellblock_grid_headcell_field63}
+{
+	cellId: 'headcell_field63',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field133}","text":"{$jslabel dbo_novaApplicationsBackofficeView additionalServiceAdultPack }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceAdultPack_align}',
+  },
+
+{END cellblock_grid_headcell_field63}
+																			{BEGIN cellblock_grid_headcell_field64}
+{
+	cellId: 'headcell_field64',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field134}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationStatusId }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationStatusId_align}',
+  },
+
+{END cellblock_grid_headcell_field64}
+																			{BEGIN cellblock_grid_headcell_field65}
+{
+	cellId: 'headcell_field65',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field135}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationPhase }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationPhase_align}',
+  },
+
+{END cellblock_grid_headcell_field65}
+																			{BEGIN cellblock_grid_headcell_field66}
+{
+	cellId: 'headcell_field66',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field136}","text":"{$jslabel dbo_novaApplicationsBackofficeView salesPhase }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$salesPhase_align}',
+  },
+
+{END cellblock_grid_headcell_field66}
+																			{BEGIN cellblock_grid_headcell_field67}
+{
+	cellId: 'headcell_field67',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field137}","text":"{$jslabel dbo_novaApplicationsBackofficeView callDate }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callDate_align}',
+  },
+
+{END cellblock_grid_headcell_field67}
+																			{BEGIN cellblock_grid_headcell_field68}
+{
+	cellId: 'headcell_field68',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field138}","text":"{$jslabel dbo_novaApplicationsBackofficeView callPhone }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callPhone_align}',
+  },
+
+{END cellblock_grid_headcell_field68}
+																			{BEGIN cellblock_grid_headcell_field69}
+{
+	cellId: 'headcell_field69',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field139}","text":"{$jslabel dbo_novaApplicationsBackofficeView applicationLastStatusDate }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationLastStatusDate_align}',
+  },
+
+{END cellblock_grid_headcell_field69}
+											],
+				{END row_grid_0}
+								
+		{BEGIN grid_row}
+	{BEGIN grid_record}
+				
+						{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field}","text":{$id_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_cell_field}
+																			{BEGIN cellblock_grid_cell_field1}
+{
+	cellId: 'cell_field1',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field1}","text":{$callid_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callid_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+																			{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field3}","text":{$applicationType_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationType_align}',
+  },
+
+{END cellblock_grid_cell_field2}
+																			{BEGIN cellblock_grid_cell_field3}
+{
+	cellId: 'cell_field3',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field4}","text":{$applicantName_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantName_align}',
+  },
+
+{END cellblock_grid_cell_field3}
+																			{BEGIN cellblock_grid_cell_field4}
+{
+	cellId: 'cell_field4',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field5}","text":{$applicantFirstName_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantFirstName_align}',
+  },
+
+{END cellblock_grid_cell_field4}
+																			{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field6}","text":{$applicantBirthdate_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantBirthdate_align}',
+  },
+
+{END cellblock_grid_cell_field5}
+																			{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":{$applicantProfession_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantProfession_align}',
+  },
+
+{END cellblock_grid_cell_field6}
+																			{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field8}","text":{$applicantIdNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantIdNumber_align}',
+  },
+
+{END cellblock_grid_cell_field7}
+																			{BEGIN cellblock_grid_cell_field8}
+{
+	cellId: 'cell_field8',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field9}","text":{$applicantAddress_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantAddress_align}',
+  },
+
+{END cellblock_grid_cell_field8}
+																			{BEGIN cellblock_grid_cell_field9}
+{
+	cellId: 'cell_field9',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field10}","text":{$applicantPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_field9}
+																			{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field11}","text":{$applicantArea_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantArea_align}',
+  },
+
+{END cellblock_grid_cell_field10}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":{$applicantCity_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantCity_align}',
+  },
+
+{END cellblock_grid_cell_field11}
+																			{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field13}","text":{$applicantTaxRegistrationNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantTaxRegistrationNumber_align}',
+  },
+
+{END cellblock_grid_cell_field12}
+																			{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field14}","text":{$applicantTaxOffice_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantTaxOffice_align}',
+  },
+
+{END cellblock_grid_cell_field13}
+																			{BEGIN cellblock_grid_cell_field14}
+{
+	cellId: 'cell_field14',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field15}","text":{$applicantPhone_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantPhone_align}',
+  },
+
+{END cellblock_grid_cell_field14}
+																			{BEGIN cellblock_grid_cell_field15}
+{
+	cellId: 'cell_field15',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field16}","text":{$applicantMobile_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantMobile_align}',
+  },
+
+{END cellblock_grid_cell_field15}
+																			{BEGIN cellblock_grid_cell_field16}
+{
+	cellId: 'cell_field16',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field17}","text":{$applicantEmail_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicantEmail_align}',
+  },
+
+{END cellblock_grid_cell_field16}
+																			{BEGIN cellblock_grid_cell_field17}
+{
+	cellId: 'cell_field17',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field18}","text":{$standAloneProgram_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$standAloneProgram_align}',
+  },
+
+{END cellblock_grid_cell_field17}
+																			{BEGIN cellblock_grid_cell_field18}
+{
+	cellId: 'cell_field18',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field19}","text":{$doublePlayProgram_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$doublePlayProgram_align}',
+  },
+
+{END cellblock_grid_cell_field18}
+																			{BEGIN cellblock_grid_cell_field19}
+{
+	cellId: 'cell_field19',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field20}","text":{$ProgramSpeed_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$ProgramSpeed_align}',
+  },
+
+{END cellblock_grid_cell_field19}
+																			{BEGIN cellblock_grid_cell_field20}
+{
+	cellId: 'cell_field20',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field21}","text":{$triplePlayProgram_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$triplePlayProgram_align}',
+  },
+
+{END cellblock_grid_cell_field20}
+																			{BEGIN cellblock_grid_cell_field21}
+{
+	cellId: 'cell_field21',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field22}","text":{$triplePlayProgramType_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$triplePlayProgramType_align}',
+  },
+
+{END cellblock_grid_cell_field21}
+																			{BEGIN cellblock_grid_cell_field22}
+{
+	cellId: 'cell_field22',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":{$additionalServiceInternet_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternet_align}',
+  },
+
+{END cellblock_grid_cell_field22}
+																			{BEGIN cellblock_grid_cell_field23}
+{
+	cellId: 'cell_field23',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field24}","text":{$additionalServiceInternetSpeed_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternetSpeed_align}',
+  },
+
+{END cellblock_grid_cell_field23}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field25}","text":{$additionalServiceInternationalCalls_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceInternationalCalls_align}',
+  },
+
+{END cellblock_grid_cell_field24}
+																			{BEGIN cellblock_grid_cell_field25}
+{
+	cellId: 'cell_field25',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field26}","text":{$additionalServiceStaticIp_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceStaticIp_align}',
+  },
+
+{END cellblock_grid_cell_field25}
+																			{BEGIN cellblock_grid_cell_field26}
+{
+	cellId: 'cell_field26',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field27}","text":{$additionalServiceStaticBlock8Ip_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceStaticBlock8Ip_align}',
+  },
+
+{END cellblock_grid_cell_field26}
+																			{BEGIN cellblock_grid_cell_field27}
+{
+	cellId: 'cell_field27',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field28}","text":{$additionalServiceSecondLine_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceSecondLine_align}',
+  },
+
+{END cellblock_grid_cell_field27}
+																			{BEGIN cellblock_grid_cell_field28}
+{
+	cellId: 'cell_field28',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field29}","text":{$additionalServiceLandLine1000Minutes_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceLandLine1000Minutes_align}',
+  },
+
+{END cellblock_grid_cell_field28}
+																			{BEGIN cellblock_grid_cell_field29}
+{
+	cellId: 'cell_field29',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field30}","text":{$additionalServiceEquipment_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEquipment_align}',
+  },
+
+{END cellblock_grid_cell_field29}
+																			{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field31}","text":{$additionalServiceEquipmentInstallation_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEquipmentInstallation_align}',
+  },
+
+{END cellblock_grid_cell_field30}
+																			{BEGIN cellblock_grid_cell_field31}
+{
+	cellId: 'cell_field31',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field32}","text":{$portabilityIsNewLine_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityIsNewLine_align}',
+  },
+
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field33}","text":{$portabilityOldNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityOldNumber_align}',
+  },
+
+{END cellblock_grid_cell_field32}
+																			{BEGIN cellblock_grid_cell_field33}
+{
+	cellId: 'cell_field33',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field34}","text":{$portabilityOldOwner_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityOldOwner_align}',
+  },
+
+{END cellblock_grid_cell_field33}
+																			{BEGIN cellblock_grid_cell_field34}
+{
+	cellId: 'cell_field34',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field35}","text":{$portabilityActivationAddress_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationAddress_align}',
+  },
+
+{END cellblock_grid_cell_field34}
+																			{BEGIN cellblock_grid_cell_field35}
+{
+	cellId: 'cell_field35',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field36}","text":{$portabilityActivationPostalCode_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationPostalCode_align}',
+  },
+
+{END cellblock_grid_cell_field35}
+																			{BEGIN cellblock_grid_cell_field36}
+{
+	cellId: 'cell_field36',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field37}","text":{$portabilityActivationArea_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationArea_align}',
+  },
+
+{END cellblock_grid_cell_field36}
+																			{BEGIN cellblock_grid_cell_field37}
+{
+	cellId: 'cell_field37',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field38}","text":{$portabilityActivationCity_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityActivationCity_align}',
+  },
+
+{END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_field38}
+{
+	cellId: 'cell_field38',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field39}","text":{$portabilityPstnIsdn_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityPstnIsdn_align}',
+  },
+
+{END cellblock_grid_cell_field38}
+																			{BEGIN cellblock_grid_cell_field39}
+{
+	cellId: 'cell_field39',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field40}","text":{$portabilityLine1PhoneNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine1PhoneNumber_align}',
+  },
+
+{END cellblock_grid_cell_field39}
+																			{BEGIN cellblock_grid_cell_field40}
+{
+	cellId: 'cell_field40',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field41}","text":{$portabilityLine2PhoneNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine2PhoneNumber_align}',
+  },
+
+{END cellblock_grid_cell_field40}
+																			{BEGIN cellblock_grid_cell_field41}
+{
+	cellId: 'cell_field41',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field42}","text":{$portabilityLine3PhoneNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine3PhoneNumber_align}',
+  },
+
+{END cellblock_grid_cell_field41}
+																			{BEGIN cellblock_grid_cell_field42}
+{
+	cellId: 'cell_field42',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field43}","text":{$portabilityLine4PhoneNumber_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityLine4PhoneNumber_align}',
+  },
+
+{END cellblock_grid_cell_field42}
+																			{BEGIN cellblock_grid_cell_field43}
+{
+	cellId: 'cell_field43',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field44}","text":{$portabilityUsername1_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityUsername1_align}',
+  },
+
+{END cellblock_grid_cell_field43}
+																			{BEGIN cellblock_grid_cell_field44}
+{
+	cellId: 'cell_field44',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field45}","text":{$portabilityusername2_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$portabilityusername2_align}',
+  },
+
+{END cellblock_grid_cell_field44}
+																			{BEGIN cellblock_grid_cell_field45}
+{
+	cellId: 'cell_field45',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field46}","text":{$documentIdPassport_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentIdPassport_align}',
+  },
+
+{END cellblock_grid_cell_field45}
+																			{BEGIN cellblock_grid_cell_field46}
+{
+	cellId: 'cell_field46',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field47}","text":{$documentIdPassportPreviousOwner_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentIdPassportPreviousOwner_align}',
+  },
+
+{END cellblock_grid_cell_field46}
+																			{BEGIN cellblock_grid_cell_field47}
+{
+	cellId: 'cell_field47',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field48}","text":{$documentLastBill_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentLastBill_align}',
+  },
+
+{END cellblock_grid_cell_field47}
+																			{BEGIN cellblock_grid_cell_field48}
+{
+	cellId: 'cell_field48',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field49}","text":{$documentAddressValidation_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentAddressValidation_align}',
+  },
+
+{END cellblock_grid_cell_field48}
+																			{BEGIN cellblock_grid_cell_field49}
+{
+	cellId: 'cell_field49',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field50}","text":{$documentDeathCertificate_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentDeathCertificate_align}',
+  },
+
+{END cellblock_grid_cell_field49}
+																			{BEGIN cellblock_grid_cell_field50}
+{
+	cellId: 'cell_field50',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field51}","text":{$documentAuthorization_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentAuthorization_align}',
+  },
+
+{END cellblock_grid_cell_field50}
+																			{BEGIN cellblock_grid_cell_field51}
+{
+	cellId: 'cell_field51',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field52}","text":{$documentOther_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentOther_align}',
+  },
+
+{END cellblock_grid_cell_field51}
+																			{BEGIN cellblock_grid_cell_field52}
+{
+	cellId: 'cell_field52',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field53}","text":{$documentOtherType_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documentOtherType_align}',
+  },
+
+{END cellblock_grid_cell_field52}
+																			{BEGIN cellblock_grid_cell_field53}
+{
+	cellId: 'cell_field53',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field54}","text":{$applicationAgentStatus_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationAgentStatus_align}',
+  },
+
+{END cellblock_grid_cell_field53}
+																			{BEGIN cellblock_grid_cell_field54}
+{
+	cellId: 'cell_field54',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field56}","text":{$applicationContactMethod_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationContactMethod_align}',
+  },
+
+{END cellblock_grid_cell_field54}
+																			{BEGIN cellblock_grid_cell_field55}
+{
+	cellId: 'cell_field55',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field57}","text":{$applicationCourier_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourier_align}',
+  },
+
+{END cellblock_grid_cell_field55}
+																			{BEGIN cellblock_grid_cell_field56}
+{
+	cellId: 'cell_field56',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field58}","text":{$applicationCourierDate_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierDate_align}',
+  },
+
+{END cellblock_grid_cell_field56}
+																			{BEGIN cellblock_grid_cell_field57}
+{
+	cellId: 'cell_field57',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field59}","text":{$applicationCourierTimeFrom_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierTimeFrom_align}',
+  },
+
+{END cellblock_grid_cell_field57}
+																			{BEGIN cellblock_grid_cell_field58}
+{
+	cellId: 'cell_field58',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field60}","text":{$applicationCourierTimeTo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierTimeTo_align}',
+  },
+
+{END cellblock_grid_cell_field58}
+																			{BEGIN cellblock_grid_cell_field59}
+{
+	cellId: 'cell_field59',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field61}","text":{$applicationCourierComments_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationCourierComments_align}',
+  },
+
+{END cellblock_grid_cell_field59}
+																			{BEGIN cellblock_grid_cell_field60}
+{
+	cellId: 'cell_field60',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field65}","text":{$adittionalServiceMobileNoLimit_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$adittionalServiceMobileNoLimit_align}',
+  },
+
+{END cellblock_grid_cell_field60}
+																			{BEGIN cellblock_grid_cell_field61}
+{
+	cellId: 'cell_field61',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field66}","text":{$additionalServiceEONMultiScreen_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceEONMultiScreen_align}',
+  },
+
+{END cellblock_grid_cell_field61}
+																			{BEGIN cellblock_grid_cell_field62}
+{
+	cellId: 'cell_field62',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field67}","text":{$additionalServiceNovaMultiroom_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceNovaMultiroom_align}',
+  },
+
+{END cellblock_grid_cell_field62}
+																			{BEGIN cellblock_grid_cell_field63}
+{
+	cellId: 'cell_field63',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field68}","text":{$additionalServiceAdultPack_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$additionalServiceAdultPack_align}',
+  },
+
+{END cellblock_grid_cell_field63}
+																			{BEGIN cellblock_grid_cell_field64}
+{
+	cellId: 'cell_field64',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field2}","text":{$applicationStatusId_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationStatusId_align}',
+  },
+
+{END cellblock_grid_cell_field64}
+																			{BEGIN cellblock_grid_cell_field65}
+{
+	cellId: 'cell_field65',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field69}","text":{$applicationPhase_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationPhase_align}',
+  },
+
+{END cellblock_grid_cell_field65}
+																			{BEGIN cellblock_grid_cell_field66}
+{
+	cellId: 'cell_field66',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field70}","text":{$salesPhase_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$salesPhase_align}',
+  },
+
+{END cellblock_grid_cell_field66}
+																			{BEGIN cellblock_grid_cell_field67}
+{
+	cellId: 'cell_field67',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field55}","text":{$callDate_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callDate_align}',
+  },
+
+{END cellblock_grid_cell_field67}
+																			{BEGIN cellblock_grid_cell_field68}
+{
+	cellId: 'cell_field68',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field62}","text":{$callPhone_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$callPhone_align}',
+  },
+
+{END cellblock_grid_cell_field68}
+																			{BEGIN cellblock_grid_cell_field69}
+{
+	cellId: 'cell_field69',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field63}","text":{$applicationLastStatusDate_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$applicationLastStatusDate_align}',
+  },
+
+{END cellblock_grid_cell_field69}
+											],
+				{END row_grid_1}
+						{END grid_record}
+	{END grid_row}
+			
+					
+							{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_footcell_field}
+{
+	cellId: 'footcell_field',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field}
+																			{BEGIN cellblock_grid_footcell_field1}
+{
+	cellId: 'footcell_field1',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field1}
+																			{BEGIN cellblock_grid_footcell_field2}
+{
+	cellId: 'footcell_field2',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field2}
+																			{BEGIN cellblock_grid_footcell_field3}
+{
+	cellId: 'footcell_field3',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field3}
+																			{BEGIN cellblock_grid_footcell_field4}
+{
+	cellId: 'footcell_field4',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field4}
+																			{BEGIN cellblock_grid_footcell_field5}
+{
+	cellId: 'footcell_field5',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field5}
+																			{BEGIN cellblock_grid_footcell_field6}
+{
+	cellId: 'footcell_field6',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field6}
+																			{BEGIN cellblock_grid_footcell_field7}
+{
+	cellId: 'footcell_field7',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field7}
+																			{BEGIN cellblock_grid_footcell_field8}
+{
+	cellId: 'footcell_field8',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field8}
+																			{BEGIN cellblock_grid_footcell_field9}
+{
+	cellId: 'footcell_field9',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field9}
+																			{BEGIN cellblock_grid_footcell_field10}
+{
+	cellId: 'footcell_field10',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field10}
+																			{BEGIN cellblock_grid_footcell_field11}
+{
+	cellId: 'footcell_field11',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field11}
+																			{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field12}
+																			{BEGIN cellblock_grid_footcell_field13}
+{
+	cellId: 'footcell_field13',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field13}
+																			{BEGIN cellblock_grid_footcell_field14}
+{
+	cellId: 'footcell_field14',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field14}
+																			{BEGIN cellblock_grid_footcell_field15}
+{
+	cellId: 'footcell_field15',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field15}
+																			{BEGIN cellblock_grid_footcell_field16}
+{
+	cellId: 'footcell_field16',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field16}
+																			{BEGIN cellblock_grid_footcell_field17}
+{
+	cellId: 'footcell_field17',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field17}
+																			{BEGIN cellblock_grid_footcell_field18}
+{
+	cellId: 'footcell_field18',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field18}
+																			{BEGIN cellblock_grid_footcell_field19}
+{
+	cellId: 'footcell_field19',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field19}
+																			{BEGIN cellblock_grid_footcell_field20}
+{
+	cellId: 'footcell_field20',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field20}
+																			{BEGIN cellblock_grid_footcell_field21}
+{
+	cellId: 'footcell_field21',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field21}
+																			{BEGIN cellblock_grid_footcell_field22}
+{
+	cellId: 'footcell_field22',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field22}
+																			{BEGIN cellblock_grid_footcell_field23}
+{
+	cellId: 'footcell_field23',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field23}
+																			{BEGIN cellblock_grid_footcell_field24}
+{
+	cellId: 'footcell_field24',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field24}
+																			{BEGIN cellblock_grid_footcell_field25}
+{
+	cellId: 'footcell_field25',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field25}
+																			{BEGIN cellblock_grid_footcell_field26}
+{
+	cellId: 'footcell_field26',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field26}
+																			{BEGIN cellblock_grid_footcell_field27}
+{
+	cellId: 'footcell_field27',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field27}
+																			{BEGIN cellblock_grid_footcell_field28}
+{
+	cellId: 'footcell_field28',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field28}
+																			{BEGIN cellblock_grid_footcell_field29}
+{
+	cellId: 'footcell_field29',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field29}
+																			{BEGIN cellblock_grid_footcell_field30}
+{
+	cellId: 'footcell_field30',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field30}
+																			{BEGIN cellblock_grid_footcell_field31}
+{
+	cellId: 'footcell_field31',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field31}
+																			{BEGIN cellblock_grid_footcell_field32}
+{
+	cellId: 'footcell_field32',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field32}
+																			{BEGIN cellblock_grid_footcell_field33}
+{
+	cellId: 'footcell_field33',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field33}
+																			{BEGIN cellblock_grid_footcell_field34}
+{
+	cellId: 'footcell_field34',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field34}
+																			{BEGIN cellblock_grid_footcell_field35}
+{
+	cellId: 'footcell_field35',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field35}
+																			{BEGIN cellblock_grid_footcell_field36}
+{
+	cellId: 'footcell_field36',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field36}
+																			{BEGIN cellblock_grid_footcell_field37}
+{
+	cellId: 'footcell_field37',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field37}
+																			{BEGIN cellblock_grid_footcell_field38}
+{
+	cellId: 'footcell_field38',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field38}
+																			{BEGIN cellblock_grid_footcell_field39}
+{
+	cellId: 'footcell_field39',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field39}
+																			{BEGIN cellblock_grid_footcell_field40}
+{
+	cellId: 'footcell_field40',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field40}
+																			{BEGIN cellblock_grid_footcell_field41}
+{
+	cellId: 'footcell_field41',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field41}
+																			{BEGIN cellblock_grid_footcell_field42}
+{
+	cellId: 'footcell_field42',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field42}
+																			{BEGIN cellblock_grid_footcell_field43}
+{
+	cellId: 'footcell_field43',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field43}
+																			{BEGIN cellblock_grid_footcell_field44}
+{
+	cellId: 'footcell_field44',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field44}
+																			{BEGIN cellblock_grid_footcell_field45}
+{
+	cellId: 'footcell_field45',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field45}
+																			{BEGIN cellblock_grid_footcell_field46}
+{
+	cellId: 'footcell_field46',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field46}
+																			{BEGIN cellblock_grid_footcell_field47}
+{
+	cellId: 'footcell_field47',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field47}
+																			{BEGIN cellblock_grid_footcell_field48}
+{
+	cellId: 'footcell_field48',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field48}
+																			{BEGIN cellblock_grid_footcell_field49}
+{
+	cellId: 'footcell_field49',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field49}
+																			{BEGIN cellblock_grid_footcell_field50}
+{
+	cellId: 'footcell_field50',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field50}
+																			{BEGIN cellblock_grid_footcell_field51}
+{
+	cellId: 'footcell_field51',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field51}
+																			{BEGIN cellblock_grid_footcell_field52}
+{
+	cellId: 'footcell_field52',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field52}
+																			{BEGIN cellblock_grid_footcell_field53}
+{
+	cellId: 'footcell_field53',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field53}
+																			{BEGIN cellblock_grid_footcell_field54}
+{
+	cellId: 'footcell_field54',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field54}
+																			{BEGIN cellblock_grid_footcell_field55}
+{
+	cellId: 'footcell_field55',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field55}
+																			{BEGIN cellblock_grid_footcell_field56}
+{
+	cellId: 'footcell_field56',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field56}
+																			{BEGIN cellblock_grid_footcell_field57}
+{
+	cellId: 'footcell_field57',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field57}
+																			{BEGIN cellblock_grid_footcell_field58}
+{
+	cellId: 'footcell_field58',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field58}
+																			{BEGIN cellblock_grid_footcell_field59}
+{
+	cellId: 'footcell_field59',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field59}
+																			{BEGIN cellblock_grid_footcell_field60}
+{
+	cellId: 'footcell_field60',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field60}
+																			{BEGIN cellblock_grid_footcell_field61}
+{
+	cellId: 'footcell_field61',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field61}
+																			{BEGIN cellblock_grid_footcell_field62}
+{
+	cellId: 'footcell_field62',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field62}
+																			{BEGIN cellblock_grid_footcell_field63}
+{
+	cellId: 'footcell_field63',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field63}
+																			{BEGIN cellblock_grid_footcell_field64}
+{
+	cellId: 'footcell_field64',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field64}
+																			{BEGIN cellblock_grid_footcell_field65}
+{
+	cellId: 'footcell_field65',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field65}
+																			{BEGIN cellblock_grid_footcell_field66}
+{
+	cellId: 'footcell_field66',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field66}
+																			{BEGIN cellblock_grid_footcell_field67}
+{
+	cellId: 'footcell_field67',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field67}
+																			{BEGIN cellblock_grid_footcell_field68}
+{
+	cellId: 'footcell_field68',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field68}
+																			{BEGIN cellblock_grid_footcell_field69}
+{
+	cellId: 'footcell_field69',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field69}
+											],
+				{END row_grid_2}
+							
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

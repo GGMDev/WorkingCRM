@@ -1,0 +1,2829 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+								{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="topbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span data-cellId="supertop_c1" data-pageid="{$pageid}" class=" r-ori-vert navbar-header" data-itemid="logo" {$item_logo}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo" {$item_logo} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</span>
+							 
+							 
+				<span data-cellId="supertop_c2" data-pageid="{$pageid}" class=" r-ori-vert navbar-collapse" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main horizontal}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Είσοδος			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c3" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Έξοδος		
+		</a>
+	</li>
+{END logoutbutton}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+					{$locking}
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="topbar" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel dbo_voltonAgentApplications search}</h2>
+		</div>					</div>
+	</div>		
+{END top_block}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+							
+						<div class="r-grid">
+										{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="topbar" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id" 
+	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label dbo_voltonAgentApplications id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN callid_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callid}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callid" 
+	
+	data-signal-error-for="callid{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="callid" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callid}">
+		{$label dbo_voltonAgentApplications callid }	</label>
+	<div class="r-search-option">
+		{$searchtype_callid}
+	</div>
+	<div class="r-search-field">
+		{$callid_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callid_editcontrol1}
+	</div>
+	
+</div>
+
+{END callid_fieldblock}
+											
+{BEGIN applicantName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantName}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantName" 
+	
+	data-signal-error-for="applicantName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="applicantName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantName}">
+		{$label dbo_voltonAgentApplications applicantName }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantName}
+	</div>
+	<div class="r-search-field">
+		{$applicantName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantName_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantName_fieldblock}
+											
+{BEGIN applicantIdNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantIdNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantIdNumber" 
+	
+	data-signal-error-for="applicantIdNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="applicantIdNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantIdNumber}">
+		{$label dbo_voltonAgentApplications applicantIdNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantIdNumber}
+	</div>
+	<div class="r-search-field">
+		{$applicantIdNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantIdNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantIdNumber_fieldblock}
+											
+{BEGIN applicantAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantAddress" 
+	
+	data-signal-error-for="applicantAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="applicantAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantAddress}">
+		{$label dbo_voltonAgentApplications applicantAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantAddress}
+	</div>
+	<div class="r-search-field">
+		{$applicantAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantAddress_fieldblock}
+											
+{BEGIN applicantPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantPostalCode" 
+	
+	data-signal-error-for="applicantPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="applicantPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantPostalCode}">
+		{$label dbo_voltonAgentApplications applicantPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$applicantPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantPostalCode_fieldblock}
+											
+{BEGIN applicantTaxRegistrationNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxRegistrationNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantTaxRegistrationNumber" 
+	
+	data-signal-error-for="applicantTaxRegistrationNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="applicantTaxRegistrationNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantTaxRegistrationNumber}">
+		{$label dbo_voltonAgentApplications applicantTaxRegistrationNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantTaxRegistrationNumber}
+	</div>
+	<div class="r-search-field">
+		{$applicantTaxRegistrationNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantTaxRegistrationNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantTaxRegistrationNumber_fieldblock}
+											
+{BEGIN applicantTaxOffice_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantTaxOffice}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantTaxOffice" 
+	
+	data-signal-error-for="applicantTaxOffice{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="applicantTaxOffice" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantTaxOffice}">
+		{$label dbo_voltonAgentApplications applicantTaxOffice }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantTaxOffice}
+	</div>
+	<div class="r-search-field">
+		{$applicantTaxOffice_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantTaxOffice_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantTaxOffice_fieldblock}
+											
+{BEGIN applicantEmail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantEmail}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantEmail" 
+	
+	data-signal-error-for="applicantEmail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="applicantEmail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantEmail}">
+		{$label dbo_voltonAgentApplications applicantEmail }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantEmail}
+	</div>
+	<div class="r-search-field">
+		{$applicantEmail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantEmail_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantEmail_fieldblock}
+											
+{BEGIN applicantProfession_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantProfession}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantProfession" 
+	
+	data-signal-error-for="applicantProfession{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="applicantProfession" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantProfession}">
+		{$label dbo_voltonAgentApplications applicantProfession }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantProfession}
+	</div>
+	<div class="r-search-field">
+		{$applicantProfession_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantProfession_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantProfession_fieldblock}
+											
+{BEGIN applicantKod_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantKod}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantKod" 
+	
+	data-signal-error-for="applicantKod{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="applicantKod" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantKod}">
+		{$label dbo_voltonAgentApplications applicantKod }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantKod}
+	</div>
+	<div class="r-search-field">
+		{$applicantKod_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantKod_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantKod_fieldblock}
+											
+{BEGIN applicantGemi_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantGemi}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantGemi" 
+	
+	data-signal-error-for="applicantGemi{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="applicantGemi" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantGemi}">
+		{$label dbo_voltonAgentApplications applicantGemi }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantGemi}
+	</div>
+	<div class="r-search-field">
+		{$applicantGemi_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantGemi_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantGemi_fieldblock}
+											
+{BEGIN contactName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactName}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactName" 
+	
+	data-signal-error-for="contactName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="contactName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactName}">
+		{$label dbo_voltonAgentApplications contactName }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactName}
+	</div>
+	<div class="r-search-field">
+		{$contactName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactName_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactName_fieldblock}
+											
+{BEGIN contactPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactPhone}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactPhone" 
+	
+	data-signal-error-for="contactPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="contactPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactPhone}">
+		{$label dbo_voltonAgentApplications contactPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactPhone}
+	</div>
+	<div class="r-search-field">
+		{$contactPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactPhone_fieldblock}
+											
+{BEGIN contactMobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactMobile}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactMobile" 
+	
+	data-signal-error-for="contactMobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="contactMobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactMobile}">
+		{$label dbo_voltonAgentApplications contactMobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactMobile}
+	</div>
+	<div class="r-search-field">
+		{$contactMobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactMobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactMobile_fieldblock}
+											
+{BEGIN contactEmail_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactEmail}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactEmail" 
+	
+	data-signal-error-for="contactEmail{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="contactEmail" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactEmail}">
+		{$label dbo_voltonAgentApplications contactEmail }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactEmail}
+	</div>
+	<div class="r-search-field">
+		{$contactEmail_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactEmail_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactEmail_fieldblock}
+											
+{BEGIN applicantPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantPhone}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantPhone" 
+	
+	data-signal-error-for="applicantPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="applicantPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantPhone}">
+		{$label dbo_voltonAgentApplications applicantPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantPhone}
+	</div>
+	<div class="r-search-field">
+		{$applicantPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantPhone_fieldblock}
+											
+{BEGIN applicantMobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantMobile}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantMobile" 
+	
+	data-signal-error-for="applicantMobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="applicantMobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantMobile}">
+		{$label dbo_voltonAgentApplications applicantMobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantMobile}
+	</div>
+	<div class="r-search-field">
+		{$applicantMobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantMobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantMobile_fieldblock}
+											
+{BEGIN legalName_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_legalName}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="legalName" 
+	
+	data-signal-error-for="legalName{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="legalName" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_legalName}">
+		{$label dbo_voltonAgentApplications legalName }	</label>
+	<div class="r-search-option">
+		{$searchtype_legalName}
+	</div>
+	<div class="r-search-field">
+		{$legalName_editcontrol}	</div>
+	<div class="r-search-field">
+		{$legalName_editcontrol1}
+	</div>
+	
+</div>
+
+{END legalName_fieldblock}
+											
+{BEGIN legalIdNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_legalIdNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="legalIdNumber" 
+	
+	data-signal-error-for="legalIdNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="legalIdNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_legalIdNumber}">
+		{$label dbo_voltonAgentApplications legalIdNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_legalIdNumber}
+	</div>
+	<div class="r-search-field">
+		{$legalIdNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$legalIdNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END legalIdNumber_fieldblock}
+											
+{BEGIN mailAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="mailAddress" 
+	
+	data-signal-error-for="mailAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="mailAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailAddress}">
+		{$label dbo_voltonAgentApplications mailAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailAddress}
+	</div>
+	<div class="r-search-field">
+		{$mailAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailAddress_fieldblock}
+											
+{BEGIN mailPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="mailPostalCode" 
+	
+	data-signal-error-for="mailPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="mailPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailPostalCode}">
+		{$label dbo_voltonAgentApplications mailPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$mailPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailPostalCode_fieldblock}
+											
+{BEGIN powerAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerAddress" 
+	
+	data-signal-error-for="powerAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="powerAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerAddress}">
+		{$label dbo_voltonAgentApplications powerAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerAddress}
+	</div>
+	<div class="r-search-field">
+		{$powerAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerAddress_fieldblock}
+											
+{BEGIN powerOwnershipType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerOwnershipType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerOwnershipType" 
+	
+	data-signal-error-for="powerOwnershipType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="powerOwnershipType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerOwnershipType}">
+		{$label dbo_voltonAgentApplications powerOwnershipType }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerOwnershipType}
+	</div>
+	<div class="r-search-field">
+		{$powerOwnershipType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerOwnershipType_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerOwnershipType_fieldblock}
+											
+{BEGIN powerPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerPostalCode" 
+	
+	data-signal-error-for="powerPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="powerPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerPostalCode}">
+		{$label dbo_voltonAgentApplications powerPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$powerPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerPostalCode_fieldblock}
+											
+{BEGIN powerAgreedKw_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerAgreedKw}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerAgreedKw" 
+	
+	data-signal-error-for="powerAgreedKw{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="powerAgreedKw" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerAgreedKw}">
+		{$label dbo_voltonAgentApplications powerAgreedKw }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerAgreedKw}
+	</div>
+	<div class="r-search-field">
+		{$powerAgreedKw_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerAgreedKw_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerAgreedKw_fieldblock}
+											
+{BEGIN powerSupplyNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerSupplyNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerSupplyNumber" 
+	
+	data-signal-error-for="powerSupplyNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="powerSupplyNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerSupplyNumber}">
+		{$label dbo_voltonAgentApplications powerSupplyNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerSupplyNumber}
+	</div>
+	<div class="r-search-field">
+		{$powerSupplyNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerSupplyNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerSupplyNumber_fieldblock}
+											
+{BEGIN powerMeterNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerMeterNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerMeterNumber" 
+	
+	data-signal-error-for="powerMeterNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="powerMeterNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerMeterNumber}">
+		{$label dbo_voltonAgentApplications powerMeterNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerMeterNumber}
+	</div>
+	<div class="r-search-field">
+		{$powerMeterNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerMeterNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerMeterNumber_fieldblock}
+											
+{BEGIN powerCurrentSupplier_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentSupplier}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerCurrentSupplier" 
+	
+	data-signal-error-for="powerCurrentSupplier{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="powerCurrentSupplier" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerCurrentSupplier}">
+		{$label dbo_voltonAgentApplications powerCurrentSupplier }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerCurrentSupplier}
+	</div>
+	<div class="r-search-field">
+		{$powerCurrentSupplier_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerCurrentSupplier_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerCurrentSupplier_fieldblock}
+											
+{BEGIN powerCurrentDayMeter_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentDayMeter}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerCurrentDayMeter" 
+	
+	data-signal-error-for="powerCurrentDayMeter{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="powerCurrentDayMeter" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerCurrentDayMeter}">
+		{$label dbo_voltonAgentApplications powerCurrentDayMeter }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerCurrentDayMeter}
+	</div>
+	<div class="r-search-field">
+		{$powerCurrentDayMeter_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerCurrentDayMeter_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerCurrentDayMeter_fieldblock}
+											
+{BEGIN powerCurrentNightMeter_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCurrentNightMeter}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerCurrentNightMeter" 
+	
+	data-signal-error-for="powerCurrentNightMeter{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="powerCurrentNightMeter" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerCurrentNightMeter}">
+		{$label dbo_voltonAgentApplications powerCurrentNightMeter }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerCurrentNightMeter}
+	</div>
+	<div class="r-search-field">
+		{$powerCurrentNightMeter_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerCurrentNightMeter_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerCurrentNightMeter_fieldblock}
+											
+{BEGIN powerActivationStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerActivationStatus}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerActivationStatus" 
+	
+	data-signal-error-for="powerActivationStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="powerActivationStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerActivationStatus}">
+		{$label dbo_voltonAgentApplications powerActivationStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerActivationStatus}
+	</div>
+	<div class="r-search-field">
+		{$powerActivationStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerActivationStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerActivationStatus_fieldblock}
+											
+{BEGIN voltonPlan_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonPlan}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonPlan" 
+	
+	data-signal-error-for="voltonPlan{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="voltonPlan" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonPlan}">
+		{$label dbo_voltonAgentApplications voltonPlan }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonPlan}
+	</div>
+	<div class="r-search-field">
+		{$voltonPlan_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonPlan_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonPlan_fieldblock}
+											
+{BEGIN voltonContractDuration_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonContractDuration}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonContractDuration" 
+	
+	data-signal-error-for="voltonContractDuration{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="voltonContractDuration" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonContractDuration}">
+		{$label dbo_voltonAgentApplications voltonContractDuration }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonContractDuration}
+	</div>
+	<div class="r-search-field">
+		{$voltonContractDuration_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonContractDuration_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonContractDuration_fieldblock}
+											
+{BEGIN voltonWarrantyAmount_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonWarrantyAmount}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonWarrantyAmount" 
+	
+	data-signal-error-for="voltonWarrantyAmount{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field37" {$item_integrated_search_field37} data-pageid="{$pageid}" data-field="voltonWarrantyAmount" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonWarrantyAmount}">
+		{$label dbo_voltonAgentApplications voltonWarrantyAmount }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonWarrantyAmount}
+	</div>
+	<div class="r-search-field">
+		{$voltonWarrantyAmount_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonWarrantyAmount_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonWarrantyAmount_fieldblock}
+											
+{BEGIN voltonWarrantyOnFirstBill_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonWarrantyOnFirstBill}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonWarrantyOnFirstBill" 
+	
+	data-signal-error-for="voltonWarrantyOnFirstBill{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field38" {$item_integrated_search_field38} data-pageid="{$pageid}" data-field="voltonWarrantyOnFirstBill" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonWarrantyOnFirstBill}">
+		{$label dbo_voltonAgentApplications voltonWarrantyOnFirstBill }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonWarrantyOnFirstBill}
+	</div>
+	<div class="r-search-field">
+		{$voltonWarrantyOnFirstBill_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonWarrantyOnFirstBill_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonWarrantyOnFirstBill_fieldblock}
+											
+{BEGIN voltonOther_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonOther}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonOther" 
+	
+	data-signal-error-for="voltonOther{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field39" {$item_integrated_search_field39} data-pageid="{$pageid}" data-field="voltonOther" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonOther}">
+		{$label dbo_voltonAgentApplications voltonOther }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonOther}
+	</div>
+	<div class="r-search-field">
+		{$voltonOther_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonOther_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonOther_fieldblock}
+											
+{BEGIN voltonComments_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonComments}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonComments" 
+	
+	data-signal-error-for="voltonComments{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field40" {$item_integrated_search_field40} data-pageid="{$pageid}" data-field="voltonComments" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonComments}">
+		{$label dbo_voltonAgentApplications voltonComments }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonComments}
+	</div>
+	<div class="r-search-field">
+		{$voltonComments_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonComments_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonComments_fieldblock}
+											
+{BEGIN voltonAutoPayment_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_voltonAutoPayment}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="voltonAutoPayment" 
+	
+	data-signal-error-for="voltonAutoPayment{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field44" {$item_integrated_search_field44} data-pageid="{$pageid}" data-field="voltonAutoPayment" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_voltonAutoPayment}">
+		{$label dbo_voltonAgentApplications voltonAutoPayment }	</label>
+	<div class="r-search-option">
+		{$searchtype_voltonAutoPayment}
+	</div>
+	<div class="r-search-field">
+		{$voltonAutoPayment_editcontrol}	</div>
+	<div class="r-search-field">
+		{$voltonAutoPayment_editcontrol1}
+	</div>
+	
+</div>
+
+{END voltonAutoPayment_fieldblock}
+											
+{BEGIN applicationType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationType" 
+	
+	data-signal-error-for="applicationType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field45" {$item_integrated_search_field45} data-pageid="{$pageid}" data-field="applicationType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationType}">
+		{$label dbo_voltonAgentApplications applicationType }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationType}
+	</div>
+	<div class="r-search-field">
+		{$applicationType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationType_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationType_fieldblock}
+											
+{BEGIN applicantWorkPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantWorkPhone}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantWorkPhone" 
+	
+	data-signal-error-for="applicantWorkPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field46" {$item_integrated_search_field46} data-pageid="{$pageid}" data-field="applicantWorkPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantWorkPhone}">
+		{$label dbo_voltonAgentApplications applicantWorkPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantWorkPhone}
+	</div>
+	<div class="r-search-field">
+		{$applicantWorkPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantWorkPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantWorkPhone_fieldblock}
+											
+{BEGIN document1_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document1}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document1" 
+	
+	data-signal-error-for="document1{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field47" {$item_integrated_search_field47} data-pageid="{$pageid}" data-field="document1" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document1}">
+		{$label dbo_voltonAgentApplications document1 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document1}
+	</div>
+	<div class="r-search-field">
+		{$document1_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document1_editcontrol1}
+	</div>
+	
+</div>
+
+{END document1_fieldblock}
+											
+{BEGIN document2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document2}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document2" 
+	
+	data-signal-error-for="document2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field48" {$item_integrated_search_field48} data-pageid="{$pageid}" data-field="document2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document2}">
+		{$label dbo_voltonAgentApplications document2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document2}
+	</div>
+	<div class="r-search-field">
+		{$document2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document2_editcontrol1}
+	</div>
+	
+</div>
+
+{END document2_fieldblock}
+											
+{BEGIN document3_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document3}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document3" 
+	
+	data-signal-error-for="document3{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field49" {$item_integrated_search_field49} data-pageid="{$pageid}" data-field="document3" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document3}">
+		{$label dbo_voltonAgentApplications document3 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document3}
+	</div>
+	<div class="r-search-field">
+		{$document3_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document3_editcontrol1}
+	</div>
+	
+</div>
+
+{END document3_fieldblock}
+											
+{BEGIN document4_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document4}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document4" 
+	
+	data-signal-error-for="document4{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field50" {$item_integrated_search_field50} data-pageid="{$pageid}" data-field="document4" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document4}">
+		{$label dbo_voltonAgentApplications document4 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document4}
+	</div>
+	<div class="r-search-field">
+		{$document4_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document4_editcontrol1}
+	</div>
+	
+</div>
+
+{END document4_fieldblock}
+											
+{BEGIN document5_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document5}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document5" 
+	
+	data-signal-error-for="document5{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field51" {$item_integrated_search_field51} data-pageid="{$pageid}" data-field="document5" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document5}">
+		{$label dbo_voltonAgentApplications document5 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document5}
+	</div>
+	<div class="r-search-field">
+		{$document5_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document5_editcontrol1}
+	</div>
+	
+</div>
+
+{END document5_fieldblock}
+											
+{BEGIN document6_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document6}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document6" 
+	
+	data-signal-error-for="document6{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field52" {$item_integrated_search_field52} data-pageid="{$pageid}" data-field="document6" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document6}">
+		{$label dbo_voltonAgentApplications document6 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document6}
+	</div>
+	<div class="r-search-field">
+		{$document6_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document6_editcontrol1}
+	</div>
+	
+</div>
+
+{END document6_fieldblock}
+											
+{BEGIN document7_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document7}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document7" 
+	
+	data-signal-error-for="document7{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field53" {$item_integrated_search_field53} data-pageid="{$pageid}" data-field="document7" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document7}">
+		{$label dbo_voltonAgentApplications document7 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document7}
+	</div>
+	<div class="r-search-field">
+		{$document7_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document7_editcontrol1}
+	</div>
+	
+</div>
+
+{END document7_fieldblock}
+											
+{BEGIN document8_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document8}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document8" 
+	
+	data-signal-error-for="document8{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field54" {$item_integrated_search_field54} data-pageid="{$pageid}" data-field="document8" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document8}">
+		{$label dbo_voltonAgentApplications document8 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document8}
+	</div>
+	<div class="r-search-field">
+		{$document8_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document8_editcontrol1}
+	</div>
+	
+</div>
+
+{END document8_fieldblock}
+											
+{BEGIN document9_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document9}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document9" 
+	
+	data-signal-error-for="document9{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field55" {$item_integrated_search_field55} data-pageid="{$pageid}" data-field="document9" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document9}">
+		{$label dbo_voltonAgentApplications document9 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document9}
+	</div>
+	<div class="r-search-field">
+		{$document9_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document9_editcontrol1}
+	</div>
+	
+</div>
+
+{END document9_fieldblock}
+											
+{BEGIN document10_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document10}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document10" 
+	
+	data-signal-error-for="document10{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field56" {$item_integrated_search_field56} data-pageid="{$pageid}" data-field="document10" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document10}">
+		{$label dbo_voltonAgentApplications document10 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document10}
+	</div>
+	<div class="r-search-field">
+		{$document10_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document10_editcontrol1}
+	</div>
+	
+</div>
+
+{END document10_fieldblock}
+											
+{BEGIN document11_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document11}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document11" 
+	
+	data-signal-error-for="document11{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field57" {$item_integrated_search_field57} data-pageid="{$pageid}" data-field="document11" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document11}">
+		{$label dbo_voltonAgentApplications document11 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document11}
+	</div>
+	<div class="r-search-field">
+		{$document11_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document11_editcontrol1}
+	</div>
+	
+</div>
+
+{END document11_fieldblock}
+											
+{BEGIN document12_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document12}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document12" 
+	
+	data-signal-error-for="document12{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field58" {$item_integrated_search_field58} data-pageid="{$pageid}" data-field="document12" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document12}">
+		{$label dbo_voltonAgentApplications document12 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document12}
+	</div>
+	<div class="r-search-field">
+		{$document12_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document12_editcontrol1}
+	</div>
+	
+</div>
+
+{END document12_fieldblock}
+											
+{BEGIN document13_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document13}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document13" 
+	
+	data-signal-error-for="document13{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field59" {$item_integrated_search_field59} data-pageid="{$pageid}" data-field="document13" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document13}">
+		{$label dbo_voltonAgentApplications document13 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document13}
+	</div>
+	<div class="r-search-field">
+		{$document13_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document13_editcontrol1}
+	</div>
+	
+</div>
+
+{END document13_fieldblock}
+											
+{BEGIN document14_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document14}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document14" 
+	
+	data-signal-error-for="document14{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field60" {$item_integrated_search_field60} data-pageid="{$pageid}" data-field="document14" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document14}">
+		{$label dbo_voltonAgentApplications document14 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document14}
+	</div>
+	<div class="r-search-field">
+		{$document14_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document14_editcontrol1}
+	</div>
+	
+</div>
+
+{END document14_fieldblock}
+											
+{BEGIN document15_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_document15}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="document15" 
+	
+	data-signal-error-for="document15{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field61" {$item_integrated_search_field61} data-pageid="{$pageid}" data-field="document15" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_document15}">
+		{$label dbo_voltonAgentApplications document15 }	</label>
+	<div class="r-search-option">
+		{$searchtype_document15}
+	</div>
+	<div class="r-search-field">
+		{$document15_editcontrol}	</div>
+	<div class="r-search-field">
+		{$document15_editcontrol1}
+	</div>
+	
+</div>
+
+{END document15_fieldblock}
+											
+{BEGIN applicationStatusId_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationStatusId}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationStatusId" 
+	
+	data-signal-error-for="applicationStatusId{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="applicationStatusId" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationStatusId}">
+		{$label dbo_voltonAgentApplications applicationStatusId }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationStatusId}
+	</div>
+	<div class="r-search-field">
+		{$applicationStatusId_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationStatusId_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationStatusId_fieldblock}
+											
+{BEGIN applicantArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantArea" 
+	
+	data-signal-error-for="applicantArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="applicantArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantArea}">
+		{$label dbo_voltonAgentApplications applicantArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantArea}
+	</div>
+	<div class="r-search-field">
+		{$applicantArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantArea_fieldblock}
+											
+{BEGIN applicantCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicantCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicantCity" 
+	
+	data-signal-error-for="applicantCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="applicantCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicantCity}">
+		{$label dbo_voltonAgentApplications applicantCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicantCity}
+	</div>
+	<div class="r-search-field">
+		{$applicantCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicantCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicantCity_fieldblock}
+											
+{BEGIN mailArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="mailArea" 
+	
+	data-signal-error-for="mailArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field42" {$item_integrated_search_field42} data-pageid="{$pageid}" data-field="mailArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailArea}">
+		{$label dbo_voltonAgentApplications mailArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailArea}
+	</div>
+	<div class="r-search-field">
+		{$mailArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailArea_fieldblock}
+											
+{BEGIN mailCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mailCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="mailCity" 
+	
+	data-signal-error-for="mailCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field43" {$item_integrated_search_field43} data-pageid="{$pageid}" data-field="mailCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mailCity}">
+		{$label dbo_voltonAgentApplications mailCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_mailCity}
+	</div>
+	<div class="r-search-field">
+		{$mailCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mailCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END mailCity_fieldblock}
+											
+{BEGIN powerArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerArea" 
+	
+	data-signal-error-for="powerArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field62" {$item_integrated_search_field62} data-pageid="{$pageid}" data-field="powerArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerArea}">
+		{$label dbo_voltonAgentApplications powerArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerArea}
+	</div>
+	<div class="r-search-field">
+		{$powerArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerArea_fieldblock}
+											
+{BEGIN powerCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_powerCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="powerCity" 
+	
+	data-signal-error-for="powerCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field63" {$item_integrated_search_field63} data-pageid="{$pageid}" data-field="powerCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_powerCity}">
+		{$label dbo_voltonAgentApplications powerCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_powerCity}
+	</div>
+	<div class="r-search-field">
+		{$powerCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$powerCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END powerCity_fieldblock}
+											
+{BEGIN ngAddress_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngAddress}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngAddress" 
+	
+	data-signal-error-for="ngAddress{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field41" {$item_integrated_search_field41} data-pageid="{$pageid}" data-field="ngAddress" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngAddress}">
+		{$label dbo_voltonAgentApplications ngAddress }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngAddress}
+	</div>
+	<div class="r-search-field">
+		{$ngAddress_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngAddress_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngAddress_fieldblock}
+											
+{BEGIN ngPostalCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngPostalCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngPostalCode" 
+	
+	data-signal-error-for="ngPostalCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field64" {$item_integrated_search_field64} data-pageid="{$pageid}" data-field="ngPostalCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngPostalCode}">
+		{$label dbo_voltonAgentApplications ngPostalCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngPostalCode}
+	</div>
+	<div class="r-search-field">
+		{$ngPostalCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngPostalCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngPostalCode_fieldblock}
+											
+{BEGIN ngArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngArea" 
+	
+	data-signal-error-for="ngArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field65" {$item_integrated_search_field65} data-pageid="{$pageid}" data-field="ngArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngArea}">
+		{$label dbo_voltonAgentApplications ngArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngArea}
+	</div>
+	<div class="r-search-field">
+		{$ngArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngArea_fieldblock}
+											
+{BEGIN ngCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngCity" 
+	
+	data-signal-error-for="ngCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field66" {$item_integrated_search_field66} data-pageid="{$pageid}" data-field="ngCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngCity}">
+		{$label dbo_voltonAgentApplications ngCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngCity}
+	</div>
+	<div class="r-search-field">
+		{$ngCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngCity_fieldblock}
+											
+{BEGIN ngPressure_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngPressure}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngPressure" 
+	
+	data-signal-error-for="ngPressure{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field67" {$item_integrated_search_field67} data-pageid="{$pageid}" data-field="ngPressure" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngPressure}">
+		{$label dbo_voltonAgentApplications ngPressure }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngPressure}
+	</div>
+	<div class="r-search-field">
+		{$ngPressure_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngPressure_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngPressure_fieldblock}
+											
+{BEGIN ngHourlyCapacity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngHourlyCapacity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngHourlyCapacity" 
+	
+	data-signal-error-for="ngHourlyCapacity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field68" {$item_integrated_search_field68} data-pageid="{$pageid}" data-field="ngHourlyCapacity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngHourlyCapacity}">
+		{$label dbo_voltonAgentApplications ngHourlyCapacity }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngHourlyCapacity}
+	</div>
+	<div class="r-search-field">
+		{$ngHourlyCapacity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngHourlyCapacity_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngHourlyCapacity_fieldblock}
+											
+{BEGIN ngHkasp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngHkasp}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngHkasp" 
+	
+	data-signal-error-for="ngHkasp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field69" {$item_integrated_search_field69} data-pageid="{$pageid}" data-field="ngHkasp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngHkasp}">
+		{$label dbo_voltonAgentApplications ngHkasp }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngHkasp}
+	</div>
+	<div class="r-search-field">
+		{$ngHkasp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngHkasp_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngHkasp_fieldblock}
+											
+{BEGIN ngMeterNumber_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngMeterNumber}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngMeterNumber" 
+	
+	data-signal-error-for="ngMeterNumber{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field71" {$item_integrated_search_field71} data-pageid="{$pageid}" data-field="ngMeterNumber" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngMeterNumber}">
+		{$label dbo_voltonAgentApplications ngMeterNumber }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngMeterNumber}
+	</div>
+	<div class="r-search-field">
+		{$ngMeterNumber_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngMeterNumber_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngMeterNumber_fieldblock}
+											
+{BEGIN ngMeterType_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngMeterType}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngMeterType" 
+	
+	data-signal-error-for="ngMeterType{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field72" {$item_integrated_search_field72} data-pageid="{$pageid}" data-field="ngMeterType" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngMeterType}">
+		{$label dbo_voltonAgentApplications ngMeterType }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngMeterType}
+	</div>
+	<div class="r-search-field">
+		{$ngMeterType_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngMeterType_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngMeterType_fieldblock}
+											
+{BEGIN ngCurrentMeterValue_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngCurrentMeterValue}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngCurrentMeterValue" 
+	
+	data-signal-error-for="ngCurrentMeterValue{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field73" {$item_integrated_search_field73} data-pageid="{$pageid}" data-field="ngCurrentMeterValue" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngCurrentMeterValue}">
+		{$label dbo_voltonAgentApplications ngCurrentMeterValue }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngCurrentMeterValue}
+	</div>
+	<div class="r-search-field">
+		{$ngCurrentMeterValue_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngCurrentMeterValue_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngCurrentMeterValue_fieldblock}
+											
+{BEGIN ngConnectionExists_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngConnectionExists}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngConnectionExists" 
+	
+	data-signal-error-for="ngConnectionExists{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field74" {$item_integrated_search_field74} data-pageid="{$pageid}" data-field="ngConnectionExists" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngConnectionExists}">
+		{$label dbo_voltonAgentApplications ngConnectionExists }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngConnectionExists}
+	</div>
+	<div class="r-search-field">
+		{$ngConnectionExists_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngConnectionExists_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngConnectionExists_fieldblock}
+											
+{BEGIN ngSupplyIsNew_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngSupplyIsNew}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngSupplyIsNew" 
+	
+	data-signal-error-for="ngSupplyIsNew{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field75" {$item_integrated_search_field75} data-pageid="{$pageid}" data-field="ngSupplyIsNew" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngSupplyIsNew}">
+		{$label dbo_voltonAgentApplications ngSupplyIsNew }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngSupplyIsNew}
+	</div>
+	<div class="r-search-field">
+		{$ngSupplyIsNew_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngSupplyIsNew_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngSupplyIsNew_fieldblock}
+											
+{BEGIN ngSupplyReactivation_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ngSupplyReactivation}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ngSupplyReactivation" 
+	
+	data-signal-error-for="ngSupplyReactivation{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field76" {$item_integrated_search_field76} data-pageid="{$pageid}" data-field="ngSupplyReactivation" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ngSupplyReactivation}">
+		{$label dbo_voltonAgentApplications ngSupplyReactivation }	</label>
+	<div class="r-search-option">
+		{$searchtype_ngSupplyReactivation}
+	</div>
+	<div class="r-search-field">
+		{$ngSupplyReactivation_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ngSupplyReactivation_editcontrol1}
+	</div>
+	
+</div>
+
+{END ngSupplyReactivation_fieldblock}
+											
+{BEGIN applicationAgentStatus_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationAgentStatus}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationAgentStatus" 
+	
+	data-signal-error-for="applicationAgentStatus{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field70" {$item_integrated_search_field70} data-pageid="{$pageid}" data-field="applicationAgentStatus" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationAgentStatus}">
+		{$label dbo_voltonAgentApplications applicationAgentStatus }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationAgentStatus}
+	</div>
+	<div class="r-search-field">
+		{$applicationAgentStatus_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationAgentStatus_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationAgentStatus_fieldblock}
+											
+{BEGIN applicationLastStatusDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_applicationLastStatusDate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="applicationLastStatusDate" 
+	
+	data-signal-error-for="applicationLastStatusDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field77" {$item_integrated_search_field77} data-pageid="{$pageid}" data-field="applicationLastStatusDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_applicationLastStatusDate}">
+		{$label dbo_voltonAgentApplications applicationLastStatusDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_applicationLastStatusDate}
+	</div>
+	<div class="r-search-field">
+		{$applicationLastStatusDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$applicationLastStatusDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END applicationLastStatusDate_fieldblock}
+											
+{BEGIN dialerList_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerList}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerList" 
+	
+	data-signal-error-for="dialerList{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field78" {$item_integrated_search_field78} data-pageid="{$pageid}" data-field="dialerList" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerList}">
+		{$label dbo_voltonAgentApplications dialerList }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerList}
+	</div>
+	<div class="r-search-field">
+		{$dialerList_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerList_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerList_fieldblock}
+											
+{BEGIN dialerAgent_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerAgent}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerAgent" 
+	
+	data-signal-error-for="dialerAgent{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field79" {$item_integrated_search_field79} data-pageid="{$pageid}" data-field="dialerAgent" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerAgent}">
+		{$label dbo_voltonAgentApplications dialerAgent }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerAgent}
+	</div>
+	<div class="r-search-field">
+		{$dialerAgent_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerAgent_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerAgent_fieldblock}
+											
+{BEGIN dialerRecording_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerRecording}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerRecording" 
+	
+	data-signal-error-for="dialerRecording{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field80" {$item_integrated_search_field80} data-pageid="{$pageid}" data-field="dialerRecording" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerRecording}">
+		{$label dbo_voltonAgentApplications dialerRecording }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerRecording}
+	</div>
+	<div class="r-search-field">
+		{$dialerRecording_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerRecording_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerRecording_fieldblock}
+											
+{BEGIN orderShipCompany_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderShipCompany}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="orderShipCompany" 
+	
+	data-signal-error-for="orderShipCompany{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field81" {$item_integrated_search_field81} data-pageid="{$pageid}" data-field="orderShipCompany" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_orderShipCompany}">
+		{$label dbo_voltonAgentApplications orderShipCompany }	</label>
+	<div class="r-search-option">
+		{$searchtype_orderShipCompany}
+	</div>
+	<div class="r-search-field">
+		{$orderShipCompany_editcontrol}	</div>
+	<div class="r-search-field">
+		{$orderShipCompany_editcontrol1}
+	</div>
+	
+</div>
+
+{END orderShipCompany_fieldblock}
+											
+{BEGIN orderInvoiceRequired_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderInvoiceRequired}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="orderInvoiceRequired" 
+	
+	data-signal-error-for="orderInvoiceRequired{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field82" {$item_integrated_search_field82} data-pageid="{$pageid}" data-field="orderInvoiceRequired" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_orderInvoiceRequired}">
+		{$label dbo_voltonAgentApplications orderInvoiceRequired }	</label>
+	<div class="r-search-option">
+		{$searchtype_orderInvoiceRequired}
+	</div>
+	<div class="r-search-field">
+		{$orderInvoiceRequired_editcontrol}	</div>
+	<div class="r-search-field">
+		{$orderInvoiceRequired_editcontrol1}
+	</div>
+	
+</div>
+
+{END orderInvoiceRequired_fieldblock}
+											
+{BEGIN callComments_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callComments}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callComments" 
+	
+	data-signal-error-for="callComments{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field83" {$item_integrated_search_field83} data-pageid="{$pageid}" data-field="callComments" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callComments}">
+		{$label dbo_voltonAgentApplications callComments }	</label>
+	<div class="r-search-option">
+		{$searchtype_callComments}
+	</div>
+	<div class="r-search-field">
+		{$callComments_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callComments_editcontrol1}
+	</div>
+	
+</div>
+
+{END callComments_fieldblock}
+											
+{BEGIN internalCommunication_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_internalCommunication}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="internalCommunication" 
+	
+	data-signal-error-for="internalCommunication{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field84" {$item_integrated_search_field84} data-pageid="{$pageid}" data-field="internalCommunication" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_internalCommunication}">
+		{$label dbo_voltonAgentApplications internalCommunication }	</label>
+	<div class="r-search-option">
+		{$searchtype_internalCommunication}
+	</div>
+	<div class="r-search-field">
+		{$internalCommunication_editcontrol}	</div>
+	<div class="r-search-field">
+		{$internalCommunication_editcontrol1}
+	</div>
+	
+</div>
+
+{END internalCommunication_fieldblock}
+											
+{BEGIN callGdprAcceptance_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callGdprAcceptance}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callGdprAcceptance" 
+	
+	data-signal-error-for="callGdprAcceptance{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field85" {$item_integrated_search_field85} data-pageid="{$pageid}" data-field="callGdprAcceptance" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callGdprAcceptance}">
+		{$label dbo_voltonAgentApplications callGdprAcceptance }	</label>
+	<div class="r-search-option">
+		{$searchtype_callGdprAcceptance}
+	</div>
+	<div class="r-search-field">
+		{$callGdprAcceptance_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callGdprAcceptance_editcontrol1}
+	</div>
+	
+</div>
+
+{END callGdprAcceptance_fieldblock}
+											
+{BEGIN callGdprRecordingAcceptance_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_callGdprRecordingAcceptance}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="callGdprRecordingAcceptance" 
+	
+	data-signal-error-for="callGdprRecordingAcceptance{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field86" {$item_integrated_search_field86} data-pageid="{$pageid}" data-field="callGdprRecordingAcceptance" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_callGdprRecordingAcceptance}">
+		{$label dbo_voltonAgentApplications callGdprRecordingAcceptance }	</label>
+	<div class="r-search-option">
+		{$searchtype_callGdprRecordingAcceptance}
+	</div>
+	<div class="r-search-field">
+		{$callGdprRecordingAcceptance_editcontrol}	</div>
+	<div class="r-search-field">
+		{$callGdprRecordingAcceptance_editcontrol1}
+	</div>
+	
+</div>
+
+{END callGdprRecordingAcceptance_fieldblock}
+											
+{BEGIN orderPaymentMethod_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_orderPaymentMethod}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="orderPaymentMethod" 
+	
+	data-signal-error-for="orderPaymentMethod{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field87" {$item_integrated_search_field87} data-pageid="{$pageid}" data-field="orderPaymentMethod" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_orderPaymentMethod}">
+		{$label dbo_voltonAgentApplications orderPaymentMethod }	</label>
+	<div class="r-search-option">
+		{$searchtype_orderPaymentMethod}
+	</div>
+	<div class="r-search-field">
+		{$orderPaymentMethod_editcontrol}	</div>
+	<div class="r-search-field">
+		{$orderPaymentMethod_editcontrol1}
+	</div>
+	
+</div>
+
+{END orderPaymentMethod_fieldblock}
+											
+{BEGIN Expr2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Expr2}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="Expr2" 
+	
+	data-signal-error-for="Expr2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field88" {$item_integrated_search_field88} data-pageid="{$pageid}" data-field="Expr2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Expr2}">
+		{$label dbo_voltonAgentApplications Expr2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_Expr2}
+	</div>
+	<div class="r-search-field">
+		{$Expr2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Expr2_editcontrol1}
+	</div>
+	
+</div>
+
+{END Expr2_fieldblock}
+											
+{BEGIN contactZipCode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactZipCode}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactZipCode" 
+	
+	data-signal-error-for="contactZipCode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field89" {$item_integrated_search_field89} data-pageid="{$pageid}" data-field="contactZipCode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactZipCode}">
+		{$label dbo_voltonAgentApplications contactZipCode }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactZipCode}
+	</div>
+	<div class="r-search-field">
+		{$contactZipCode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactZipCode_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactZipCode_fieldblock}
+											
+{BEGIN contactCity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactCity}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactCity" 
+	
+	data-signal-error-for="contactCity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field90" {$item_integrated_search_field90} data-pageid="{$pageid}" data-field="contactCity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactCity}">
+		{$label dbo_voltonAgentApplications contactCity }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactCity}
+	</div>
+	<div class="r-search-field">
+		{$contactCity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactCity_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactCity_fieldblock}
+											
+{BEGIN ContactArea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ContactArea}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ContactArea" 
+	
+	data-signal-error-for="ContactArea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field91" {$item_integrated_search_field91} data-pageid="{$pageid}" data-field="ContactArea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ContactArea}">
+		{$label dbo_voltonAgentApplications ContactArea }	</label>
+	<div class="r-search-option">
+		{$searchtype_ContactArea}
+	</div>
+	<div class="r-search-field">
+		{$ContactArea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ContactArea_editcontrol1}
+	</div>
+	
+</div>
+
+{END ContactArea_fieldblock}
+											
+{BEGIN contactGender_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactGender}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactGender" 
+	
+	data-signal-error-for="contactGender{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field92" {$item_integrated_search_field92} data-pageid="{$pageid}" data-field="contactGender" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactGender}">
+		{$label dbo_voltonAgentApplications contactGender }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactGender}
+	</div>
+	<div class="r-search-field">
+		{$contactGender_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactGender_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactGender_fieldblock}
+											
+{BEGIN contactAge_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactAge}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactAge" 
+	
+	data-signal-error-for="contactAge{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field93" {$item_integrated_search_field93} data-pageid="{$pageid}" data-field="contactAge" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactAge}">
+		{$label dbo_voltonAgentApplications contactAge }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactAge}
+	</div>
+	<div class="r-search-field">
+		{$contactAge_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactAge_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactAge_fieldblock}
+											
+{BEGIN crmUser_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_crmUser}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="crmUser" 
+	
+	data-signal-error-for="crmUser{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field94" {$item_integrated_search_field94} data-pageid="{$pageid}" data-field="crmUser" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_crmUser}">
+		{$label dbo_voltonAgentApplications crmUser }	</label>
+	<div class="r-search-option">
+		{$searchtype_crmUser}
+	</div>
+	<div class="r-search-field">
+		{$crmUser_editcontrol}	</div>
+	<div class="r-search-field">
+		{$crmUser_editcontrol1}
+	</div>
+	
+</div>
+
+{END crmUser_fieldblock}
+											
+{BEGIN pauseAfterCall_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pauseAfterCall}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="pauseAfterCall" 
+	
+	data-signal-error-for="pauseAfterCall{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field95" {$item_integrated_search_field95} data-pageid="{$pageid}" data-field="pauseAfterCall" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_pauseAfterCall}">
+		{$label dbo_voltonAgentApplications pauseAfterCall }	</label>
+	<div class="r-search-option">
+		{$searchtype_pauseAfterCall}
+	</div>
+	<div class="r-search-field">
+		{$pauseAfterCall_editcontrol}	</div>
+	<div class="r-search-field">
+		{$pauseAfterCall_editcontrol1}
+	</div>
+	
+</div>
+
+{END pauseAfterCall_fieldblock}
+											
+{BEGIN dialerPhone_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerPhone}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerPhone" 
+	
+	data-signal-error-for="dialerPhone{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field96" {$item_integrated_search_field96} data-pageid="{$pageid}" data-field="dialerPhone" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerPhone}">
+		{$label dbo_voltonAgentApplications dialerPhone }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerPhone}
+	</div>
+	<div class="r-search-field">
+		{$dialerPhone_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerPhone_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerPhone_fieldblock}
+											
+{BEGIN dialerCampaign_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dialerCampaign}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="dialerCampaign" 
+	
+	data-signal-error-for="dialerCampaign{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field97" {$item_integrated_search_field97} data-pageid="{$pageid}" data-field="dialerCampaign" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dialerCampaign}">
+		{$label dbo_voltonAgentApplications dialerCampaign }	</label>
+	<div class="r-search-option">
+		{$searchtype_dialerCampaign}
+	</div>
+	<div class="r-search-field">
+		{$dialerCampaign_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dialerCampaign_editcontrol1}
+	</div>
+	
+</div>
+
+{END dialerCampaign_fieldblock}
+											
+{BEGIN productFamilyId_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_productFamilyId}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="productFamilyId" 
+	
+	data-signal-error-for="productFamilyId{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field98" {$item_integrated_search_field98} data-pageid="{$pageid}" data-field="productFamilyId" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_productFamilyId}">
+		{$label dbo_voltonAgentApplications productFamilyId }	</label>
+	<div class="r-search-option">
+		{$searchtype_productFamilyId}
+	</div>
+	<div class="r-search-field">
+		{$productFamilyId_editcontrol}	</div>
+	<div class="r-search-field">
+		{$productFamilyId_editcontrol1}
+	</div>
+	
+</div>
+
+{END productFamilyId_fieldblock}
+											
+{BEGIN contactMethod_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contactMethod}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="contactMethod" 
+	
+	data-signal-error-for="contactMethod{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field99" {$item_integrated_search_field99} data-pageid="{$pageid}" data-field="contactMethod" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_contactMethod}">
+		{$label dbo_voltonAgentApplications contactMethod }	</label>
+	<div class="r-search-option">
+		{$searchtype_contactMethod}
+	</div>
+	<div class="r-search-field">
+		{$contactMethod_editcontrol}	</div>
+	<div class="r-search-field">
+		{$contactMethod_editcontrol1}
+	</div>
+	
+</div>
+
+{END contactMethod_fieldblock}
+											
+{BEGIN courier_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courier}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="courier" 
+	
+	data-signal-error-for="courier{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field100" {$item_integrated_search_field100} data-pageid="{$pageid}" data-field="courier" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_courier}">
+		{$label dbo_voltonAgentApplications courier }	</label>
+	<div class="r-search-option">
+		{$searchtype_courier}
+	</div>
+	<div class="r-search-field">
+		{$courier_editcontrol}	</div>
+	<div class="r-search-field">
+		{$courier_editcontrol1}
+	</div>
+	
+</div>
+
+{END courier_fieldblock}
+											
+{BEGIN deliveryComments_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_deliveryComments}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="deliveryComments" 
+	
+	data-signal-error-for="deliveryComments{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field101" {$item_integrated_search_field101} data-pageid="{$pageid}" data-field="deliveryComments" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_deliveryComments}">
+		{$label dbo_voltonAgentApplications deliveryComments }	</label>
+	<div class="r-search-option">
+		{$searchtype_deliveryComments}
+	</div>
+	<div class="r-search-field">
+		{$deliveryComments_editcontrol}	</div>
+	<div class="r-search-field">
+		{$deliveryComments_editcontrol1}
+	</div>
+	
+</div>
+
+{END deliveryComments_fieldblock}
+											
+{BEGIN courierDeliveryDate_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierDeliveryDate}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="courierDeliveryDate" 
+	
+	data-signal-error-for="courierDeliveryDate{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field102" {$item_integrated_search_field102} data-pageid="{$pageid}" data-field="courierDeliveryDate" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_courierDeliveryDate}">
+		{$label dbo_voltonAgentApplications courierDeliveryDate }	</label>
+	<div class="r-search-option">
+		{$searchtype_courierDeliveryDate}
+	</div>
+	<div class="r-search-field">
+		{$courierDeliveryDate_editcontrol}	</div>
+	<div class="r-search-field">
+		{$courierDeliveryDate_editcontrol1}
+	</div>
+	
+</div>
+
+{END courierDeliveryDate_fieldblock}
+											
+{BEGIN courierTimeFrom_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierTimeFrom}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="courierTimeFrom" 
+	
+	data-signal-error-for="courierTimeFrom{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field103" {$item_integrated_search_field103} data-pageid="{$pageid}" data-field="courierTimeFrom" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_courierTimeFrom}">
+		{$label dbo_voltonAgentApplications courierTimeFrom }	</label>
+	<div class="r-search-option">
+		{$searchtype_courierTimeFrom}
+	</div>
+	<div class="r-search-field">
+		{$courierTimeFrom_editcontrol}	</div>
+	<div class="r-search-field">
+		{$courierTimeFrom_editcontrol1}
+	</div>
+	
+</div>
+
+{END courierTimeFrom_fieldblock}
+											
+{BEGIN courierTimeTo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_courierTimeTo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="courierTimeTo" 
+	
+	data-signal-error-for="courierTimeTo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field104" {$item_integrated_search_field104} data-pageid="{$pageid}" data-field="courierTimeTo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_courierTimeTo}">
+		{$label dbo_voltonAgentApplications courierTimeTo }	</label>
+	<div class="r-search-option">
+		{$searchtype_courierTimeTo}
+	</div>
+	<div class="r-search-field">
+		{$courierTimeTo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$courierTimeTo_editcontrol1}
+	</div>
+	
+</div>
+
+{END courierTimeTo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+							</div>
+						
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="topbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Αναζήτηση			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Επαναφορά			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Πίσω στη λίστα			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Ακύρωση			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

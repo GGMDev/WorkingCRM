@@ -1,0 +1,501 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_voltonAgentApplications search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_search_field}","text":{$id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field1}","text":{$callid_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field3}","text":{$applicantName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field4}","text":{$applicantIdNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$applicantAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field6}","text":{$applicantPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field7}","text":{$applicantTaxRegistrationNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field8}","text":{$applicantTaxOffice_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$applicantEmail_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$applicantProfession_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$applicantKod_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field12}","text":{$applicantGemi_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field15}","text":{$contactName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field16}","text":{$contactPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field17}","text":{$contactMobile_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field18}","text":{$contactEmail_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field13}","text":{$applicantPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field14}","text":{$applicantMobile_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field19}","text":{$legalName_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field20}","text":{$legalIdNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field21}","text":{$mailAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field22}","text":{$mailPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field24}","text":{$powerAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field25}","text":{$powerOwnershipType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field26}","text":{$powerPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field28}","text":{$powerAgreedKw_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field29}","text":{$powerSupplyNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field30}","text":{$powerMeterNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field31}","text":{$powerCurrentSupplier_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field32}","text":{$powerCurrentDayMeter_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field33}","text":{$powerCurrentNightMeter_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field34}","text":{$powerActivationStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field35}","text":{$voltonPlan_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$voltonContractDuration_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$voltonWarrantyAmount_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field38}","text":{$voltonWarrantyOnFirstBill_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field39}","text":{$voltonOther_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field40}","text":{$voltonComments_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field44}","text":{$voltonAutoPayment_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field45}","text":{$applicationType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field46}","text":{$applicantWorkPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field47}","text":{$document1_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field48}","text":{$document2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field49}","text":{$document3_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field50}","text":{$document4_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field51}","text":{$document5_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$document6_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field53}","text":{$document7_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field54}","text":{$document8_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field55}","text":{$document9_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field56}","text":{$document10_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field57}","text":{$document11_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field58}","text":{$document12_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field59}","text":{$document13_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field60}","text":{$document14_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field61}","text":{$document15_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field2}","text":{$applicationStatusId_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field23}","text":{$applicantArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field27}","text":{$applicantCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field42}","text":{$mailArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field43}","text":{$mailCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field62}","text":{$powerArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field63}","text":{$powerCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field41}","text":{$ngAddress_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field64}","text":{$ngPostalCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field65}","text":{$ngArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field66}","text":{$ngCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field67}","text":{$ngPressure_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field68}","text":{$ngHourlyCapacity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field69}","text":{$ngHkasp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field71}","text":{$ngMeterNumber_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field72}","text":{$ngMeterType_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field73}","text":{$ngCurrentMeterValue_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field74}","text":{$ngConnectionExists_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field75}","text":{$ngSupplyIsNew_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field76}","text":{$ngSupplyReactivation_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field70}","text":{$applicationAgentStatus_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field77}","text":{$applicationLastStatusDate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field78}","text":{$dialerList_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field79}","text":{$dialerAgent_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field80}","text":{$dialerRecording_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field81}","text":{$orderShipCompany_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field82}","text":{$orderInvoiceRequired_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field83}","text":{$callComments_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field84}","text":{$internalCommunication_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field85}","text":{$callGdprAcceptance_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field86}","text":{$callGdprRecordingAcceptance_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field87}","text":{$orderPaymentMethod_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field88}","text":{$Expr2_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field89}","text":{$contactZipCode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field90}","text":{$contactCity_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field91}","text":{$ContactArea_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field92}","text":{$contactGender_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field93}","text":{$contactAge_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field94}","text":{$crmUser_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field95}","text":{$pauseAfterCall_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field96}","text":{$dialerPhone_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field97}","text":{$dialerCampaign_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field98}","text":{$productFamilyId_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field99}","text":{$contactMethod_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field100}","text":{$courier_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field101}","text":{$deliveryComments_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field102}","text":{$courierDeliveryDate_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field103}","text":{$courierTimeFrom_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field104}","text":{$courierTimeTo_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  
